@@ -1,0 +1,51 @@
+/* SIZE */
+.f-40 {
+    font-size: 40px;
+}
+
+.f-30 {
+    font-size: 30px;
+}
+
+.f-18 {
+    font-size: 18px;
+}
+
+.f-16 {
+    font-size: 16px;
+}
+
+.f-15 {
+    font-size: 15px;
+}
+
+.f-14 {
+    font-size: 14px;
+}
+
+.f-12 {
+    font-size: 12px
+}
+
+/* TRANSFORM */
+.f-bold {
+    font-weight: bold;
+}
+
+.t-center {
+    text-align: center;
+}
+
+/* COLOR */
+.c-gray {
+    color: #adadad;
+}
+
+.c-gray-b {
+    color: #808080;
+}
+
+.c-red {
+    color: #cc2a36;
+}
+
