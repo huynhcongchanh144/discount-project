@@ -303,6 +303,7 @@ footer .copyright {
     border: none;
     cursor: pointer;
     position: relative;
+    background-color: unset;
 }
 
 .btn-view-up::after {
@@ -396,4 +397,17 @@ footer .copyright {
     position: absolute;
     z-index: 1;
     display: block;
+}
+
+.tabs {
+    border-bottom: 1px solid #adadad;
+    transition: .5s;
+}
+
+.tab.active {
+    border-bottom: 2px solid #cc2a36;
+}
+
+.collapse {
+    /* display: none; */
 }

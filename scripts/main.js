@@ -17,3 +17,12 @@ navDropdown.forEach((element) => {
     }
   });
 });
+
+let collapseBtn = document.querySelectorAll('.collapse-btn')
+
+collapseBtn.forEach(e => {
+    e.addEventListener('click', () => {
+        let target = e.getAttribute("target");
+        console.log(target)
+    })
+})
