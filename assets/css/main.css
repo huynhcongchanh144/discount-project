@@ -10,6 +10,10 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 a {
     text-decoration: none;
     color: #808080;
@@ -30,6 +34,10 @@ ul li {
 .bg-gray-light {
     background-color: #fafafa;
     position: relative;
+}
+
+.bg-white {
+    background-color: white;
 }
 
 .v-center {
@@ -255,13 +263,14 @@ footer .copyright {
 }
 
 .list-vouchers .voucher {
-    border: 1px solid #adadad;
+    border: 1px solid #eee;
     border-radius: 7px;
 }
 
 .list-vouchers .voucher .short-detail {
-    border-bottom: 1px solid #adadad;
     cursor: pointer;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
 }
 
 .btn-thumb {
@@ -296,6 +305,7 @@ footer .copyright {
     background-color: #eee;
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
+    border-top: 1px solid #eee;
     font-size: 14px;
 }
 
@@ -399,9 +409,26 @@ footer .copyright {
     display: block;
 }
 
+.btn-getoffer {
+    background-image: linear-gradient(22deg,#cc2a36,#f77941);
+    position: relative;
+    border-radius: 1000px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 500ms ease 0s, border-color 500ms ease 0s, color 500ms ease 0s, fill 500ms ease 0s;
+    -webkit-font-smoothing: antialiased;
+    border: thin solid #eee;
+    color: white;
+    height: 3rem;
+    padding-right: 12px;
+    outline: none !important;
+    font-size: 16px;
+    width: 100%;
+}
+
 .tabs {
     border-bottom: 1px solid #adadad;
-    transition: .5s;
 }
 
 .tab.active {
@@ -409,5 +436,62 @@ footer .copyright {
 }
 
 .collapse {
-    /* display: none; */
+    display: none;
+}
+
+.best-offer {
+    border-radius: 7px;
+}
+
+.form-best-offer input {
+    border: 1px solid #ededed;
+    border-radius: 7px;
+    background-color: #ededed;
+    outline: none;
+}
+
+.magazine-item {
+    border: 1px solid #ededed;
+    border-radius: 10px;
+    text-align: center;
+    background-color: white;
+}
+
+.magazine-item a {
+    color: black;
+}
+
+.magazine-item .brand-name {
+    padding: 4px;
+    background-color: #ededed;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.magazine-item img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 74px;
+}
+
+.code-and-voucher {
+    background-color: white;
+    padding: 1.5rem;
+    border: 1px solid #ededed;
+    border-radius: 8px;
+}
+
+.code-and-voucher table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.code-and-voucher table tr {
+    border-bottom: 1px solid #ededed;
+}
+
+table th + td {
+    padding: 8px;
+    font-size: 14px;
 }
