@@ -26,3 +26,27 @@ collapseBtn.forEach(e => {
         console.log(target)
     })
 })
+
+const openMenuOnMobile = () => {
+  const menuMobile = document.querySelector('div.navbar-mobile-menu');
+
+  if(!menuMobile.classList.contains('show')){
+    menuMobile.classList.add('show');
+  } else {
+    menuMobile.classList.remove('show');
+  }
+
+  const secondary = document.querySelectorAll('div.navbar-secondary');
+  secondary.forEach(function(e) {
+    if (e.classList.contains('show')){
+      e.classList.remove('show');
+    }
+  });
+}
+
+const openMenuSecondaryOnMobile = (idMenuSecondary) => {
+  var element = document.getElementById(idMenuSecondary);
+  const menuMobile = document.querySelector('div.navbar-mobile-menu');
+  menuMobile.classList.remove('show');
+  element.classList.add("show");
+}
