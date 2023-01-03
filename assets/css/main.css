@@ -196,6 +196,17 @@ footer .copyright {
     background: #F9F9F9;
 }
 
+.magazin .is-fixed {
+    position: fixed;
+    width: min-content;
+    top: 2%
+}
+
+.magazin .is-bottom {
+    position: absolute;
+    bottom: 0%
+}
+
 .magazin .thumbnail {
     border: 1px solid #eee;
     border-radius: 15px;
@@ -494,4 +505,51 @@ footer .copyright {
 table th + td {
     padding: 8px;
     font-size: 14px;
+}
+
+.desc-shop ul {
+    padding-left: 40px;
+}
+
+.showshort {
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.showshort::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: -webkit-linear-gradient(top,rgba(255,255,255,0) 33%,rgb(255,255,255) 100%);
+    background-image: -o-linear-gradient(top,rgba(255,255,255,0) 33%,rgb(255,255,255) 100%);
+    background-image: linear-gradient(to bottom,rgba(255,255,255,0) 33%,rgb(255,255,255) 100%);
+    background-repeat: repeat-x;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.faqs .faq-item {
+    background-color: #fff;
+    border: 1px solid #eee;
+    padding: 20px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.faqs .faq-item .faq-question {
+    position: relative;
+}
+
+.faqs .faq-item .faq-icon {
+    position: absolute;
+    right: 0;
+}
+
+.faqs .faq-item .faq-answer {
+    border-top: 1px solid #eee;
 }

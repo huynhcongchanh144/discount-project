@@ -62,3 +62,58 @@ function removeActive(e, target) {
         }
     })
 }
+
+let storeDesc = document.querySelectorAll('a[href="#see-more"]')
+
+storeDesc.forEach(e => {
+    e.addEventListener('click', (ref) => {
+        ref.preventDefault()
+        let target = e.getAttribute('target')
+        let content = document.getElementById(target)
+        if(content.classList.contains('showshort')) {
+            content.classList.remove('showshort')
+        } else {
+            content.classList.add('showshort')
+        }
+    })
+})
+
+let faqs = document.querySelectorAll('.faq-item')
+
+faqs.forEach(e => {
+    e.addEventListener('click', () => {
+        let target = e.getAttribute('target')
+        let content = document.getElementById(target)
+        if(content.classList.contains('collapse')) {
+            content.classList.remove('collapse')
+            e.querySelector('.faq-question .icon-plus').classList.add('collapse')
+            e.querySelector('.faq-question .icon-minus').classList.remove('collapse')
+        } else {
+            content.classList.add('collapse')
+            e.querySelector('.faq-question .icon-plus').classList.remove('collapse')
+            e.querySelector('.faq-question .icon-minus').classList.add('collapse')
+        }
+    })
+})
+
+let sidebarStore = document.querySelector('.sidebar-store')
+
+if(sidebarStore) {
+    let footer = document.querySelector('#footer')
+    let header = document.querySelector('#header')
+    let container = document.querySelector('.magazin')
+    document.addEventListener('scroll', function(e) {
+        let documentHeight = document.body.scrollHeight;
+        let currentScroll = window.scrollY + window.innerHeight;
+        let modifier = footer.scrollHeight/2 + 30; 
+        if(currentScroll + modifier > documentHeight) {
+            sidebarStore.className = 'sidebar-store is-bottom'
+        } else {
+            console.log(header.scrollHeight, window.scrollY)
+            if(window.scrollY < header.scrollHeight) {
+                sidebarStore.className = 'sidebar-store'
+            } else
+                sidebarStore.className = 'sidebar-store is-fixed'
+        }
+    })
+}
