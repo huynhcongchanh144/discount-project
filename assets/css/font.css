@@ -32,6 +32,10 @@
     font-weight: bold;
 }
 
+.f-thin {
+    font-weight: 400;
+}
+
 .t-center {
     text-align: center;
 }

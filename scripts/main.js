@@ -23,7 +23,16 @@ let collapseBtn = document.querySelectorAll('.collapse-btn')
 collapseBtn.forEach(e => {
     e.addEventListener('click', () => {
         let target = e.getAttribute("target");
-        console.log(target)
+        let collapse = document.getElementById(target)
+        if(collapse.classList.contains('collapse')) {
+            collapse.classList.remove('collapse')
+            e.classList.remove('btn-view-up')
+            e.classList.add('btn-view-down')
+        } else {
+            collapse.classList.add('collapse')
+            e.classList.add('btn-view-up')
+            e.classList.remove('btn-view-down')
+        }
     })
 })
 
@@ -49,4 +58,85 @@ const openMenuSecondaryOnMobile = (idMenuSecondary) => {
   const menuMobile = document.querySelector('div.navbar-mobile-menu');
   menuMobile.classList.remove('show');
   element.classList.add("show");
+}
+let moreDetails = document.querySelectorAll('.more-details')
+
+moreDetails.forEach(e => {
+    let tabs = e.querySelectorAll('.tab')
+    tabs.forEach(tab => {
+        tab.addEventListener('click',() => {
+            let target = tab.getAttribute('target')
+            let content = document.getElementById(target)
+            content.classList.remove('collapse')
+            tab.classList.add('active')
+            removeActive(e, target)
+        })
+    })
+})
+
+function removeActive(e, target) {
+    let tabActive = e.querySelectorAll('.tab')
+    tabActive.forEach(tab => {
+        let subTarget = tab.getAttribute('target')
+        let content = document.getElementById(subTarget)
+        if(!tab.getAttribute('target').includes(target)) {
+            tab.classList.remove('active')
+            content.classList.add('collapse')
+        }
+    })
+}
+
+let storeDesc = document.querySelectorAll('a[href="#see-more"]')
+
+storeDesc.forEach(e => {
+    e.addEventListener('click', (ref) => {
+        ref.preventDefault()
+        let target = e.getAttribute('target')
+        let content = document.getElementById(target)
+        if(content.classList.contains('showshort')) {
+            content.classList.remove('showshort')
+        } else {
+            content.classList.add('showshort')
+        }
+    })
+})
+
+let faqs = document.querySelectorAll('.faq-item')
+
+faqs.forEach(e => {
+    e.addEventListener('click', () => {
+        let target = e.getAttribute('target')
+        let content = document.getElementById(target)
+        if(content.classList.contains('collapse')) {
+            content.classList.remove('collapse')
+            e.querySelector('.faq-question .icon-plus').classList.add('collapse')
+            e.querySelector('.faq-question .icon-minus').classList.remove('collapse')
+        } else {
+            content.classList.add('collapse')
+            e.querySelector('.faq-question .icon-plus').classList.remove('collapse')
+            e.querySelector('.faq-question .icon-minus').classList.add('collapse')
+        }
+    })
+})
+
+let sidebarStore = document.querySelector('.sidebar-store')
+
+if(sidebarStore) {
+    let footer = document.querySelector('#footer')
+    let header = document.querySelector('#header')
+    let container = document.querySelector('.magazin')
+    document.addEventListener('scroll', function(e) {
+        let documentHeight = document.body.scrollHeight;
+        let currentScroll = window.scrollY + window.innerHeight;
+        let modifier = footer.scrollHeight/2 + 30; 
+        if(currentScroll + modifier > documentHeight) {
+            sidebarStore.className = 'sidebar-store is-bottom'
+        } else {
+            console.log(header.scrollHeight, window.scrollY)
+            if(window.scrollY < header.scrollHeight) {
+                sidebarStore.className = 'sidebar-store'
+            } else
+                sidebarStore.className = 'sidebar-store is-fixed'
+        }
+    })
 }
