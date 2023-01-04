@@ -223,13 +223,14 @@ footer {
   border-bottom: 2px solid #cc2a36; }
 
 header {
-  position: fixed;
-  width: 100%;
-  z-index: 9999;
-  top: 0;
   color: #919191;
   display: block;
   background-color: #fff; }
+  header.fixed {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    top: 0; }
   header .meta {
     border-bottom: 1px solid #e5e5e5; }
     @media (max-width: 998px) {

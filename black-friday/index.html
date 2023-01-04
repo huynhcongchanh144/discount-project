@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/font/icomoon/style.css">
+    <link rel="stylesheet" href="../assets/css/blackFriday.css">
+    
+</head>
+
+<body id="black-friday">
+    <header id="header">
+        <div class="mb-0 meta">
+            <div class="container">
+                <div class="row justify-between align-center mb-0">
+                    <div class="col-md-12 py-1">
+                        <div class="row justify-between align-center mb-0">
+                            <a href="" class="col-md-1 p-0"><img src="../assets/images/logo.png" width="66" alt=""></a>
+                            <div class="search_bar p-0 col-md-8">
+                                <div class="row mb-0 align-center">
+                                    <div class="wrapper_search col-md-7 p-0">
+                                        <input type="text" name="search" id="search" placeholder="Find stores">
+                                        <button class="position-relative btn btn-search">Search</button>
+                                    </div>
+                                    <div class="question col-md-4 py-0">
+                                        <a href="" class="nav-tips d-flex align-center c-gray">
+                                            <img src="../assets/images/circle-question-regular.svg" alt="" width="24"
+                                                class="mr-1">
+                                            <span>How to get rewards with Tipli?</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="login col-md-3 p-0">
+                                <div class="row mb-0 justify-right">
+                                    <img src="../assets/images/user-large-solid.svg" alt="" width="25" class="mr-1">
+                                    <div class="col-md-10 p-0">
+                                        <div class="row mb-0">
+                                            <a href="" class="f-bold link-h-decoration">Sign in</a>
+                                            <small>
+                                                Already earning rewards with Tipli? <a href=""
+                                                    class="link-h-decoration">Sign in</a>
+                                            </small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar bg-gray-light">
+            <nav class="row d-flex container p-0 mb-0">
+                    <ul class="menu col-md-12">
+                        <li class="nav-item dropdown">
+                            <a href="" target="shop">
+                                shop
+                                <img src="../assets/images/caret-down-solid.svg" alt="" width="8" class="caret">
+                            </a>
+                        <!--Start of Dropdown-->
+                            <ul class="dropdown-nav">
+                                <div class="container-navbar-dropdown">
+                                    <li class="nav-item"><a href="">Vouchers</a></li>
+                                    <li class="nav-item"><a href="">Vouchers</a></li>
+                                    <li class="nav-item"><a href="">Vouchers</a></li>
+                                    <li class="nav-item"><a href="">Vouchers</a></li>
+                                    <li class="nav-item"><a href="">Vouchers</a></li>
+                                    <li class="nav-item"><a href="">Vouchers</a></li>
+                                    <li class="nav-item"><a href="">Vouchers</a></li>
+                                    <li class="nav-item"><a href="">Vouchers</a></li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="">VOUCHERS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" >catalogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="">Recommended products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="">ware</a>
+                        <li class="nav-item">
+                            <a href="">Post-Christmas discounts on Tipli</a>
+                        </li>
+                    </ul>
+            </nav>
+        </div>
+        <div class="navbar-mobile d-sm-none d-block">
+            <div class="row mb-0">
+                <div class="logo py-1 px-1">
+                    <a href="" class="col-md-1 p-0"><img src="../assets/images/logo.png" width="66" alt=""></a>
+                </div>
+                <div class="hamberger d-flex p-0">
+                    <div class="search-btn">
+                        <img src="../assets/images/icons8-search.svg" alt="" width="24" />
+                    </div>
+                    <div class="menu" onclick="openMenuOnMobile()">
+                        <img src="../assets/images/burger-menu-svgrepo-com.svg" alt="" width="24" />
+                        <span>MENU</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-mobile-menu">
+            <div class="menu">
+                <span class="nav-item" onclick="openMenuSecondaryOnMobile('shop')">Shop</span>
+                <a class="nav-item" href="">VOUCHERS</a>
+                <a class="nav-item"  href="">catalogs</a>
+                <a class="nav-item"  href="">Recommended products</a>
+                <a class="nav-item"  href="">ware</a>
+                <a class="nav-item"  href="">Post-Christmas discounts on Tipli</a>
+            </div>
+        </div>
+        <div id="shop" class="navbar-secondary">
+            <div class="navbar-secondary-container">
+                <span class="navbar-item navbar-mobile-back-link" onclick="openMenuOnMobile()">
+                    Back to main menu
+                </span>
+                <div class="navbar-secondary-wrapper">
+                    <span class="navbar-secondary-item">
+                        <a class="link" href="">Vouchers</a>
+                        <span class="plus">+</span>
+                    </span>
+                    <span class="navbar-secondary-item">
+                        <a class="link" href="">Vouchers</a>
+                        <span class="plus">+</span>
+                    </span>
+                    <span class="navbar-secondary-item">
+                        <a class="link" href="">Vouchers</a>
+                        <span class="plus">+</span>
+                    </span>
+                    <span class="navbar-secondary-item">
+                        <a class="link" href="">Vouchers</a>
+                        <span class="plus">+</span>
+                    </span>
+                    <span class="navbar-secondary-item">
+                        <a class="link" href="">Vouchers</a>
+                        <span class="plus">+</span>
+                    </span>
+                    <span class="navbar-secondary-item">
+                        <a class="link" href="">Vouchers</a>
+                        <span class="plus">+</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="body-content">
+        <div class="container">
+            <div class="row mb-0 py-2">
+                <div class="col-md-3 coupone-filter left-sidebar">
+                    <div class="sideber-inner">
+                        <div class="filter-sub">
+                            <div class="filter-sub-title">Category</div>
+                            <div>
+                                <ul class="filter-subbody m-0 p-0">
+                                    <li class="filter-li">
+                                        <a href="">
+                                            <span class="icon-phone-solid"></span>
+                                            Alimente si bauturi
+                                        </a>
+                                    </li>
+                                    <li class="filter-li">
+                                        <a href="">
+                                            <span class="icon-phone-solid"></span>
+                                            Alimente si bauturi
+                                        </a>
+                                    </li>
+                                    <li class="filter-li">
+                                        <a href="">
+                                            <span class="icon-phone-solid"></span>
+                                            Alimente si bauturi
+                                        </a>
+                                    </li>
+                                    <li class="filter-li">
+                                        <a href="">
+                                            <span class="icon-phone-solid"></span>
+                                            Alimente si bauturi
+                                        </a>
+                                    </li>
+                                    <li class="filter-li">
+                                        <a href="">
+                                            <span class="icon-phone-solid"></span>
+                                            Alimente si bauturi
+                                        </a>
+                                    </li>
+
+                                    <li class="filter-li">
+                                        <a href="">
+                                            <span class="icon-phone-solid"></span>
+                                            Alimente si bauturi
+                                        </a>
+                                    </li>
+                                    <li class="filter-li">
+                                        <a href="">
+                                            <span class="icon-phone-solid"></span>
+                                            Alimente si bauturi
+                                        </a>
+                                    </li>
+                                    <li class="filter-li">
+                                        <a href="">
+                                            <span class="icon-phone-solid"></span>
+                                            Alimente si bauturi
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9 coupons">
+                    <div class="row coupons-total">
+                        <h1 class="coupons-title">
+                            Black Friday România 2023
+                        </h1>
+                    </div>
+                    <div class="row">
+                        <h2 class="coupons-h2">Oferte Black Friday România 2023 </h2>
+                        <div class="va-carrousel-section col-12">
+                            <div class="va-whitewrap">
+                                <div id="va_container">
+                                    <!-- <button class="deals-scroll-left deals-paddle">
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left"
+                                            class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 320 512">
+                                            <path fill="currentColor"
+                                                d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z">
+                                            </path>
+                                        </svg>
+                                    </button> -->
+                        
+                                    <div class="va-carrousel-flexbox row">
+                                        <div class="va-card">
+                                            <a class="link-plain" target="_blank"> 
+                                                <div class="va-thumbnail">
+                                                    <img class="" src="../assets/images/jocuri-pentru-copii-noriel-1.jpg">
+                                                </div>
+                                                <div class="info">
+                                                    <div class="va-title">Card Title </div>
+                                                    <div class="va-start-from"> card description can be written here</div>
+                                                </div>
+                                            </a> 
+                                        </div>
+                                        <div class="va-card">
+                                            <a class="link-plain" target="_blank"> 
+                                                <div class="va-thumbnail">
+                                                    <img class="" src="../assets/images/jocuri-pentru-copii-noriel-1.jpg">
+                                                </div>
+                                                <div class="info">
+                                                    <div class="va-title">Card Title </div>
+                                                    <div class="va-start-from"> card description can be written here</div>
+                                                </div>
+                                            </a> 
+                                        </div>
+                                        <div class="va-card">
+                                            <a class="link-plain" target="_blank"> 
+                                                <div class="va-thumbnail">
+                                                    <img class="" src="../assets/images/jocuri-pentru-copii-noriel-1.jpg">
+                                                </div>
+                                                <div class="info">
+                                                    <div class="va-title">Card Title </div>
+                                                    <div class="va-start-from"> card description can be written here</div>
+                                                </div>
+                                            </a> 
+                                        </div>
+                                        <div class="va-card">
+                                            <a class="link-plain" target="_blank"> 
+                                                <div class="va-thumbnail">
+                                                    <img class="" src="../assets/images/jocuri-pentru-copii-noriel-1.jpg">
+                                                </div>
+                                                <div class="info">
+                                                    <div class="va-title">Card Title </div>
+                                                    <div class="va-start-from"> card description can be written here</div>
+                                                </div>
+                                            </a> 
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- <button class="deals-scroll-right deals-paddle">
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right"
+                                            class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 320 512">
+                                            <path fill="currentColor"
+                                                d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+                                            </path>
+                                        </svg>
+                                    </button> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="row justify-between align-center container mb-0">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href=""><img src="../assets/images/footer_logo.svg" alt="" width="170"></a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="mailto:"><img class="v-center" src="../assets/images/Email.svg" width="25" alt=""> <span class="v-center">info@kuplio.ro</span></a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href=""><img class="v-center" src="../assets/images/Download.svg" width="25" alt="">  <span class="v-center">noutăți prin e-mail</span></a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="" class="mr-1"><img src="../assets/images/Facebook.svg" width="32" alt=""></a>
+                        <a href="" class="mr-1"><img src="../assets/images/Instagram.svg" width="32" alt=""></a>
+                        <a href=""><img src="../assets/images/Youtube.svg" width="32" alt=""></a>
+                    </div>
+                </div>
+                <div class="row c-white">
+                    <div class="col-md-3">
+                        <h3 class="mb-2">Site-urile noastre</h3>
+                        <div class="list">
+                            <ul class="list-style-none">
+                                <li><a href=""><img src="../assets/images/flag_cz.webp" class="mr-1" alt=""> <span>Vasekupony.cz</span></a></li>
+                                <li><a href=""><img src="../assets/images/flag_sk.webp" class="mr-1" alt=""> <span>Vasekupony.sk</span></a></li>
+                                <li><a href=""><img src="../assets/images/flag_hu.webp" class="mr-1" alt=""> <span>KUPLIO.hu</span></a></li>
+                                <li><a href=""><img src="../assets/images/flag_pl.webp" class="mr-1" alt=""> <span>KUPLIO.pl</span></a></li>
+                                <li><a href=""><img src="../assets/images/flag_de.webp" class="mr-1" alt=""> <span>KUPLIO.de</span></a></li>
+                                <li><a href=""><img src="../assets/images/flag_at.webp" class="mr-1" alt=""> <span>KUPLIO.at</span></a></li>
+                                <li><a href=""><img src="../assets/images/flag_bg.webp" class="mr-1" alt=""> <span>KUPLIO.bg</span></a></li>
+                                <li><a href=""><img src="../assets/images/flag_hr.webp" class="mr-1" alt=""> <span>KUPLIO.hr</span></a></li>
+                                <li><a href=""><img src="../assets/images/flag_si.webp" class="mr-1" alt=""> <span>KUPLIO.si</span></a></li>
+                                <li><a href=""><img src="../assets/images/flag_it.webp" class="mr-1" alt=""> <span>KUPLIO.it</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <h3 class="mb-2">Cele mai bune reduceri</h3>
+                        <div class="list">
+                            <ul class="list-style-none">
+                                <li><a href="">TOP 50 vouchere</a></li>
+                                <li><a href="">Coduri de reducere</a></li>
+                                <li><a href="">Reduceri</a></li>
+                                <li><a href="">Lichidări</a></li>
+                                <li><a href="">Cataloage online</a></li>
+                                <li><a href="">Magazine</a></li>
+                                <li><a href="">Branduri</a></li>
+                                <li><a href="">BLACK FRIDAY</a></li>
+                                <li><a href="">Transport gratuit</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <h3 class="mb-2">Pentru parteneri</h3>
+                        <div class="list">
+                            <ul class="list-style-none">
+                                <li><a href="">Reclamă pe KUPLIO.ro</a></li>
+                                <li><a href="">Adăugare magazin</a></li>
+                                <li><a href="">Profilul companiei</a></li>
+                                <li><a href="">Condiții comerciale generale</a></li>
+                                <li><a href="">Contact</a></li>   
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <h3 class="mb-2">Pentru utilizatori</h3>
+                        <div class="list">
+                            <ul class="list-style-none">
+                                <li><a href="">KUPLIO revista</a></li>
+                                <li><a href="">Termeni de utilizare</a></li>
+                                <li><a href="">Protecția datelor personale</a></li>
+                                <li><a href="">Cookies</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <p class="col-md-12 copyright">© 2022 PACHET PLUS s.r.l., Toate drepturile rezervate</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="../scripts/main.js"></script>
+
+</html>

@@ -1,0 +1,181 @@
+#black-friday .body-content {
+  background-color: black; }
+#black-friday .coupone-filter {
+  max-width: 220px;
+  will-change: min-height; }
+  #black-friday .coupone-filter .filter-sub {
+    padding-left: 30px !important;
+    padding-bottom: 18px; }
+    #black-friday .coupone-filter .filter-sub .filter-li i, #black-friday .coupone-filter .filter-sub .filter-li a, #black-friday .coupone-filter .filter-sub .filter-sub-title {
+      color: #999; }
+    #black-friday .coupone-filter .filter-sub .filter-sub_title {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 8px; }
+    #black-friday .coupone-filter .filter-sub .filter-subbody {
+      color: #999;
+      max-height: fit-content;
+      overflow-y: hidden; }
+      #black-friday .coupone-filter .filter-sub .filter-subbody .filter-li {
+        list-style: none;
+        margin-top: 10px;
+        margin-bottom: 10px; }
+        #black-friday .coupone-filter .filter-sub .filter-subbody .filter-li a:hover {
+          color: #fff; }
+          #black-friday .coupone-filter .filter-sub .filter-subbody .filter-li a:hover span::before {
+            color: #fff; }
+#black-friday .coupons {
+  padding-left: 32px;
+  flex-basis: calc(100% - 220px) !important;
+  margin-top: 20px;
+  color: #f0f0f0; }
+  #black-friday .coupons .coupons-total {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-top: 10px; }
+    #black-friday .coupons .coupons-total .coupons-title {
+      font-size: 1.7rem;
+      margin: 0 15px 0 0;
+      overflow-wrap: break-word;
+      line-height: 1.2;
+      font-weight: 400;
+      flex: 1 1 auto; }
+  #black-friday .coupons .coupons-h2 {
+    font-weight: 400;
+    font-size: 1.125rem;
+    margin: 0 0 10px;
+    overflow-wrap: break-word;
+    font-weight: normal; }
+  #black-friday .coupons #va_container {
+    position: relative;
+    max-width: 1140px;
+    margin: auto; }
+  #black-friday .coupons .va-thumbnail img {
+    border: 0px;
+    max-width: 100%;
+    width: 100%; }
+  #black-friday .coupons .va-title {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-weight: 700; }
+  #black-friday .coupons .va-carrousel-flexbox {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    border-radius: 5px; }
+  #black-friday .coupons .va-carrousel-flexbox .va-card {
+    flex: 0 0 auto; }
+  #black-friday .coupons .va-carrousel-flexbox .va-card:last-child {
+    margin-right: 15px; }
+  #black-friday .coupons .va-carrousel-flexbox .va-card:last-child::after {
+    content: ' ';
+    display: inline-block; }
+  #black-friday .coupons .va-card {
+    width: 100px;
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+    background-color: #fff;
+    margin-right: 5px; }
+  #black-friday .coupons .va-card:hover {
+    user-select: none;
+    outline: none; }
+  #black-friday .coupons .va-card a {
+    display: block; }
+  @media (min-width: 768px) {
+    #black-friday .coupons .va-card {
+      width: 400px; } }
+  #black-friday .coupons .va-carrousel,
+  #black-friday .coupons .va-carrousel-flexbox {
+    width: 100%;
+    -webkit-overflow-scrolling: touch; }
+  #black-friday .coupons .va-carrousel::-webkit-scrollbar,
+  #black-friday .coupons .va-carrousel-flexbox::-webkit-scrollbar {
+    display: none; }
+  #black-friday .coupons .va-carrousel-title {
+    display: inline-block;
+    color: white;
+    font-weight: 700;
+    padding-bottom: 8px;
+    margin-bottom: 18px; }
+  #black-friday .coupons .va-title {
+    margin-top: 8px;
+    font-size: 11px;
+    max-height: 3em;
+    overflow: hidden;
+    color: white;
+    font-weight: 700; }
+  @media (min-width: 768px) {
+    #black-friday .coupons .va-title {
+      font-size: 13px; } }
+  #black-friday .coupons .va-start-from {
+    font-size: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white; }
+  #black-friday .coupons .va-points {
+    font-size: 12px;
+    font-weight: 700;
+    display: inline-block;
+    color: white; }
+  #black-friday .coupons .deals-paddle {
+    height: 38px;
+    width: 38px;
+    color: white;
+    background-color: #00000089;
+    border-radius: 50%;
+    border: 0px solid;
+    margin: auto;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; }
+  #black-friday .coupons .deals-paddle:focus {
+    outline: none; }
+  #black-friday .coupons .deals-paddle:active {
+    border-style: solid;
+    outline: none;
+    user-select: none; }
+  #black-friday .coupons .deals-paddle svg {
+    width: 10px; }
+  @media (min-width: 768px) {
+    #black-friday .coupons .other-game-button {
+      width: 300px; } }
+  #black-friday .coupons .deals-scroll-left {
+    top: 0;
+    left: 5px;
+    bottom: 0; }
+  #black-friday .coupons .deals-scroll-right {
+    top: 0;
+    bottom: 0;
+    right: 5px; }
+  #black-friday .coupons .va-carrousel-section {
+    font-family: "Roboto";
+    padding: 0px;
+    position: relative;
+    max-width: 100%;
+    min-width: 100%; }
+  @media (min-width: 768px) {
+    #black-friday .coupons .va-carrousel-section {
+      padding-left: 15px;
+      padding-right: 15px; } }
+  #black-friday .coupons .va-whitewrap {
+    /*         background-color: white; */
+    padding-top: 15px;
+    margin-top: 15px; }
+  #black-friday .coupons .va-seeall {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    border-top: 1px solid #DDDDDD;
+    text-align: center;
+    padding: 10px; }
+
+/*# sourceMappingURL=blackFriday.css.map */
