@@ -273,7 +273,7 @@ header {
   z-index: 9999;
   top: 0;
   color: #919191;
-  display: block;
+  display: none;
   background-color: #fff; }
   header .meta {
     border-bottom: 1px solid #e5e5e5; }

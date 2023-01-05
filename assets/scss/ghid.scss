@@ -1,0 +1,127 @@
+.body-content.ghid {
+    .breadcrumbs {
+        font-size: 13px;
+        a {
+            color: #cc2a36;
+            -webkit-text-decoration: none;
+            text-decoration: none;
+        }
+    }
+
+    #content-wrapper {
+        .products-title {
+            box-sizing: border-box;
+            -webkit-box-flex: 1;
+            flex-grow: 1;
+            flex-wrap: wrap;
+            display: flex;
+            -webkit-box-pack: justify;
+            justify-content: space-between;
+            -webkit-box-align: center;
+            align-items: center;
+            .price-list-title-m {
+                box-sizing: border-box;
+                flex-basis: 0;
+                -webkit-box-flex: 1;
+                flex-grow: 1;
+                max-width: 100%;
+                .text-13 {
+                    font-weight: 600;
+                    line-height: 1.33;
+                    color: rgb(50, 50, 50);
+                    font-size: 1.125rem;
+                    margin-top: 12px;
+                    margin-bottom: 8px;
+
+                    @media (min-width: 576px) {
+                        font-size: 1.5rem;
+                        margin-top: 16px;
+                        margin-bottom: 16px;
+                    }
+                }
+
+                .black {
+                    color: #323232 !important;
+                }
+            }
+        }
+
+        .products-content {
+            box-sizing: border-box;
+            -webkit-box-flex: 1;
+            flex-grow: 1;
+            flex-wrap: wrap;
+            display: flex;
+            .product-card {
+                padding-right: 12px;
+                padding-left: 12px;
+                box-sizing: border-box;
+                -webkit-box-flex: 1;
+                max-width: 100%;
+                flex: 0 0 100%;
+
+                @media (min-width: 576px) {
+                    padding-right: 12px;
+                    padding-left: 12px;
+                    flex: 0 0 50%;
+                    max-width: 50%;
+                }
+
+                @media (min-width: 1024px) {
+                    flex: 0 0 33.3333%;
+                    max-width: 33.3333%;
+                }
+
+                a.product-card-a {
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 24px;
+                    margin-top: 8px;
+                    .product-cardbox {
+                        position: relative;
+                        width: 100%;
+                        .product-card-img {
+                            display: inline;
+                            border-radius: 8px;
+                            border: 1px solid rgb(227, 227, 227);
+                            max-width: 100%;
+                            height: auto;
+                        }
+                        .product-badge {
+                            text-transform: uppercase;
+                            line-height: normal;
+                            color: white;
+                            font-size: 12px;
+                            font-weight: bold;
+                            margin: 0;
+                            position: absolute;
+                            background: rgba(74, 0, 114, 0.7);
+                            height: 24px;
+                            border-radius: 20px;
+                            right: 12px;
+                            top: 12px;
+                            padding: 4px 8px;
+                        }
+                    }
+                    .product-cardname {
+                        display: flex;
+                        flex-direction: column;
+                        .product-cardname-t1 {
+                            color: rgb(50, 50, 50);
+                            font-weight: 500;
+                            flex: 0 0 auto;
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
+                            margin-top: 16px;
+                            margin-bottom: 12px;
+                            font-size: 18px;
+                            line-height: 1.33em;
+                            -webkit-line-clamp: 2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
