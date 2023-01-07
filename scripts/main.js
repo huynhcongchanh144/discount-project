@@ -132,7 +132,6 @@ if(sidebarStore) {
         if(currentScroll + modifier > documentHeight) {
             sidebarStore.className = 'sidebar-store is-bottom'
         } else {
-            console.log(header.scrollHeight, window.scrollY)
             if(window.scrollY < header.scrollHeight) {
                 sidebarStore.className = 'sidebar-store'
             } else

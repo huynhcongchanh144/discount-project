@@ -1,0 +1,37 @@
+.filter-options {
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  background-color: #f9f9f9;
+}
+.filter-options li {
+  padding: 12px 0px;
+}
+.filter-options li a {
+  padding: 12px;
+}
+.filter-options li:not(:last-child) {
+  border-right: 1px solid #ddd;
+}
+.filter-options .filter-select {
+  color: #cc2a36;
+  font-weight: bold;
+}
+
+.list-filter {
+  background-color: #f9f9f9;
+}
+.list-filter .store-item {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+.list-filter .store-item .img-item {
+  max-width: 100px;
+  border-radius: 10px;
+  padding: 0 15px;
+}
+.list-filter .store-item .img-item img {
+  max-width: 100%;
+}
+/*# sourceMappingURL=magazin.css.map */
