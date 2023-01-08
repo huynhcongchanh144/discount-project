@@ -56,6 +56,9 @@ header {
         @media (max-width: 998px) {
             display: none;
         }
+        nav {
+            margin-bottom: 0 !important;
+        }
         position: relative;
         ul.menu {
             margin: 0;
