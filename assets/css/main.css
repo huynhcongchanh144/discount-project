@@ -223,6 +223,7 @@ footer {
   border-bottom: 2px solid #cc2a36; }
 
 header {
+  max-height: 130px;
   color: #919191;
   display: block;
   background-color: #fff; }

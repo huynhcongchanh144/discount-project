@@ -51,10 +51,10 @@ const openMenuSecondaryOnMobile = (idMenuSecondary) => {
   menuSecondary.classList.add("show");
 }
 
-const addPositionFixedToHeader = () => {
+function addPositionFixedToHeader () {
   var header = document.getElementById("header");
   window.onscroll = function (e) {
-      if ( scrollY > 100 ) {
+      if ( scrollY > 130 ) {
         header.classList.add("fixed");
       } else {
         header.classList.remove("fixed");
