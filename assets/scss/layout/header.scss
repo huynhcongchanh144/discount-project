@@ -1,8 +1,11 @@
 header {
-    position: fixed;
-    width: 100%;
-    z-index: 9999;
-    top: 0;
+    &.fixed {
+        position: fixed;
+        width: 100%;
+        z-index: 9999;
+        top: 0;
+    }
+    max-height: 130px;
 	color: #919191;
     display: block;
     background-color: #fff;

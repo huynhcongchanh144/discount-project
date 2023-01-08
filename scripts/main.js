@@ -54,10 +54,10 @@ const openMenuOnMobile = () => {
 }
 
 const openMenuSecondaryOnMobile = (idMenuSecondary) => {
-  var element = document.getElementById(idMenuSecondary);
+  var menuSecondary = document.getElementById(idMenuSecondary);
   const menuMobile = document.querySelector('div.navbar-mobile-menu');
   menuMobile.classList.remove('show');
-  element.classList.add("show");
+  menuSecondary.classList.add("show");
 }
 let moreDetails = document.querySelectorAll('.more-details')
 
@@ -139,3 +139,16 @@ if(sidebarStore) {
         }
     })
 }
+
+function addPositionFixedToHeader () {
+  var header = document.getElementById("header");
+  window.onscroll = function (e) {
+      if ( scrollY > 130 ) {
+        header.classList.add("fixed");
+      } else {
+        header.classList.remove("fixed");
+      }
+  }
+}
+
+addPositionFixedToHeader();
