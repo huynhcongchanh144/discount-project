@@ -1,0 +1,269 @@
+html {
+  scroll-behavior: smooth; }
+
+.recenzzi {
+  margin-top: 30px; }
+  .recenzzi .breadcrumbs {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #333; }
+    .recenzzi .breadcrumbs a {
+      color: #cc2a36;
+      text-decoration: none; }
+  .recenzzi .article-content {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #333; }
+    @media (max-width: 765px) {
+      .recenzzi .article-content .hide-on-mobile {
+        display: none; } }
+    .recenzzi .article-content .sh-header-home {
+      padding: 3rem;
+      flex-basis: 40%;
+      text-align: center; }
+      .recenzzi .article-content .sh-header-home img {
+        width: 200px; }
+    .recenzzi .article-content .sh-header-credit {
+      flex-basis: 70%;
+      text-align: justify;
+      padding-right: 25px; }
+      @media (max-width: 765px) {
+        .recenzzi .article-content .sh-header-credit {
+          flex-basis: 100%; } }
+      .recenzzi .article-content .sh-header-credit h1 {
+        font-size: 30px;
+        line-height: 40px;
+        margin-top: 45px; }
+      .recenzzi .article-content .sh-header-credit p {
+        margin-top: 15px; }
+    .recenzzi .article-content .sidebar {
+      position: relative; }
+      .recenzzi .article-content .sidebar .sidebar-store.is-fixed {
+        position: sticky;
+        width: 100%;
+        top: 0; }
+      .recenzzi .article-content .sidebar .sidebar-store.is-bottom {
+        position: sticky;
+        width: 100%;
+        top: 0; }
+    .recenzzi .article-content .sh-body-sidebar {
+      flex-basis: 26%;
+      padding-left: 25px;
+      padding-right: 25px;
+      padding-bottom: 50px;
+      position: sticky;
+      top: 40px;
+      background-color: #f9f9f9;
+      padding-top: 60px;
+      height: fit-content; }
+      .recenzzi .article-content .sh-body-sidebar .sh-sidebar-content {
+        height: 100vh;
+        -ms-overflow-style: none;
+        scrollbar-width: none; }
+        @media (max-width: 765px) {
+          .recenzzi .article-content .sh-body-sidebar .sh-sidebar-content {
+            height: auto; } }
+        .recenzzi .article-content .sh-body-sidebar .sh-sidebar-content ul {
+          margin: 0;
+          padding: 0; }
+          .recenzzi .article-content .sh-body-sidebar .sh-sidebar-content ul li {
+            list-style: none;
+            margin-bottom: 15px;
+            position: relative;
+            padding-right: 20px; }
+            .recenzzi .article-content .sh-body-sidebar .sh-sidebar-content ul li a {
+              font-size: 17px;
+              line-height: 22px;
+              color: #323232;
+              font-weight: 400;
+              text-decoration: none !important; }
+              .recenzzi .article-content .sh-body-sidebar .sh-sidebar-content ul li a.active {
+                font-weight: bold; }
+              .recenzzi .article-content .sh-body-sidebar .sh-sidebar-content ul li a span {
+                position: absolute;
+                top: 50%;
+                right: 0px;
+                font-weight: 700;
+                box-sizing: border-box;
+                height: 11px;
+                width: 11px; }
+    .recenzzi .article-content .sh-body-container {
+      position: relative; }
+      .recenzzi .article-content .sh-body-container .section-content h2 {
+        font-size: 20px !important;
+        line-height: 28px !important;
+        font-weight: 700; }
+      .recenzzi .article-content .sh-body-container .section-content .info {
+        position: relative;
+        margin-top: 15px; }
+        .recenzzi .article-content .sh-body-container .section-content .info .subtitle {
+          font-size: 1.25rem;
+          line-height: 1.25rem;
+          font-weight: 700;
+          display: inline-block;
+          position: absolute;
+          top: -20px;
+          left: -10px;
+          z-index: 1;
+          margin: 0;
+          padding: 9px 16px 8px 14px;
+          color: #fff !important;
+          background-color: #3358d5;
+          box-shadow: 2px 2px 2px 0 black; }
+          .recenzzi .article-content .sh-body-container .section-content .info .subtitle::after {
+            content: " ";
+            display: block;
+            position: absolute;
+            left: -5px;
+            bottom: -7px;
+            z-index: 1;
+            border-color: transparent #133091 transparent transparent;
+            border-style: inset solid inset inset;
+            border-width: 0 10px 7px; }
+        .recenzzi .article-content .sh-body-container .section-content .info .card {
+          clear: both;
+          padding: 30px;
+          margin-bottom: 25px;
+          border: 1px solid #ddd;
+          overflow: hidden;
+          margin-left: 0;
+          margin-right: 0;
+          max-width: 1280px;
+          -webkit-box-sizing: content-box;
+          box-sizing: content-box; }
+          .recenzzi .article-content .sh-body-container .section-content .info .card picture {
+            margin-bottom: 15px;
+            display: block; }
+            .recenzzi .article-content .sh-body-container .section-content .info .card picture img {
+              max-width: 100%; }
+          .recenzzi .article-content .sh-body-container .section-content .info .card .eae-full-link {
+            font-weight: 700;
+            border-width: 0;
+            border-radius: 0.125rem;
+            cursor: pointer;
+            display: inline-block;
+            white-space: nowrap;
+            padding: 1rem;
+            position: relative;
+            text-align: left;
+            -ms-touch-action: manipulation;
+            touch-action: manipulation;
+            font-size: .8125rem;
+            line-height: 1.5384615384615385;
+            text-transform: uppercase;
+            letter-spacing: .0625em;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            line-height: 1;
+            -webkit-box-shadow: inset 0 0 0 1px #008255 !important;
+            box-shadow: inset 0 0 0 1px #008255 !important;
+            background-color: #008255;
+            color: #fff !important;
+            width: 100%;
+            margin-bottom: 3px; }
+            .recenzzi .article-content .sh-body-container .section-content .info .card .eae-full-link:hover {
+              background-color: #cc2a36;
+              color: #fff !important; }
+          .recenzzi .article-content .sh-body-container .section-content .info .card .eae-empty-link {
+            font-weight: 700;
+            border-width: 0;
+            border-radius: 0.125rem;
+            cursor: pointer;
+            display: inline-block;
+            white-space: nowrap;
+            padding: 1rem;
+            position: relative;
+            text-align: left;
+            -ms-touch-action: manipulation;
+            touch-action: manipulation;
+            font-size: .8125rem;
+            line-height: 1.5384615384615385;
+            text-transform: uppercase;
+            letter-spacing: .0625em;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            line-height: 1;
+            background-color: transparent;
+            -webkit-box-shadow: inset 0 0 0 1px #008255 !important;
+            box-shadow: inset 0 0 0 1px #008255 !important;
+            color: #008255 !important;
+            width: 100%; }
+            .recenzzi .article-content .sh-body-container .section-content .info .card .eae-empty-link:hover {
+              background-color: #cc2a36;
+              color: #fff !important; }
+          .recenzzi .article-content .sh-body-container .section-content .info .card .guidesd {
+            line-height: 19px !important;
+            margin-top: 5px; }
+            .recenzzi .article-content .sh-body-container .section-content .info .card .guidesd p {
+              font-size: 13px;
+              color: #333;
+              font-weight: 700;
+              padding: 0; }
+              .recenzzi .article-content .sh-body-container .section-content .info .card .guidesd p .text-muted {
+                color: #7a7a7a;
+                font-weight: 400;
+                margin-right: 5px; }
+          .recenzzi .article-content .sh-body-container .section-content .info .card .switer-header {
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
+            position: relative;
+            min-width: max-content;
+            border-color: #b1b3b5;
+            overflow: visible; }
+            .recenzzi .article-content .sh-body-container .section-content .info .card .switer-header p {
+              max-width: fit-content;
+              font-size: 16px;
+              cursor: pointer;
+              font-weight: bold;
+              color: #000;
+              border-bottom: 2px solid #000; }
+          .recenzzi .article-content .sh-body-container .section-content .info .card .switer-content {
+            margin-top: 25px; }
+            .recenzzi .article-content .sh-body-container .section-content .info .card .switer-content .wpsm_cons {
+              padding: 0 10px 0 0; }
+              .recenzzi .article-content .sh-body-container .section-content .info .card .switer-content .wpsm_cons p {
+                font-size: 15px;
+                line-height: 20px;
+                color: #3d4a70;
+                font-weight: 400;
+                margin-bottom: 10px;
+                list-style-type: none;
+                position: relative; }
+                .recenzzi .article-content .sh-body-container .section-content .info .card .switer-content .wpsm_cons p .icon-circle-minus-solid {
+                  color: #f24f4f; }
+  .recenzzi .faqs h2 {
+    font-size: 38px;
+    line-height: 43px;
+    color: #041264;
+    font-weight: 700; }
+  .recenzzi .faqs ul {
+    margin-top: 20px; }
+    .recenzzi .faqs ul .faq-item {
+      background-color: #fff;
+      border-radius: 32px;
+      border: thin solid #e0e0e0;
+      box-shadow: black 0 1px 1px;
+      margin-bottom: 35px;
+      position: relative; }
+      .recenzzi .faqs ul .faq-item .faq-question {
+        cursor: pointer;
+        margin-bottom: 0 !important;
+        padding: 20px;
+        font-weight: 700 !important; }
+        .recenzzi .faqs ul .faq-item .faq-question span {
+          font-weight: bold; }
+      .recenzzi .faqs ul .faq-item .faq-answer {
+        border-top: none !important;
+        padding: 0 20px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        color: #333; }
+
+/*# sourceMappingURL=recenzzi.css.map */

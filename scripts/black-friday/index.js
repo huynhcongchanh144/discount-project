@@ -19,23 +19,25 @@ const config = {
   new Glide('.glide', config).mount()
 
 function addPositionFixedToLeftSidebar () {
-  var sidebar = document.querySelector("div.sidebar-inner");
-  var header = document.getElementById("header");
-  var footer = document.getElementById("footer");
-  var bodyContent = document.querySelector("div.body-content")
-  window.onscroll = function (e) {
-      if ( scrollY > 130 ) {
-        sidebar.classList.add("fixed");
-        header.classList.add("fixed");
-      } else {
-        header.classList.remove("fixed");
-      }
+  let sidebarStore = document.querySelector('.sidebar-store')
 
-      if (scrollY >=  ( bodyContent.offsetHeight + header.offsetHeight  - ( footer.offsetHeight + 200 ) ) ) {
-        sidebar.classList.remove("fixed");
-      } else {
-        sidebar.classList.add("fixed");
-      }
+  if(sidebarStore) {
+      let footer = document.querySelector('#footer')
+      let header = document.querySelector('#header')
+      let container = document.querySelector('.magazin')
+      document.addEventListener('scroll', function(e) {
+          let documentHeight = document.body.scrollHeight;
+          let currentScroll = window.scrollY + window.innerHeight;
+          let modifier = footer.scrollHeight/2 + 30; 
+          if(currentScroll + modifier > documentHeight) {
+              sidebarStore.className = 'sidebar-store is-bottom'
+          } else {
+              if(window.scrollY < header.scrollHeight) {
+                  sidebarStore.className = 'sidebar-store'
+              } else
+                  sidebarStore.className = 'sidebar-store is-fixed'
+          }
+      })
   }
 }
   
