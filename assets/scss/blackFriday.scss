@@ -5,10 +5,17 @@
     .coupone-filter {
         max-width: 220px;
         will-change: min-height;
-        .sidebar-inner {
-            &.fixed {
-                position: fixed;
-                top: 150px;
+        .sidebar-store {
+            &.is-fixed {
+                position: sticky;
+                width: 100%;
+                top: 2%;
+            }
+            
+            &.is-bottom {
+                position: sticky;
+                width: 100%;
+                top: 2%;                
             }
         }
         .filter-sub {

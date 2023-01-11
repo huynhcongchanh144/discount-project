@@ -3,9 +3,14 @@
 #black-friday .coupone-filter {
   max-width: 220px;
   will-change: min-height; }
-  #black-friday .coupone-filter .sidebar-inner.fixed {
-    position: fixed;
-    top: 150px; }
+  #black-friday .coupone-filter .sidebar-store.is-fixed {
+    position: sticky;
+    width: 100%;
+    top: 2%; }
+  #black-friday .coupone-filter .sidebar-store.is-bottom {
+    position: sticky;
+    width: 100%;
+    top: 2%; }
   #black-friday .coupone-filter .filter-sub {
     padding-left: 30px !important;
     padding-bottom: 18px; }

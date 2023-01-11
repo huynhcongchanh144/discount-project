@@ -1,0 +1,342 @@
+html {
+    scroll-behavior: smooth;
+}
+.recenzzi {
+    margin-top: 30px;
+    .breadcrumbs {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        color: #333;
+        a {
+            color: #cc2a36;
+            text-decoration: none;
+        }
+    }
+
+    .article-content {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        color: #333;
+        .hide-on-mobile {
+            @media (max-width: 765px) {
+                display: none;
+            }
+        } 
+        .sh-header-home {
+            padding: 3rem;
+            flex-basis: 40%;
+            text-align: center;
+            img {
+                width: 200px;
+                // max-width: 100%;
+            }
+        }
+
+        .sh-header-credit {
+            flex-basis: 70%;
+            text-align: justify;
+            padding-right: 25px;
+            @media (max-width: 765px) {
+                flex-basis: 100%;
+            }
+            h1 {
+                font-size: 30px;
+                line-height: 40px;
+                margin-top: 45px;
+            }
+            p {
+                margin-top: 15px;
+            }
+        }
+
+        .sidebar {
+            position: relative;
+            .sidebar-store {
+                &.is-fixed {
+                    position: sticky;
+                    width: 100%;
+                    top: 0;
+                }
+                
+                &.is-bottom {
+                    position: sticky;
+                    width: 100%;
+                    top: 0;                
+                }
+            }
+        }
+
+        .sh-body-sidebar {
+            flex-basis: 26%;
+            padding-left: 25px;
+            padding-right: 25px;
+            // position: relative;
+            padding-bottom: 50px;
+            position: sticky;
+            top: 40px;
+            background-color: #f9f9f9;
+            padding-top: 60px;
+            height: fit-content;
+
+            .sh-sidebar-content {
+                height: 100vh;
+                // overflow-y: auto;
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+                // overflow-y: scroll;
+                @media (max-width: 765px) {
+                    height: auto;
+                }
+                ul {
+                    margin: 0;
+                    padding: 0;
+                    li {
+                        list-style: none;
+                        margin-bottom: 15px;
+                        position: relative;
+                        padding-right: 20px;
+                        a {
+                            font-size: 17px;
+                            line-height: 22px;
+                            color: #323232;
+                            font-weight: 400;
+                            text-decoration: none!important;
+
+                            &.active {
+                                font-weight: bold;
+                            }
+                            span {
+                                position: absolute;
+                                top: 50%;
+                                right: 0px;
+                                font-weight: 700;
+                                box-sizing: border-box;
+                                height: 11px;
+                                width: 11px;
+                            }
+                        }
+                    }
+                }
+            }   
+        }
+
+        .sh-body-container {
+            position: relative;
+            .section-content {
+                h2 {
+                    font-size: 20px!important;
+                    line-height: 28px!important;
+                    font-weight: 700;
+                }
+                .info {
+                    position: relative;
+                    margin-top: 15px;
+                    .subtitle {
+                        font-size: 1.25rem;
+                        line-height: 1.25rem;
+                        font-weight: 700;
+                        display: inline-block;
+                        position: absolute;
+                        top: -20px;
+                        left: -10px;
+                        z-index: 1;
+                        margin: 0;
+                        padding: 9px 16px 8px 14px;
+                        color: #fff!important;
+                        background-color: #3358d5;
+                        box-shadow: 2px 2px 2px 0 rgb(0,0,0);
+                        &::after {
+                            content: " ";
+                            display: block;
+                            position: absolute;
+                            left: -5px;
+                            bottom: -7px;
+                            z-index: 1;
+                            border-color: transparent #133091 transparent transparent;
+                            border-style: inset solid inset inset;
+                            border-width: 0 10px 7px;
+                        }
+                    }
+
+                    .card  {
+                        clear: both;
+                        padding: 30px;
+                        margin-bottom: 25px;
+                        border: 1px solid #ddd;
+                        overflow: hidden;
+                        margin-left: 0;
+                        margin-right: 0;
+                        max-width: 1280px;
+                        -webkit-box-sizing: content-box;
+                        box-sizing: content-box;
+
+                        picture {
+                            margin-bottom: 15px;
+                            display: block;
+                            img {
+                                max-width: 100%;
+                            }
+                        }
+
+                        .eae-full-link {
+                            font-weight: 700;
+                            border-width: 0;
+                            border-radius: 0.125rem;
+                            cursor: pointer;
+                            display: inline-block;
+                            white-space: nowrap;
+                            padding: 1rem;
+                            position: relative;
+                            text-align: left;
+                            -ms-touch-action: manipulation;
+                            touch-action: manipulation;
+                            font-size: .8125rem;
+                            line-height: 1.5384615384615385;
+                            text-transform: uppercase;
+                            letter-spacing: .0625em;
+                            -webkit-user-select: none;
+                            -moz-user-select: none;
+                            -ms-user-select: none;
+                            user-select: none;
+                            line-height: 1;
+                            -webkit-box-shadow: inset 0 0 0 1px #008255!important;
+                            box-shadow: inset 0 0 0 1px #008255!important;
+                            background-color: #008255;
+                            color: #fff!important;
+                            width: 100%;
+                            margin-bottom: 3px;
+                            &:hover  {
+                                background-color: #cc2a36;
+                                color: #fff!important;
+                            }
+                        }
+
+                        .eae-empty-link {
+                            font-weight: 700;
+                            border-width: 0;
+                            border-radius: 0.125rem;
+                            cursor: pointer;
+                            display: inline-block;
+                            white-space: nowrap;
+                            padding: 1rem;
+                            position: relative;
+                            text-align: left;
+                            -ms-touch-action: manipulation;
+                            touch-action: manipulation;
+                            font-size: .8125rem;
+                            line-height: 1.5384615384615385;
+                            text-transform: uppercase;
+                            letter-spacing: .0625em;
+                            -webkit-user-select: none;
+                            -moz-user-select: none;
+                            -ms-user-select: none;
+                            user-select: none;
+                            line-height: 1;
+                            background-color: transparent;
+                            -webkit-box-shadow: inset 0 0 0 1px #008255!important;
+                            box-shadow: inset 0 0 0 1px #008255!important;
+                            color: #008255!important;
+                            width: 100%; 
+                            &:hover  {
+                                background-color: #cc2a36;
+                                color: #fff!important;
+                            }
+                        }
+
+                        .guidesd {
+                            line-height: 19px!important;
+                            margin-top: 5px;
+                            p {
+                                font-size: 13px;
+                                color: #333;
+                                font-weight: 700;
+                                padding: 0;
+                                .text-muted {
+                                    color: #7a7a7a;
+                                    font-weight: 400;
+                                    margin-right: 5px;
+                                }
+                            }
+                        }
+
+                        .switer-header {
+                            border-bottom-style: solid;
+                            border-bottom-width: 1px;
+                            position: relative;
+                            min-width: max-content;
+                            border-color: rgb(177, 179, 181);
+                            overflow: visible;
+                            p {
+                                max-width: fit-content;
+                                font-size: 16px;
+                                cursor: pointer;
+                                font-weight: bold;
+                                color: #000;
+                                border-bottom: 2px solid #000;
+                            }
+                        }
+
+                        .switer-content {
+                            margin-top: 25px;
+                            .wpsm_cons {
+                                padding: 0 10px 0 0;
+                                p {
+                                    font-size: 15px;
+                                    line-height: 20px;
+                                    color: #3d4a70;
+                                    font-weight: 400;
+                                    margin-bottom: 10px;
+                                    list-style-type: none;
+                                    position: relative;
+                                    .icon-circle-minus-solid {
+                                        color: #f24f4f;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    .faqs {
+        h2 {
+            font-size: 38px;
+            line-height: 43px;
+            color: #041264;
+            font-weight: 700;
+        }
+        ul {
+            margin-top: 20px;
+            .faq-item {
+                background-color: #fff;
+                border-radius: 32px;
+                border: thin solid rgb(224, 224, 224);
+                box-shadow: rgb(0, 0, 0) 0 1px 1px;
+                margin-bottom: 35px;
+                position: relative;
+                .faq-question {
+                    cursor: pointer;
+                    margin-bottom: 0!important;
+                    padding: 20px;
+                    font-weight: 700 !important;
+                    span {
+                        font-weight: bold;
+                    }
+                }
+                .faq-answer  {
+                    border-top: none !important;
+                    padding: 0 20px;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 30px;
+                    color: #333;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/font/icomoon/style.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/recenzzi.css">
+</head>
+
+<body>
+    <div>
+        <header id="header">
+            <div class="mb-0 meta">
+                <div class="container">
+                    <div class="row justify-between align-center mb-0">
+                        <div class="col-md-12 py-1">
+                            <div class="row justify-between align-center mb-0">
+                                <a href="" class="col-md-1 p-0"><img src="../assets/images/logo.png" width="66"
+                                        alt=""></a>
+                                <div class="search_bar p-0 col-md-8">
+                                    <div class="row mb-0 align-center">
+                                        <div class="wrapper_search col-md-7 p-0">
+                                            <input type="text" name="search" id="search" placeholder="Find stores">
+                                            <button class="position-relative btn btn-search">Search</button>
+                                        </div>
+                                        <div class="question col-md-4 py-0">
+                                            <a href="" class="nav-tips d-flex align-center c-gray">
+                                                <img src="../assets/images/circle-question-regular.svg" alt=""
+                                                    width="24" class="mr-1">
+                                                <span>How to get rewards with Tipli?</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="login col-md-3 p-0">
+                                    <div class="row mb-0 justify-right">
+                                        <img src="../assets/images/user-large-solid.svg" alt="" width="25" class="mr-1">
+                                        <div class="col-md-10 p-0">
+                                            <div class="row mb-0">
+                                                <a href="" class="f-bold link-h-decoration">Sign in</a>
+                                                <small>
+                                                    Already earning rewards with Tipli? <a href=""
+                                                        class="link-h-decoration">Sign in</a>
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar bg-gray-light">
+                <nav class="row d-flex container p-0">
+                    <ul class="menu col-md-12">
+                        <li class="nav-item dropdown">
+                            <a href="" target="shop">
+                                shop
+                                <img src="../assets/images/caret-down-solid.svg" alt="" width="8" class="caret">
+                            </a>
+                            <!--Start of Dropdown-->
+                            <ul class="dropdown-nav">
+                                <div class="container-navbar-dropdown">
+                                    <li class="nav-item"><a href="">Vouchers</a></li>
+                                    <li class="nav-item"><a href="">Vouchers</a></li>
+                                    <li class="nav-item"><a href="">Vouchers</a></li>
+                                    <li class="nav-item"><a href="">Vouchers</a></li>
+                                    <li class="nav-item"><a href="">Vouchers</a></li>
+                                    <li class="nav-item"><a href="">Vouchers</a></li>
+                                    <li class="nav-item"><a href="">Vouchers</a></li>
+                                    <li class="nav-item"><a href="">Vouchers</a></li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="">VOUCHERS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="">catalogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="">Recommended products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="">ware</a>
+                        <li class="nav-item">
+                            <a href="">Post-Christmas discounts on Tipli</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="navbar-mobile d-sm-none d-block">
+                <div class="row mb-0">
+                    <div class="logo py-1 px-1">
+                        <a href="" class="col-md-1 p-0"><img src="../assets/images/logo.png" width="66" alt=""></a>
+                    </div>
+                    <div class="hamberger d-flex p-0">
+                        <div class="search-btn">
+                            <img src="../assets/images/icons8-search.svg" alt="" width="24" />
+                        </div>
+                        <div class="menu" onclick="openMenuOnMobile()">
+                            <img src="../assets/images/burger-menu-svgrepo-com.svg" alt="" width="24" />
+                            <span>MENU</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-mobile-menu">
+                <div class="menu">
+                    <span class="nav-item" onclick="openMenuSecondaryOnMobile('shop')">Shop</span>
+                    <a class="nav-item" href="">VOUCHERS</a>
+                    <a class="nav-item" href="">catalogs</a>
+                    <a class="nav-item" href="">Recommended products</a>
+                    <a class="nav-item" href="">ware</a>
+                    <a class="nav-item" href="">Post-Christmas discounts on Tipli</a>
+                </div>
+            </div>
+            <div id="shop" class="navbar-secondary">
+                <div class="navbar-secondary-container">
+                    <span class="navbar-item navbar-mobile-back-link" onclick="openMenuOnMobile()">
+                        Back to main menu
+                    </span>
+                    <div class="navbar-secondary-wrapper">
+                        <span class="navbar-secondary-item">
+                            <a class="link" href="">Vouchers</a>
+                            <span class="plus">+</span>
+                        </span>
+                        <span class="navbar-secondary-item">
+                            <a class="link" href="">Vouchers</a>
+                            <span class="plus">+</span>
+                        </span>
+                        <span class="navbar-secondary-item">
+                            <a class="link" href="">Vouchers</a>
+                            <span class="plus">+</span>
+                        </span>
+                        <span class="navbar-secondary-item">
+                            <a class="link" href="">Vouchers</a>
+                            <span class="plus">+</span>
+                        </span>
+                        <span class="navbar-secondary-item">
+                            <a class="link" href="">Vouchers</a>
+                            <span class="plus">+</span>
+                        </span>
+                        <span class="navbar-secondary-item">
+                            <a class="link" href="">Vouchers</a>
+                            <span class="plus">+</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="body-content recenzzi">
+            <div class="row justify-between container mb-0">
+                <div class="col-12">
+                    <div class="breadcrumbs px-1">
+                        <a href="https://discount.ro">Home</a> » <a href="https://discount.ro/recenzii/"
+                            class="acwpreload">Recenzii</a> » <a href="https://discount.ro/recenzii/casa-gradina/">Casa
+                            &amp; Gradina</a> » <span>Cele mai bune piscine gonflabile și supraterane pentru vara anului
+                            2023</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-between container mb-0 article-content">
+                <div class="col-md-3 px-4  hide-on-mobile">
+                    <div class="sh-header-home">
+                        <img class="img-fluid"
+                            src="https://discount.ro/wp-content/uploads/2022/07/piscina-gonflabila.png"
+                            alt="Cele mai bune piscine gonflabile și supraterane pentru vara anului 2023">
+                    </div>
+                </div>
+                <div class="col-md-8 sh-header-credit">
+                    <h1>Cele mai bune piscine gonflabile și supraterane pentru vara anului 2023</h1>
+                    <p>Vremea caldă a sosit în mod oficial, ceea ce îi face pe mulți oameni să caute cu nerăbdare
+                        modalități de a se răcori fără a se refugia înăuntru toată ziua cu aerul condiționat dat la
+                        maxim. O piscină gonflabilă, plină de apă rece ca gheața, este sinonimul verii. Ieftine, ușor de
+                        montat și chiar mai ușor de demontat, piscinele gonflabile oferă un răgaz de la căldură și oferă
+                        ore întregi de divertisment în aer liber. Ele reprezintă apogeul distracției de vară la soare, o
+                        soluție de nerefuzat pentru oricine caută o modalitate de a sta la racoare acasă.</p>
+                </div>
+            </div>
+            <div class="row justify-between container mb-0 sh-body-wrapper article-content">
+                <div class="col-md-3 px-4 sidebar p-0">
+                    <div class="sidebar-store">
+                        <div class="sh-body-sidebar" id="mainh">
+                            <!-- <div class="show-filter"> <strong>Cuprins <a href="javascript:void(0);"></a></strong></div>
+                            <h2></h2> -->
+                            <div class="sh-sidebar-content">
+                                <ul>
+                                    <li class="navigation">
+                                        <a href="#session-demo-1">Section demo 1<span class="icon-chevron-thin-right"></span></a>
+                                    </li>
+                                    <li class="navigation">
+                                        <a href="#session-demo-2">Section demo 2<span class="icon-chevron-thin-right"></span></a>
+                                    </li>
+                                    <li class="navigation">
+                                        <a href="#session-demo-3">Section demo 3<span class="icon-chevron-thin-right"></span></a>
+                                    </li>
+                                    <li class="navigation" >
+                                        <a href="#session-demo-4">Section demo 4<span class="icon-chevron-thin-right"></span></a>
+                                    </li>
+                                    <li class="navigation">
+                                        <a href="#session-demo-5">Section demo 5<span class="icon-chevron-thin-right"></span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9 sh-body-container">
+                    <p class="mb-2">Fie că sunteți nerăbdători să faceți o baie înainte ca piscinele în aer
+                        liber să se deschidă pentru sezon, fie că sunteți în căutarea unei modalități de a vă
+                        bucura toată vara de apă fără a părăsi curtea din spate, o piscină gonflabilă este o
+                        modalitate accesibilă și neîngrădită de a sta la răcoare și de a vă distra în aer liber.
+                        Și în timp ce majoritatea piscinelor gonflabile sunt deja chilipiruri în comparație cu
+                        omologii lor cu pereți rigizi, magazinele online au făcut ca obținerea uneia dintre
+                        aceste elemente esențiale pentru vremea caldă să fie și mai blândă cu portofelul
+                        cumpărătorilor. Magazinele online oferă în prezent câteva alternative de piscine
+                        gonflabile și supraterane excelente, cu opțiuni pentru copii, adulți și familii de toate
+                        dimensiunile.
+                    </p>
+                    <div class="row section-content">
+                        <div class="row section-item" id="session-demo-1">
+                            <div class="col-md-12">
+                                <h2>Session demo 1</h2>
+                            </div>
+                            <div class="col-md-12 info">
+                                <div class="subtitle">Cel mai usor de montat</div>
+                                <div class="card">
+                                    <div class="card-inner row">
+                                        <div class="col-md-4">
+                                            <picture>
+                                                <a title="Specificații tehnice" target="_blank" rel="nofollow"
+                                                    href="//discount.ro/link/?id=138" class="acwpreload">
+                                                    <img alt="Specificații tehnice"
+                                                        src="https://discount.ro/wp-content/uploads/2022/07/226-specificatii-tehnice-390x390.jpg"
+                                                        class="eae-card-image lazy"
+                                                        style="object-fit: contain; display: inline;">
+                                                </a>
+                                            </picture>
+                                            <div class="mainlinks">
+                                                <a class="eae-full-link" title="Specificații tehnice" target="_blank"
+                                                    rel="nofollow" href="//discount.ro/link/?id=137">
+                                                    <i class="fas fa-shopping-cart"></i> emag.ro
+                                                </a>
+                                            </div>
+                                            <div class="sources">
+                                                <a class="eae-empty-link" target="_blank" rel="nofollow"
+                                                    href="//discount.ro/link/?id=138"> raijucarii.ro<span></span></a>
+                                                <a class="eae-empty-link" target="_blank" rel="nofollow"
+                                                    href="//discount.ro/link/?id=139"> pepitashop.ro<span></span></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div><strong class="guidesubtitle">Specificații tehnice</strong></div>
+                                            <div class="guidesd row">
+                                                <p class="col-md-12"><span class="text-muted">Tip: </span> Supraterana</p>
+                                                <p class="col-md-12"><span class="text-muted">Forma: </span> Dreptunghi</p>
+                                                <p class="col-md-12"><span class="text-muted">Volum: </span> 31.805 l</p>
+                                                <p class="col-md-12"><span class="text-muted">Material: </span> PVC</p>
+                                                <p class="col-md-12"><span class="text-muted">Structura: </span> Otel</p>
+                                                <p class="col-md-12"><span class="text-muted">Culoare: </span> Argintiu</p>
+                                                <p class="col-md-12"><span class="text-muted">Continut pachet: </span>
+                                                    Piscina Cadru Pompa filtrare Prelata de protectie Scara exterioa</p>
+                                            </div>
+                                            <div class="eae-rating-wrapper row">
+                                                <div class="col-md-12 p-0">
+                                                    <span class="icon-star-solid"></span>
+                                                    <span class="icon-star-solid"></span>
+                                                    <span class="icon-star-solid"></span>
+                                                    <span class="icon-star-solid"></span>
+                                                    <span class="icon-star-solid"></span>
+                                                    <span class="eae-rating-count">(47 reviews)</span>   
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12 p-0 switer-header">
+                                                    <p>Pro & Contra</p>
+                                                </div>
+                                                <div class="col-md-12 switer-content p-0">
+                                                    <div class="row">
+                                                        <div class="col-xs-6 wpsm_cons">
+                                                            <p><span class="icon-circle-check-solid"></span> Disponibil în diferite dimensiuni</p>
+                                                        </div>
+                                                        <div class="col-xs-6 wpsm_cons">
+                                                            <p><span class="icon-circle-minus-solid"></span> Disponibil în diferite dimensiuni</p>
+                                                        </div>                                                      
+                                                        <div class="col-xs-6 wpsm_cons">
+                                                            <p><span class="icon-circle-check-solid"></span> Disponibil în diferite dimensiuni</p>
+                                                        </div>                                                    
+                                                        <div class="col-xs-6 wpsm_cons">
+                                                            <p><span class="icon-circle-minus-solid"></span> Disponibil în diferite dimensiuni</p>
+                                                        </div>                                                  
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <p>Cu o căptușeală rezistentă, o pompă cu filtru de nisip, o scară detașabilă și o copertină, această piscină rotundă supraterană are toate dotările necesare. Este disponibilă în dimensiuni de 5.5, 6 sau 7 metri, ceea ce înseamnă că se va potrivi perfect într-o varietate de curți. Ca să nu mai vorbim de faptul că interiorul cu imprimeu de țiglă albastră și exteriorul elegant de culoare gri închis îi conferă un aspect plăcut, dar sofisticat. Pompa funcționează foarte bine și menține piscina în mare parte curată.</p>                            
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row section-item" id="session-demo-2">
+                            <div class="col-md-12">
+                                <h2>Session demo 2</h2>
+                            </div>
+                            <div class="col-md-12 info">
+                                <div class="subtitle">Cel mai usor de montat</div>
+                                <div class="card">
+                                    <div class="card-inner row">
+                                        <div class="col-md-4">
+                                            <picture>
+                                                <a title="Specificații tehnice" target="_blank" rel="nofollow"
+                                                    href="//discount.ro/link/?id=138" class="acwpreload">
+                                                    <img alt="Specificații tehnice"
+                                                        src="https://discount.ro/wp-content/uploads/2022/07/226-specificatii-tehnice-390x390.jpg"
+                                                        class="eae-card-image lazy"
+                                                        style="object-fit: contain; display: inline;">
+                                                </a>
+                                            </picture>
+                                            <div class="mainlinks">
+                                                <a class="eae-full-link" title="Specificații tehnice" target="_blank"
+                                                    rel="nofollow" href="//discount.ro/link/?id=137">
+                                                    <i class="fas fa-shopping-cart"></i> emag.ro
+                                                </a>
+                                            </div>
+                                            <div class="sources">
+                                                <a class="eae-empty-link" target="_blank" rel="nofollow"
+                                                    href="//discount.ro/link/?id=138"> raijucarii.ro<span></span></a>
+                                                <a class="eae-empty-link" target="_blank" rel="nofollow"
+                                                    href="//discount.ro/link/?id=139"> pepitashop.ro<span></span></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div><strong class="guidesubtitle">Specificații tehnice</strong></div>
+                                            <div class="guidesd row">
+                                                <p class="col-md-12"><span class="text-muted">Tip: </span> Supraterana</p>
+                                                <p class="col-md-12"><span class="text-muted">Forma: </span> Dreptunghi</p>
+                                                <p class="col-md-12"><span class="text-muted">Volum: </span> 31.805 l</p>
+                                                <p class="col-md-12"><span class="text-muted">Material: </span> PVC</p>
+                                                <p class="col-md-12"><span class="text-muted">Structura: </span> Otel</p>
+                                                <p class="col-md-12"><span class="text-muted">Culoare: </span> Argintiu</p>
+                                                <p class="col-md-12"><span class="text-muted">Continut pachet: </span>
+                                                    Piscina Cadru Pompa filtrare Prelata de protectie Scara exterioa</p>
+                                            </div>
+                                            <div class="eae-rating-wrapper row">
+                                                <div class="col-md-12 p-0">
+                                                    <span class="icon-star-solid"></span>
+                                                    <span class="icon-star-solid"></span>
+                                                    <span class="icon-star-solid"></span>
+                                                    <span class="icon-star-solid"></span>
+                                                    <span class="icon-star-solid"></span>
+                                                    <span class="eae-rating-count">(47 reviews)</span>   
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12 p-0 switer-header">
+                                                    <p>Pro & Contra</p>
+                                                </div>
+                                                <div class="col-md-12 switer-content p-0">
+                                                    <div class="row">
+                                                        <div class="col-xs-6 wpsm_cons">
+                                                            <p><span class="icon-circle-check-solid"></span> Disponibil în diferite dimensiuni</p>
+                                                        </div>
+                                                        <div class="col-xs-6 wpsm_cons">
+                                                            <p><span class="icon-circle-minus-solid"></span> Disponibil în diferite dimensiuni</p>
+                                                        </div>                                                      
+                                                        <div class="col-xs-6 wpsm_cons">
+                                                            <p><span class="icon-circle-check-solid"></span> Disponibil în diferite dimensiuni</p>
+                                                        </div>                                                    
+                                                        <div class="col-xs-6 wpsm_cons">
+                                                            <p><span class="icon-circle-minus-solid"></span> Disponibil în diferite dimensiuni</p>
+                                                        </div>                                                  
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <p>Cu o căptușeală rezistentă, o pompă cu filtru de nisip, o scară detașabilă și o copertină, această piscină rotundă supraterană are toate dotările necesare. Este disponibilă în dimensiuni de 5.5, 6 sau 7 metri, ceea ce înseamnă că se va potrivi perfect într-o varietate de curți. Ca să nu mai vorbim de faptul că interiorul cu imprimeu de țiglă albastră și exteriorul elegant de culoare gri închis îi conferă un aspect plăcut, dar sofisticat. Pompa funcționează foarte bine și menține piscina în mare parte curată.</p>                            
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row section-item" id="session-demo-3">
+                            <div class="col-md-12">
+                                <h2>Session demo 3</h2>
+                            </div>
+                            <div class="col-md-12 info">
+                                <div class="subtitle">Cel mai usor de montat</div>
+                                <div class="card">
+                                    <div class="card-inner row">
+                                        <div class="col-md-4">
+                                            <picture>
+                                                <a title="Specificații tehnice" target="_blank" rel="nofollow"
+                                                    href="//discount.ro/link/?id=138" class="acwpreload">
+                                                    <img alt="Specificații tehnice"
+                                                        src="https://discount.ro/wp-content/uploads/2022/07/226-specificatii-tehnice-390x390.jpg"
+                                                        class="eae-card-image lazy"
+                                                        style="object-fit: contain; display: inline;">
+                                                </a>
+                                            </picture>
+                                            <div class="mainlinks">
+                                                <a class="eae-full-link" title="Specificații tehnice" target="_blank"
+                                                    rel="nofollow" href="//discount.ro/link/?id=137">
+                                                    <i class="fas fa-shopping-cart"></i> emag.ro
+                                                </a>
+                                            </div>
+                                            <div class="sources">
+                                                <a class="eae-empty-link" target="_blank" rel="nofollow"
+                                                    href="//discount.ro/link/?id=138"> raijucarii.ro<span></span></a>
+                                                <a class="eae-empty-link" target="_blank" rel="nofollow"
+                                                    href="//discount.ro/link/?id=139"> pepitashop.ro<span></span></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div><strong class="guidesubtitle">Specificații tehnice</strong></div>
+                                            <div class="guidesd row">
+                                                <p class="col-md-12"><span class="text-muted">Tip: </span> Supraterana</p>
+                                                <p class="col-md-12"><span class="text-muted">Forma: </span> Dreptunghi</p>
+                                                <p class="col-md-12"><span class="text-muted">Volum: </span> 31.805 l</p>
+                                                <p class="col-md-12"><span class="text-muted">Material: </span> PVC</p>
+                                                <p class="col-md-12"><span class="text-muted">Structura: </span> Otel</p>
+                                                <p class="col-md-12"><span class="text-muted">Culoare: </span> Argintiu</p>
+                                                <p class="col-md-12"><span class="text-muted">Continut pachet: </span>
+                                                    Piscina Cadru Pompa filtrare Prelata de protectie Scara exterioa</p>
+                                            </div>
+                                            <div class="eae-rating-wrapper row">
+                                                <div class="col-md-12 p-0">
+                                                    <span class="icon-star-solid"></span>
+                                                    <span class="icon-star-solid"></span>
+                                                    <span class="icon-star-solid"></span>
+                                                    <span class="icon-star-solid"></span>
+                                                    <span class="icon-star-solid"></span>
+                                                    <span class="eae-rating-count">(47 reviews)</span>   
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12 p-0 switer-header">
+                                                    <p>Pro & Contra</p>
+                                                </div>
+                                                <div class="col-md-12 switer-content p-0">
+                                                    <div class="row">
+                                                        <div class="col-xs-6 wpsm_cons">
+                                                            <p><span class="icon-circle-check-solid"></span> Disponibil în diferite dimensiuni</p>
+                                                        </div>
+                                                        <div class="col-xs-6 wpsm_cons">
+                                                            <p><span class="icon-circle-minus-solid"></span> Disponibil în diferite dimensiuni</p>
+                                                        </div>                                                      
+                                                        <div class="col-xs-6 wpsm_cons">
+                                                            <p><span class="icon-circle-check-solid"></span> Disponibil în diferite dimensiuni</p>
+                                                        </div>                                                    
+                                                        <div class="col-xs-6 wpsm_cons">
+                                                            <p><span class="icon-circle-minus-solid"></span> Disponibil în diferite dimensiuni</p>
+                                                        </div>                                                  
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <p>Cu o căptușeală rezistentă, o pompă cu filtru de nisip, o scară detașabilă și o copertină, această piscină rotundă supraterană are toate dotările necesare. Este disponibilă în dimensiuni de 5.5, 6 sau 7 metri, ceea ce înseamnă că se va potrivi perfect într-o varietate de curți. Ca să nu mai vorbim de faptul că interiorul cu imprimeu de țiglă albastră și exteriorul elegant de culoare gri închis îi conferă un aspect plăcut, dar sofisticat. Pompa funcționează foarte bine și menține piscina în mare parte curată.</p>                            
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row section-item" id="session-demo-4">
+                            <div class="col-md-12">
+                                <h2>Session demo 4</h2>
+                            </div>
+                            <div class="col-md-12 info">
+                                <div class="subtitle">Cel mai usor de montat</div>
+                                <div class="card">
+                                    <div class="card-inner row">
+                                        <div class="col-md-4">
+                                            <picture>
+                                                <a title="Specificații tehnice" target="_blank" rel="nofollow"
+                                                    href="//discount.ro/link/?id=138" class="acwpreload">
+                                                    <img alt="Specificații tehnice"
+                                                        src="https://discount.ro/wp-content/uploads/2022/07/226-specificatii-tehnice-390x390.jpg"
+                                                        class="eae-card-image lazy"
+                                                        style="object-fit: contain; display: inline;">
+                                                </a>
+                                            </picture>
+                                            <div class="mainlinks">
+                                                <a class="eae-full-link" title="Specificații tehnice" target="_blank"
+                                                    rel="nofollow" href="//discount.ro/link/?id=137">
+                                                    <i class="fas fa-shopping-cart"></i> emag.ro
+                                                </a>
+                                            </div>
+                                            <div class="sources">
+                                                <a class="eae-empty-link" target="_blank" rel="nofollow"
+                                                    href="//discount.ro/link/?id=138"> raijucarii.ro<span></span></a>
+                                                <a class="eae-empty-link" target="_blank" rel="nofollow"
+                                                    href="//discount.ro/link/?id=139"> pepitashop.ro<span></span></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div><strong class="guidesubtitle">Specificații tehnice</strong></div>
+                                            <div class="guidesd row">
+                                                <p class="col-md-12"><span class="text-muted">Tip: </span> Supraterana</p>
+                                                <p class="col-md-12"><span class="text-muted">Forma: </span> Dreptunghi</p>
+                                                <p class="col-md-12"><span class="text-muted">Volum: </span> 31.805 l</p>
+                                                <p class="col-md-12"><span class="text-muted">Material: </span> PVC</p>
+                                                <p class="col-md-12"><span class="text-muted">Structura: </span> Otel</p>
+                                                <p class="col-md-12"><span class="text-muted">Culoare: </span> Argintiu</p>
+                                                <p class="col-md-12"><span class="text-muted">Continut pachet: </span>
+                                                    Piscina Cadru Pompa filtrare Prelata de protectie Scara exterioa</p>
+                                            </div>
+                                            <div class="eae-rating-wrapper row">
+                                                <div class="col-md-12 p-0">
+                                                    <span class="icon-star-solid"></span>
+                                                    <span class="icon-star-solid"></span>
+                                                    <span class="icon-star-solid"></span>
+                                                    <span class="icon-star-solid"></span>
+                                                    <span class="icon-star-solid"></span>
+                                                    <span class="eae-rating-count">(47 reviews)</span>   
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12 p-0 switer-header">
+                                                    <p>Pro & Contra</p>
+                                                </div>
+                                                <div class="col-md-12 switer-content p-0">
+                                                    <div class="row">
+                                                        <div class="col-xs-6 wpsm_cons">
+                                                            <p><span class="icon-circle-check-solid"></span> Disponibil în diferite dimensiuni</p>
+                                                        </div>
+                                                        <div class="col-xs-6 wpsm_cons">
+                                                            <p><span class="icon-circle-minus-solid"></span> Disponibil în diferite dimensiuni</p>
+                                                        </div>                                                      
+                                                        <div class="col-xs-6 wpsm_cons">
+                                                            <p><span class="icon-circle-check-solid"></span> Disponibil în diferite dimensiuni</p>
+                                                        </div>                                                    
+                                                        <div class="col-xs-6 wpsm_cons">
+                                                            <p><span class="icon-circle-minus-solid"></span> Disponibil în diferite dimensiuni</p>
+                                                        </div>                                                  
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <p>Cu o căptușeală rezistentă, o pompă cu filtru de nisip, o scară detașabilă și o copertină, această piscină rotundă supraterană are toate dotările necesare. Este disponibilă în dimensiuni de 5.5, 6 sau 7 metri, ceea ce înseamnă că se va potrivi perfect într-o varietate de curți. Ca să nu mai vorbim de faptul că interiorul cu imprimeu de țiglă albastră și exteriorul elegant de culoare gri închis îi conferă un aspect plăcut, dar sofisticat. Pompa funcționează foarte bine și menține piscina în mare parte curată.</p>                            
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row section-item" id="session-demo-5">
+                            <div class="col-md-12">
+                                <h2>Session demo 5</h2>
+                            </div>
+                            <div class="col-md-12 info">
+                                <div class="subtitle">Cel mai usor de montat</div>
+                                <div class="card">
+                                    <div class="card-inner row">
+                                        <div class="col-md-4">
+                                            <picture>
+                                                <a title="Specificații tehnice" target="_blank" rel="nofollow"
+                                                    href="//discount.ro/link/?id=138" class="acwpreload">
+                                                    <img alt="Specificații tehnice"
+                                                        src="https://discount.ro/wp-content/uploads/2022/07/226-specificatii-tehnice-390x390.jpg"
+                                                        class="eae-card-image lazy"
+                                                        style="object-fit: contain; display: inline;">
+                                                </a>
+                                            </picture>
+                                            <div class="mainlinks">
+                                                <a class="eae-full-link" title="Specificații tehnice" target="_blank"
+                                                    rel="nofollow" href="//discount.ro/link/?id=137">
+                                                    <i class="fas fa-shopping-cart"></i> emag.ro
+                                                </a>
+                                            </div>
+                                            <div class="sources">
+                                                <a class="eae-empty-link" target="_blank" rel="nofollow"
+                                                    href="//discount.ro/link/?id=138"> raijucarii.ro<span></span></a>
+                                                <a class="eae-empty-link" target="_blank" rel="nofollow"
+                                                    href="//discount.ro/link/?id=139"> pepitashop.ro<span></span></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div><strong class="guidesubtitle">Specificații tehnice</strong></div>
+                                            <div class="guidesd row">
+                                                <p class="col-md-12"><span class="text-muted">Tip: </span> Supraterana</p>
+                                                <p class="col-md-12"><span class="text-muted">Forma: </span> Dreptunghi</p>
+                                                <p class="col-md-12"><span class="text-muted">Volum: </span> 31.805 l</p>
+                                                <p class="col-md-12"><span class="text-muted">Material: </span> PVC</p>
+                                                <p class="col-md-12"><span class="text-muted">Structura: </span> Otel</p>
+                                                <p class="col-md-12"><span class="text-muted">Culoare: </span> Argintiu</p>
+                                                <p class="col-md-12"><span class="text-muted">Continut pachet: </span>
+                                                    Piscina Cadru Pompa filtrare Prelata de protectie Scara exterioa</p>
+                                            </div>
+                                            <div class="eae-rating-wrapper row">
+                                                <div class="col-md-12 p-0">
+                                                    <span class="icon-star-solid"></span>
+                                                    <span class="icon-star-solid"></span>
+                                                    <span class="icon-star-solid"></span>
+                                                    <span class="icon-star-solid"></span>
+                                                    <span class="icon-star-solid"></span>
+                                                    <span class="eae-rating-count">(47 reviews)</span>   
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12 p-0 switer-header">
+                                                    <p>Pro & Contra</p>
+                                                </div>
+                                                <div class="col-md-12 switer-content p-0">
+                                                    <div class="row">
+                                                        <div class="col-xs-6 wpsm_cons">
+                                                            <p><span class="icon-circle-check-solid"></span> Disponibil în diferite dimensiuni</p>
+                                                        </div>
+                                                        <div class="col-xs-6 wpsm_cons">
+                                                            <p><span class="icon-circle-minus-solid"></span> Disponibil în diferite dimensiuni</p>
+                                                        </div>                                                      
+                                                        <div class="col-xs-6 wpsm_cons">
+                                                            <p><span class="icon-circle-check-solid"></span> Disponibil în diferite dimensiuni</p>
+                                                        </div>                                                    
+                                                        <div class="col-xs-6 wpsm_cons">
+                                                            <p><span class="icon-circle-minus-solid"></span> Disponibil în diferite dimensiuni</p>
+                                                        </div>                                                  
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <p>Cu o căptușeală rezistentă, o pompă cu filtru de nisip, o scară detașabilă și o copertină, această piscină rotundă supraterană are toate dotările necesare. Este disponibilă în dimensiuni de 5.5, 6 sau 7 metri, ceea ce înseamnă că se va potrivi perfect într-o varietate de curți. Ca să nu mai vorbim de faptul că interiorul cu imprimeu de țiglă albastră și exteriorul elegant de culoare gri închis îi conferă un aspect plăcut, dar sofisticat. Pompa funcționează foarte bine și menține piscina în mare parte curată.</p>                            
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-3 row container d-flex justify-center">
+                <div class="faqs mt-2 col-md-10">
+                    <h2>Întrebări frecvente</h2>
+                    <p>Află răspunsurile la cele mai frecvente întrebări despre Piscine</p>
+                    <ul class="list-style-none">
+                        <li>
+                            <div class="faq-item" target="faq-1">
+                                <h3 class="faq-question">
+                                    <span class="f-16 f-thin">Ce reprezintă un cod de reducere ePantofi?</span>
+                                    <svg class="v-center faq-icon icon-plus" width="25" fill="#cc2a36"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                        <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
+                                    </svg>
+                                    <svg class="v-center faq-icon icon-minus" width="25" fill="#cc2a36"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                        <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z" />
+                                    </svg>
+                                </h3>
+                                <div class="collapse faq-answer py-1 mt-1" id="faq-1">
+                                    Un cod de reducere, voucher sau cupon reprezintă un cod format din litere
+                                    și/sau cifre (ex: DISCOUNT25), care poate fi aplicat în câmpul special aflat
+                                    în pagina de finalizare a comenzilor. Un cod de reducere poate aplica o
+                                    reducere la prețul final al comenzii dvs.
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="faq-item" target="faq-2">
+                                <h3 class="faq-question">
+                                    <span class="f-16 f-thin">Ce reprezintă un cod de reducere ePantofi?</span>
+                                    <svg class="v-center faq-icon icon-plus" width="25" fill="#cc2a36"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                        <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
+                                    </svg>
+                                    <svg class="v-center faq-icon icon-minus" width="25" fill="#cc2a36"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                        <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z" />
+                                    </svg>
+                                </h3>
+                                <div class="collapse faq-answer py-1 mt-1" id="faq-2">
+                                    Un cod de reducere, voucher sau cupon reprezintă un cod format din litere
+                                    și/sau cifre (ex: DISCOUNT25), care poate fi aplicat în câmpul special aflat
+                                    în pagina de finalizare a comenzilor. Un cod de reducere poate aplica o
+                                    reducere la prețul final al comenzii dvs.
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="faq-item" target="faq-3">
+                                <h3 class="faq-question">
+                                    <span class="f-16 f-thin">Ce reprezintă un cod de reducere ePantofi?</span>
+                                    <svg class="v-center faq-icon icon-plus" width="25" fill="#cc2a36"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                        <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
+                                    </svg>
+                                    <svg class="v-center faq-icon icon-minus" width="25" fill="#cc2a36"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                        <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z" />
+                                    </svg>
+                                </h3>
+                                <div class="collapse faq-answer py-1 mt-1" id="faq-3">
+                                    Un cod de reducere, voucher sau cupon reprezintă un cod format din litere
+                                    și/sau cifre (ex: DISCOUNT25), care poate fi aplicat în câmpul special aflat
+                                    în pagina de finalizare a comenzilor. Un cod de reducere poate aplica o
+                                    reducere la prețul final al comenzii dvs.
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <footer id="footer">
+            <div class="row justify-between align-center container mb-0">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <a href=""><img src="../assets/images/footer_logo.svg" alt="" width="170"></a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="mailto:"><img class="v-center" src="../assets/images/Email.svg" width="25" alt="">
+                                <span class="v-center">info@kuplio.ro</span></a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href=""><img class="v-center" src="../assets/images/Download.svg" width="25" alt="">
+                                <span class="v-center">noutăți prin e-mail</span></a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="" class="mr-1"><img src="../assets/images/Facebook.svg" width="32" alt=""></a>
+                            <a href="" class="mr-1"><img src="../assets/images/Instagram.svg" width="32" alt=""></a>
+                            <a href=""><img src="../assets/images/Youtube.svg" width="32" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="row c-white">
+                        <div class="col-md-3">
+                            <h3 class="mb-2">Site-urile noastre</h3>
+                            <div class="list">
+                                <ul class="list-style-none">
+                                    <li><a href=""><img src="../assets/images/flag_cz.webp" class="mr-1" alt="">
+                                            <span>Vasekupony.cz</span></a></li>
+                                    <li><a href=""><img src="../assets/images/flag_sk.webp" class="mr-1" alt="">
+                                            <span>Vasekupony.sk</span></a></li>
+                                    <li><a href=""><img src="../assets/images/flag_hu.webp" class="mr-1" alt="">
+                                            <span>KUPLIO.hu</span></a></li>
+                                    <li><a href=""><img src="../assets/images/flag_pl.webp" class="mr-1" alt="">
+                                            <span>KUPLIO.pl</span></a></li>
+                                    <li><a href=""><img src="../assets/images/flag_de.webp" class="mr-1" alt="">
+                                            <span>KUPLIO.de</span></a></li>
+                                    <li><a href=""><img src="../assets/images/flag_at.webp" class="mr-1" alt="">
+                                            <span>KUPLIO.at</span></a></li>
+                                    <li><a href=""><img src="../assets/images/flag_bg.webp" class="mr-1" alt="">
+                                            <span>KUPLIO.bg</span></a></li>
+                                    <li><a href=""><img src="../assets/images/flag_hr.webp" class="mr-1" alt="">
+                                            <span>KUPLIO.hr</span></a></li>
+                                    <li><a href=""><img src="../assets/images/flag_si.webp" class="mr-1" alt="">
+                                            <span>KUPLIO.si</span></a></li>
+                                    <li><a href=""><img src="../assets/images/flag_it.webp" class="mr-1" alt="">
+                                            <span>KUPLIO.it</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <h3 class="mb-2">Cele mai bune reduceri</h3>
+                            <div class="list">
+                                <ul class="list-style-none">
+                                    <li><a href="">TOP 50 vouchere</a></li>
+                                    <li><a href="">Coduri de reducere</a></li>
+                                    <li><a href="">Reduceri</a></li>
+                                    <li><a href="">Lichidări</a></li>
+                                    <li><a href="">Cataloage online</a></li>
+                                    <li><a href="">Magazine</a></li>
+                                    <li><a href="">Branduri</a></li>
+                                    <li><a href="">BLACK FRIDAY</a></li>
+                                    <li><a href="">Transport gratuit</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <h3 class="mb-2">Pentru parteneri</h3>
+                            <div class="list">
+                                <ul class="list-style-none">
+                                    <li><a href="">Reclamă pe KUPLIO.ro</a></li>
+                                    <li><a href="">Adăugare magazin</a></li>
+                                    <li><a href="">Profilul companiei</a></li>
+                                    <li><a href="">Condiții comerciale generale</a></li>
+                                    <li><a href="">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <h3 class="mb-2">Pentru utilizatori</h3>
+                            <div class="list">
+                                <ul class="list-style-none">
+                                    <li><a href="">KUPLIO revista</a></li>
+                                    <li><a href="">Termeni de utilizare</a></li>
+                                    <li><a href="">Protecția datelor personale</a></li>
+                                    <li><a href="">Cookies</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p class="col-md-12 copyright">© 2022 PACHET PLUS s.r.l., Toate drepturile rezervate</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="../scripts/main.js"></script>
+
+</html>
