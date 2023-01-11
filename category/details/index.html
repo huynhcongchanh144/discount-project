@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../assets/css/responsive.css">
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../../assets/css/magazin_store.css">
+    <link rel="stylesheet" href="../../assets/css/category_detail.css">
+</head>
+
+<body>
+    <div>
+
+        <header id="header">
+            <div class="mb-0 meta">
+                <div class="container">
+                    <div class="row justify-between align-center mb-0">
+                        <div class="col-md-12 py-1">
+                            <div class="row justify-between align-center mb-0">
+                                <a href="" class="col-md-1 p-0"><img src="../../assets/images/logo.png" width="66"
+                                        alt=""></a>
+                                <div class="search_bar p-0 col-md-8">
+                                    <div class="row mb-0 align-center">
+                                        <div class="wrapper_search col-md-7 p-0">
+                                            <input type="text" name="search" id="search" placeholder="Find stores">
+                                            <button class="position-relative btn btn-search">Search</button>
+                                        </div>
+                                        <div class="question col-md-4 py-0">
+                                            <a href="" class="nav-tips d-flex align-center c-gray">
+                                                <img src="../../assets/images/circle-question-regular.svg" alt=""
+                                                    width="24" class="mr-1">
+                                                <span>How to get rewards with Tipli?</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="login col-md-3 p-0">
+                                    <div class="row mb-0 justify-right">
+                                        <img src="../../assets/images/user-large-solid.svg" alt="" width="25"
+                                            class="mr-1">
+                                        <div class="col-md-10 p-0">
+                                            <div class="row mb-0">
+                                                <a href="" onclick="createModalLogin(event)" class="f-bold link-h-decoration">Sign in</a>
+                                                <small>
+                                                    Already earning rewards with Tipli? <a href=""
+                                                        class="link-h-decoration" onclick="createModalLogin(event)">Sign in</a>
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar bg-gray-light">
+                <nav class="row d-flex container p-0">
+                    <ul class="menu col-md-12">
+                        <li class="nav-item dropdown">
+                            <a href="" target="shop">
+                                shop
+                                <img src="../../assets/images/caret-down-solid.svg" alt="" width="8" class="caret">
+                            </a>
+                            <!--Start of Dropdown-->
+                            <ul class="dropdown-nav">
+                                <div class="container-navbar-dropdown">
+                                    <li class="nav-item"><a href="">Vouchers</a></li>
+                                    <li class="nav-item"><a href="">Vouchers</a></li>
+                                    <li class="nav-item"><a href="">Vouchers</a></li>
+                                    <li class="nav-item"><a href="">Vouchers</a></li>
+                                    <li class="nav-item"><a href="">Vouchers</a></li>
+                                    <li class="nav-item"><a href="">Vouchers</a></li>
+                                    <li class="nav-item"><a href="">Vouchers</a></li>
+                                    <li class="nav-item"><a href="">Vouchers</a></li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="">VOUCHERS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="">catalogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="">Recommended products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="">ware</a>
+                        <li class="nav-item">
+                            <a href="">Post-Christmas discounts on Tipli</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="navbar-mobile d-sm-none d-block">
+                <div class="row mb-0">
+                    <div class="logo py-1 px-1">
+                        <a href="" class="col-md-1 p-0"><img src="../../assets/images/logo.png" width="66" alt=""></a>
+                    </div>
+                    <div class="hamberger d-flex p-0">
+                        <div class="search-btn">
+                            <img src="../../assets/images/icons8-search.svg" alt="" width="24" />
+                        </div>
+                        <div class="menu" onclick="openMenuOnMobile()">
+                            <img src="../../assets/images/burger-menu-svgrepo-com.svg" alt="" width="24" />
+                            <span>MENU</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-mobile-menu">
+                <div class="menu">
+                    <span class="nav-item" onclick="openMenuSecondaryOnMobile('shop')">Shop</span>
+                    <a class="nav-item" href="">VOUCHERS</a>
+                    <a class="nav-item" href="">catalogs</a>
+                    <a class="nav-item" href="">Recommended products</a>
+                    <a class="nav-item" href="">ware</a>
+                    <a class="nav-item" href="">Post-Christmas discounts on Tipli</a>
+                </div>
+            </div>
+            <div id="shop" class="navbar-secondary">
+                <div class="navbar-secondary-container">
+                    <span class="navbar-item navbar-mobile-back-link" onclick="openMenuOnMobile()">
+                        Back to main menu
+                    </span>
+                    <div class="navbar-secondary-wrapper">
+                        <span class="navbar-secondary-item">
+                            <a class="link" href="">Vouchers</a>
+                            <span class="plus">+</span>
+                        </span>
+                        <span class="navbar-secondary-item">
+                            <a class="link" href="">Vouchers</a>
+                            <span class="plus">+</span>
+                        </span>
+                        <span class="navbar-secondary-item">
+                            <a class="link" href="">Vouchers</a>
+                            <span class="plus">+</span>
+                        </span>
+                        <span class="navbar-secondary-item">
+                            <a class="link" href="">Vouchers</a>
+                            <span class="plus">+</span>
+                        </span>
+                        <span class="navbar-secondary-item">
+                            <a class="link" href="">Vouchers</a>
+                            <span class="plus">+</span>
+                        </span>
+                        <span class="navbar-secondary-item">
+                            <a class="link" href="">Vouchers</a>
+                            <span class="plus">+</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="body-content magazin category-detail">
+            <div class="row justify-between container mb-0">
+                <div class="col-md-3 px-4 position-relative">
+                    <div class="sidebar-store">
+                        <h3>14 Valid promotions</h3>
+                        <div class="filter-checked row justify-between">
+                            <label for="">Just checked</label>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="filter mb-1">
+                            <span><b>Magazine</b></span>
+                            <form class="filter-search">
+                                <fieldset> <svg class="search-icon" viewBox="0 0 16 16">
+                                        <path
+                                            d="M15.9 15.1l-3.6-3.6C13.4 10.4 14 8.8 14 7c0-3.9-3.1-7-7-7S0 3.1 0 7s3.1 7 7 7c1.8 0 3.4-.6 4.6-1.7l3.6 3.6c.2.2.5.2.7 0 .1-.2.1-.6 0-.8zM7 13c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6z">
+                                        </path>
+                                    </svg> <input type="text" placeholder="Search for a store"
+                                        aria-label="Search for a store" value="" class="search-input-d"></fieldset>
+                            </form>
+                            <ul class="list-style-none long-list">
+                                <li class="py-1">
+                                    <input type="checkbox" name="coduri" id="Chocolissimo.ro" class="filter-input">
+                                    <label for="Chocolissimo.ro" class="input-label">Chocolissimo.ro</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="promoti" id="Carturesti" class="filter-input">
+                                    <label for="Carturesti" class="input-label">Carturesti</label>
+                                </li>
+                                <li class="py-1">
+                                    <input type="checkbox" name="coduri" id="Best-Value" class="filter-input">
+                                    <label for="Best-Value" class="input-label">Best Value</label>
+                                </li>
+                                <li class="py-1">
+                                    <input type="checkbox" name="coduri" id="Presto-Pizza" class="filter-input">
+                                    <label for="Presto-Pizza" class="input-label">Presto Pizza</label>
+                                </li>
+                                <li class="py-1">
+                                    <input type="checkbox" name="coduri" id="Alcool-Discount" class="filter-input">
+                                    <label for="Alcool-Discount" class="input-label">Alcool Discount</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="filter mb-1">
+                            <span><b>Tip</b></span>
+                            <ul class="list-style-none">
+                                <li class="py-1">
+                                    <input type="checkbox" name="coduri" id="coduri" class="filter-input">
+                                    <label for="coduri" class="input-label">Coduri cupon</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="promoti" id="promoti" class="filter-input">
+                                    <label for="promoti" class="input-label">Promotii online</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="filter mb-1">
+                            <span><b>Category</b></span>
+                            <ul class="list-style-none">
+                                <li class="py-1">
+                                    <input type="checkbox" name="coduri" id="Alimente" class="filter-input">
+                                    <label for="Alimente" class="input-label">Alimente și băuturi</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="promoti" id="Alcool" class="filter-input">
+                                    <label for="Alcool" class="input-label">Alcool</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="title f-30 mb-1">Cupoane, vouchere si promotii alimente și băuturi</div>
+                    <div class="list-vouchers">
+                        <div class="voucher mb-1" id="voucher-1">
+                            <div class="row mb-0 align-center short-detail bg-white" onclick="createModal('voucher-1')">
+                                <div class="imgwrap">
+                                    <img src="https://discount.ro/wp-content/uploads/2021/03/Alcooldiscount.ro-220x220.jpg"
+                                        width="108" alt="">
+                                    <div class="wrap-discount">5%</div>
+                                </div>
+                                <div class="desc col-md-7">
+                                    <div class="status row mb-0 f-12 c-red mb-7">
+                                        <b>Cod</b> <img src="../../assets/images/circle-check-solid.svg" width="10"
+                                            alt="" class="mx-1">
+                                        <span class="c-gray"><b>Verificat</b></span>
+                                    </div>
+                                    <div class="row mb-0 f-18">
+                                        <b class="title-voucher">Cod reducere Epantofi 100 lei extra la produsele cu pret intreg</b>
+                                    </div>
+                                </div>
+                                <div class="code col-md-3">
+                                    <button class="btn btn-getcode" code="TESTCODE123">
+                                        <span>Afișează COD</span>
+                                        ...00RO
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row mb-0 px-3 py-1 justify-between align-center view-details">
+                                <button class="btn-none-border btn-view btn-view-up collapse-btn" target="voucher-description-1">
+                                    <span>View Details</span>
+                                </button>
+                                <div>
+                                    <button class="btn-thumb thumb-up">
+                                        <svg class="thumb" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                            <path
+                                                d="M313.4 32.9c26 5.2 42.9 30.5 37.7 56.5l-2.3 11.4c-5.3 26.7-15.1 52.1-28.8 75.2H464c26.5 0 48 21.5 48 48c0 25.3-19.5 46-44.3 47.9c7.7 8.5 12.3 19.8 12.3 32.1c0 23.4-16.8 42.9-38.9 47.1c4.4 7.2 6.9 15.8 6.9 24.9c0 21.3-13.9 39.4-33.1 45.6c.7 3.3 1.1 6.8 1.1 10.4c0 26.5-21.5 48-48 48H294.5c-19 0-37.5-5.6-53.3-16.1l-38.5-25.7C176 420.4 160 390.4 160 358.3V320 272 247.1c0-29.2 13.3-56.7 36-75l7.4-5.9c26.5-21.2 44.6-51 51.2-84.2l2.3-11.4c5.2-26 30.5-42.9 56.5-37.7zM32 192H96c17.7 0 32 14.3 32 32V448c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V224c0-17.7 14.3-32 32-32z" />
+                                        </svg>
+                                    </button>
+                                    <button class="btn-thumb thumb-down">
+                                        <svg class=" thumb" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                            <path
+                                                d="M313.4 479.1c26-5.2 42.9-30.5 37.7-56.5l-2.3-11.4c-5.3-26.7-15.1-52.1-28.8-75.2H464c26.5 0 48-21.5 48-48c0-25.3-19.5-46-44.3-47.9c7.7-8.5 12.3-19.8 12.3-32.1c0-23.4-16.8-42.9-38.9-47.1c4.4-7.3 6.9-15.8 6.9-24.9c0-21.3-13.9-39.4-33.1-45.6c.7-3.3 1.1-6.8 1.1-10.4c0-26.5-21.5-48-48-48H294.5c-19 0-37.5 5.6-53.3 16.1L202.7 73.8C176 91.6 160 121.6 160 153.7V192v48 24.9c0 29.2 13.3 56.7 36 75l7.4 5.9c26.5 21.2 44.6 51 51.2 84.2l2.3 11.4c5.2 26 30.5 42.9 56.5 37.7zM32 320H96c17.7 0 32-14.3 32-32V64c0-17.7-14.3-32-32-32H32C14.3 32 0 46.3 0 64V288c0 17.7 14.3 32 32 32z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="more-details bg-white px-3 collapse" id="voucher-description-1">
+                                <div class="row mb-0 tabs">
+                                    <button class="btn-none-border mr-2 px-0 py-2 f-16 tab active"
+                                        target="detail-voucher-description-1">
+                                        Detail
+                                    </button>
+                                    <button class="btn-none-border py-2 px-0 f-16 tab" target="comment-voucher-description-1">
+                                        Comment
+                                    </button>
+                                </div>
+                                <div class="row mb-0 content py-3 justify-center">
+                                    <div id="detail-voucher-description-1">
+                                        <ul class="list-style-none">
+                                            <li><b>Expira:</b> 01.12.2023</li>
+                                            <li><b>Detail:</b> Beneficiază de reducere pentru achiziționarea de produse
+                                                nereduse din noua colecție, în cazul comenzilor de peste 999 lei.</li>
+                                        </ul>
+                                    </div>
+                                    <div id="comment-voucher-description-1" class="col-md-10 collapse">
+                                        <form action="" class="row mb-0 justify-center">
+                                            <input type="text" placeholder="Name" class="col-md-10 p-1 mb-1">
+                                            <textarea name="" cols="30" rows="3" class="col-md-10 p-1"
+                                                placeholder="Comments"></textarea>
+                                            <div class="group col-md-10 px-0">
+                                                <button type="submit" class="btn-submit">Comment</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="voucher mb-1" id="voucher-2">
+                            <div class="row mb-0 align-center short-detail bg-white" onclick="createModal('voucher-2')">
+                                <div class="imgwrap">
+                                    <img src="https://discount.ro/wp-content/uploads/2021/03/Alcooldiscount.ro-220x220.jpg"
+                                        width="108" alt="">
+                                    <div class="wrap-discount">5%</div>
+                                </div>
+                                <div class="desc col-md-7">
+                                    <div class="status row mb-0 f-12 c-red mb-7">
+                                        <b>Cod</b> <img src="../../assets/images/circle-check-solid.svg" width="10"
+                                            alt="" class="mx-1">
+                                        <span class="c-gray"><b>Verificat</b></span>
+                                    </div>
+                                    <div class="row mb-0 f-18">
+                                        <b class="title-voucher">Cod reducere Epantofi 100 lei extra la produsele cu pret intreg</b>
+                                    </div>
+                                </div>
+                                <div class="code col-md-3">
+                                    <button class="btn btn-getcode" code="TESTCODE123">
+                                        <span>Afișează COD</span>
+                                        ...00RO
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row mb-0 px-3 py-1 justify-between align-center view-details">
+                                <button class="btn-none-border btn-view btn-view-up collapse-btn" target="voucher-description-2">
+                                    <span>View Details</span>
+                                </button>
+                                <div>
+                                    <button class="btn-thumb thumb-up">
+                                        <svg class="thumb" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                            <path
+                                                d="M313.4 32.9c26 5.2 42.9 30.5 37.7 56.5l-2.3 11.4c-5.3 26.7-15.1 52.1-28.8 75.2H464c26.5 0 48 21.5 48 48c0 25.3-19.5 46-44.3 47.9c7.7 8.5 12.3 19.8 12.3 32.1c0 23.4-16.8 42.9-38.9 47.1c4.4 7.2 6.9 15.8 6.9 24.9c0 21.3-13.9 39.4-33.1 45.6c.7 3.3 1.1 6.8 1.1 10.4c0 26.5-21.5 48-48 48H294.5c-19 0-37.5-5.6-53.3-16.1l-38.5-25.7C176 420.4 160 390.4 160 358.3V320 272 247.1c0-29.2 13.3-56.7 36-75l7.4-5.9c26.5-21.2 44.6-51 51.2-84.2l2.3-11.4c5.2-26 30.5-42.9 56.5-37.7zM32 192H96c17.7 0 32 14.3 32 32V448c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V224c0-17.7 14.3-32 32-32z" />
+                                        </svg>
+                                    </button>
+                                    <button class="btn-thumb thumb-down">
+                                        <svg class=" thumb" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                            <path
+                                                d="M313.4 479.1c26-5.2 42.9-30.5 37.7-56.5l-2.3-11.4c-5.3-26.7-15.1-52.1-28.8-75.2H464c26.5 0 48-21.5 48-48c0-25.3-19.5-46-44.3-47.9c7.7-8.5 12.3-19.8 12.3-32.1c0-23.4-16.8-42.9-38.9-47.1c4.4-7.3 6.9-15.8 6.9-24.9c0-21.3-13.9-39.4-33.1-45.6c.7-3.3 1.1-6.8 1.1-10.4c0-26.5-21.5-48-48-48H294.5c-19 0-37.5 5.6-53.3 16.1L202.7 73.8C176 91.6 160 121.6 160 153.7V192v48 24.9c0 29.2 13.3 56.7 36 75l7.4 5.9c26.5 21.2 44.6 51 51.2 84.2l2.3 11.4c5.2 26 30.5 42.9 56.5 37.7zM32 320H96c17.7 0 32-14.3 32-32V64c0-17.7-14.3-32-32-32H32C14.3 32 0 46.3 0 64V288c0 17.7 14.3 32 32 32z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="more-details bg-white px-3 collapse" id="voucher-description-2">
+                                <div class="row mb-0 tabs">
+                                    <button class="btn-none-border mr-2 px-0 py-2 f-16 tab active"
+                                        target="detail-voucher-description-2">
+                                        Detail
+                                    </button>
+                                    <button class="btn-none-border py-2 px-0 f-16 tab" target="comment-voucher-description-2">
+                                        Comment
+                                    </button>
+                                </div>
+                                <div class="row mb-0 content py-3 justify-center">
+                                    <div id="detail-voucher-description-2">
+                                        <ul class="list-style-none">
+                                            <li><b>Expira:</b> 01.12.2023</li>
+                                            <li><b>Detail:</b> Beneficiază de reducere pentru achiziționarea de produse
+                                                nereduse din noua colecție, în cazul comenzilor de peste 999 lei.</li>
+                                        </ul>
+                                    </div>
+                                    <div id="comment-voucher-description-2" class="col-md-10 collapse">
+                                        <form action="" class="row mb-0 justify-center">
+                                            <input type="text" placeholder="Name" class="col-md-10 p-1 mb-1">
+                                            <textarea name="" cols="30" rows="3" class="col-md-10 p-1"
+                                                placeholder="Comments"></textarea>
+                                            <div class="group col-md-10 px-0">
+                                                <button type="submit" class="btn-submit">Comment</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="voucher mb-1">
+                            <div class="row mb-0 align-center short-detail bg-white">
+                                <h1 class="c-red f-40 col-md-2 t-center px-2 py-1 nocode-img">%</h1>
+                                <div class="desc col-md-7">
+                                    <div class="status row mb-0 f-12 c-red mb-7">
+                                        <b>Reducere</b> <img src="../../assets/images/circle-check-solid.svg" width="10"
+                                            alt="" class="mx-1">
+                                        <span class="c-gray"><b>Verificat</b></span>
+                                    </div>
+                                    <div class="row mb-0 f-18">
+                                        <b>Cod reducere Epantofi 100 lei extra la produsele cu pret intreg</b>
+                                    </div>
+                                </div>
+                                <div class="code col-md-3">
+                                    <button class="btn btn-nocode">
+                                        <span>Vezi oferta</span>
+                                        <img src="../../assets/images/chevron-right-solid.svg" width="12" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row mb-0 px-3 py-1 justify-between align-center view-details">
+                                <button class="btn-none-border btn-view btn-view-up collapse-btn" target="voucher-description-4">
+                                    <span>View Details</span>
+                                </button>
+                                <div>
+                                    <button class="btn-thumb thumb-up">
+                                        <svg class="thumb" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                            <path
+                                                d="M313.4 32.9c26 5.2 42.9 30.5 37.7 56.5l-2.3 11.4c-5.3 26.7-15.1 52.1-28.8 75.2H464c26.5 0 48 21.5 48 48c0 25.3-19.5 46-44.3 47.9c7.7 8.5 12.3 19.8 12.3 32.1c0 23.4-16.8 42.9-38.9 47.1c4.4 7.2 6.9 15.8 6.9 24.9c0 21.3-13.9 39.4-33.1 45.6c.7 3.3 1.1 6.8 1.1 10.4c0 26.5-21.5 48-48 48H294.5c-19 0-37.5-5.6-53.3-16.1l-38.5-25.7C176 420.4 160 390.4 160 358.3V320 272 247.1c0-29.2 13.3-56.7 36-75l7.4-5.9c26.5-21.2 44.6-51 51.2-84.2l2.3-11.4c5.2-26 30.5-42.9 56.5-37.7zM32 192H96c17.7 0 32 14.3 32 32V448c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V224c0-17.7 14.3-32 32-32z" />
+                                        </svg>
+                                    </button>
+                                    <button class="btn-thumb thumb-down">
+                                        <svg class=" thumb" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                            <path
+                                                d="M313.4 479.1c26-5.2 42.9-30.5 37.7-56.5l-2.3-11.4c-5.3-26.7-15.1-52.1-28.8-75.2H464c26.5 0 48-21.5 48-48c0-25.3-19.5-46-44.3-47.9c7.7-8.5 12.3-19.8 12.3-32.1c0-23.4-16.8-42.9-38.9-47.1c4.4-7.3 6.9-15.8 6.9-24.9c0-21.3-13.9-39.4-33.1-45.6c.7-3.3 1.1-6.8 1.1-10.4c0-26.5-21.5-48-48-48H294.5c-19 0-37.5 5.6-53.3 16.1L202.7 73.8C176 91.6 160 121.6 160 153.7V192v48 24.9c0 29.2 13.3 56.7 36 75l7.4 5.9c26.5 21.2 44.6 51 51.2 84.2l2.3 11.4c5.2 26 30.5 42.9 56.5 37.7zM32 320H96c17.7 0 32-14.3 32-32V64c0-17.7-14.3-32-32-32H32C14.3 32 0 46.3 0 64V288c0 17.7 14.3 32 32 32z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="more-details bg-white px-3 collapse" id="voucher-description-4">
+                                <div class="row mb-0 tabs">
+                                    <button class="btn-none-border mr-2 px-0 py-2 f-16 tab active"
+                                        target="detail-voucher-description-4">
+                                        Detail
+                                    </button>
+                                    <button class="btn-none-border py-2 px-0 f-16 tab" target="comment-voucher-description-4">
+                                        Comment
+                                    </button>
+                                </div>
+                                <div class="row mb-0 content py-3 justify-center">
+                                    <div id="detail-voucher-description-4">
+                                        <ul class="list-style-none">
+                                            <li><b>Expira:</b> 01.12.2023</li>
+                                            <li><b>Detail:</b> Beneficiază de reducere pentru achiziționarea de produse
+                                                nereduse din noua colecție, în cazul comenzilor de peste 999 lei.</li>
+                                        </ul>
+                                    </div>
+                                    <div id="comment-voucher-description-4" class="col-md-10 collapse">
+                                        <form action="" class="row mb-0 justify-center">
+                                            <input type="text" placeholder="Name" class="col-md-10 p-1 mb-1">
+                                            <textarea name="" cols="30" rows="3" class="col-md-10 p-1"
+                                                placeholder="Comments"></textarea>
+                                            <div class="group col-md-10 px-0">
+                                                <button type="submit" class="btn-submit">Comment</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="voucher mb-1" id="voucher-3">
+                            <div class="row mb-0 align-center short-detail bg-white" onclick="createModal('voucher-3')">
+                                <div class="imgwrap">
+                                    <img src="https://discount.ro/wp-content/uploads/2021/03/Alcooldiscount.ro-220x220.jpg"
+                                        width="108" alt="">
+                                    <div class="wrap-discount">5%</div>
+                                </div>
+                                <div class="desc col-md-7">
+                                    <div class="status row mb-0 f-12 c-red mb-7">
+                                        <b>Cod</b> <img src="../../assets/images/circle-check-solid.svg" width="10"
+                                            alt="" class="mx-1">
+                                        <span class="c-gray"><b>Verificat</b></span>
+                                    </div>
+                                    <div class="row mb-0 f-18">
+                                        <b class="title-voucher">Cod reducere Epantofi 100 lei extra la produsele cu pret intreg</b>
+                                    </div>
+                                </div>
+                                <div class="code col-md-3">
+                                    <button class="btn btn-getcode" code="TESTCODE123">
+                                        <span>Afișează COD</span>
+                                        ...00RO
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row mb-0 px-3 py-1 justify-between align-center view-details">
+                                <button class="btn-none-border btn-view btn-view-up collapse-btn" target="voucher-description-3">
+                                    <span>View Details</span>
+                                </button>
+                                <div>
+                                    <button class="btn-thumb thumb-up">
+                                        <svg class="thumb" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                            <path
+                                                d="M313.4 32.9c26 5.2 42.9 30.5 37.7 56.5l-2.3 11.4c-5.3 26.7-15.1 52.1-28.8 75.2H464c26.5 0 48 21.5 48 48c0 25.3-19.5 46-44.3 47.9c7.7 8.5 12.3 19.8 12.3 32.1c0 23.4-16.8 42.9-38.9 47.1c4.4 7.2 6.9 15.8 6.9 24.9c0 21.3-13.9 39.4-33.1 45.6c.7 3.3 1.1 6.8 1.1 10.4c0 26.5-21.5 48-48 48H294.5c-19 0-37.5-5.6-53.3-16.1l-38.5-25.7C176 420.4 160 390.4 160 358.3V320 272 247.1c0-29.2 13.3-56.7 36-75l7.4-5.9c26.5-21.2 44.6-51 51.2-84.2l2.3-11.4c5.2-26 30.5-42.9 56.5-37.7zM32 192H96c17.7 0 32 14.3 32 32V448c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V224c0-17.7 14.3-32 32-32z" />
+                                        </svg>
+                                    </button>
+                                    <button class="btn-thumb thumb-down">
+                                        <svg class=" thumb" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                            <path
+                                                d="M313.4 479.1c26-5.2 42.9-30.5 37.7-56.5l-2.3-11.4c-5.3-26.7-15.1-52.1-28.8-75.2H464c26.5 0 48-21.5 48-48c0-25.3-19.5-46-44.3-47.9c7.7-8.5 12.3-19.8 12.3-32.1c0-23.4-16.8-42.9-38.9-47.1c4.4-7.3 6.9-15.8 6.9-24.9c0-21.3-13.9-39.4-33.1-45.6c.7-3.3 1.1-6.8 1.1-10.4c0-26.5-21.5-48-48-48H294.5c-19 0-37.5 5.6-53.3 16.1L202.7 73.8C176 91.6 160 121.6 160 153.7V192v48 24.9c0 29.2 13.3 56.7 36 75l7.4 5.9c26.5 21.2 44.6 51 51.2 84.2l2.3 11.4c5.2 26 30.5 42.9 56.5 37.7zM32 320H96c17.7 0 32-14.3 32-32V64c0-17.7-14.3-32-32-32H32C14.3 32 0 46.3 0 64V288c0 17.7 14.3 32 32 32z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="more-details bg-white px-3 collapse" id="voucher-description-3">
+                                <div class="row mb-0 tabs">
+                                    <button class="btn-none-border mr-2 px-0 py-2 f-16 tab active"
+                                        target="detail-voucher-description-3">
+                                        Detail
+                                    </button>
+                                    <button class="btn-none-border py-2 px-0 f-16 tab" target="comment-voucher-description-1">
+                                        Comment
+                                    </button>
+                                </div>
+                                <div class="row mb-0 content py-3 justify-center">
+                                    <div id="detail-voucher-description-3">
+                                        <ul class="list-style-none">
+                                            <li><b>Expira:</b> 01.12.2023</li>
+                                            <li><b>Detail:</b> Beneficiază de reducere pentru achiziționarea de produse
+                                                nereduse din noua colecție, în cazul comenzilor de peste 999 lei.</li>
+                                        </ul>
+                                    </div>
+                                    <div id="comment-voucher-description-3" class="col-md-10 collapse">
+                                        <form action="" class="row mb-0 justify-center">
+                                            <input type="text" placeholder="Name" class="col-md-10 p-1 mb-1">
+                                            <textarea name="" cols="30" rows="3" class="col-md-10 p-1"
+                                                placeholder="Comments"></textarea>
+                                            <div class="group col-md-10 px-0">
+                                                <button type="submit" class="btn-submit">Comment</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="desc-shop mt-3">
+                        <div class="mt-1 code-and-voucher">
+                            <div class="store-description" id="epantofi">
+                                <p>
+                                    Vrei produse din categoria Alimente si bauturi la pret redus? Pe site-ul discount.ro
+                                    veti gasi cele mai noi oferte si reduceri la toate produsele din aceasta categorie.
+                                    Descopera care sunt cele mai noi oferte aparute si revendica codurile pentru a
+                                    primii cele mai mari reduceri.
+                                    .
+                                </p>
+                                <p class="mt-3">
+                                    In primul rand, in categoria Alimente si bauturi gasiti reduceri la cele mai
+                                    cunoscute magazine alimentare. Familia dumneavoastra cu siguranta va fi fericita
+                                    pentru noile produse aschizionate pentru casa. Toate acestea la preturi foarte,
+                                    foarte mici.
+                                </p>
+                                <p class="mt-3">
+                                    In al doilea rand, in aceasta categorie a site-ului discount.ro veti gasi reduceri
+                                    la magazine ca Alcool Discount, Auchan si multe altele. Cumpara pentru casa ta doar
+                                    ce e mai bun. Fii cu ochii pe aceasta categorie si nu rata ocazia de a cumpara cele
+                                    mai bune produse cu ajutorul codurilor noastre de reducere.
+
+                                </p>
+                                <p class="mt-3">
+                                    Acum poti verifica foarte simplu si usor ce coduri de reduceri si cupoane sunt
+                                    disponibile. Utilizatorii nostri verifica mereu si ofera un feedback in functie de
+                                    disponibilitatea acelui voucher.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer id="footer">
+            <div class="row justify-between align-center container mb-0">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <a href=""><img src="../../assets/images/footer_logo.svg" alt="" width="170"></a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="mailto:"><img class="v-center" src="../../assets/images/Email.svg" width="25"
+                                    alt="">
+                                <span class="v-center">info@kuplio.ro</span></a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href=""><img class="v-center" src="../../assets/images/Download.svg" width="25" alt="">
+                                <span class="v-center">noutăți prin e-mail</span></a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="" class="mr-1"><img src="../../assets/images/Facebook.svg" width="32" alt=""></a>
+                            <a href="" class="mr-1"><img src="../../assets/images/Instagram.svg" width="32" alt=""></a>
+                            <a href=""><img src="../../assets/images/Youtube.svg" width="32" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="row c-white">
+                        <div class="col-md-3">
+                            <h3 class="mb-2">Site-urile noastre</h3>
+                            <div class="list">
+                                <ul class="list-style-none">
+                                    <li><a href=""><img src="../../assets/images/flag_cz.webp" class="mr-1" alt="">
+                                            <span>Vasekupony.cz</span></a></li>
+                                    <li><a href=""><img src="../../assets/images/flag_sk.webp" class="mr-1" alt="">
+                                            <span>Vasekupony.sk</span></a></li>
+                                    <li><a href=""><img src="../../assets/images/flag_hu.webp" class="mr-1" alt="">
+                                            <span>KUPLIO.hu</span></a></li>
+                                    <li><a href=""><img src="../../assets/images/flag_pl.webp" class="mr-1" alt="">
+                                            <span>KUPLIO.pl</span></a></li>
+                                    <li><a href=""><img src="../../assets/images/flag_de.webp" class="mr-1" alt="">
+                                            <span>KUPLIO.de</span></a></li>
+                                    <li><a href=""><img src="../../assets/images/flag_at.webp" class="mr-1" alt="">
+                                            <span>KUPLIO.at</span></a></li>
+                                    <li><a href=""><img src="../../assets/images/flag_bg.webp" class="mr-1" alt="">
+                                            <span>KUPLIO.bg</span></a></li>
+                                    <li><a href=""><img src="../../assets/images/flag_hr.webp" class="mr-1" alt="">
+                                            <span>KUPLIO.hr</span></a></li>
+                                    <li><a href=""><img src="../../assets/images/flag_si.webp" class="mr-1" alt="">
+                                            <span>KUPLIO.si</span></a></li>
+                                    <li><a href=""><img src="../../assets/images/flag_it.webp" class="mr-1" alt="">
+                                            <span>KUPLIO.it</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <h3 class="mb-2">Cele mai bune reduceri</h3>
+                            <div class="list">
+                                <ul class="list-style-none">
+                                    <li><a href="">TOP 50 vouchere</a></li>
+                                    <li><a href="">Coduri de reducere</a></li>
+                                    <li><a href="">Reduceri</a></li>
+                                    <li><a href="">Lichidări</a></li>
+                                    <li><a href="">Cataloage online</a></li>
+                                    <li><a href="">Magazine</a></li>
+                                    <li><a href="">Branduri</a></li>
+                                    <li><a href="">BLACK FRIDAY</a></li>
+                                    <li><a href="">Transport gratuit</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <h3 class="mb-2">Pentru parteneri</h3>
+                            <div class="list">
+                                <ul class="list-style-none">
+                                    <li><a href="">Reclamă pe KUPLIO.ro</a></li>
+                                    <li><a href="">Adăugare magazin</a></li>
+                                    <li><a href="">Profilul companiei</a></li>
+                                    <li><a href="">Condiții comerciale generale</a></li>
+                                    <li><a href="">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <h3 class="mb-2">Pentru utilizatori</h3>
+                            <div class="list">
+                                <ul class="list-style-none">
+                                    <li><a href="">KUPLIO revista</a></li>
+                                    <li><a href="">Termeni de utilizare</a></li>
+                                    <li><a href="">Protecția datelor personale</a></li>
+                                    <li><a href="">Cookies</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p class="col-md-12 copyright">© 2022 PACHET PLUS s.r.l., Toate drepturile rezervate</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="../../scripts/main.js"></script>
+
+</html>

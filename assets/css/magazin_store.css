@@ -1,0 +1,324 @@
+.magazin {
+  background: #F9F9F9;
+}
+.magazin .thumbnail {
+  border: 1px solid #eee;
+  border-radius: 15px;
+}
+.magazin .thumbnail img {
+  border-radius: 15px;
+}
+.magazin .contact {
+  font-size: 14px;
+  color: #adadad;
+}
+.magazin .is-fixed {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 2%;
+}
+.magazin .is-bottom {
+  position: absolute;
+  bottom: 0%;
+}
+.magazin .magazine-item {
+  border: 1px solid #ededed;
+  border-radius: 10px;
+  text-align: center;
+  background-color: white;
+}
+.magazin .magazine-item .brand-name {
+  padding: 4px;
+  background-color: #ededed;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.magazin .magazine-item a {
+  color: black;
+}
+.magazin .magazine-item img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 74px;
+}
+
+.filter-input {
+  display: block;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  margin: 0;
+}
+.filter-input:checked + .input-label::before {
+  visibility: visible;
+}
+
+.input-label {
+  display: block;
+  position: relative;
+  padding-left: 29px;
+  line-height: 22px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+.input-label::before {
+  visibility: hidden;
+  position: absolute;
+  top: 4px;
+  left: 8px;
+  z-index: 2;
+  box-sizing: border-box;
+  width: 6px;
+  height: 11px;
+  content: "";
+  transform: rotate(45deg);
+  border-style: solid;
+  -o-border-image: initial;
+     border-image: initial;
+  border-color: #cc2a36;
+  border-width: 0 2px 2px 0;
+}
+.input-label::after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  width: 22px;
+  height: 22px;
+  content: "";
+  border: thin solid rgb(117, 117, 117);
+  background-color: white;
+}
+
+.rate img {
+  vertical-align: middle;
+}
+
+.list-vouchers .voucher {
+  border: 1px solid #adadad;
+  border-radius: 7px;
+}
+.list-vouchers .voucher .short-detail {
+  border-bottom: 1px solid #adadad;
+  cursor: pointer;
+}
+
+.btn-thumb {
+  padding: 4px 15px;
+  border-radius: 15px;
+  cursor: pointer;
+  border: 1px solid;
+}
+.btn-thumb.thumb-up:hover {
+  border-color: green;
+}
+.btn-thumb.thumb-up:hover svg {
+  fill: green;
+}
+.btn-thumb.thumb-down:hover {
+  border-color: red;
+}
+.btn-thumb.thumb-down:hover svg {
+  fill: red;
+}
+
+.thumb {
+  width: 15px;
+  vertical-align: middle;
+}
+
+.view-details {
+  background-color: #eee;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  font-size: 14px;
+}
+
+.btn-none-border {
+  border: none;
+  cursor: pointer;
+  position: relative;
+  background-color: unset;
+}
+
+.btn-view-up::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: url("../images/chevron-up-solid.svg") no-repeat;
+  top: 2px;
+  right: -15px;
+  position: absolute;
+  display: inline-block;
+}
+
+.btn-view-down::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: url("../images/chevron-down-solid.svg") no-repeat;
+  top: 2px;
+  right: -15px;
+  position: absolute;
+  display: inline-block;
+}
+
+.btn-getcode {
+  position: relative;
+  border-radius: 1000px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  text-align: right;
+  transition: background-color 500ms ease 0s, border-color 500ms ease 0s, color 500ms ease 0s, fill 500ms ease 0s;
+  -webkit-font-smoothing: antialiased;
+  border: thin solid #eee;
+  background-color: #fff;
+  color: #333;
+  height: 3rem;
+  padding-right: 12px;
+  outline: none !important;
+  font-size: 16px;
+  width: 100%;
+}
+.btn-getcode span {
+  z-index: 2;
+  position: absolute;
+  left: 10%;
+  color: white;
+}
+.btn-getcode:hover {
+  background-color: #fff;
+  color: black;
+  border-color: #eee;
+}
+.btn-getcode:hover::before {
+  width: 67%;
+}
+.btn-getcode:hover::after {
+  left: 67%;
+}
+.btn-getcode::before {
+  content: "";
+  position: absolute;
+  width: 76%;
+  height: 100%;
+  left: 0;
+  background-color: #39b54a;
+  top: 0;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  transition: width 0.2s ease-out;
+  z-index: 1;
+}
+.btn-getcode::after {
+  left: 76%;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 48px 0 0 35px;
+  transform: rotate(17deg);
+  border-color: transparent transparent transparent #2e8d3a;
+  transition: left 0.2s ease-out;
+  transform-origin: top left;
+  content: "";
+  position: absolute;
+  z-index: 1;
+  display: block;
+}
+
+.tabs {
+  border-bottom: 1px solid #adadad;
+  transition: 0.5s;
+}
+
+.tab.active {
+  border-bottom: 2px solid #cc2a36;
+}
+
+.collapse {
+  display: none;
+}
+
+.best-offer {
+  border-radius: 7px;
+}
+.best-offer .form-best-offer input {
+  border: 1px solid #ededed;
+  border-radius: 7px;
+  background-color: #ededed;
+  outline: none;
+}
+
+.code-and-voucher {
+  background-color: white;
+  padding: 1.5rem;
+  border: 1px solid #ededed;
+  border-radius: 8px;
+}
+
+.code-and-voucher table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+.code-and-voucher table tr {
+  border-bottom: 1px solid #ededed;
+}
+
+table th + td {
+  padding: 8px;
+  font-size: 14px;
+}
+
+.desc-shop ul {
+  padding-left: 40px;
+}
+
+.showshort {
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+
+.showshort::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 33%, rgb(255, 255, 255) 100%);
+  background-repeat: repeat-x;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.faqs .faq-item {
+  background-color: #fff;
+  border: 1px solid #eee;
+  padding: 20px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.faqs .faq-item .faq-question {
+  position: relative;
+}
+
+.faqs .faq-item .faq-icon {
+  position: absolute;
+  right: 0;
+}
+
+.faqs .faq-item .faq-answer {
+  border-top: 1px solid #eee;
+}
+/*# sourceMappingURL=magazin_store.css.map */

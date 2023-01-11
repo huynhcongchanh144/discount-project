@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.min.js"
+        integrity="sha512-IkLiryZhI6G4pnA3bBZzYCT9Ewk87U4DGEOz+TnRD3MrKqaUitt+ssHgn2X/sxoM7FxCP/ROUp6wcxjH/GcI5Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css"
+        integrity="sha512-YQlbvfX5C6Ym6fTUSZ9GZpyB3F92hmQAZTO5YjciedwAaGRI9ccNs4iw2QTCJiSPheUQZomZKHQtuwbHkA9lgw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/category.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="mb-0 meta">
+            <div class="container">
+                <div class="row justify-between align-center mb-0">
+                    <div class="col-md-12 py-1">
+                        <div class="row justify-between align-center mb-0">
+                            <a href="" class="col-md-1 p-0"><img src="../assets/images/logo.png" width="66" alt=""></a>
+                            <div class="search_bar p-0 col-md-8">
+                                <div class="row mb-0 align-center">
+                                    <div class="wrapper_search col-md-7 p-0">
+                                        <input type="text" name="search" id="search" placeholder="Find stores">
+                                        <button class="position-relative btn btn-search">Search</button>
+                                    </div>
+                                    <div class="question col-md-4 py-0">
+                                        <a href="" class="nav-tips d-flex align-center c-gray">
+                                            <img src="../assets/images/circle-question-regular.svg" alt="" width="24"
+                                                class="mr-1">
+                                            <span>How to get rewards with Tipli?</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="login col-md-3 p-0">
+                                <div class="row mb-0 justify-right">
+                                    <img src="../assets/images/user-large-solid.svg" alt="" width="25" class="mr-1">
+                                    <div class="col-md-10 p-0">
+                                        <div class="row mb-0">
+                                            <a href="" class="f-bold link-h-decoration">Sign in</a>
+                                            <small>
+                                                Already earning rewards with Tipli? <a href=""
+                                                    class="link-h-decoration">Sign in</a>
+                                            </small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar bg-gray-light">
+            <nav class="row d-flex container p-0">
+                <ul class="menu col-md-12">
+                    <li class="nav-item dropdown">
+                        <a href="" target="shop">
+                            shop
+                            <img src="../assets/images/caret-down-solid.svg" alt="" width="8" class="caret">
+                        </a>
+                        <!--Start of Dropdown-->
+                        <ul class="dropdown-nav">
+                            <div class="container-navbar-dropdown">
+                                <li class="nav-item"><a href="">Vouchers</a></li>
+                                <li class="nav-item"><a href="">Vouchers</a></li>
+                                <li class="nav-item"><a href="">Vouchers</a></li>
+                                <li class="nav-item"><a href="">Vouchers</a></li>
+                                <li class="nav-item"><a href="">Vouchers</a></li>
+                                <li class="nav-item"><a href="">Vouchers</a></li>
+                                <li class="nav-item"><a href="">Vouchers</a></li>
+                                <li class="nav-item"><a href="">Vouchers</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="">VOUCHERS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="">catalogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="">Recommended products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="">ware</a>
+                    <li class="nav-item">
+                        <a href="">Post-Christmas discounts on Tipli</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="navbar-mobile d-sm-none d-block">
+            <div class="row mb-0">
+                <div class="logo py-1 px-1">
+                    <a href="" class="col-md-1 p-0"><img src="../assets/images/logo.png" width="66" alt=""></a>
+                </div>
+                <div class="hamberger d-flex p-0">
+                    <div class="search-btn">
+                        <img src="../assets/images/icons8-search.svg" alt="" width="24" />
+                    </div>
+                    <div class="menu" onclick="openMenuOnMobile()">
+                        <img src="../assets/images/burger-menu-svgrepo-com.svg" alt="" width="24" />
+                        <span>MENU</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-mobile-menu">
+            <div class="menu">
+                <span class="nav-item" onclick="openMenuSecondaryOnMobile('shop')">Shop</span>
+                <a class="nav-item" href="">VOUCHERS</a>
+                <a class="nav-item" href="">catalogs</a>
+                <a class="nav-item" href="">Recommended products</a>
+                <a class="nav-item" href="">ware</a>
+                <a class="nav-item" href="">Post-Christmas discounts on Tipli</a>
+            </div>
+        </div>
+        <div id="shop" class="navbar-secondary">
+            <div class="navbar-secondary-container">
+                <span class="navbar-item navbar-mobile-back-link" onclick="openMenuOnMobile()">
+                    Back to main menu
+                </span>
+                <div class="navbar-secondary-wrapper">
+                    <span class="navbar-secondary-item">
+                        <a class="link" href="">Vouchers</a>
+                        <span class="plus">+</span>
+                    </span>
+                    <span class="navbar-secondary-item">
+                        <a class="link" href="">Vouchers</a>
+                        <span class="plus">+</span>
+                    </span>
+                    <span class="navbar-secondary-item">
+                        <a class="link" href="">Vouchers</a>
+                        <span class="plus">+</span>
+                    </span>
+                    <span class="navbar-secondary-item">
+                        <a class="link" href="">Vouchers</a>
+                        <span class="plus">+</span>
+                    </span>
+                    <span class="navbar-secondary-item">
+                        <a class="link" href="">Vouchers</a>
+                        <span class="plus">+</span>
+                    </span>
+                    <span class="navbar-secondary-item">
+                        <a class="link" href="">Vouchers</a>
+                        <span class="plus">+</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="category">
+        <div class="container">
+            <div class="pb-3">
+                <h2>Magazine populare</h2>
+                <div class="slider-store">
+                    <div class="glide">
+                        <div class="glide__track" data-glide-el="track">
+                            <ul class="glide__slides">
+                                <li class="glide__slide t-center">
+                                    <div>
+                                        <a href="" class="magazin-item">
+                                            <img class="img-magazin"
+                                                src="https://discount.ro/wp-content/uploads/2021/03/Sinsay.com-220x220.jpg"
+                                                width="96" alt="">
+                                            <span class="py-1">Sinsay</span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="glide__slide t-center">
+                                    <div>
+                                        <a href="" class="magazin-item">
+                                            <img class="img-magazin"
+                                                src="https://discount.ro/wp-content/uploads/2021/03/Epantofi.ro-220x220.jpg"
+                                                width="96" alt="">
+                                            <span class="py-1">Sinsay</span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="glide__slide t-center">
+                                    <div>
+                                        <a href="" class="magazin-item">
+                                            <img class="img-magazin"
+                                                src="https://discount.ro/wp-content/uploads/2021/03/Aboutyou.ro-220x220.jpg"
+                                                width="96" alt="">
+                                            <span class="py-1">Sinsay</span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="glide__slide t-center">
+                                    <div>
+                                        <a href="" class="magazin-item">
+                                            <img class="img-magazin"
+                                                src="https://discount.ro/wp-content/uploads/2021/03/Sinsay.com-220x220.jpg"
+                                                width="96" alt="">
+                                            <span class="py-1">Sinsay</span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="glide__slide t-center">
+                                    <div>
+                                        <a href="" class="magazin-item">
+                                            <img class="img-magazin"
+                                                src="https://discount.ro/wp-content/uploads/2021/03/Epantofi.ro-220x220.jpg"
+                                                width="96" alt="">
+                                            <span class="py-1">Sinsay</span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="glide__slide t-center">
+                                    <div>
+                                        <a href="" class="magazin-item">
+                                            <img class="img-magazin"
+                                                src="https://discount.ro/wp-content/uploads/2021/03/Aboutyou.ro-220x220.jpg"
+                                                width="96" alt="">
+                                            <span class="py-1">Sinsay</span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="glide__slide t-center">
+                                    <div>
+                                        <a href="" class="magazin-item">
+                                            <img class="img-magazin"
+                                                src="https://discount.ro/wp-content/uploads/2021/03/Sinsay.com-220x220.jpg"
+                                                width="96" alt="">
+                                            <span class="py-1">Sinsay</span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="glide__slide t-center">
+                                    <div>
+                                        <a href="" class="magazin-item">
+                                            <img class="img-magazin"
+                                                src="https://discount.ro/wp-content/uploads/2021/03/Epantofi.ro-220x220.jpg"
+                                                width="96" alt="">
+                                            <span class="py-1">Sinsay</span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="glide__slide t-center">
+                                    <div>
+                                        <a href="" class="magazin-item">
+                                            <img class="img-magazin"
+                                                src="https://discount.ro/wp-content/uploads/2021/03/Aboutyou.ro-220x220.jpg"
+                                                width="96" alt="">
+                                            <span class="py-1">Sinsay</span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="glide__slide t-center">
+                                    <div>
+                                        <a href="" class="magazin-item">
+                                            <img class="img-magazin"
+                                                src="https://discount.ro/wp-content/uploads/2021/03/Sinsay.com-220x220.jpg"
+                                                width="96" alt="">
+                                            <span class="py-1">Sinsay</span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="glide__slide t-center">
+                                    <div>
+                                        <a href="" class="magazin-item">
+                                            <img class="img-magazin"
+                                                src="https://discount.ro/wp-content/uploads/2021/03/Epantofi.ro-220x220.jpg"
+                                                width="96" alt="">
+                                            <span class="py-1">Sinsay</span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="glide__slide t-center">
+                                    <div>
+                                        <a href="" class="magazin-item">
+                                            <img class="img-magazin"
+                                                src="https://discount.ro/wp-content/uploads/2021/03/Aboutyou.ro-220x220.jpg"
+                                                width="96" alt="">
+                                            <span class="py-1">Sinsay</span>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div data-glide-el="controls">
+                                <button data-glide-dir="<" class="glide_prev"></button>
+                                <button data-glide-dir=">" class="glide_next"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-center mt-3 mb-0 list-category">
+                <div class="col-md-4 p-1">
+                    <div class="store-item py-3">
+                        <a href="./details/index.html" class="row mb-0 align-center">
+                            <div class="img-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19"
+                                    viewBox="0 0 416 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+                                    <path
+                                        d="M207.9 15.2c.8 4.7 16.1 94.5 16.1 128.8 0 52.3-27.8 89.6-68.9 104.6L168 486.7c.7 13.7-10.2 25.3-24 25.3H80c-13.7 0-24.7-11.5-24-25.3l12.9-238.1C27.7 233.6 0 196.2 0 144 0 109.6 15.3 19.9 16.1 15.2 19.3-5.1 61.4-5.4 64 16.3v141.2c1.3 3.4 15.1 3.2 16 0 1.4-25.3 7.9-139.2 8-141.8 3.3-20.8 44.7-20.8 47.9 0 .2 2.7 6.6 116.5 8 141.8.9 3.2 14.8 3.4 16 0V16.3c2.6-21.6 44.8-21.4 48-1.1zm119.2 285.7l-15 185.1c-1.2 14 9.9 26 23.9 26h56c13.3 0 24-10.7 24-24V24c0-13.2-10.7-24-24-24-82.5 0-221.4 178.5-64.9 300.9z" />
+                                </svg>
+                            </div>
+                            <span class="f-18">Epantofi.ro</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 p-1">
+                    <div class="store-item py-3">
+                        <a href="./details/index.html" class="row mb-0 align-center">
+                            <div class="img-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19"
+                                    viewBox="0 0 416 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+                                    <path
+                                        d="M207.9 15.2c.8 4.7 16.1 94.5 16.1 128.8 0 52.3-27.8 89.6-68.9 104.6L168 486.7c.7 13.7-10.2 25.3-24 25.3H80c-13.7 0-24.7-11.5-24-25.3l12.9-238.1C27.7 233.6 0 196.2 0 144 0 109.6 15.3 19.9 16.1 15.2 19.3-5.1 61.4-5.4 64 16.3v141.2c1.3 3.4 15.1 3.2 16 0 1.4-25.3 7.9-139.2 8-141.8 3.3-20.8 44.7-20.8 47.9 0 .2 2.7 6.6 116.5 8 141.8.9 3.2 14.8 3.4 16 0V16.3c2.6-21.6 44.8-21.4 48-1.1zm119.2 285.7l-15 185.1c-1.2 14 9.9 26 23.9 26h56c13.3 0 24-10.7 24-24V24c0-13.2-10.7-24-24-24-82.5 0-221.4 178.5-64.9 300.9z" />
+                                </svg>
+                            </div>
+                            <span class="f-18">Epantofi.ro</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 p-1">
+                    <div class="store-item py-3">
+                        <a href="./details/index.html" class="row mb-0 align-center">
+                            <div class="img-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19"
+                                    viewBox="0 0 416 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+                                    <path
+                                        d="M207.9 15.2c.8 4.7 16.1 94.5 16.1 128.8 0 52.3-27.8 89.6-68.9 104.6L168 486.7c.7 13.7-10.2 25.3-24 25.3H80c-13.7 0-24.7-11.5-24-25.3l12.9-238.1C27.7 233.6 0 196.2 0 144 0 109.6 15.3 19.9 16.1 15.2 19.3-5.1 61.4-5.4 64 16.3v141.2c1.3 3.4 15.1 3.2 16 0 1.4-25.3 7.9-139.2 8-141.8 3.3-20.8 44.7-20.8 47.9 0 .2 2.7 6.6 116.5 8 141.8.9 3.2 14.8 3.4 16 0V16.3c2.6-21.6 44.8-21.4 48-1.1zm119.2 285.7l-15 185.1c-1.2 14 9.9 26 23.9 26h56c13.3 0 24-10.7 24-24V24c0-13.2-10.7-24-24-24-82.5 0-221.4 178.5-64.9 300.9z" />
+                                </svg>
+                            </div>
+                            <span class="f-18">Epantofi.ro</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 p-1">
+                    <div class="store-item py-3">
+                        <a href="./details/index.html" class="row mb-0 align-center">
+                            <div class="img-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19"
+                                    viewBox="0 0 416 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+                                    <path
+                                        d="M207.9 15.2c.8 4.7 16.1 94.5 16.1 128.8 0 52.3-27.8 89.6-68.9 104.6L168 486.7c.7 13.7-10.2 25.3-24 25.3H80c-13.7 0-24.7-11.5-24-25.3l12.9-238.1C27.7 233.6 0 196.2 0 144 0 109.6 15.3 19.9 16.1 15.2 19.3-5.1 61.4-5.4 64 16.3v141.2c1.3 3.4 15.1 3.2 16 0 1.4-25.3 7.9-139.2 8-141.8 3.3-20.8 44.7-20.8 47.9 0 .2 2.7 6.6 116.5 8 141.8.9 3.2 14.8 3.4 16 0V16.3c2.6-21.6 44.8-21.4 48-1.1zm119.2 285.7l-15 185.1c-1.2 14 9.9 26 23.9 26h56c13.3 0 24-10.7 24-24V24c0-13.2-10.7-24-24-24-82.5 0-221.4 178.5-64.9 300.9z" />
+                                </svg>
+                            </div>
+                            <span class="f-18">Epantofi.ro</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 p-1">
+                    <div class="store-item py-3">
+                        <a href="./details/index.html" class="row mb-0 align-center">
+                            <div class="img-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19"
+                                    viewBox="0 0 416 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+                                    <path
+                                        d="M207.9 15.2c.8 4.7 16.1 94.5 16.1 128.8 0 52.3-27.8 89.6-68.9 104.6L168 486.7c.7 13.7-10.2 25.3-24 25.3H80c-13.7 0-24.7-11.5-24-25.3l12.9-238.1C27.7 233.6 0 196.2 0 144 0 109.6 15.3 19.9 16.1 15.2 19.3-5.1 61.4-5.4 64 16.3v141.2c1.3 3.4 15.1 3.2 16 0 1.4-25.3 7.9-139.2 8-141.8 3.3-20.8 44.7-20.8 47.9 0 .2 2.7 6.6 116.5 8 141.8.9 3.2 14.8 3.4 16 0V16.3c2.6-21.6 44.8-21.4 48-1.1zm119.2 285.7l-15 185.1c-1.2 14 9.9 26 23.9 26h56c13.3 0 24-10.7 24-24V24c0-13.2-10.7-24-24-24-82.5 0-221.4 178.5-64.9 300.9z" />
+                                </svg>
+                            </div>
+                            <span class="f-18">Epantofi.ro</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 p-1">
+                    <div class="store-item py-3">
+                        <a href="./details/index.html" class="row mb-0 align-center">
+                            <div class="img-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19"
+                                    viewBox="0 0 416 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+                                    <path
+                                        d="M207.9 15.2c.8 4.7 16.1 94.5 16.1 128.8 0 52.3-27.8 89.6-68.9 104.6L168 486.7c.7 13.7-10.2 25.3-24 25.3H80c-13.7 0-24.7-11.5-24-25.3l12.9-238.1C27.7 233.6 0 196.2 0 144 0 109.6 15.3 19.9 16.1 15.2 19.3-5.1 61.4-5.4 64 16.3v141.2c1.3 3.4 15.1 3.2 16 0 1.4-25.3 7.9-139.2 8-141.8 3.3-20.8 44.7-20.8 47.9 0 .2 2.7 6.6 116.5 8 141.8.9 3.2 14.8 3.4 16 0V16.3c2.6-21.6 44.8-21.4 48-1.1zm119.2 285.7l-15 185.1c-1.2 14 9.9 26 23.9 26h56c13.3 0 24-10.7 24-24V24c0-13.2-10.7-24-24-24-82.5 0-221.4 178.5-64.9 300.9z" />
+                                </svg>
+                            </div>
+                            <span class="f-18">Epantofi.ro</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 p-1">
+                    <div class="store-item py-3">
+                        <a href="./details/index.html" class="row mb-0 align-center">
+                            <div class="img-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19"
+                                    viewBox="0 0 416 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+                                    <path
+                                        d="M207.9 15.2c.8 4.7 16.1 94.5 16.1 128.8 0 52.3-27.8 89.6-68.9 104.6L168 486.7c.7 13.7-10.2 25.3-24 25.3H80c-13.7 0-24.7-11.5-24-25.3l12.9-238.1C27.7 233.6 0 196.2 0 144 0 109.6 15.3 19.9 16.1 15.2 19.3-5.1 61.4-5.4 64 16.3v141.2c1.3 3.4 15.1 3.2 16 0 1.4-25.3 7.9-139.2 8-141.8 3.3-20.8 44.7-20.8 47.9 0 .2 2.7 6.6 116.5 8 141.8.9 3.2 14.8 3.4 16 0V16.3c2.6-21.6 44.8-21.4 48-1.1zm119.2 285.7l-15 185.1c-1.2 14 9.9 26 23.9 26h56c13.3 0 24-10.7 24-24V24c0-13.2-10.7-24-24-24-82.5 0-221.4 178.5-64.9 300.9z" />
+                                </svg>
+                            </div>
+                            <span class="f-18">Epantofi.ro</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 p-1">
+                    <div class="store-item py-3">
+                        <a href="./details/index.html" class="row mb-0 align-center">
+                            <div class="img-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19"
+                                    viewBox="0 0 416 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+                                    <path
+                                        d="M207.9 15.2c.8 4.7 16.1 94.5 16.1 128.8 0 52.3-27.8 89.6-68.9 104.6L168 486.7c.7 13.7-10.2 25.3-24 25.3H80c-13.7 0-24.7-11.5-24-25.3l12.9-238.1C27.7 233.6 0 196.2 0 144 0 109.6 15.3 19.9 16.1 15.2 19.3-5.1 61.4-5.4 64 16.3v141.2c1.3 3.4 15.1 3.2 16 0 1.4-25.3 7.9-139.2 8-141.8 3.3-20.8 44.7-20.8 47.9 0 .2 2.7 6.6 116.5 8 141.8.9 3.2 14.8 3.4 16 0V16.3c2.6-21.6 44.8-21.4 48-1.1zm119.2 285.7l-15 185.1c-1.2 14 9.9 26 23.9 26h56c13.3 0 24-10.7 24-24V24c0-13.2-10.7-24-24-24-82.5 0-221.4 178.5-64.9 300.9z" />
+                                </svg>
+                            </div>
+                            <span class="f-18">Epantofi.ro</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 p-1">
+                    <div class="store-item py-3">
+                        <a href="./details/index.html" class="row mb-0 align-center">
+                            <div class="img-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19"
+                                    viewBox="0 0 416 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+                                    <path
+                                        d="M207.9 15.2c.8 4.7 16.1 94.5 16.1 128.8 0 52.3-27.8 89.6-68.9 104.6L168 486.7c.7 13.7-10.2 25.3-24 25.3H80c-13.7 0-24.7-11.5-24-25.3l12.9-238.1C27.7 233.6 0 196.2 0 144 0 109.6 15.3 19.9 16.1 15.2 19.3-5.1 61.4-5.4 64 16.3v141.2c1.3 3.4 15.1 3.2 16 0 1.4-25.3 7.9-139.2 8-141.8 3.3-20.8 44.7-20.8 47.9 0 .2 2.7 6.6 116.5 8 141.8.9 3.2 14.8 3.4 16 0V16.3c2.6-21.6 44.8-21.4 48-1.1zm119.2 285.7l-15 185.1c-1.2 14 9.9 26 23.9 26h56c13.3 0 24-10.7 24-24V24c0-13.2-10.7-24-24-24-82.5 0-221.4 178.5-64.9 300.9z" />
+                                </svg>
+                            </div>
+                            <span class="f-18">Epantofi.ro</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 p-1">
+                    <div class="store-item py-3">
+                        <a href="./details/index.html" class="row mb-0 align-center">
+                            <div class="img-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19"
+                                    viewBox="0 0 416 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+                                    <path
+                                        d="M207.9 15.2c.8 4.7 16.1 94.5 16.1 128.8 0 52.3-27.8 89.6-68.9 104.6L168 486.7c.7 13.7-10.2 25.3-24 25.3H80c-13.7 0-24.7-11.5-24-25.3l12.9-238.1C27.7 233.6 0 196.2 0 144 0 109.6 15.3 19.9 16.1 15.2 19.3-5.1 61.4-5.4 64 16.3v141.2c1.3 3.4 15.1 3.2 16 0 1.4-25.3 7.9-139.2 8-141.8 3.3-20.8 44.7-20.8 47.9 0 .2 2.7 6.6 116.5 8 141.8.9 3.2 14.8 3.4 16 0V16.3c2.6-21.6 44.8-21.4 48-1.1zm119.2 285.7l-15 185.1c-1.2 14 9.9 26 23.9 26h56c13.3 0 24-10.7 24-24V24c0-13.2-10.7-24-24-24-82.5 0-221.4 178.5-64.9 300.9z" />
+                                </svg>
+                            </div>
+                            <span class="f-18">Epantofi.ro</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 p-1">
+                    <div class="store-item py-3">
+                        <a href="./details/index.html" class="row mb-0 align-center">
+                            <div class="img-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19"
+                                    viewBox="0 0 416 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+                                    <path
+                                        d="M207.9 15.2c.8 4.7 16.1 94.5 16.1 128.8 0 52.3-27.8 89.6-68.9 104.6L168 486.7c.7 13.7-10.2 25.3-24 25.3H80c-13.7 0-24.7-11.5-24-25.3l12.9-238.1C27.7 233.6 0 196.2 0 144 0 109.6 15.3 19.9 16.1 15.2 19.3-5.1 61.4-5.4 64 16.3v141.2c1.3 3.4 15.1 3.2 16 0 1.4-25.3 7.9-139.2 8-141.8 3.3-20.8 44.7-20.8 47.9 0 .2 2.7 6.6 116.5 8 141.8.9 3.2 14.8 3.4 16 0V16.3c2.6-21.6 44.8-21.4 48-1.1zm119.2 285.7l-15 185.1c-1.2 14 9.9 26 23.9 26h56c13.3 0 24-10.7 24-24V24c0-13.2-10.7-24-24-24-82.5 0-221.4 178.5-64.9 300.9z" />
+                                </svg>
+                            </div>
+                            <span class="f-18">Epantofi.ro</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 p-1">
+                    <div class="store-item py-3">
+                        <a href="./details/index.html" class="row mb-0 align-center">
+                            <div class="img-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19"
+                                    viewBox="0 0 416 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+                                    <path
+                                        d="M207.9 15.2c.8 4.7 16.1 94.5 16.1 128.8 0 52.3-27.8 89.6-68.9 104.6L168 486.7c.7 13.7-10.2 25.3-24 25.3H80c-13.7 0-24.7-11.5-24-25.3l12.9-238.1C27.7 233.6 0 196.2 0 144 0 109.6 15.3 19.9 16.1 15.2 19.3-5.1 61.4-5.4 64 16.3v141.2c1.3 3.4 15.1 3.2 16 0 1.4-25.3 7.9-139.2 8-141.8 3.3-20.8 44.7-20.8 47.9 0 .2 2.7 6.6 116.5 8 141.8.9 3.2 14.8 3.4 16 0V16.3c2.6-21.6 44.8-21.4 48-1.1zm119.2 285.7l-15 185.1c-1.2 14 9.9 26 23.9 26h56c13.3 0 24-10.7 24-24V24c0-13.2-10.7-24-24-24-82.5 0-221.4 178.5-64.9 300.9z" />
+                                </svg>
+                            </div>
+                            <span class="f-18">Epantofi.ro</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 p-1">
+                    <div class="store-item py-3">
+                        <a href="./details/index.html" class="row mb-0 align-center">
+                            <div class="img-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19"
+                                    viewBox="0 0 416 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+                                    <path
+                                        d="M207.9 15.2c.8 4.7 16.1 94.5 16.1 128.8 0 52.3-27.8 89.6-68.9 104.6L168 486.7c.7 13.7-10.2 25.3-24 25.3H80c-13.7 0-24.7-11.5-24-25.3l12.9-238.1C27.7 233.6 0 196.2 0 144 0 109.6 15.3 19.9 16.1 15.2 19.3-5.1 61.4-5.4 64 16.3v141.2c1.3 3.4 15.1 3.2 16 0 1.4-25.3 7.9-139.2 8-141.8 3.3-20.8 44.7-20.8 47.9 0 .2 2.7 6.6 116.5 8 141.8.9 3.2 14.8 3.4 16 0V16.3c2.6-21.6 44.8-21.4 48-1.1zm119.2 285.7l-15 185.1c-1.2 14 9.9 26 23.9 26h56c13.3 0 24-10.7 24-24V24c0-13.2-10.7-24-24-24-82.5 0-221.4 178.5-64.9 300.9z" />
+                                </svg>
+                            </div>
+                            <span class="f-18">Epantofi.ro</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 p-1">
+                    <div class="store-item py-3">
+                        <a href="./details/index.html" class="row mb-0 align-center">
+                            <div class="img-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19"
+                                    viewBox="0 0 416 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+                                    <path
+                                        d="M207.9 15.2c.8 4.7 16.1 94.5 16.1 128.8 0 52.3-27.8 89.6-68.9 104.6L168 486.7c.7 13.7-10.2 25.3-24 25.3H80c-13.7 0-24.7-11.5-24-25.3l12.9-238.1C27.7 233.6 0 196.2 0 144 0 109.6 15.3 19.9 16.1 15.2 19.3-5.1 61.4-5.4 64 16.3v141.2c1.3 3.4 15.1 3.2 16 0 1.4-25.3 7.9-139.2 8-141.8 3.3-20.8 44.7-20.8 47.9 0 .2 2.7 6.6 116.5 8 141.8.9 3.2 14.8 3.4 16 0V16.3c2.6-21.6 44.8-21.4 48-1.1zm119.2 285.7l-15 185.1c-1.2 14 9.9 26 23.9 26h56c13.3 0 24-10.7 24-24V24c0-13.2-10.7-24-24-24-82.5 0-221.4 178.5-64.9 300.9z" />
+                                </svg>
+                            </div>
+                            <span class="f-18">Epantofi.ro</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 p-1">
+                    <div class="store-item py-3">
+                        <a href="./details/index.html" class="row mb-0 align-center">
+                            <div class="img-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19"
+                                    viewBox="0 0 416 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+                                    <path
+                                        d="M207.9 15.2c.8 4.7 16.1 94.5 16.1 128.8 0 52.3-27.8 89.6-68.9 104.6L168 486.7c.7 13.7-10.2 25.3-24 25.3H80c-13.7 0-24.7-11.5-24-25.3l12.9-238.1C27.7 233.6 0 196.2 0 144 0 109.6 15.3 19.9 16.1 15.2 19.3-5.1 61.4-5.4 64 16.3v141.2c1.3 3.4 15.1 3.2 16 0 1.4-25.3 7.9-139.2 8-141.8 3.3-20.8 44.7-20.8 47.9 0 .2 2.7 6.6 116.5 8 141.8.9 3.2 14.8 3.4 16 0V16.3c2.6-21.6 44.8-21.4 48-1.1zm119.2 285.7l-15 185.1c-1.2 14 9.9 26 23.9 26h56c13.3 0 24-10.7 24-24V24c0-13.2-10.7-24-24-24-82.5 0-221.4 178.5-64.9 300.9z" />
+                                </svg>
+                            </div>
+                            <span class="f-18">Epantofi.ro</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 p-1">
+                    <div class="store-item py-3">
+                        <a href="./details/index.html" class="row mb-0 align-center">
+                            <div class="img-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19"
+                                    viewBox="0 0 416 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+                                    <path
+                                        d="M207.9 15.2c.8 4.7 16.1 94.5 16.1 128.8 0 52.3-27.8 89.6-68.9 104.6L168 486.7c.7 13.7-10.2 25.3-24 25.3H80c-13.7 0-24.7-11.5-24-25.3l12.9-238.1C27.7 233.6 0 196.2 0 144 0 109.6 15.3 19.9 16.1 15.2 19.3-5.1 61.4-5.4 64 16.3v141.2c1.3 3.4 15.1 3.2 16 0 1.4-25.3 7.9-139.2 8-141.8 3.3-20.8 44.7-20.8 47.9 0 .2 2.7 6.6 116.5 8 141.8.9 3.2 14.8 3.4 16 0V16.3c2.6-21.6 44.8-21.4 48-1.1zm119.2 285.7l-15 185.1c-1.2 14 9.9 26 23.9 26h56c13.3 0 24-10.7 24-24V24c0-13.2-10.7-24-24-24-82.5 0-221.4 178.5-64.9 300.9z" />
+                                </svg>
+                            </div>
+                            <span class="f-18">Epantofi.ro</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 p-1">
+                    <div class="store-item py-3">
+                        <a href="./details/index.html" class="row mb-0 align-center">
+                            <div class="img-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19"
+                                    viewBox="0 0 416 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+                                    <path
+                                        d="M207.9 15.2c.8 4.7 16.1 94.5 16.1 128.8 0 52.3-27.8 89.6-68.9 104.6L168 486.7c.7 13.7-10.2 25.3-24 25.3H80c-13.7 0-24.7-11.5-24-25.3l12.9-238.1C27.7 233.6 0 196.2 0 144 0 109.6 15.3 19.9 16.1 15.2 19.3-5.1 61.4-5.4 64 16.3v141.2c1.3 3.4 15.1 3.2 16 0 1.4-25.3 7.9-139.2 8-141.8 3.3-20.8 44.7-20.8 47.9 0 .2 2.7 6.6 116.5 8 141.8.9 3.2 14.8 3.4 16 0V16.3c2.6-21.6 44.8-21.4 48-1.1zm119.2 285.7l-15 185.1c-1.2 14 9.9 26 23.9 26h56c13.3 0 24-10.7 24-24V24c0-13.2-10.7-24-24-24-82.5 0-221.4 178.5-64.9 300.9z" />
+                                </svg>
+                            </div>
+                            <span class="f-18">Epantofi.ro</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 p-1">
+                    <div class="store-item py-3">
+                        <a href="./details/index.html" class="row mb-0 align-center">
+                            <div class="img-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19"
+                                    viewBox="0 0 416 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+                                    <path
+                                        d="M207.9 15.2c.8 4.7 16.1 94.5 16.1 128.8 0 52.3-27.8 89.6-68.9 104.6L168 486.7c.7 13.7-10.2 25.3-24 25.3H80c-13.7 0-24.7-11.5-24-25.3l12.9-238.1C27.7 233.6 0 196.2 0 144 0 109.6 15.3 19.9 16.1 15.2 19.3-5.1 61.4-5.4 64 16.3v141.2c1.3 3.4 15.1 3.2 16 0 1.4-25.3 7.9-139.2 8-141.8 3.3-20.8 44.7-20.8 47.9 0 .2 2.7 6.6 116.5 8 141.8.9 3.2 14.8 3.4 16 0V16.3c2.6-21.6 44.8-21.4 48-1.1zm119.2 285.7l-15 185.1c-1.2 14 9.9 26 23.9 26h56c13.3 0 24-10.7 24-24V24c0-13.2-10.7-24-24-24-82.5 0-221.4 178.5-64.9 300.9z" />
+                                </svg>
+                            </div>
+                            <span class="f-18">Epantofi.ro</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 p-1">
+                    <div class="store-item py-3">
+                        <a href="./details/index.html" class="row mb-0 align-center">
+                            <div class="img-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19"
+                                    viewBox="0 0 416 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+                                    <path
+                                        d="M207.9 15.2c.8 4.7 16.1 94.5 16.1 128.8 0 52.3-27.8 89.6-68.9 104.6L168 486.7c.7 13.7-10.2 25.3-24 25.3H80c-13.7 0-24.7-11.5-24-25.3l12.9-238.1C27.7 233.6 0 196.2 0 144 0 109.6 15.3 19.9 16.1 15.2 19.3-5.1 61.4-5.4 64 16.3v141.2c1.3 3.4 15.1 3.2 16 0 1.4-25.3 7.9-139.2 8-141.8 3.3-20.8 44.7-20.8 47.9 0 .2 2.7 6.6 116.5 8 141.8.9 3.2 14.8 3.4 16 0V16.3c2.6-21.6 44.8-21.4 48-1.1zm119.2 285.7l-15 185.1c-1.2 14 9.9 26 23.9 26h56c13.3 0 24-10.7 24-24V24c0-13.2-10.7-24-24-24-82.5 0-221.4 178.5-64.9 300.9z" />
+                                </svg>
+                            </div>
+                            <span class="f-18">Epantofi.ro</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 p-1">
+                    <div class="store-item py-3">
+                        <a href="./details/index.html" class="row mb-0 align-center">
+                            <div class="img-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19"
+                                    viewBox="0 0 416 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+                                    <path
+                                        d="M207.9 15.2c.8 4.7 16.1 94.5 16.1 128.8 0 52.3-27.8 89.6-68.9 104.6L168 486.7c.7 13.7-10.2 25.3-24 25.3H80c-13.7 0-24.7-11.5-24-25.3l12.9-238.1C27.7 233.6 0 196.2 0 144 0 109.6 15.3 19.9 16.1 15.2 19.3-5.1 61.4-5.4 64 16.3v141.2c1.3 3.4 15.1 3.2 16 0 1.4-25.3 7.9-139.2 8-141.8 3.3-20.8 44.7-20.8 47.9 0 .2 2.7 6.6 116.5 8 141.8.9 3.2 14.8 3.4 16 0V16.3c2.6-21.6 44.8-21.4 48-1.1zm119.2 285.7l-15 185.1c-1.2 14 9.9 26 23.9 26h56c13.3 0 24-10.7 24-24V24c0-13.2-10.7-24-24-24-82.5 0-221.4 178.5-64.9 300.9z" />
+                                </svg>
+                            </div>
+                            <span class="f-18">Epantofi.ro</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 p-1">
+                    <div class="store-item py-3">
+                        <a href="./details/index.html" class="row mb-0 align-center">
+                            <div class="img-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19"
+                                    viewBox="0 0 416 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+                                    <path
+                                        d="M207.9 15.2c.8 4.7 16.1 94.5 16.1 128.8 0 52.3-27.8 89.6-68.9 104.6L168 486.7c.7 13.7-10.2 25.3-24 25.3H80c-13.7 0-24.7-11.5-24-25.3l12.9-238.1C27.7 233.6 0 196.2 0 144 0 109.6 15.3 19.9 16.1 15.2 19.3-5.1 61.4-5.4 64 16.3v141.2c1.3 3.4 15.1 3.2 16 0 1.4-25.3 7.9-139.2 8-141.8 3.3-20.8 44.7-20.8 47.9 0 .2 2.7 6.6 116.5 8 141.8.9 3.2 14.8 3.4 16 0V16.3c2.6-21.6 44.8-21.4 48-1.1zm119.2 285.7l-15 185.1c-1.2 14 9.9 26 23.9 26h56c13.3 0 24-10.7 24-24V24c0-13.2-10.7-24-24-24-82.5 0-221.4 178.5-64.9 300.9z" />
+                                </svg>
+                            </div>
+                            <span class="f-18">Epantofi.ro</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 p-1">
+                    <div class="store-item py-3">
+                        <a href="./details/index.html" class="row mb-0 align-center">
+                            <div class="img-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19"
+                                    viewBox="0 0 416 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+                                    <path
+                                        d="M207.9 15.2c.8 4.7 16.1 94.5 16.1 128.8 0 52.3-27.8 89.6-68.9 104.6L168 486.7c.7 13.7-10.2 25.3-24 25.3H80c-13.7 0-24.7-11.5-24-25.3l12.9-238.1C27.7 233.6 0 196.2 0 144 0 109.6 15.3 19.9 16.1 15.2 19.3-5.1 61.4-5.4 64 16.3v141.2c1.3 3.4 15.1 3.2 16 0 1.4-25.3 7.9-139.2 8-141.8 3.3-20.8 44.7-20.8 47.9 0 .2 2.7 6.6 116.5 8 141.8.9 3.2 14.8 3.4 16 0V16.3c2.6-21.6 44.8-21.4 48-1.1zm119.2 285.7l-15 185.1c-1.2 14 9.9 26 23.9 26h56c13.3 0 24-10.7 24-24V24c0-13.2-10.7-24-24-24-82.5 0-221.4 178.5-64.9 300.9z" />
+                                </svg>
+                            </div>
+                            <span class="f-18">Epantofi.ro</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 p-1">
+                    <div class="store-item py-3">
+                        <a href="./details/index.html" class="row mb-0 align-center">
+                            <div class="img-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19"
+                                    viewBox="0 0 416 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+                                    <path
+                                        d="M207.9 15.2c.8 4.7 16.1 94.5 16.1 128.8 0 52.3-27.8 89.6-68.9 104.6L168 486.7c.7 13.7-10.2 25.3-24 25.3H80c-13.7 0-24.7-11.5-24-25.3l12.9-238.1C27.7 233.6 0 196.2 0 144 0 109.6 15.3 19.9 16.1 15.2 19.3-5.1 61.4-5.4 64 16.3v141.2c1.3 3.4 15.1 3.2 16 0 1.4-25.3 7.9-139.2 8-141.8 3.3-20.8 44.7-20.8 47.9 0 .2 2.7 6.6 116.5 8 141.8.9 3.2 14.8 3.4 16 0V16.3c2.6-21.6 44.8-21.4 48-1.1zm119.2 285.7l-15 185.1c-1.2 14 9.9 26 23.9 26h56c13.3 0 24-10.7 24-24V24c0-13.2-10.7-24-24-24-82.5 0-221.4 178.5-64.9 300.9z" />
+                                </svg>
+                            </div>
+                            <span class="f-18">Epantofi.ro</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 p-1">
+                    <div class="store-item py-3">
+                        <a href="./details/index.html" class="row mb-0 align-center">
+                            <div class="img-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19"
+                                    viewBox="0 0 416 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+                                    <path
+                                        d="M207.9 15.2c.8 4.7 16.1 94.5 16.1 128.8 0 52.3-27.8 89.6-68.9 104.6L168 486.7c.7 13.7-10.2 25.3-24 25.3H80c-13.7 0-24.7-11.5-24-25.3l12.9-238.1C27.7 233.6 0 196.2 0 144 0 109.6 15.3 19.9 16.1 15.2 19.3-5.1 61.4-5.4 64 16.3v141.2c1.3 3.4 15.1 3.2 16 0 1.4-25.3 7.9-139.2 8-141.8 3.3-20.8 44.7-20.8 47.9 0 .2 2.7 6.6 116.5 8 141.8.9 3.2 14.8 3.4 16 0V16.3c2.6-21.6 44.8-21.4 48-1.1zm119.2 285.7l-15 185.1c-1.2 14 9.9 26 23.9 26h56c13.3 0 24-10.7 24-24V24c0-13.2-10.7-24-24-24-82.5 0-221.4 178.5-64.9 300.9z" />
+                                </svg>
+                            </div>
+                            <span class="f-18">Epantofi.ro</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 p-1">
+                    <div class="store-item py-3">
+                        <a href="./details/index.html" class="row mb-0 align-center">
+                            <div class="img-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19"
+                                    viewBox="0 0 416 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+                                    <path
+                                        d="M207.9 15.2c.8 4.7 16.1 94.5 16.1 128.8 0 52.3-27.8 89.6-68.9 104.6L168 486.7c.7 13.7-10.2 25.3-24 25.3H80c-13.7 0-24.7-11.5-24-25.3l12.9-238.1C27.7 233.6 0 196.2 0 144 0 109.6 15.3 19.9 16.1 15.2 19.3-5.1 61.4-5.4 64 16.3v141.2c1.3 3.4 15.1 3.2 16 0 1.4-25.3 7.9-139.2 8-141.8 3.3-20.8 44.7-20.8 47.9 0 .2 2.7 6.6 116.5 8 141.8.9 3.2 14.8 3.4 16 0V16.3c2.6-21.6 44.8-21.4 48-1.1zm119.2 285.7l-15 185.1c-1.2 14 9.9 26 23.9 26h56c13.3 0 24-10.7 24-24V24c0-13.2-10.7-24-24-24-82.5 0-221.4 178.5-64.9 300.9z" />
+                                </svg>
+                            </div>
+                            <span class="f-18">Epantofi.ro</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 p-1">
+                    <div class="store-item py-3">
+                        <a href="./details/index.html" class="row mb-0 align-center">
+                            <div class="img-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19"
+                                    viewBox="0 0 416 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+                                    <path
+                                        d="M207.9 15.2c.8 4.7 16.1 94.5 16.1 128.8 0 52.3-27.8 89.6-68.9 104.6L168 486.7c.7 13.7-10.2 25.3-24 25.3H80c-13.7 0-24.7-11.5-24-25.3l12.9-238.1C27.7 233.6 0 196.2 0 144 0 109.6 15.3 19.9 16.1 15.2 19.3-5.1 61.4-5.4 64 16.3v141.2c1.3 3.4 15.1 3.2 16 0 1.4-25.3 7.9-139.2 8-141.8 3.3-20.8 44.7-20.8 47.9 0 .2 2.7 6.6 116.5 8 141.8.9 3.2 14.8 3.4 16 0V16.3c2.6-21.6 44.8-21.4 48-1.1zm119.2 285.7l-15 185.1c-1.2 14 9.9 26 23.9 26h56c13.3 0 24-10.7 24-24V24c0-13.2-10.7-24-24-24-82.5 0-221.4 178.5-64.9 300.9z" />
+                                </svg>
+                            </div>
+                            <span class="f-18">Epantofi.ro</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 p-1">
+                    <div class="store-item py-3">
+                        <a href="./details/index.html" class="row mb-0 align-center">
+                            <div class="img-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19"
+                                    viewBox="0 0 416 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+                                    <path
+                                        d="M207.9 15.2c.8 4.7 16.1 94.5 16.1 128.8 0 52.3-27.8 89.6-68.9 104.6L168 486.7c.7 13.7-10.2 25.3-24 25.3H80c-13.7 0-24.7-11.5-24-25.3l12.9-238.1C27.7 233.6 0 196.2 0 144 0 109.6 15.3 19.9 16.1 15.2 19.3-5.1 61.4-5.4 64 16.3v141.2c1.3 3.4 15.1 3.2 16 0 1.4-25.3 7.9-139.2 8-141.8 3.3-20.8 44.7-20.8 47.9 0 .2 2.7 6.6 116.5 8 141.8.9 3.2 14.8 3.4 16 0V16.3c2.6-21.6 44.8-21.4 48-1.1zm119.2 285.7l-15 185.1c-1.2 14 9.9 26 23.9 26h56c13.3 0 24-10.7 24-24V24c0-13.2-10.7-24-24-24-82.5 0-221.4 178.5-64.9 300.9z" />
+                                </svg>
+                            </div>
+                            <span class="f-18">Epantofi.ro</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 p-1">
+                    <div class="store-item py-3">
+                        <a href="./details/index.html" class="row mb-0 align-center">
+                            <div class="img-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19"
+                                    viewBox="0 0 416 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+                                    <path
+                                        d="M207.9 15.2c.8 4.7 16.1 94.5 16.1 128.8 0 52.3-27.8 89.6-68.9 104.6L168 486.7c.7 13.7-10.2 25.3-24 25.3H80c-13.7 0-24.7-11.5-24-25.3l12.9-238.1C27.7 233.6 0 196.2 0 144 0 109.6 15.3 19.9 16.1 15.2 19.3-5.1 61.4-5.4 64 16.3v141.2c1.3 3.4 15.1 3.2 16 0 1.4-25.3 7.9-139.2 8-141.8 3.3-20.8 44.7-20.8 47.9 0 .2 2.7 6.6 116.5 8 141.8.9 3.2 14.8 3.4 16 0V16.3c2.6-21.6 44.8-21.4 48-1.1zm119.2 285.7l-15 185.1c-1.2 14 9.9 26 23.9 26h56c13.3 0 24-10.7 24-24V24c0-13.2-10.7-24-24-24-82.5 0-221.4 178.5-64.9 300.9z" />
+                                </svg>
+                            </div>
+                            <span class="f-18">Epantofi.ro</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 p-1">
+                    <div class="store-item py-3">
+                        <a href="./details/index.html" class="row mb-0 align-center">
+                            <div class="img-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19"
+                                    viewBox="0 0 416 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+                                    <path
+                                        d="M207.9 15.2c.8 4.7 16.1 94.5 16.1 128.8 0 52.3-27.8 89.6-68.9 104.6L168 486.7c.7 13.7-10.2 25.3-24 25.3H80c-13.7 0-24.7-11.5-24-25.3l12.9-238.1C27.7 233.6 0 196.2 0 144 0 109.6 15.3 19.9 16.1 15.2 19.3-5.1 61.4-5.4 64 16.3v141.2c1.3 3.4 15.1 3.2 16 0 1.4-25.3 7.9-139.2 8-141.8 3.3-20.8 44.7-20.8 47.9 0 .2 2.7 6.6 116.5 8 141.8.9 3.2 14.8 3.4 16 0V16.3c2.6-21.6 44.8-21.4 48-1.1zm119.2 285.7l-15 185.1c-1.2 14 9.9 26 23.9 26h56c13.3 0 24-10.7 24-24V24c0-13.2-10.7-24-24-24-82.5 0-221.4 178.5-64.9 300.9z" />
+                                </svg>
+                            </div>
+                            <span class="f-18">Epantofi.ro</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 p-1">
+                    <div class="store-item py-3">
+                        <a href="./details/index.html" class="row mb-0 align-center">
+                            <div class="img-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19"
+                                    viewBox="0 0 416 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+                                    <path
+                                        d="M207.9 15.2c.8 4.7 16.1 94.5 16.1 128.8 0 52.3-27.8 89.6-68.9 104.6L168 486.7c.7 13.7-10.2 25.3-24 25.3H80c-13.7 0-24.7-11.5-24-25.3l12.9-238.1C27.7 233.6 0 196.2 0 144 0 109.6 15.3 19.9 16.1 15.2 19.3-5.1 61.4-5.4 64 16.3v141.2c1.3 3.4 15.1 3.2 16 0 1.4-25.3 7.9-139.2 8-141.8 3.3-20.8 44.7-20.8 47.9 0 .2 2.7 6.6 116.5 8 141.8.9 3.2 14.8 3.4 16 0V16.3c2.6-21.6 44.8-21.4 48-1.1zm119.2 285.7l-15 185.1c-1.2 14 9.9 26 23.9 26h56c13.3 0 24-10.7 24-24V24c0-13.2-10.7-24-24-24-82.5 0-221.4 178.5-64.9 300.9z" />
+                                </svg>
+                            </div>
+                            <span class="f-18">Epantofi.ro</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="row justify-between align-center container mb-0">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href=""><img src="../assets/images/footer_logo.svg" alt="" width="170"></a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="mailto:"><img class="v-center" src="../assets/images/Email.svg" width="25" alt=""> <span class="v-center">info@kuplio.ro</span></a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href=""><img class="v-center" src="../assets/images/Download.svg" width="25" alt="">  <span class="v-center">noutăți prin e-mail</span></a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="" class="mr-1"><img src="../assets/images/Facebook.svg" width="32" alt=""></a>
+                        <a href="" class="mr-1"><img src="../assets/images/Instagram.svg" width="32" alt=""></a>
+                        <a href=""><img src="../assets/images/Youtube.svg" width="32" alt=""></a>
+                    </div>
+                </div>
+                <div class="row c-white">
+                    <div class="col-md-3">
+                        <h3 class="mb-2">Site-urile noastre</h3>
+                        <div class="list">
+                            <ul class="list-style-none">
+                                <li><a href=""><img src="../assets/images/flag_cz.webp" class="mr-1" alt=""> <span>Vasekupony.cz</span></a></li>
+                                <li><a href=""><img src="../assets/images/flag_sk.webp" class="mr-1" alt=""> <span>Vasekupony.sk</span></a></li>
+                                <li><a href=""><img src="../assets/images/flag_hu.webp" class="mr-1" alt=""> <span>KUPLIO.hu</span></a></li>
+                                <li><a href=""><img src="../assets/images/flag_pl.webp" class="mr-1" alt=""> <span>KUPLIO.pl</span></a></li>
+                                <li><a href=""><img src="../assets/images/flag_de.webp" class="mr-1" alt=""> <span>KUPLIO.de</span></a></li>
+                                <li><a href=""><img src="../assets/images/flag_at.webp" class="mr-1" alt=""> <span>KUPLIO.at</span></a></li>
+                                <li><a href=""><img src="../assets/images/flag_bg.webp" class="mr-1" alt=""> <span>KUPLIO.bg</span></a></li>
+                                <li><a href=""><img src="../assets/images/flag_hr.webp" class="mr-1" alt=""> <span>KUPLIO.hr</span></a></li>
+                                <li><a href=""><img src="../assets/images/flag_si.webp" class="mr-1" alt=""> <span>KUPLIO.si</span></a></li>
+                                <li><a href=""><img src="../assets/images/flag_it.webp" class="mr-1" alt=""> <span>KUPLIO.it</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <h3 class="mb-2">Cele mai bune reduceri</h3>
+                        <div class="list">
+                            <ul class="list-style-none">
+                                <li><a href="">TOP 50 vouchere</a></li>
+                                <li><a href="">Coduri de reducere</a></li>
+                                <li><a href="">Reduceri</a></li>
+                                <li><a href="">Lichidări</a></li>
+                                <li><a href="">Cataloage online</a></li>
+                                <li><a href="">Magazine</a></li>
+                                <li><a href="">Branduri</a></li>
+                                <li><a href="">BLACK FRIDAY</a></li>
+                                <li><a href="">Transport gratuit</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <h3 class="mb-2">Pentru parteneri</h3>
+                        <div class="list">
+                            <ul class="list-style-none">
+                                <li><a href="">Reclamă pe KUPLIO.ro</a></li>
+                                <li><a href="">Adăugare magazin</a></li>
+                                <li><a href="">Profilul companiei</a></li>
+                                <li><a href="">Condiții comerciale generale</a></li>
+                                <li><a href="">Contact</a></li>   
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <h3 class="mb-2">Pentru utilizatori</h3>
+                        <div class="list">
+                            <ul class="list-style-none">
+                                <li><a href="">KUPLIO revista</a></li>
+                                <li><a href="">Termeni de utilizare</a></li>
+                                <li><a href="">Protecția datelor personale</a></li>
+                                <li><a href="">Cookies</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <p class="col-md-12 copyright">© 2022 PACHET PLUS s.r.l., Toate drepturile rezervate</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script>
+    var glideMulti1 = new Glide('.glide', {
+        type: 'carousel',
+        perView: 8
+    });
+    glideMulti1.mount();
+</script>
+
+</html>
