@@ -32,15 +32,20 @@
           color: #fff; }
           #black-friday .coupone-filter .filter-sub .filter-subbody .filter-li a:hover span::before {
             color: #fff; }
-        #black-friday .coupone-filter .filter-sub .filter-subbody .filter-li .filter-subbody {
+        #black-friday .coupone-filter .filter-sub .filter-subbody .filter-li a.active {
+          color: #fff; }
+        #black-friday .coupone-filter .filter-sub .filter-subbody .filter-li .sub-menu {
           color: #999;
           padding-left: 30px;
           overflow-y: hidden;
           max-height: inherit;
           margin: 0;
-          padding: 0; }
-          #black-friday .coupone-filter .filter-sub .filter-subbody .filter-li .filter-subbody li {
+          padding: 0;
+          display: none; }
+          #black-friday .coupone-filter .filter-sub .filter-subbody .filter-li .sub-menu li {
             list-style-type: disc; }
+        #black-friday .coupone-filter .filter-sub .filter-subbody .filter-li.active .sub-menu {
+          display: block; }
   @media (max-width: 768px) {
     #black-friday .coupone-filter {
       display: none; } }

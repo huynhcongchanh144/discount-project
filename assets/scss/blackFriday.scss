@@ -46,17 +46,26 @@
                                 }
                             }
                         }
+                        &.active {
+                            color: #fff;
+                        }
                     }
-                    .filter-subbody {
+                    .sub-menu {
                         color: #999;
                         padding-left: 30px;
                         overflow-y: hidden;
                         max-height: inherit;
                         margin: 0;
                         padding: 0;
+                        display: none;
                         li {
                             list-style-type: disc;
                         }
+                    }
+                    &.active {
+                        .sub-menu {
+                            display: block;
+                        }                    
                     }
                 }
             } 
