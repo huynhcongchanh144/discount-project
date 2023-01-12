@@ -44,19 +44,34 @@ if(btnLoginGg) {
                 email: user.email || '',
                 name: user.displayName || '',
                 phone: user.phoneNumber || '',
-                photo: user.photoURL
             }
-            set(ref(database, 'users/' + user.uid), userData);
-            sessionStorage.setItem('userData', JSON.stringify(userData))
+            const userInfo = ref(database, 'users/' + user.uid);
+            onValue(userInfo, async (snapshot) => {
+                const data = snapshot.val();
+                console.log(1)
+                if(data) {
+                    console.log(2)
+                    await sessionStorage.setItem('userData', JSON.stringify(data)) 
+                    window.location.href = '/account/profile.html'     
+                } else {
+                console.log(3)
+                    await set(ref(database, 'users/' + user.uid), userData);    
+                    sessionStorage.setItem('userData', JSON.stringify(userData))    
+                    window.location.href = '/account/profile.html'  
+                }
+            });
         }).catch((error) => {
             // Handle Errors here.
             const errorCode = error.code;
-            const errorMessage = error.message;
-            // The email of the user's account used.
-            const email = error.customData.email;
-            // The AuthCredential type that was used.
-            const credential = GoogleAuthProvider.credentialFromError(error);
-            console.log(errorCode, errorMessage, email, credential)
+            let notify = document.querySelector('.notify-login')
+            notify.textContent = generateMessage(errorCode)
+            notify.style.color = 'red'
+
+            let idInter = setInterval(() => {
+                notify.textContent = ''
+                clearInterval(idInter)
+            }, 3000)
+            
           })
     })
 }
@@ -65,8 +80,6 @@ if(btnRegister) {
     btnRegister.addEventListener("click", () => {
         let email = document.querySelector('.login-container #email').value
         let password = document.querySelector('.login-container #password').value
-        
-        console.log(1)
         createUserWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
             // Signed in
@@ -75,15 +88,21 @@ if(btnRegister) {
                 email: user.email || '',
                 name: user.displayName || '',
                 phone: user.phoneNumber || '',
-                photo: user.photoURL
             }
             set(ref(database, 'users/' + user.uid), userData);
             sessionStorage.setItem('userData', JSON.stringify(userData))
+            window.location.href = '/account/profile.html'
         })
         .catch((error) => {
             const errorCode = error.code;
-            const errorMessage = error.message;
-            // ...
+            let notify = document.querySelector('.notify-login')
+            notify.textContent = generateMessage(errorCode)
+            notify.style.color = 'red'
+
+            let idInter = setInterval(() => {
+                notify.textContent = ''
+                clearInterval(idInter)
+            }, 3000)
         });
     })
 }
@@ -94,15 +113,27 @@ if(btnLogin) {
         let password = document.querySelector('.login-container #password').value
     
         signInWithEmailAndPassword(auth, email, password)
-        .then((userCredential) => {
+        .then(async (userCredential) => {
             // Signed in
             const user = userCredential.user;
-            sessionStorage.setItem('userData', JSON.stringify(user))
+            const userInfo = ref(database, 'users/' + user.uid);
+            await onValue(userInfo, (snapshot) => {
+                const data = snapshot.val();
+                sessionStorage.setItem('userData', JSON.stringify(data)) 
+                window.location.href = "/account/profile.html"
+            });
         })
         .catch((error) => {
             const errorCode = error.code;
-            const errorMessage = error.message;
-            // ...
+            console.log(errorCode)
+            let notify = document.querySelector('.notify-login')
+            notify.textContent = generateMessage(errorCode)
+            notify.style.color = 'red'
+
+            let idInter = setInterval(() => {
+                notify.textContent = ''
+                clearInterval(idInter)
+            }, 3000)
         });
     })
 }
@@ -120,12 +151,25 @@ function changePassword(auth, newPassword) {
 function resetPassword(auth, email) {
     sendPasswordResetEmail(auth, email)
     .then(() => {
-        console.log('send successful')
+        let notify = document.querySelector('.notify-reset')
+        notify.textContent = 'Reset email has been sent!'
+        notify.style.color = 'green'
+
+        let idInter = setInterval(() => {
+            notify.textContent = ''
+            clearInterval(idInter)
+        }, 3000)
     })
     .catch((error) => {
         const errorCode = error.code;
-        const errorMessage = error.message;
-        console.log(errorMessage)
+        let notify = document.querySelector('.notify-reset')
+        notify.textContent = generateMessage(errorCode)
+        notify.style.color = 'red'
+
+        let idInter = setInterval(() => {
+            notify.textContent = ''
+            clearInterval(idInter)
+        }, 3000)
     });
 }
 
@@ -234,10 +278,12 @@ function getUserFromSession() {
 	document.querySelector('.form-profile #currency').value = data.currency || 0
 }
 
-if(sessionStorage.getItem('userData')) {
-	getUserFromSession()
-} else {
-	getCurrentUser(auth)
+if(['/account/profile.html'].includes(window.location.pathname)) {
+    if(sessionStorage.getItem('userData')) {
+        getUserFromSession()
+    } else {
+        getCurrentUser(auth)
+    }
 }
 
 
@@ -247,6 +293,7 @@ if(logoutBtn) {
 		e.preventDefault()
 		signOut(auth).then(() => {
 			sessionStorage.removeItem('userData')
+            window.location.href = '/'
 		}).catch((error) => {
 			console.log(error)
 		});
@@ -269,6 +316,23 @@ function removeDisableField() {
 
 }
 
+function generateMessage(code) {
+    switch (code) {
+        case 'auth/user-not-found':
+            return "Can't find any users with this email !"
+        case 'auth/wrong-password':
+            return "Incorrect password !"
+        case 'auth/weak-password':
+            return "Password so weak !"
+        case 'auth/email-already-in-use': 
+            return 'Email already in use !'
+        default:
+            return "Send request failed!"
+    }
+}
+
 window.onload = e => {
-	removeDisableField()
+	if(['/account/profile.html'].includes(window.location.pathname)) {
+        removeDisableField()
+    }
 }

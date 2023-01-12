@@ -1,6 +1,14 @@
+@media screen and (max-width: 768px) {
+  .account .justify-mb-center {
+    justify-content: center;
+  }
+}
 .account .sidebar {
   height: 100vh;
   background-color: #f4f2eb;
+}
+.account .sidebar .toggle-menu {
+  display: none;
 }
 .account .sidebar ul {
   padding-left: 25%;
@@ -26,6 +34,30 @@
 .account .sidebar ul .nav-item.active svg {
   fill: #b5aad1;
   color: #b5aad1;
+}
+@media screen and (max-width: 768px) {
+  .account .sidebar .logo-header-desktop {
+    display: none;
+  }
+  .account .sidebar {
+    height: auto;
+  }
+  .account .sidebar .toggle-menu {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+  }
+  .account .sidebar ul {
+    display: none;
+  }
+  .account .sidebar ul.show {
+    display: block;
+    padding: 0;
+  }
+  .account .sidebar ul.show .nav-item {
+    padding: 15px 20%;
+    border-top: 1px solid #ddd;
+  }
 }
 .account .contain {
   padding: 40px;
@@ -155,6 +187,15 @@
   background: black;
   color: white;
 }
+@media screen and (max-width: 425px) {
+  .account .contain .tabs-list {
+    border-radius: 0;
+  }
+  .account .contain .tabs-list .tab {
+    border: 1px solid gray;
+    margin: 5px 0;
+  }
+}
 .account .contain .list-items {
   /* Media Queries*/
 }
@@ -163,6 +204,21 @@
   padding: 0;
   margin: 0;
   width: 100%;
+}
+.account .contain .list-items .thead-mobile {
+  display: none;
+}
+@media screen and (max-width: 425px) {
+  .account .contain .list-items .thead-mobile {
+    display: flex;
+    justify-content: space-between;
+  }
+  .account .contain .list-items .thead-mobile .thead span, .account .contain .list-items .thead-mobile .thead svg {
+    vertical-align: middle;
+  }
+  .account .contain .list-items .thead-desktop {
+    display: none;
+  }
 }
 .account .contain .list-items caption {
   font-size: 2em;
@@ -298,6 +354,7 @@
   padding: 10px 0;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .account .contain .statistic .earned {
   position: relative;
@@ -309,6 +366,12 @@
   fill: #6A55A2;
   width: 10px;
 }
+@media screen and (max-width: 370px) {
+  .account .contain .statistic .earned {
+    width: 100%;
+    border: none;
+  }
+}
 .account .contain .statistic .pending {
   position: relative;
   padding: 10px;
@@ -317,6 +380,11 @@
 .account .contain .statistic .pending svg {
   fill: #FA9BBB;
   width: 10px;
+}
+@media screen and (max-width: 370px) {
+  .account .contain .statistic .pending {
+    width: 100%;
+  }
 }
 .account .contain .statistic .pending .term {
   display: block;
@@ -352,5 +420,13 @@
 .account .contain .contain-menu .tabs-list .tab.active {
   color: white;
   background-color: black;
+}
+@media screen and (max-width: 425px) {
+  .account .contain .contain-menu .tabs-list {
+    border-radius: 0;
+  }
+  .account .contain .contain-menu .tabs-list .tab {
+    margin: 5px 0;
+  }
 }
 /*# sourceMappingURL=account.css.map */

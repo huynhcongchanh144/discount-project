@@ -292,6 +292,10 @@ function createModalLogin(e, type) {
                                     <small class="notify">Prin înregistrare, confirmi ca ai citit și accepti "<a href="">Termeni şi conditți</a>"si "<a href="">Politica de
                                         confidentialitate.</a>"</small>
 
+                                    <div>
+                                        <small class="notify-login"></small>
+                                    </div>
+
                                     <div class="submit mt-2">
                                         <button class="btn btn-submit ${type == 'login' ? 'btn-login' : 'btn-signup'}" type="button">${type == 'login' ? 'Login' : 'Register'}</button>
                                     </div>
@@ -362,4 +366,27 @@ function navHighlighter() {
       document.querySelector(".navigation a[href*=" + sectionId + "]").classList.remove("active");
     }
   });
+}
+
+let noAuthMenu = document.querySelector('.no-auth')
+let authMenu = document.querySelector('.auth')
+
+if(noAuthMenu && authMenu) {
+    if(sessionStorage.getItem('userData')) {
+        let userData = JSON.parse(sessionStorage.getItem('userData'))
+        noAuthMenu.classList.add('collapse')
+        document.querySelector('.name-account').textContent = userData.first_name && userData.last_name ?
+            `${userData.first_name} ${userData.last_name}` : userData.name
+    } else {
+        authMenu.classList.add('collapse')
+    }
+}
+
+function goToAccountPage(e) {
+    e.preventDefault()
+    if(sessionStorage.getItem('userData')) {
+        window.location.href = '/account/profile.html'
+    } else {
+        createModalLogin()
+    }
 }

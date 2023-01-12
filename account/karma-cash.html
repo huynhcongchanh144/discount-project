@@ -13,10 +13,25 @@
 
 <body>
     <div class="account">
-        <div class="row mb-0">
+        <div class="row mb-0 justify-mb-center">
             <div class="sidebar col-md-2 p-0">
-                <ul class="list-style-none">
-                    <li class="nav-item">
+                <div class="toggle-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                        viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                        <path
+                            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                    </svg>
+                    <div class="logo-header-mobile">
+                        <a href="../index.html" class="mt-1"><img src="../assets/images/logo.png" width="66"
+                            alt=""></a>
+                    </div>
+                </div>
+                <div class="row justify-center logo-header-desktop">
+                    <a href="../index.html" class="mt-1"><img src="../assets/images/logo.png" width="66"
+                        alt=""></a>
+                </div>
+                <ul class="list-style-none menu">
+                    <li class="nav-item active">
                         <a href="./profile.html">
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
@@ -26,7 +41,7 @@
                             <span>Profile</span>
                         </a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a href="./karma-cash.html">
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
@@ -85,11 +100,11 @@
                                 </div>
 
                                 <div class="row justify-center">
-                                    <button class="btn btn-cashout col-md-8">Cash Out Rewards</button>
+                                    <button class="btn btn-cashout col-xs-8">Cash Out Rewards</button>
                                 </div>
 
                                 <div class="row connect justify-center">
-                                    <button class="btn btn-connect col-md-8">Connect with PayPal</button>
+                                    <button class="btn btn-connect col-xs-8">Connect with PayPal</button>
                                 </div>
                             </div>
                         </div>
@@ -97,8 +112,8 @@
                         <div class="row">
                             <div class="contain-menu col-md-12 p-3">
                                 <div class="row mb-0 tabs-list">
-                                    <button class="tab col-md-6 p-2 active">Item updates</button>
-                                    <button class="tab col-md-6 p-2">Promotions & activity</button>
+                                    <button class="tab col-xs-6 p-2 active">Item updates</button>
+                                    <button class="tab col-xs-6 p-2">Promotions & activity</button>
                                 </div>  
                             </div>
                         </div>
@@ -109,5 +124,5 @@
     </div>
 </body>
 <script src="../scripts/login.js" type="module"></script>
-
+<script src="../scripts/account.js"></script>
 </html>

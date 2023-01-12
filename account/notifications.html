@@ -13,10 +13,25 @@
 
 <body>
     <div class="account">
-        <div class="row mb-0">
+        <div class="row mb-0 justify-mb-center">
             <div class="sidebar col-md-2 p-0">
-                <ul class="list-style-none">
-                    <li class="nav-item">
+                <div class="toggle-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                        viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                        <path
+                            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                    </svg>
+                    <div class="logo-header-mobile">
+                        <a href="../index.html" class="mt-1"><img src="../assets/images/logo.png" width="66"
+                            alt=""></a>
+                    </div>
+                </div>
+                <div class="row justify-center logo-header-desktop">
+                    <a href="../index.html" class="mt-1"><img src="../assets/images/logo.png" width="66"
+                        alt=""></a>
+                </div>
+                <ul class="list-style-none menu">
+                    <li class="nav-item active">
                         <a href="./profile.html">
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
@@ -36,7 +51,7 @@
                             <span>Karma Cash</span>
                         </a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a href="./notifications.html">
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
@@ -52,8 +67,8 @@
                 <div class="row">
                     <div class="col-md-6 py-0">
                         <div class="row tabs-list">
-                            <button class="tab col-md-6 p-2 active">Item updates</button>
-                            <button class="tab col-md-6 p-2">Promotions & activity</button>
+                            <button class="tab col-xs-6 p-2 active">Item updates</button>
+                            <button class="tab col-xs-6 p-2">Promotions & activity</button>
                         </div>
 
                         <div class="row list-items">
@@ -103,21 +118,174 @@
                                 <tbody>
                                     <tr>
                                         <td>Price drop</td>
-                                        <td><input type="checkbox" name="price-email" id="price-email"></td>
-                                        <td><input type="checkbox" name="price-mobile" id="price-mobile"></td>
-                                        <td><input type="checkbox" name="price-web" id="price-web"></td>
+                                        <td>
+                                            <div class="thead-mobile">
+                                                <div class="thead">
+                                                    <svg width="24" xmlns="http://www.w3.org/2000/svg"
+                                                        viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                                        <path
+                                                            d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
+                                                    </svg>
+                                                    <span>Email</span>
+                                                </div>
+                                                <input type="checkbox" name="price-email" id="price-email">
+                                            </div>
+                                            <input class="thead-desktop" type="checkbox" name="price-email" id="price-email">
+                                        </td>
+                                        <td>
+                                            <div class="thead-mobile">
+                                                <div class="thead">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M13 16H11V18H13V16Z" fill="currentColor" />
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M5 4C5 2.89543 5.89543 2 7 2H17C18.1046 2 19 2.89543 19 4V20C19 21.1046 18.1046 22 17 22H7C5.89543 22 5 21.1046 5 20V4ZM7 4H17V20H7L7 4Z"
+                                                            fill="currentColor" />
+                                                    </svg>
+                                                    <span>Mobile Push</span>
+                                                </div>
+                                                <input type="checkbox" name="price-mobile" id="price-mobile">
+                                            </div>
+                                            <input class="thead-desktop" type="checkbox" name="price-mobile" id="price-mobile">
+                                        </td>
+                                        <td>
+                                            <div class="thead-mobile">
+                                                <div class="thead">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M4 8C4.55228 8 5 7.55228 5 7C5 6.44772 4.55228 6 4 6C3.44772 6 3 6.44772 3 7C3 7.55228 3.44772 8 4 8Z"
+                                                            fill="currentColor" />
+                                                        <path
+                                                            d="M8 7C8 7.55228 7.55228 8 7 8C6.44772 8 6 7.55228 6 7C6 6.44772 6.44772 6 7 6C7.55228 6 8 6.44772 8 7Z"
+                                                            fill="currentColor" />
+                                                        <path
+                                                            d="M10 8C10.5523 8 11 7.55228 11 7C11 6.44772 10.5523 6 10 6C9.44771 6 9 6.44772 9 7C9 7.55228 9.44771 8 10 8Z"
+                                                            fill="currentColor" />
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M3 3C1.34315 3 0 4.34315 0 6V18C0 19.6569 1.34315 21 3 21H21C22.6569 21 24 19.6569 24 18V6C24 4.34315 22.6569 3 21 3H3ZM21 5H3C2.44772 5 2 5.44772 2 6V9H22V6C22 5.44772 21.5523 5 21 5ZM2 18V11H22V18C22 18.5523 21.5523 19 21 19H3C2.44772 19 2 18.5523 2 18Z"
+                                                            fill="currentColor" />
+                                                    </svg>
+                                                    <span>Web Push</span>
+                                                </div>
+                                                <input type="checkbox" name="price-web" id="price-web">
+                                            </div>
+                                            <input class="thead-desktop" type="checkbox" name="price-web" id="price-web">
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Back in stock</td>
-                                        <td><input type="checkbox" name="price-email" id="price-email"></td>
-                                        <td><input type="checkbox" name="price-mobile" id="price-mobile"></td>
-                                        <td><input type="checkbox" name="price-web" id="price-web"></td>
+                                        <td>
+                                            <div class="thead-mobile">
+                                                <div class="thead">
+                                                    <svg width="24" xmlns="http://www.w3.org/2000/svg"
+                                                        viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                                        <path
+                                                            d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
+                                                    </svg>
+                                                    <span>Email</span>
+                                                </div>
+                                                <input type="checkbox" name="price-email" id="price-email">
+                                            </div>
+                                            <input class="thead-desktop" type="checkbox" name="price-email" id="price-email">
+                                        </td>
+                                        <td>
+                                            <div class="thead-mobile">
+                                                <div class="thead">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M13 16H11V18H13V16Z" fill="currentColor" />
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M5 4C5 2.89543 5.89543 2 7 2H17C18.1046 2 19 2.89543 19 4V20C19 21.1046 18.1046 22 17 22H7C5.89543 22 5 21.1046 5 20V4ZM7 4H17V20H7L7 4Z"
+                                                            fill="currentColor" />
+                                                    </svg>
+                                                    <span>Mobile Push</span>
+                                                </div>
+                                                <input type="checkbox" name="price-mobile" id="price-mobile">
+                                            </div>
+                                            <input class="thead-desktop" type="checkbox" name="price-mobile" id="price-mobile">
+                                        </td>
+                                        <td>
+                                            <div class="thead-mobile">
+                                                <div class="thead">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M4 8C4.55228 8 5 7.55228 5 7C5 6.44772 4.55228 6 4 6C3.44772 6 3 6.44772 3 7C3 7.55228 3.44772 8 4 8Z"
+                                                            fill="currentColor" />
+                                                        <path
+                                                            d="M8 7C8 7.55228 7.55228 8 7 8C6.44772 8 6 7.55228 6 7C6 6.44772 6.44772 6 7 6C7.55228 6 8 6.44772 8 7Z"
+                                                            fill="currentColor" />
+                                                        <path
+                                                            d="M10 8C10.5523 8 11 7.55228 11 7C11 6.44772 10.5523 6 10 6C9.44771 6 9 6.44772 9 7C9 7.55228 9.44771 8 10 8Z"
+                                                            fill="currentColor" />
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M3 3C1.34315 3 0 4.34315 0 6V18C0 19.6569 1.34315 21 3 21H21C22.6569 21 24 19.6569 24 18V6C24 4.34315 22.6569 3 21 3H3ZM21 5H3C2.44772 5 2 5.44772 2 6V9H22V6C22 5.44772 21.5523 5 21 5ZM2 18V11H22V18C22 18.5523 21.5523 19 21 19H3C2.44772 19 2 18.5523 2 18Z"
+                                                            fill="currentColor" />
+                                                    </svg>
+                                                    <span>Web Push</span>
+                                                </div>
+                                                <input type="checkbox" name="price-web" id="price-web">
+                                            </div>
+                                            <input class="thead-desktop" type="checkbox" name="price-web" id="price-web">
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Low in stock</td>
-                                        <td><input type="checkbox" name="price-email" id="price-email"></td>
-                                        <td><input type="checkbox" name="price-mobile" id="price-mobile"></td>
-                                        <td><input type="checkbox" name="price-web" id="price-web"></td>
+                                        <td>
+                                            <div class="thead-mobile">
+                                                <div class="thead">
+                                                    <svg width="24" xmlns="http://www.w3.org/2000/svg"
+                                                        viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                                        <path
+                                                            d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
+                                                    </svg>
+                                                    <span>Email</span>
+                                                </div>
+                                                <input type="checkbox" name="price-email" id="price-email">
+                                            </div>
+                                            <input class="thead-desktop" type="checkbox" name="price-email" id="price-email">
+                                        </td>
+                                        <td>
+                                            <div class="thead-mobile">
+                                                <div class="thead">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M13 16H11V18H13V16Z" fill="currentColor" />
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M5 4C5 2.89543 5.89543 2 7 2H17C18.1046 2 19 2.89543 19 4V20C19 21.1046 18.1046 22 17 22H7C5.89543 22 5 21.1046 5 20V4ZM7 4H17V20H7L7 4Z"
+                                                            fill="currentColor" />
+                                                    </svg>
+                                                    <span>Mobile Push</span>
+                                                </div>
+                                                <input type="checkbox" name="price-mobile" id="price-mobile">
+                                            </div>
+                                            <input class="thead-desktop" type="checkbox" name="price-mobile" id="price-mobile">
+                                        </td>
+                                        <td>
+                                            <div class="thead-mobile">
+                                                <div class="thead">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M4 8C4.55228 8 5 7.55228 5 7C5 6.44772 4.55228 6 4 6C3.44772 6 3 6.44772 3 7C3 7.55228 3.44772 8 4 8Z"
+                                                            fill="currentColor" />
+                                                        <path
+                                                            d="M8 7C8 7.55228 7.55228 8 7 8C6.44772 8 6 7.55228 6 7C6 6.44772 6.44772 6 7 6C7.55228 6 8 6.44772 8 7Z"
+                                                            fill="currentColor" />
+                                                        <path
+                                                            d="M10 8C10.5523 8 11 7.55228 11 7C11 6.44772 10.5523 6 10 6C9.44771 6 9 6.44772 9 7C9 7.55228 9.44771 8 10 8Z"
+                                                            fill="currentColor" />
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M3 3C1.34315 3 0 4.34315 0 6V18C0 19.6569 1.34315 21 3 21H21C22.6569 21 24 19.6569 24 18V6C24 4.34315 22.6569 3 21 3H3ZM21 5H3C2.44772 5 2 5.44772 2 6V9H22V6C22 5.44772 21.5523 5 21 5ZM2 18V11H22V18C22 18.5523 21.5523 19 21 19H3C2.44772 19 2 18.5523 2 18Z"
+                                                            fill="currentColor" />
+                                                    </svg>
+                                                    <span>Web Push</span>
+                                                </div>
+                                                <input type="checkbox" name="price-web" id="price-web">
+                                            </div>
+                                            <input class="thead-desktop" type="checkbox" name="price-web" id="price-web">
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -129,5 +297,5 @@
     </div>
 </body>
 <script src="../scripts/login.js" type="module"></script>
-
+<script src="../scripts/account.js"></script>
 </html>

@@ -45,12 +45,16 @@
                                     <img src="./assets/images/user-large-solid.svg" alt="" width="25"
                                         class="mr-1">
                                     <div class="col-md-10 p-0">
-                                        <div class="row mb-0">
+                                        <div class="row mb-0 no-auth">
                                             <a href="" onclick="createModalLogin(event, 'login')" class="f-bold link-h-decoration">Sign in</a>
                                             <small>
                                                 Already earning rewards with Tipli? <a href=""
                                                     class="link-h-decoration" onclick="createModalLogin(event, 'signup')">Sign up</a>
                                             </small>
+                                        </div>
+                                        <div class="row mb-0 auth">
+                                            <a href="" onclick="goToAccountPage(event)" class="f-bold link-h-decoration">My Account</a>
+                                            <small class="name-account col-xs-12"></small>
                                         </div>
                                     </div>
                                 </div>
