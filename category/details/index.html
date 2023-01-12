@@ -44,10 +44,10 @@
                                             class="mr-1">
                                         <div class="col-md-10 p-0">
                                             <div class="row mb-0">
-                                                <a href="" onclick="createModalLogin(event)" class="f-bold link-h-decoration">Sign in</a>
+                                                <a href="" onclick="createModalLogin(event, 'login')" class="f-bold link-h-decoration">Sign in</a>
                                                 <small>
                                                     Already earning rewards with Tipli? <a href=""
-                                                        class="link-h-decoration" onclick="createModalLogin(event)">Sign in</a>
+                                                        class="link-h-decoration" onclick="createModalLogin(event, 'signup')">Sign up</a>
                                                 </small>
                                             </div>
                                         </div>
@@ -160,7 +160,7 @@
 
         <div class="body-content magazin category-detail">
             <div class="row justify-between container mb-0">
-                <div class="col-md-3 px-4 position-relative">
+                <div class="col-md-3 px-4 px-sm-0 position-relative">
                     <div class="sidebar-store">
                         <h3>14 Valid promotions</h3>
                         <div class="filter-checked row justify-between">
@@ -231,31 +231,35 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-9">
+                <div class="col-md-9 px-sm-0">
                     <div class="title f-30 mb-1">Cupoane, vouchere si promotii alimente și băuturi</div>
                     <div class="list-vouchers">
                         <div class="voucher mb-1" id="voucher-1">
                             <div class="row mb-0 align-center short-detail bg-white" onclick="createModal('voucher-1')">
-                                <div class="imgwrap">
+                                <div class="imgwrap col-xs-2">
                                     <img src="https://discount.ro/wp-content/uploads/2021/03/Alcooldiscount.ro-220x220.jpg"
                                         width="108" alt="">
                                     <div class="wrap-discount">5%</div>
                                 </div>
-                                <div class="desc col-md-7">
-                                    <div class="status row mb-0 f-12 c-red mb-7">
-                                        <b>Cod</b> <img src="../../assets/images/circle-check-solid.svg" width="10"
-                                            alt="" class="mx-1">
-                                        <span class="c-gray"><b>Verificat</b></span>
+                                <div class="col-xs-10 desc-voucher">
+                                    <div class="row mb-0">
+                                        <div class="desc col-xs-8">
+                                            <div class="status row mb-0 f-12 c-red mb-7">
+                                                <b>Cod</b> <img src="../../assets/images/circle-check-solid.svg" width="10"
+                                                    alt="" class="mx-1">
+                                                <span class="c-gray"><b>Verificat</b></span>
+                                            </div>
+                                            <div class="row mb-0 f-18">
+                                                <b class="title-voucher">Cod reducere Epantofi 100 lei extra la produsele cu pret intreg</b>
+                                            </div>
+                                        </div>
+                                        <div class="code col-xs-4">
+                                            <button class="btn btn-getcode" code="TESTCODE123">
+                                                <span>Afișează COD</span>
+                                                ...00RO
+                                            </button>
+                                        </div>
                                     </div>
-                                    <div class="row mb-0 f-18">
-                                        <b class="title-voucher">Cod reducere Epantofi 100 lei extra la produsele cu pret intreg</b>
-                                    </div>
-                                </div>
-                                <div class="code col-md-3">
-                                    <button class="btn btn-getcode" code="TESTCODE123">
-                                        <span>Afișează COD</span>
-                                        ...00RO
-                                    </button>
                                 </div>
                             </div>
                             <div class="row mb-0 px-3 py-1 justify-between align-center view-details">
@@ -313,26 +317,30 @@
 
                         <div class="voucher mb-1" id="voucher-2">
                             <div class="row mb-0 align-center short-detail bg-white" onclick="createModal('voucher-2')">
-                                <div class="imgwrap">
+                                <div class="imgwrap col-xs-2">
                                     <img src="https://discount.ro/wp-content/uploads/2021/03/Alcooldiscount.ro-220x220.jpg"
                                         width="108" alt="">
                                     <div class="wrap-discount">5%</div>
                                 </div>
-                                <div class="desc col-md-7">
-                                    <div class="status row mb-0 f-12 c-red mb-7">
-                                        <b>Cod</b> <img src="../../assets/images/circle-check-solid.svg" width="10"
-                                            alt="" class="mx-1">
-                                        <span class="c-gray"><b>Verificat</b></span>
+                                <div class="col-xs-10 desc-voucher">
+                                    <div class="row mb-0">
+                                        <div class="desc col-xs-8">
+                                            <div class="status row mb-0 f-12 c-red mb-7">
+                                                <b>Cod</b> <img src="../../assets/images/circle-check-solid.svg" width="10"
+                                                    alt="" class="mx-1">
+                                                <span class="c-gray"><b>Verificat</b></span>
+                                            </div>
+                                            <div class="row mb-0 f-18">
+                                                <b class="title-voucher">Cod reducere Epantofi 100 lei extra la produsele cu pret intreg</b>
+                                            </div>
+                                        </div>
+                                        <div class="code col-xs-4">
+                                            <button class="btn btn-getcode" code="TESTCODE123">
+                                                <span>Afișează COD</span>
+                                                ...00RO
+                                            </button>
+                                        </div>
                                     </div>
-                                    <div class="row mb-0 f-18">
-                                        <b class="title-voucher">Cod reducere Epantofi 100 lei extra la produsele cu pret intreg</b>
-                                    </div>
-                                </div>
-                                <div class="code col-md-3">
-                                    <button class="btn btn-getcode" code="TESTCODE123">
-                                        <span>Afișează COD</span>
-                                        ...00RO
-                                    </button>
                                 </div>
                             </div>
                             <div class="row mb-0 px-3 py-1 justify-between align-center view-details">
@@ -390,22 +398,26 @@
 
                         <div class="voucher mb-1">
                             <div class="row mb-0 align-center short-detail bg-white">
-                                <h1 class="c-red f-40 col-md-2 t-center px-2 py-1 nocode-img">%</h1>
-                                <div class="desc col-md-7">
-                                    <div class="status row mb-0 f-12 c-red mb-7">
-                                        <b>Reducere</b> <img src="../../assets/images/circle-check-solid.svg" width="10"
-                                            alt="" class="mx-1">
-                                        <span class="c-gray"><b>Verificat</b></span>
+                                <h1 class="c-red f-40 col-xs-2 t-center px-2 py-1 nocode-img">%</h1>
+                                <div class="col-xs-10 desc-voucher">
+                                    <div class="row mb-0">
+                                        <div class="desc col-xs-8">
+                                            <div class="status row mb-0 f-12 c-red mb-7">
+                                                <b>Reducere</b> <img src="../../assets/images/circle-check-solid.svg" width="10"
+                                                    alt="" class="mx-1">
+                                                <span class="c-gray"><b>Verificat</b></span>
+                                            </div>
+                                            <div class="row mb-0 f-18">
+                                                <b class="title-voucher">Cod reducere Epantofi 100 lei extra la produsele cu pret intreg</b>
+                                            </div>
+                                        </div>
+                                        <div class="code col-xs-4">
+                                            <button class="btn btn-nocode">
+                                                <span>Vezi oferta</span>
+                                                <img src="../../assets/images/chevron-right-solid.svg" width="12" alt="">
+                                            </button>
+                                        </div>
                                     </div>
-                                    <div class="row mb-0 f-18">
-                                        <b>Cod reducere Epantofi 100 lei extra la produsele cu pret intreg</b>
-                                    </div>
-                                </div>
-                                <div class="code col-md-3">
-                                    <button class="btn btn-nocode">
-                                        <span>Vezi oferta</span>
-                                        <img src="../../assets/images/chevron-right-solid.svg" width="12" alt="">
-                                    </button>
                                 </div>
                             </div>
                             <div class="row mb-0 px-3 py-1 justify-between align-center view-details">
@@ -461,32 +473,36 @@
                             </div>
                         </div>
 
-                        <div class="voucher mb-1" id="voucher-3">
-                            <div class="row mb-0 align-center short-detail bg-white" onclick="createModal('voucher-3')">
-                                <div class="imgwrap">
+                        <div class="voucher mb-1" id="voucher-4">
+                            <div class="row mb-0 align-center short-detail bg-white" onclick="createModal('voucher-4')">
+                                <div class="imgwrap col-xs-2">
                                     <img src="https://discount.ro/wp-content/uploads/2021/03/Alcooldiscount.ro-220x220.jpg"
                                         width="108" alt="">
                                     <div class="wrap-discount">5%</div>
                                 </div>
-                                <div class="desc col-md-7">
-                                    <div class="status row mb-0 f-12 c-red mb-7">
-                                        <b>Cod</b> <img src="../../assets/images/circle-check-solid.svg" width="10"
-                                            alt="" class="mx-1">
-                                        <span class="c-gray"><b>Verificat</b></span>
+                                <div class="col-xs-10 desc-voucher">
+                                    <div class="row mb-0">
+                                        <div class="desc col-xs-8">
+                                            <div class="status row mb-0 f-12 c-red mb-7">
+                                                <b>Cod</b> <img src="../../assets/images/circle-check-solid.svg" width="10"
+                                                    alt="" class="mx-1">
+                                                <span class="c-gray"><b>Verificat</b></span>
+                                            </div>
+                                            <div class="row mb-0 f-18">
+                                                <b class="title-voucher">Cod reducere Epantofi 100 lei extra la produsele cu pret intreg</b>
+                                            </div>
+                                        </div>
+                                        <div class="code col-xs-4">
+                                            <button class="btn btn-getcode" code="TESTCODE123">
+                                                <span>Afișează COD</span>
+                                                ...00RO
+                                            </button>
+                                        </div>
                                     </div>
-                                    <div class="row mb-0 f-18">
-                                        <b class="title-voucher">Cod reducere Epantofi 100 lei extra la produsele cu pret intreg</b>
-                                    </div>
-                                </div>
-                                <div class="code col-md-3">
-                                    <button class="btn btn-getcode" code="TESTCODE123">
-                                        <span>Afișează COD</span>
-                                        ...00RO
-                                    </button>
                                 </div>
                             </div>
                             <div class="row mb-0 px-3 py-1 justify-between align-center view-details">
-                                <button class="btn-none-border btn-view btn-view-up collapse-btn" target="voucher-description-3">
+                                <button class="btn-none-border btn-view btn-view-up collapse-btn" target="voucher-description-4">
                                     <span>View Details</span>
                                 </button>
                                 <div>
@@ -506,25 +522,25 @@
                                     </button>
                                 </div>
                             </div>
-                            <div class="more-details bg-white px-3 collapse" id="voucher-description-3">
+                            <div class="more-details bg-white px-3 collapse" id="voucher-description-4">
                                 <div class="row mb-0 tabs">
                                     <button class="btn-none-border mr-2 px-0 py-2 f-16 tab active"
-                                        target="detail-voucher-description-3">
+                                        target="detail-voucher-description-4">
                                         Detail
                                     </button>
-                                    <button class="btn-none-border py-2 px-0 f-16 tab" target="comment-voucher-description-1">
+                                    <button class="btn-none-border py-2 px-0 f-16 tab" target="comment-voucher-description-4">
                                         Comment
                                     </button>
                                 </div>
                                 <div class="row mb-0 content py-3 justify-center">
-                                    <div id="detail-voucher-description-3">
+                                    <div id="detail-voucher-description-4">
                                         <ul class="list-style-none">
                                             <li><b>Expira:</b> 01.12.2023</li>
                                             <li><b>Detail:</b> Beneficiază de reducere pentru achiziționarea de produse
                                                 nereduse din noua colecție, în cazul comenzilor de peste 999 lei.</li>
                                         </ul>
                                     </div>
-                                    <div id="comment-voucher-description-3" class="col-md-10 collapse">
+                                    <div id="comment-voucher-description-4" class="col-md-10 collapse">
                                         <form action="" class="row mb-0 justify-center">
                                             <input type="text" placeholder="Name" class="col-md-10 p-1 mb-1">
                                             <textarea name="" cols="30" rows="3" class="col-md-10 p-1"

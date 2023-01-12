@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/account.css">
+</head>
+
+<body>
+    <div class="account">
+        <div class="row mb-0">
+            <div class="sidebar col-md-2 p-0">
+                <ul class="list-style-none">
+                    <li class="nav-item active">
+                        <a href="./profile.html">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                <path
+                                    d="M256 352C293.2 352 319.2 334.5 334.4 318.1C343.3 308.4 358.5 307.7 368.3 316.7C378 325.7 378.6 340.9 369.6 350.6C347.7 374.5 309.7 400 256 400C202.3 400 164.3 374.5 142.4 350.6C133.4 340.9 133.1 325.7 143.7 316.7C153.5 307.7 168.7 308.4 177.6 318.1C192.8 334.5 218.8 352 256 352zM208.4 208C208.4 225.7 194 240 176.4 240C158.7 240 144.4 225.7 144.4 208C144.4 190.3 158.7 176 176.4 176C194 176 208.4 190.3 208.4 208zM304.4 208C304.4 190.3 318.7 176 336.4 176C354 176 368.4 190.3 368.4 208C368.4 225.7 354 240 336.4 240C318.7 240 304.4 225.7 304.4 208zM512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM256 48C141.1 48 48 141.1 48 256C48 370.9 141.1 464 256 464C370.9 464 464 370.9 464 256C464 141.1 370.9 48 256 48z" />
+                            </svg>
+                            <span>Profile</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./karma-cash.html">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                <path
+                                    d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V192c0-35.3-28.7-64-64-64H80c-8.8 0-16-7.2-16-16s7.2-16 16-16H448c17.7 0 32-14.3 32-32s-14.3-32-32-32H64zM416 336c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z" />
+                            </svg>
+                            <span>Karma Cash</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./notifications.html">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                <path
+                                    d="M256 32V49.88C328.5 61.39 384 124.2 384 200V233.4C384 278.8 399.5 322.9 427.8 358.4L442.7 377C448.5 384.2 449.6 394.1 445.6 402.4C441.6 410.7 433.2 416 424 416H24C14.77 416 6.365 410.7 2.369 402.4C-1.628 394.1-.504 384.2 5.26 377L20.17 358.4C48.54 322.9 64 278.8 64 233.4V200C64 124.2 119.5 61.39 192 49.88V32C192 14.33 206.3 0 224 0C241.7 0 256 14.33 256 32V32zM216 96C158.6 96 112 142.6 112 200V233.4C112 281.3 98.12 328 72.31 368H375.7C349.9 328 336 281.3 336 233.4V200C336 142.6 289.4 96 232 96H216zM288 448C288 464.1 281.3 481.3 269.3 493.3C257.3 505.3 240.1 512 224 512C207 512 190.7 505.3 178.7 493.3C166.7 481.3 160 464.1 160 448H288z" />
+                            </svg>
+                            <span>Notifications</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contain col-xs-10">
+                <div class="row">
+                    <div class="col-md-6 py-0">
+                        <h3 class="p-1">Edit Your Account</h3>
+                        <form action="" class="form-profile">
+                            <div class="row">
+                                <div class="input-group col-md-12 p-1">
+                                    <fieldset>
+                                        <legend>Email</legend>
+                                        <input type="email" name="email" id="email" disabled>
+                                    </fieldset>
+                                </div>
+                                <a href="" class="p-1 reset-link">Reset Password</a>
+                            </div>
+                            <div class="row">
+                                <div class="input-group col-md-12 p-1">
+                                    <fieldset>
+                                        <legend>Phone Number</legend>
+                                        <input type="text" name="phone" id="phone" disabled>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-group border-input col-md-6 p-1">
+                                    <fieldset>
+                                        <input type="text" name="first_name" id="first_name" placeholder="First Name" disabled>
+                                    </fieldset>
+                                </div>
+                                <div class="input-group col-md-6 p-1">
+                                    <fieldset>
+                                        <input type="text" name="last_name" id="last_name" placeholder="Last Name" disabled>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-group border-input col-md-4 p-1">
+                                    <fieldset>
+                                        <select name="year" id="year" disabled>
+                                            <option value="0">Year</option>
+                                            <option value="1940">1940</option>
+                                            <option value="1941">1941</option>
+                                            <option value="1942">1942</option>
+                                            <option value="1943">1943</option>
+                                            <option value="1944">1944</option>
+                                            <option value="1945">1945</option>
+                                            <option value="1946">1946</option>
+                                            <option value="1947">1947</option>
+                                            <option value="1948">1948</option>
+                                            <option value="1949">1949</option>
+                                            <option value="1950">1950</option>
+                                            <option value="1951">1951</option>
+                                            <option value="1952">1952</option>
+                                            <option value="1953">1953</option>
+                                            <option value="1954">1954</option>
+                                            <option value="1955">1955</option>
+                                            <option value="1956">1956</option>
+                                            <option value="1957">1957</option>
+                                            <option value="1958">1958</option>
+                                            <option value="1959">1959</option>
+                                            <option value="1960">1960</option>
+                                            <option value="1961">1961</option>
+                                            <option value="1962">1962</option>
+                                            <option value="1963">1963</option>
+                                            <option value="1964">1964</option>
+                                            <option value="1965">1965</option>
+                                            <option value="1966">1966</option>
+                                            <option value="1967">1967</option>
+                                            <option value="1968">1968</option>
+                                            <option value="1969">1969</option>
+                                            <option value="1970">1970</option>
+                                            <option value="1971">1971</option>
+                                            <option value="1972">1972</option>
+                                            <option value="1973">1973</option>
+                                            <option value="1974">1974</option>
+                                            <option value="1975">1975</option>
+                                            <option value="1976">1976</option>
+                                            <option value="1977">1977</option>
+                                            <option value="1978">1978</option>
+                                            <option value="1979">1979</option>
+                                            <option value="1980">1980</option>
+                                            <option value="1981">1981</option>
+                                            <option value="1982">1982</option>
+                                            <option value="1983">1983</option>
+                                            <option value="1984">1984</option>
+                                            <option value="1985">1985</option>
+                                            <option value="1986">1986</option>
+                                            <option value="1987">1987</option>
+                                            <option value="1988">1988</option>
+                                            <option value="1989">1989</option>
+                                            <option value="1990">1990</option>
+                                            <option value="1991">1991</option>
+                                            <option value="1992">1992</option>
+                                            <option value="1993">1993</option>
+                                            <option value="1994">1994</option>
+                                            <option value="1995">1995</option>
+                                            <option value="1996">1996</option>
+                                            <option value="1997">1997</option>
+                                            <option value="1998">1998</option>
+                                            <option value="1999">1999</option>
+                                            <option value="2000">2000</option>
+                                            <option value="2001">2001</option>
+                                            <option value="2002">2002</option>
+                                            <option value="2003">2003</option>
+                                            <option value="2004">2004</option>
+                                            <option value="2005">2005</option>
+                                            <option value="2006">2006</option>
+                                            <option value="2007">2007</option>
+                                            <option value="2008">2008</option>
+                                            <option value="2009">2009</option>
+                                            <option value="2010">2010</option>
+                                            <option value="2011">2011</option>
+                                            <option value="2012">2012</option>
+                                            <option value="2013">2013</option>
+                                            <option value="2014">2014</option>
+                                            <option value="2015">2015</option>
+                                            <option value="2016">2016</option>
+                                            <option value="2017">2017</option>
+                                            <option value="2018">2018</option>
+                                            <option value="2019">2019</option>
+                                            <option value="2020">2020</option>
+                                            <option value="2021">2021</option>
+                                            <option value="2022">2022</option>
+                                            <option value="2023">2023</option>
+                                        </select>
+                                    </fieldset>
+                                </div>
+                                <div class="input-group border-input col-md-4 p-1">
+                                    <fieldset>
+                                        <select name="month" id="month" disabled>
+                                            <option value="0">Month</option>
+                                            <option value="1">January</option>
+                                            <option value="2">February</option>
+                                            <option value="3">March</option>
+                                            <option value="4">April</option>
+                                            <option value="5">May</option>
+                                            <option value="6">June</option>
+                                            <option value="7">July</option>
+                                            <option value="8">August</option>
+                                            <option value="9">September</option>
+                                            <option value="10">October</option>
+                                            <option value="11">November</option>
+                                            <option value="12">December</option>
+                                        </select>
+                                    </fieldset>
+                                </div>
+                                <div class="input-group border-input col-md-4 p-1">
+                                    <fieldset>
+                                        <select name="day" id="day" disabled>
+                                            <option value="0">Day</option>
+                                            <option value="1">01</option>
+                                            <option value="2">02</option>
+                                            <option value="3">03</option>
+                                            <option value="4">04</option>
+                                            <option value="5">05</option>
+                                            <option value="6">06</option>
+                                            <option value="7">07</option>
+                                            <option value="8">08</option>
+                                            <option value="9">09</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>
+                                            <option value="24">24</option>
+                                            <option value="25">25</option>
+                                            <option value="26">26</option>
+                                            <option value="27">27</option>
+                                            <option value="28">28</option>
+                                            <option value="29">29</option>
+                                            <option value="30">30</option>
+                                            <option value="31">31</option>
+                                        </select>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-group border-input col-md-12 p-1">
+                                    <fieldset>
+                                        <select name="gender" id="gender" disabled>
+                                            <option value="0">Gender</option>
+                                            <option value="male">Male</option>
+                                            <option value="female">female</option>
+                                        </select>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-group col-md-6 p-1">
+                                    <fieldset>
+                                        <legend>Language</legend>
+                                        <select name="language" id="language" disabled>
+                                            <option value="0">Language</option>
+                                            <option value="af">Afrikaans</option>
+                                            <option value="sq">Albanian - shqip</option>
+                                            <option value="am">Amharic - አማርኛ</option>
+                                            <option value="ar">Arabic - العربية</option>
+                                            <option value="an">Aragonese - aragonés</option>
+                                            <option value="hy">Armenian - հայերեն</option>
+                                            <option value="ast">Asturian - asturianu</option>
+                                            <option value="az">Azerbaijani - azərbaycan dili</option>
+                                            <option value="eu">Basque - euskara</option>
+                                            <option value="be">Belarusian - беларуская</option>
+                                            <option value="bn">Bengali - বাংলা</option>
+                                            <option value="bs">Bosnian - bosanski</option>
+                                            <option value="br">Breton - brezhoneg</option>
+                                            <option value="bg">Bulgarian - български</option>
+                                            <option value="ca">Catalan - català</option>
+                                            <option value="ckb">Central Kurdish - کوردی (دەستنوسی عەرەبی)</option>
+                                            <option value="zh">Chinese - 中文</option>
+                                            <option value="zh-HK">Chinese (Hong Kong) - 中文（香港）</option>
+                                            <option value="zh-CN">Chinese (Simplified) - 中文（简体）</option>
+                                            <option value="zh-TW">Chinese (Traditional) - 中文（繁體）</option>
+                                            <option value="co">Corsican</option>
+                                            <option value="hr">Croatian - hrvatski</option>
+                                            <option value="cs">Czech - čeština</option>
+                                            <option value="da">Danish - dansk</option>
+                                            <option value="nl">Dutch - Nederlands</option>
+                                            <option value="en">English</option>
+                                            <option value="en-AU">English (Australia)</option>
+                                            <option value="en-CA">English (Canada)</option>
+                                            <option value="en-IN">English (India)</option>
+                                            <option value="en-NZ">English (New Zealand)</option>
+                                            <option value="en-ZA">English (South Africa)</option>
+                                            <option value="en-GB">English (United Kingdom)</option>
+                                            <option value="en-US">English (United States)</option>
+                                            <option value="eo">Esperanto - esperanto</option>
+                                            <option value="et">Estonian - eesti</option>
+                                            <option value="fo">Faroese - føroyskt</option>
+                                            <option value="fil">Filipino</option>
+                                            <option value="fi">Finnish - suomi</option>
+                                            <option value="fr">French - français</option>
+                                            <option value="fr-CA">French (Canada) - français (Canada)</option>
+                                            <option value="fr-FR">French (France) - français (France)</option>
+                                            <option value="fr-CH">French (Switzerland) - français (Suisse)</option>
+                                            <option value="gl">Galician - galego</option>
+                                            <option value="ka">Georgian - ქართული</option>
+                                            <option value="de">German - Deutsch</option>
+                                            <option value="de-AT">German (Austria) - Deutsch (Österreich)</option>
+                                            <option value="de-DE">German (Germany) - Deutsch (Deutschland)</option>
+                                            <option value="de-LI">German (Liechtenstein) - Deutsch (Liechtenstein)
+                                            </option>
+                                            <option value="de-CH">German (Switzerland) - Deutsch (Schweiz)</option>
+                                            <option value="el">Greek - Ελληνικά</option>
+                                            <option value="gn">Guarani</option>
+                                            <option value="gu">Gujarati - ગુજરાતી</option>
+                                            <option value="ha">Hausa</option>
+                                            <option value="haw">Hawaiian - ʻŌlelo Hawaiʻi</option>
+                                            <option value="he">Hebrew - עברית</option>
+                                            <option value="hi">Hindi - हिन्दी</option>
+                                            <option value="hu">Hungarian - magyar</option>
+                                            <option value="is">Icelandic - íslenska</option>
+                                            <option value="id">Indonesian - Indonesia</option>
+                                            <option value="ia">Interlingua</option>
+                                            <option value="ga">Irish - Gaeilge</option>
+                                            <option value="it">Italian - italiano</option>
+                                            <option value="it-IT">Italian (Italy) - italiano (Italia)</option>
+                                            <option value="it-CH">Italian (Switzerland) - italiano (Svizzera)</option>
+                                            <option value="ja">Japanese - 日本語</option>
+                                            <option value="kn">Kannada - ಕನ್ನಡ</option>
+                                            <option value="kk">Kazakh - қазақ тілі</option>
+                                            <option value="km">Khmer - ខ្មែរ</option>
+                                            <option value="ko">Korean - 한국어</option>
+                                            <option value="ku">Kurdish - Kurdî</option>
+                                            <option value="ky">Kyrgyz - кыргызча</option>
+                                            <option value="lo">Lao - ລາວ</option>
+                                            <option value="la">Latin</option>
+                                            <option value="lv">Latvian - latviešu</option>
+                                            <option value="ln">Lingala - lingála</option>
+                                            <option value="lt">Lithuanian - lietuvių</option>
+                                            <option value="mk">Macedonian - македонски</option>
+                                            <option value="ms">Malay - Bahasa Melayu</option>
+                                            <option value="ml">Malayalam - മലയാളം</option>
+                                            <option value="mt">Maltese - Malti</option>
+                                            <option value="mr">Marathi - मराठी</option>
+                                            <option value="mn">Mongolian - монгол</option>
+                                            <option value="ne">Nepali - नेपाली</option>
+                                            <option value="no">Norwegian - norsk</option>
+                                            <option value="nb">Norwegian Bokmål - norsk bokmål</option>
+                                            <option value="nn">Norwegian Nynorsk - nynorsk</option>
+                                            <option value="oc">Occitan</option>
+                                            <option value="or">Oriya - ଓଡ଼ିଆ</option>
+                                            <option value="om">Oromo - Oromoo</option>
+                                            <option value="ps">Pashto - پښتو</option>
+                                            <option value="fa">Persian - فارسی</option>
+                                            <option value="pl">Polish - polski</option>
+                                            <option value="pt">Portuguese - português</option>
+                                            <option value="pt-BR">Portuguese (Brazil) - português (Brasil)</option>
+                                            <option value="pt-PT">Portuguese (Portugal) - português (Portugal)</option>
+                                            <option value="pa">Punjabi - ਪੰਜਾਬੀ</option>
+                                            <option value="qu">Quechua</option>
+                                            <option value="ro">Romanian - română</option>
+                                            <option value="mo">Romanian (Moldova) - română (Moldova)</option>
+                                            <option value="rm">Romansh - rumantsch</option>
+                                            <option value="ru">Russian - русский</option>
+                                            <option value="gd">Scottish Gaelic</option>
+                                            <option value="sr">Serbian - српски</option>
+                                            <option value="sh">Serbo-Croatian - Srpskohrvatski</option>
+                                            <option value="sn">Shona - chiShona</option>
+                                            <option value="sd">Sindhi</option>
+                                            <option value="si">Sinhala - සිංහල</option>
+                                            <option value="sk">Slovak - slovenčina</option>
+                                            <option value="sl">Slovenian - slovenščina</option>
+                                            <option value="so">Somali - Soomaali</option>
+                                            <option value="st">Southern Sotho</option>
+                                            <option value="es">Spanish - español</option>
+                                            <option value="es-AR">Spanish (Argentina) - español (Argentina)</option>
+                                            <option value="es-419">Spanish (Latin America) - español (Latinoamérica)
+                                            </option>
+                                            <option value="es-MX">Spanish (Mexico) - español (México)</option>
+                                            <option value="es-ES">Spanish (Spain) - español (España)</option>
+                                            <option value="es-US">Spanish (United States) - español (Estados Unidos)
+                                            </option>
+                                            <option value="su">Sundanese</option>
+                                            <option value="sw">Swahili - Kiswahili</option>
+                                            <option value="sv">Swedish - svenska</option>
+                                            <option value="tg">Tajik - тоҷикӣ</option>
+                                            <option value="ta">Tamil - தமிழ்</option>
+                                            <option value="tt">Tatar</option>
+                                            <option value="te">Telugu - తెలుగు</option>
+                                            <option value="th">Thai - ไทย</option>
+                                            <option value="ti">Tigrinya - ትግርኛ</option>
+                                            <option value="to">Tongan - lea fakatonga</option>
+                                            <option value="tr">Turkish - Türkçe</option>
+                                            <option value="tk">Turkmen</option>
+                                            <option value="tw">Twi</option>
+                                            <option value="uk">Ukrainian - українська</option>
+                                            <option value="ur">Urdu - اردو</option>
+                                            <option value="ug">Uyghur</option>
+                                            <option value="uz">Uzbek - o‘zbek</option>
+                                            <option value="vi">Vietnamese - Tiếng Việt</option>
+                                            <option value="wa">Walloon - wa</option>
+                                            <option value="cy">Welsh - Cymraeg</option>
+                                            <option value="fy">Western Frisian</option>
+                                            <option value="xh">Xhosa</option>
+                                            <option value="yi">Yiddish</option>
+                                            <option value="yo">Yoruba - Èdè Yorùbá</option>
+                                            <option value="zu">Zulu - isiZulu</option>
+                                        </select>
+                                    </fieldset>
+                                </div>
+                                <div class="input-group col-md-6 p-1">
+                                    <fieldset>
+                                        <legend>Currency</legend>
+                                        <select name="currency" id="currency" disabled>
+                                            <option value="0">Currency</option>
+                                            <option value="AFN">Afghan Afghani</option>
+                                            <option value="ALL">Albanian Lek</option>
+                                            <option value="DZD">Algerian Dinar</option>
+                                            <option value="AOA">Angolan Kwanza</option>
+                                            <option value="ARS">Argentine Peso</option>
+                                            <option value="AMD">Armenian Dram</option>
+                                            <option value="AWG">Aruban Florin</option>
+                                            <option value="AUD">Australian Dollar</option>
+                                            <option value="AZN">Azerbaijani Manat</option>
+                                            <option value="BSD">Bahamian Dollar</option>
+                                            <option value="BHD">Bahraini Dinar</option>
+                                            <option value="BDT">Bangladeshi Taka</option>
+                                            <option value="BBD">Barbadian Dollar</option>
+                                            <option value="BYR">Belarusian Ruble</option>
+                                            <option value="BEF">Belgian Franc</option>
+                                            <option value="BZD">Belize Dollar</option>
+                                            <option value="BMD">Bermudan Dollar</option>
+                                            <option value="BTN">Bhutanese Ngultrum</option>
+                                            <option value="BTC">Bitcoin</option>
+                                            <option value="BOB">Bolivian Boliviano</option>
+                                            <option value="BAM">Bosnia-Herzegovina Convertible Mark</option>
+                                            <option value="BWP">Botswanan Pula</option>
+                                            <option value="BRL">Brazilian Real</option>
+                                            <option value="GBP">British Pound Sterling</option>
+                                            <option value="BND">Brunei Dollar</option>
+                                            <option value="BGN">Bulgarian Lev</option>
+                                            <option value="BIF">Burundian Franc</option>
+                                            <option value="KHR">Cambodian Riel</option>
+                                            <option value="CAD">Canadian Dollar</option>
+                                            <option value="CVE">Cape Verdean Escudo</option>
+                                            <option value="KYD">Cayman Islands Dollar</option>
+                                            <option value="XOF">CFA Franc BCEAO</option>
+                                            <option value="XAF">CFA Franc BEAC</option>
+                                            <option value="XPF">CFP Franc</option>
+                                            <option value="CLP">Chilean Peso</option>
+                                            <option value="CNY">Chinese Yuan</option>
+                                            <option value="COP">Colombian Peso</option>
+                                            <option value="KMF">Comorian Franc</option>
+                                            <option value="CDF">Congolese Franc</option>
+                                            <option value="CRC">Costa Rican ColÃ³n</option>
+                                            <option value="HRK">Croatian Kuna</option>
+                                            <option value="CUC">Cuban Convertible Peso</option>
+                                            <option value="CZK">Czech Republic Koruna</option>
+                                            <option value="DKK">Danish Krone</option>
+                                            <option value="DJF">Djiboutian Franc</option>
+                                            <option value="DOP">Dominican Peso</option>
+                                            <option value="XCD">East Caribbean Dollar</option>
+                                            <option value="EGP">Egyptian Pound</option>
+                                            <option value="ERN">Eritrean Nakfa</option>
+                                            <option value="EEK">Estonian Kroon</option>
+                                            <option value="ETB">Ethiopian Birr</option>
+                                            <option value="EUR">Euro</option>
+                                            <option value="FKP">Falkland Islands Pound</option>
+                                            <option value="FJD">Fijian Dollar</option>
+                                            <option value="GMD">Gambian Dalasi</option>
+                                            <option value="GEL">Georgian Lari</option>
+                                            <option value="DEM">German Mark</option>
+                                            <option value="GHS">Ghanaian Cedi</option>
+                                            <option value="GIP">Gibraltar Pound</option>
+                                            <option value="GRD">Greek Drachma</option>
+                                            <option value="GTQ">Guatemalan Quetzal</option>
+                                            <option value="GNF">Guinean Franc</option>
+                                            <option value="GYD">Guyanaese Dollar</option>
+                                            <option value="HTG">Haitian Gourde</option>
+                                            <option value="HNL">Honduran Lempira</option>
+                                            <option value="HKD">Hong Kong Dollar</option>
+                                            <option value="HUF">Hungarian Forint</option>
+                                            <option value="ISK">Icelandic KrÃ³na</option>
+                                            <option value="INR">Indian Rupee</option>
+                                            <option value="IDR">Indonesian Rupiah</option>
+                                            <option value="IRR">Iranian Rial</option>
+                                            <option value="IQD">Iraqi Dinar</option>
+                                            <option value="ILS">Israeli New Sheqel</option>
+                                            <option value="ITL">Italian Lira</option>
+                                            <option value="JMD">Jamaican Dollar</option>
+                                            <option value="JPY">Japanese Yen</option>
+                                            <option value="JOD">Jordanian Dinar</option>
+                                            <option value="KZT">Kazakhstani Tenge</option>
+                                            <option value="KES">Kenyan Shilling</option>
+                                            <option value="KWD">Kuwaiti Dinar</option>
+                                            <option value="KGS">Kyrgystani Som</option>
+                                            <option value="LAK">Laotian Kip</option>
+                                            <option value="LVL">Latvian Lats</option>
+                                            <option value="LBP">Lebanese Pound</option>
+                                            <option value="LSL">Lesotho Loti</option>
+                                            <option value="LRD">Liberian Dollar</option>
+                                            <option value="LYD">Libyan Dinar</option>
+                                            <option value="LTL">Lithuanian Litas</option>
+                                            <option value="MOP">Macanese Pataca</option>
+                                            <option value="MKD">Macedonian Denar</option>
+                                            <option value="MGA">Malagasy Ariary</option>
+                                            <option value="MWK">Malawian Kwacha</option>
+                                            <option value="MYR">Malaysian Ringgit</option>
+                                            <option value="MVR">Maldivian Rufiyaa</option>
+                                            <option value="MRO">Mauritanian Ouguiya</option>
+                                            <option value="MUR">Mauritian Rupee</option>
+                                            <option value="MXN">Mexican Peso</option>
+                                            <option value="MDL">Moldovan Leu</option>
+                                            <option value="MNT">Mongolian Tugrik</option>
+                                            <option value="MAD">Moroccan Dirham</option>
+                                            <option value="MZM">Mozambican Metical</option>
+                                            <option value="MMK">Myanmar Kyat</option>
+                                            <option value="NAD">Namibian Dollar</option>
+                                            <option value="NPR">Nepalese Rupee</option>
+                                            <option value="ANG">Netherlands Antillean Guilder</option>
+                                            <option value="TWD">New Taiwan Dollar</option>
+                                            <option value="NZD">New Zealand Dollar</option>
+                                            <option value="NIO">Nicaraguan CÃ³rdoba</option>
+                                            <option value="NGN">Nigerian Naira</option>
+                                            <option value="KPW">North Korean Won</option>
+                                            <option value="NOK">Norwegian Krone</option>
+                                            <option value="OMR">Omani Rial</option>
+                                            <option value="PKR">Pakistani Rupee</option>
+                                            <option value="PAB">Panamanian Balboa</option>
+                                            <option value="PGK">Papua New Guinean Kina</option>
+                                            <option value="PYG">Paraguayan Guarani</option>
+                                            <option value="PEN">Peruvian Nuevo Sol</option>
+                                            <option value="PHP">Philippine Peso</option>
+                                            <option value="PLN">Polish Zloty</option>
+                                            <option value="QAR">Qatari Rial</option>
+                                            <option value="RON">Romanian Leu</option>
+                                            <option value="RUB">Russian Ruble</option>
+                                            <option value="RWF">Rwandan Franc</option>
+                                            <option value="SVC">Salvadoran ColÃ³n</option>
+                                            <option value="WST">Samoan Tala</option>
+                                            <option value="SAR">Saudi Riyal</option>
+                                            <option value="RSD">Serbian Dinar</option>
+                                            <option value="SCR">Seychellois Rupee</option>
+                                            <option value="SLL">Sierra Leonean Leone</option>
+                                            <option value="SGD">Singapore Dollar</option>
+                                            <option value="SKK">Slovak Koruna</option>
+                                            <option value="SBD">Solomon Islands Dollar</option>
+                                            <option value="SOS">Somali Shilling</option>
+                                            <option value="ZAR">South African Rand</option>
+                                            <option value="KRW">South Korean Won</option>
+                                            <option value="XDR">Special Drawing Rights</option>
+                                            <option value="LKR">Sri Lankan Rupee</option>
+                                            <option value="SHP">St. Helena Pound</option>
+                                            <option value="SDG">Sudanese Pound</option>
+                                            <option value="SRD">Surinamese Dollar</option>
+                                            <option value="SZL">Swazi Lilangeni</option>
+                                            <option value="SEK">Swedish Krona</option>
+                                            <option value="CHF">Swiss Franc</option>
+                                            <option value="SYP">Syrian Pound</option>
+                                            <option value="STD">São Tomé and Príncipe Dobra</option>
+                                            <option value="TJS">Tajikistani Somoni</option>
+                                            <option value="TZS">Tanzanian Shilling</option>
+                                            <option value="THB">Thai Baht</option>
+                                            <option value="TOP">Tongan pa'anga</option>
+                                            <option value="TTD">Trinidad & Tobago Dollar</option>
+                                            <option value="TND">Tunisian Dinar</option>
+                                            <option value="TRY">Turkish Lira</option>
+                                            <option value="TMT">Turkmenistani Manat</option>
+                                            <option value="UGX">Ugandan Shilling</option>
+                                            <option value="UAH">Ukrainian Hryvnia</option>
+                                            <option value="AED">United Arab Emirates Dirham</option>
+                                            <option value="UYU">Uruguayan Peso</option>
+                                            <option value="USD">US Dollar</option>
+                                            <option value="UZS">Uzbekistan Som</option>
+                                            <option value="VUV">Vanuatu Vatu</option>
+                                            <option value="VEF">Venezuelan BolÃ­var</option>
+                                            <option value="VND">Vietnamese Dong</option>
+                                            <option value="YER">Yemeni Rial</option>
+                                            <option value="ZMK">Zambian Kwacha</option>
+                                        </select>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="row justify-center footer-form">
+                                <div class="col-md-12 p-1">
+                                    <button type="button" class="btn btn-save w-100 loading">Save</button>
+                                </div>
+                                <small class="mt-2"></small>
+                            </div>
+                        </form>
+
+                        <div class="row">
+                            <div class="col-md-12 t-center">
+                                <a href="" class="logout">
+                                    <span>Log out</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        class="icon icon-tabler icon-tabler-arrow-right" width="24" height="24"
+                                        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        <line x1="13" y1="18" x2="19" y2="12"></line>
+                                        <line x1="13" y1="6" x2="19" y2="12"></line>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../scripts/login.js" type="module"></script>
+
+</html>

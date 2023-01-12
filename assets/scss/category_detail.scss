@@ -112,6 +112,7 @@
         padding: .7rem;
         img {
             border-radius: 7px;
+            max-width: 100%;
         }
 
         .wrap-discount {
@@ -123,6 +124,10 @@
             text-align: center;
             font-size: 14px;
         }
+    }
+
+    .title-voucher {
+        line-height: 23px;
     }
 
     .nocode-img {
@@ -157,5 +162,29 @@
 
   p {
         line-height: 1.5;
+    }
+
+    @media screen and (max-width: 768px) {
+        .voucher {
+            .imgwrap, .nocode-img {
+                width: calc(100% * (4 / 12));
+                padding: 0.5rem;
+            }
+    
+            .desc-voucher {
+                width: calc(100% * (8/12));
+                padding: 0.5rem;
+                .desc, .code {
+                    width: 100%;
+                    padding-left: 0;
+                    padding-right: 0
+                }
+    
+                .title-voucher {
+                    font-weight: 400;
+                    font-size: 16px;
+                }
+            }
+        }
     }
 }
