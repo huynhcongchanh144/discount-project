@@ -12,8 +12,11 @@ const renderSlider = (element ,  perView  = 2, perViewDesktop  = 3, perViewTable
           1024: {
             perView: perViewTablet,
           },
-          768: {
+          769: {
             perView: perViewMobile,
+          },
+          540: {
+            perView: 1
           }
         }
       }

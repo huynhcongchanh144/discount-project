@@ -224,6 +224,7 @@ header {
         @media (min-width: 998px) {
             display: none;
         }
+        z-index: 100;
         position: absolute;
         display: none;
         width: 100%;
@@ -260,14 +261,15 @@ header {
         &.show {
             display: block;
         }
-        position: fixed;
+        position: absolute;
         display: none;
         width: 100%;
         height: calc(100vh - 62px);
         top: 60px;
         background-color: #fff;
-        padding-top: 44px;
+        // padding-top: 44px;
         overflow: scroll;
+        z-index: 100;
         .navbar-secondary-container {
             position: relative;
             display: block;
@@ -275,7 +277,7 @@ header {
             max-width: 1180px;
             margin: auto;
             .navbar-mobile-back-link {
-                position: fixed;
+                // position: absolute;
                 display: flex;
                 align-items: center;
                 width: 100%;

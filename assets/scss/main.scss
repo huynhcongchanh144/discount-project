@@ -23,6 +23,11 @@ ul {
 		padding: 5px 0;
 	}
 }
+@media screen and (max-width: 575px) {
+    .lazy {
+        width: 100%;
+    }
+}
 .bg-gray-light {
 	background-color: #fafafa;
 	position: relative;

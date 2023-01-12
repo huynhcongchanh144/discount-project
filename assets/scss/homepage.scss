@@ -6,6 +6,11 @@
         border-radius: 0;
     }
     .glide-trending , .glide-popular {
+        @media screen and (max-height: 769px) {
+            .glide__slide {
+                padding: 3rem
+            }
+        }
         position: relative;
         .item-link {
             position: relative;
@@ -94,7 +99,7 @@
         .gslide-arrows {
             position: absolute;
             top: 45% !important;
-            width: 100%;
+            width: calc(100% - 2em);
             button {
                 border: 0;
                 background-color:    transparent;
@@ -110,9 +115,9 @@
                     }
                 }
 
-                &.glide__arrow--left {
-                    left: -30px !important;
-                }
+                // &.glide__arrow--left {
+                //     left: -30px !important;
+                // }
 
                 &.glide__arrow--right {
                     right: 0px !important;
@@ -141,7 +146,7 @@
         .gslide-arrows {
             position: absolute;
             top: 40% !important;
-            width: 100%;
+            width: calc(100% - 2em);
             button {
                 border: 0;
                 background-color:    transparent;
@@ -159,12 +164,12 @@
                     }
                 }
 
-                &.glide__arrow--left {
-                    left: -30px !important;
-                }
+                // &.glide__arrow--left {
+                //     left: -30px !important;
+                // }
 
                 &.glide__arrow--right {
-                    right: 0px !important;
+                    right: 0 !important;
                 }
             }
         }
@@ -396,7 +401,7 @@
         .gslide-arrows {
             position: absolute;
             top: 45% !important;
-            width: 100%;
+            width: calc(100% - 2em);
             button {
                 border: 0;
                 background-color:    transparent;
@@ -414,16 +419,16 @@
                     }
                 }
 
-                &.glide__arrow--left {
-                    left: -8% !important;
-                }
+                // &.glide__arrow--left {
+                //     left: -8% !important;
+                // }
 
-                &.glide__arrow--right {
-                    right: -5% !important;
-                    @media (max-width: 768px) {
-                        right: -2% !important;
-                    }
-                }
+                // &.glide__arrow--right {
+                //     right: -5% !important;
+                //     @media (max-width: 768px) {
+                //         right: -2% !important;
+                //     }
+                // }
             }
         }
     }
@@ -472,6 +477,17 @@
                     }
                 }
             }
+        }
+    }
+
+    @media screen and (max-width: 540px) {
+        h2 {
+            font-size: 20px
+        }
+
+        .btn-yellow {
+            font-size: 14px;
+            text-align: center;
         }
     }
 }

@@ -9,9 +9,9 @@
     max-width: 540px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .container {
-    max-width: 768px;
+    max-width: 769px;
   }
 }
 @media (min-width: 992px) {
@@ -75,7 +75,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .col-sm-1 {
     width: calc(100% * (1 / 12));
   }
@@ -108,7 +108,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .col-sm-2 {
     width: calc(100% * (2 / 12));
   }
@@ -145,7 +145,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .col-sm-3 {
     width: calc(100% * (3 / 12));
   }
@@ -178,7 +178,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .col-sm-4 {
     width: calc(100% * (4 / 12));
   }
@@ -211,7 +211,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .col-sm-5 {
     width: calc(100% * (5 / 12));
   }
@@ -244,7 +244,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .col-sm-6 {
     width: calc(100% * (6 / 12));
   }
@@ -277,7 +277,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .col-sm-7 {
     width: calc(100% * (7 / 12));
   }
@@ -310,7 +310,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .col-sm-8 {
     width: calc(100% * (8 / 12));
   }
@@ -347,7 +347,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .col-sm-9 {
     width: calc(100% * (9 / 12));
   }
@@ -380,7 +380,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .col-sm-10 {
     width: calc(100% * (10 / 12));
   }
@@ -413,7 +413,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .col-sm-11 {
     width: calc(100% * (11 / 12));
   }
@@ -447,7 +447,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .col-sm-12 {
     width: calc(100% * (12 / 12));
   }
@@ -489,7 +489,7 @@
     padding-right: 2.2rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
     .px-sm-0 {
         padding-left: 0;
         padding-right: 0;
