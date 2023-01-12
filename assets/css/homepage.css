@@ -2,434 +2,358 @@
   background-color: #deaed4;
   color: #cc2a36;
   border: none;
-  border-radius: 0;
-}
+  border-radius: 0; }
 .homepage .glide-trending, .homepage .glide-popular {
-  position: relative;
-}
-@media screen and (max-height: 769px) {
-  .homepage .glide-trending .glide__slide, .homepage .glide-popular .glide__slide {
-    padding: 3rem;
-  }
-}
-.homepage .glide-trending .item-link, .homepage .glide-popular .item-link {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  border-radius: 8px;
-  border: thin solid rgb(224, 224, 224);
-  overflow: hidden;
-  box-shadow: rgba(0, 0, 0, 0.05) 0 3px 8px;
-  color: rgb(50, 50, 50);
-}
-.homepage .glide-trending .item-link .item-image img, .homepage .glide-popular .item-link .item-image img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  width: 100%;
-}
-.homepage .glide-trending .item-link .item-info, .homepage .glide-popular .item-link .item-info {
-  font-size: 0.875rem;
-  padding: 8px 16px 12px 7px;
-  flex: 1 1 auto;
-}
-.homepage .glide-trending .item-link .item-info .small-image, .homepage .glide-popular .item-link .item-info .small-image {
-  width: 85px;
-  height: 85px;
-  border-radius: 6px;
-  overflow: hidden;
-  background: #fff;
-  display: block;
-  box-shadow: 0px 1px 2px rgb(0, 0, 0);
-  padding: 0 !important;
-}
-.homepage .glide-trending .item-link .item-info .small-image img, .homepage .glide-popular .item-link .item-info .small-image img {
-  max-width: 100%;
-  height: auto;
-  width: 100%;
-}
-.homepage .glide-trending .item-link .item-info .promoinfo, .homepage .glide-popular .item-link .item-info .promoinfo {
-  position: relative;
-}
-.homepage .glide-trending .item-link .item-info .promoinfo .shop-name, .homepage .glide-popular .item-link .item-info .promoinfo .shop-name {
-  font-size: 12px;
-  margin-bottom: 8px;
-  text-transform: uppercase;
-  color: rgb(117, 117, 117);
-  display: flex;
-  align-items: center;
-}
-.homepage .glide-trending .item-link .item-info .promoinfo .shop-name .shop-name-title, .homepage .glide-popular .item-link .item-info .promoinfo .shop-name .shop-name-title {
-  color: #cc2a36 !important;
-  font-weight: bold !important;
-}
-.homepage .glide-trending .item-link .item-info .promoinfo .shop-info, .homepage .glide-popular .item-link .item-info .promoinfo .shop-info {
-  flex: 1 0 auto;
-  color: #323232;
-  min-height: auto;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-  overflow: hidden;
-  line-height: 1.5em;
-  font-size: 16px;
-  font-weight: 500;
-  margin-bottom: 10px;
-}
-.homepage .glide-trending .item-link .item-info .promoinfo .shop-desc, .homepage .glide-popular .item-link .item-info .promoinfo .shop-desc {
-  color: #323232;
-}
-@media (min-width: 576px) {
-  .homepage .glide-trending .item-link .item-info, .homepage .glide-popular .item-link .item-info {
-    padding: 8px 16px 12px;
-  }
-}
-.homepage .glide-trending .gslide-arrows, .homepage .glide-popular .gslide-arrows {
-  position: absolute;
-  top: 45% !important;
-  width: calc(100% - 2em);
-}
-.homepage .glide-trending .gslide-arrows button, .homepage .glide-popular .gslide-arrows button {
-  border: 0;
-  background-color: transparent;
-}
-.homepage .glide-trending .gslide-arrows button.glide__arrow, .homepage .glide-popular .gslide-arrows button.glide__arrow {
-  position: absolute;
-  z-index: 99;
-  width: 42px !important;
-  text-align: center;
-  height: 42px !important;
-  cursor: pointer;
-}
-.homepage .glide-trending .gslide-arrows button.glide__arrow .icon, .homepage .glide-popular .gslide-arrows button.glide__arrow .icon {
-  font-size: 30px;
-}
-.homepage .glide-trending .gslide-arrows button.glide__arrow--right, .homepage .glide-popular .gslide-arrows button.glide__arrow--right {
-  right: 0px !important;
-}
+  position: relative; }
+  @media screen and (max-width: 769px) {
+    .homepage .glide-trending .glide__slide, .homepage .glide-popular .glide__slide {
+      padding: 3rem; } }
+  .homepage .glide-trending .item-link, .homepage .glide-popular .item-link {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 8px;
+    border: thin solid #e0e0e0;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.05) 0 3px 8px;
+    color: #323232; }
+    .homepage .glide-trending .item-link .item-image img, .homepage .glide-popular .item-link .item-image img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      width: 100%; }
+    .homepage .glide-trending .item-link .item-info, .homepage .glide-popular .item-link .item-info {
+      font-size: 0.875rem;
+      padding: 8px 16px 12px 7px;
+      flex: 1 1 auto; }
+      .homepage .glide-trending .item-link .item-info .small-image, .homepage .glide-popular .item-link .item-info .small-image {
+        width: 85px;
+        height: 85px;
+        border-radius: 6px;
+        overflow: hidden;
+        background: #fff;
+        display: block;
+        box-shadow: 0px 1px 2px black;
+        padding: 0 !important; }
+        .homepage .glide-trending .item-link .item-info .small-image img, .homepage .glide-popular .item-link .item-info .small-image img {
+          max-width: 100%;
+          height: auto;
+          width: 100%; }
+      .homepage .glide-trending .item-link .item-info .promoinfo, .homepage .glide-popular .item-link .item-info .promoinfo {
+        position: relative; }
+        .homepage .glide-trending .item-link .item-info .promoinfo .shop-name, .homepage .glide-popular .item-link .item-info .promoinfo .shop-name {
+          font-size: 12px;
+          margin-bottom: 8px;
+          text-transform: uppercase;
+          color: #757575;
+          display: flex;
+          align-items: center; }
+          .homepage .glide-trending .item-link .item-info .promoinfo .shop-name .shop-name-title, .homepage .glide-popular .item-link .item-info .promoinfo .shop-name .shop-name-title {
+            color: #cc2a36 !important;
+            font-weight: bold !important; }
+        .homepage .glide-trending .item-link .item-info .promoinfo .shop-info, .homepage .glide-popular .item-link .item-info .promoinfo .shop-info {
+          flex: 1 0 auto;
+          color: #323232;
+          min-height: auto;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 3;
+          overflow: hidden;
+          line-height: 1.5em;
+          font-size: 16px;
+          font-weight: 500;
+          margin-bottom: 10px; }
+        .homepage .glide-trending .item-link .item-info .promoinfo .shop-desc, .homepage .glide-popular .item-link .item-info .promoinfo .shop-desc {
+          color: #323232; }
+      @media (min-width: 576px) {
+        .homepage .glide-trending .item-link .item-info, .homepage .glide-popular .item-link .item-info {
+          padding: 8px 16px 12px; } }
+  .homepage .glide-trending .gslide-arrows, .homepage .glide-popular .gslide-arrows {
+    position: absolute;
+    top: 45% !important;
+    width: calc(100% - 2em); }
+    .homepage .glide-trending .gslide-arrows button, .homepage .glide-popular .gslide-arrows button {
+      border: 0;
+      background-color: transparent; }
+      .homepage .glide-trending .gslide-arrows button.glide__arrow, .homepage .glide-popular .gslide-arrows button.glide__arrow {
+        position: absolute;
+        z-index: 99;
+        width: 42px !important;
+        text-align: center;
+        height: 42px !important;
+        cursor: pointer; }
+        .homepage .glide-trending .gslide-arrows button.glide__arrow .icon, .homepage .glide-popular .gslide-arrows button.glide__arrow .icon {
+          font-size: 30px; }
+      .homepage .glide-trending .gslide-arrows button.glide__arrow--right, .homepage .glide-popular .gslide-arrows button.glide__arrow--right {
+        right: 0px !important; }
 .homepage .glide-logo {
-  position: relative;
-}
-.homepage .glide-logo .magazin-item {
-  text-decoration: none;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #ddd;
-  width: 100px;
-  height: 100px;
-  background-color: #f9f9f9;
-}
-.homepage .glide-logo .gslide-arrows {
-  position: absolute;
-  top: 40% !important;
-  width: calc(100% - 2em);
-}
-.homepage .glide-logo .gslide-arrows button {
-  border: 0;
-  background-color: transparent;
-}
-.homepage .glide-logo .gslide-arrows button.glide__arrow {
-  position: absolute;
-  z-index: 99;
-  width: 42px !important;
-  text-align: center;
-  height: 42px !important;
-  cursor: pointer;
-  background-color: #deaed4;
-}
-.homepage .glide-logo .gslide-arrows button.glide__arrow .icon {
-  font-size: 20px;
-  color: red;
-}
-.homepage .glide-logo .gslide-arrows button.glide__arrow--right {
-  right: 0 !important;
-}
+  position: relative; }
+  .homepage .glide-logo .magazin-item {
+    text-decoration: none;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    width: 100px;
+    height: 100px;
+    background-color: #f9f9f9; }
+  .homepage .glide-logo .gslide-arrows {
+    position: absolute;
+    top: 40% !important;
+    width: calc(100% - 2em); }
+    .homepage .glide-logo .gslide-arrows button {
+      border: 0;
+      background-color: transparent; }
+      .homepage .glide-logo .gslide-arrows button.glide__arrow {
+        position: absolute;
+        z-index: 99;
+        width: 42px !important;
+        text-align: center;
+        height: 42px !important;
+        cursor: pointer;
+        background-color: #deaed4; }
+        .homepage .glide-logo .gslide-arrows button.glide__arrow .icon {
+          font-size: 20px;
+          color: red; }
+      .homepage .glide-logo .gslide-arrows button.glide__arrow--right {
+        right: 0 !important; }
 .homepage .lastest-coupons .coffee-card {
   box-sizing: border-box;
+  -webkit-box-flex: 1;
   flex-grow: 1;
   flex-wrap: wrap;
   display: flex;
-  margin: -3px 0;
-}
-.homepage .lastest-coupons .coffee-card .open-offer {
-  cursor: pointer;
-}
-.homepage .lastest-coupons .coffee-card .open-offer .product-link {
-  position: relative;
-  display: flex;
-  background-color: white;
-  border-radius: 8px;
-  border: thin solid rgb(224, 224, 224);
-  overflow: hidden;
-  box-shadow: rgba(0, 0, 0, 0.05) 0 3px 8px;
-  color: rgb(50, 50, 50);
-  flex-direction: row;
-}
-.homepage .lastest-coupons .coffee-card .open-offer .product-link:hover {
-  box-shadow: 0 0 10px #d8d8d8;
-}
-.homepage .lastest-coupons .coffee-card .open-offer .product-link .product-img {
-  position: relative;
-  background: #fff;
-  flex: 0 0 auto;
-  width: 25%;
-  min-width: 75px;
-  height: 100%;
-  padding-bottom: 10%;
-  border-right: 1px solid rgba(112, 112, 112, 0.17);
-  border-bottom: none;
-}
-.homepage .lastest-coupons .coffee-card .open-offer .product-link .product-img img {
-  max-height: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  padding: 10px;
-  transform: translate(-50%, -50%);
-  z-index: 0;
-  display: block;
-}
-@media (min-width: 576px) {
-  .homepage .lastest-coupons .coffee-card .open-offer .product-link .product-img {
-    width: 100%;
-    min-width: auto;
-    height: auto;
-    padding-bottom: 45%;
-    border-right: none;
-    border-bottom: 1px solid rgba(112, 112, 112, 0.17);
-  }
-}
-.homepage .lastest-coupons .coffee-card .open-offer .product-link .product-info {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  font-size: 0.875rem;
-  padding: 8px 16px 12px 7px;
-  flex: 1 1 auto;
-}
-.homepage .lastest-coupons .coffee-card .open-offer .product-link .product-info .shop-name {
-  font-size: 12px;
-  margin-bottom: 8px;
-  text-transform: uppercase;
-  color: rgb(117, 117, 117);
-  display: flex;
-  align-items: center;
-}
-.homepage .lastest-coupons .coffee-card .open-offer .product-link .product-info .shop-name .shop-name-title {
-  color: #cc2a36;
-  font-weight: 600;
-}
-.homepage .lastest-coupons .coffee-card .open-offer .product-link .product-info .shop-name .shop-name-title .verified-offer {
-  color: #788691;
-  text-transform: initial;
-}
-.homepage .lastest-coupons .coffee-card .open-offer .product-link .product-info .shop-name .shop-title {
-  display: none;
-}
-.homepage .lastest-coupons .coffee-card .open-offer .product-link .product-info .shop-info {
-  flex: 1 0 auto;
-  min-height: 48px;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-  overflow: hidden;
-  line-height: 1.5em;
-  font-size: 16px;
-  font-weight: 500;
-  margin-bottom: 10px;
-}
-.homepage .lastest-coupons .coffee-card .open-offer .product-link .product-info .coupone-button {
-  margin: 10px 0 !important;
-  text-align: center;
-}
-.homepage .lastest-coupons .coffee-card .open-offer .product-link .product-info .coupone-button .btn-getcode {
-  position: relative;
-  border-radius: 1000px;
-  font-weight: 600;
-  text-align: center;
-  cursor: pointer;
-  text-align: right;
-  transition: background-color 500ms ease 0s, border-color 500ms ease 0s, color 500ms ease 0s, fill 500ms ease 0s;
-  -webkit-font-smoothing: antialiased;
-  border: thin solid #eee;
-  background-color: #fff;
-  color: #333;
-  height: 3rem;
-  padding-right: 12px;
-  outline: none !important;
-  font-size: 16px;
-  width: 100%;
-}
-.homepage .lastest-coupons .coffee-card .open-offer .product-link .product-info .coupone-button .btn-getcode span {
-  z-index: 2;
-  position: absolute;
-  left: 10%;
-  color: white;
-}
-.homepage .lastest-coupons .coffee-card .open-offer .product-link .product-info .coupone-button .btn-getcode:hover {
-  background-color: #fff;
-  color: black;
-  border-color: #eee;
-}
-.homepage .lastest-coupons .coffee-card .open-offer .product-link .product-info .coupone-button .btn-getcode:hover::before {
-  width: 67%;
-}
-.homepage .lastest-coupons .coffee-card .open-offer .product-link .product-info .coupone-button .btn-getcode:hover::after {
-  left: 67%;
-}
-.homepage .lastest-coupons .coffee-card .open-offer .product-link .product-info .coupone-button .btn-getcode::before {
-  content: "";
-  position: absolute;
-  width: 76%;
-  height: 100%;
-  left: 0;
-  background-color: #39b54a;
-  top: 0;
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
-  transition: width 0.2s ease-out;
-  z-index: 1;
-}
-.homepage .lastest-coupons .coffee-card .open-offer .product-link .product-info .coupone-button .btn-getcode::after {
-  left: 76%;
-  top: 0;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 48px 0 0 35px;
-  transform: rotate(17deg);
-  border-color: transparent transparent transparent #2e8d3a;
-  transition: left 0.2s ease-out;
-  transform-origin: top left;
-  content: "";
-  position: absolute;
-  z-index: 1;
-  display: block;
-}
-@media (min-width: 576px) {
-  .homepage .lastest-coupons .coffee-card .open-offer .product-link .product-info {
-    flex: 1 0 auto;
-    padding: 8px 16px 12px;
-  }
-}
-@media (min-width: 576px) {
-  .homepage .lastest-coupons .coffee-card .open-offer .product-link {
-    flex-direction: column;
-  }
-}
-.homepage .lastest-coupons .coffee-card .offer-card {
-  padding: 8px;
-}
-@media (min-width: 1024px) {
-  .homepage .lastest-coupons .coffee-card .home-card {
-    flex: 0 0 25% !important;
-    max-width: 25% !important;
-  }
-}
-@media (min-width: 576px) {
-  .homepage .lastest-coupons .coffee-card {
-    margin: -8px;
-  }
-  .homepage .lastest-coupons .coffee-card .home-card {
-    flex: 0 0 50%;
-    max-width: 50%;
-    padding: 8px;
-  }
-}
+  margin: -3px 0; }
+  .homepage .lastest-coupons .coffee-card .open-offer {
+    cursor: pointer; }
+    .homepage .lastest-coupons .coffee-card .open-offer .product-link {
+      position: relative;
+      display: flex;
+      background-color: white;
+      border-radius: 8px;
+      border: thin solid #e0e0e0;
+      overflow: hidden;
+      box-shadow: rgba(0, 0, 0, 0.05) 0 3px 8px;
+      color: #323232;
+      flex-direction: row; }
+      .homepage .lastest-coupons .coffee-card .open-offer .product-link:hover {
+        box-shadow: 0 0 10px #d8d8d8; }
+      .homepage .lastest-coupons .coffee-card .open-offer .product-link .product-img {
+        position: relative;
+        background: #fff;
+        flex: 0 0 auto;
+        width: 25%;
+        min-width: 75px;
+        height: 100%;
+        padding-bottom: 10%;
+        border-right: 1px solid rgba(112, 112, 112, 0.17);
+        border-bottom: none; }
+        .homepage .lastest-coupons .coffee-card .open-offer .product-link .product-img img {
+          max-height: 100%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          padding: 10px;
+          transform: translate(-50%, -50%);
+          z-index: 0;
+          display: block; }
+        @media (min-width: 576px) {
+          .homepage .lastest-coupons .coffee-card .open-offer .product-link .product-img {
+            width: 100%;
+            min-width: auto;
+            height: auto;
+            padding-bottom: 45%;
+            border-right: none;
+            border-bottom: 1px solid rgba(112, 112, 112, 0.17); } }
+      .homepage .lastest-coupons .coffee-card .open-offer .product-link .product-info {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        font-size: 0.875rem;
+        padding: 8px 16px 12px 7px;
+        flex: 1 1 auto; }
+        .homepage .lastest-coupons .coffee-card .open-offer .product-link .product-info .shop-name {
+          font-size: 12px;
+          margin-bottom: 8px;
+          text-transform: uppercase;
+          color: #757575;
+          display: flex;
+          align-items: center; }
+          .homepage .lastest-coupons .coffee-card .open-offer .product-link .product-info .shop-name .shop-name-title {
+            color: #cc2a36;
+            font-weight: 600; }
+            .homepage .lastest-coupons .coffee-card .open-offer .product-link .product-info .shop-name .shop-name-title .verified-offer {
+              color: #788691;
+              text-transform: initial; }
+          .homepage .lastest-coupons .coffee-card .open-offer .product-link .product-info .shop-name .shop-title {
+            display: none; }
+        .homepage .lastest-coupons .coffee-card .open-offer .product-link .product-info .shop-info {
+          flex: 1 0 auto;
+          min-height: 48px;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 3;
+          overflow: hidden;
+          line-height: 1.5em;
+          font-size: 16px;
+          font-weight: 500;
+          margin-bottom: 10px; }
+        .homepage .lastest-coupons .coffee-card .open-offer .product-link .product-info .coupone-button {
+          margin: 10px 0 !important;
+          text-align: center; }
+          .homepage .lastest-coupons .coffee-card .open-offer .product-link .product-info .coupone-button .btn-getcode {
+            position: relative;
+            border-radius: 1000px;
+            font-weight: 600;
+            text-align: center;
+            cursor: pointer;
+            text-align: right;
+            transition: background-color 500ms ease 0s, border-color 500ms ease 0s, color 500ms ease 0s, fill 500ms ease 0s;
+            -webkit-font-smoothing: antialiased;
+            border: thin solid #eee;
+            background-color: #fff;
+            color: #333;
+            height: 3rem;
+            padding-right: 12px;
+            outline: none !important;
+            font-size: 16px;
+            width: 100%; }
+            .homepage .lastest-coupons .coffee-card .open-offer .product-link .product-info .coupone-button .btn-getcode span {
+              z-index: 2;
+              position: absolute;
+              left: 10%;
+              color: white; }
+            .homepage .lastest-coupons .coffee-card .open-offer .product-link .product-info .coupone-button .btn-getcode:hover {
+              background-color: #fff;
+              color: black;
+              border-color: #eee; }
+              .homepage .lastest-coupons .coffee-card .open-offer .product-link .product-info .coupone-button .btn-getcode:hover::before {
+                width: 67%; }
+              .homepage .lastest-coupons .coffee-card .open-offer .product-link .product-info .coupone-button .btn-getcode:hover::after {
+                left: 67%; }
+            .homepage .lastest-coupons .coffee-card .open-offer .product-link .product-info .coupone-button .btn-getcode::before {
+              content: "";
+              position: absolute;
+              width: 76%;
+              height: 100%;
+              left: 0;
+              background-color: #39b54a;
+              top: 0;
+              border-top-left-radius: 30px;
+              border-bottom-left-radius: 30px;
+              transition: width .2s ease-out;
+              z-index: 1; }
+            .homepage .lastest-coupons .coffee-card .open-offer .product-link .product-info .coupone-button .btn-getcode::after {
+              left: 76%;
+              top: 0;
+              width: 0;
+              height: 0;
+              border-style: solid;
+              border-width: 48px 0 0 35px;
+              transform: rotate(17deg);
+              border-color: transparent transparent transparent #2e8d3a;
+              transition: left .2s ease-out;
+              transform-origin: top left;
+              content: "";
+              position: absolute;
+              z-index: 1;
+              display: block; }
+        @media (min-width: 576px) {
+          .homepage .lastest-coupons .coffee-card .open-offer .product-link .product-info {
+            flex: 1 0 auto;
+            padding: 8px 16px 12px; } }
+      @media (min-width: 576px) {
+        .homepage .lastest-coupons .coffee-card .open-offer .product-link {
+          flex-direction: column; } }
+  .homepage .lastest-coupons .coffee-card .offer-card {
+    padding: 8px; }
+  @media (min-width: 1024px) {
+    .homepage .lastest-coupons .coffee-card .home-card {
+      flex: 0 0 25% !important;
+      max-width: 25% !important; } }
+  @media (min-width: 576px) {
+    .homepage .lastest-coupons .coffee-card {
+      margin: -8px; }
+      .homepage .lastest-coupons .coffee-card .home-card {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding: 8px; } }
 .homepage .glide-popular .title {
-  font-weight: bold;
-}
+  font-weight: bold; }
 .homepage .glide-popular .btn-yellow {
   width: 100px;
   height: 30px;
-  background-color: rgb(232, 232, 127);
+  background-color: #e8e87f;
   border: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 10px;
-  border-radius: 0%;
-}
-.homepage .glide-popular .btn-yellow span {
-  color: red;
-}
+  border-radius: 0%; }
+  .homepage .glide-popular .btn-yellow span {
+    color: red; }
 .homepage .glide-popular .gslide-arrows {
   position: absolute;
   top: 45% !important;
-  width: calc(100% - 2em);
-}
-.homepage .glide-popular .gslide-arrows button {
-  border: 0;
-  background-color: transparent;
-}
-.homepage .glide-popular .gslide-arrows button.glide__arrow {
-  position: absolute;
-  z-index: 99;
-  width: 42px !important;
-  text-align: center;
-  height: 42px !important;
-  cursor: pointer;
-  background-color: #deaed4;
-}
-.homepage .glide-popular .gslide-arrows button.glide__arrow .icon {
-  font-size: 20px;
-  color: red;
-}
+  width: calc(100% - 2em); }
+  .homepage .glide-popular .gslide-arrows button {
+    border: 0;
+    background-color: transparent; }
+    .homepage .glide-popular .gslide-arrows button.glide__arrow {
+      position: absolute;
+      z-index: 99;
+      width: 42px !important;
+      text-align: center;
+      height: 42px !important;
+      cursor: pointer;
+      background-color: #deaed4; }
+      .homepage .glide-popular .gslide-arrows button.glide__arrow .icon {
+        font-size: 20px;
+        color: red; }
 .homepage .faqs h2 {
   font-size: 38px;
   line-height: 43px;
   color: #041264;
-  font-weight: 700;
-}
+  font-weight: 700; }
 .homepage .faqs ul {
-  margin-top: 20px;
-}
-.homepage .faqs ul .faq-item {
-  background-color: #fff;
-  border-radius: 32px;
-  border: thin solid rgb(224, 224, 224);
-  box-shadow: rgb(0, 0, 0) 0 1px 1px;
-  margin-bottom: 35px;
-  position: relative;
-}
-.homepage .faqs ul .faq-item .faq-question {
-  cursor: pointer;
-  margin-bottom: 0 !important;
-  padding: 20px;
-  font-weight: 700 !important;
-}
-.homepage .faqs ul .faq-item .faq-question span {
-  font-weight: bold;
-}
-.homepage .faqs ul .faq-item .faq-answer {
-  border-top: none !important;
-  padding: 0 20px;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 30px;
-  color: #333;
-}
-.homepage .faqs ul .faq-item .faq-answer p {
-  display: flex;
-}
-.homepage .faqs ul .faq-item .faq-answer span {
-  display: flex;
-  align-items: center;
-  padding-right: 15px;
-  color: #cc2a36;
-  font-weight: bold;
-}
+  margin-top: 20px; }
+  .homepage .faqs ul .faq-item {
+    background-color: #fff;
+    border-radius: 32px;
+    border: thin solid #e0e0e0;
+    box-shadow: black 0 1px 1px;
+    margin-bottom: 35px;
+    position: relative; }
+    .homepage .faqs ul .faq-item .faq-question {
+      cursor: pointer;
+      margin-bottom: 0 !important;
+      padding: 20px;
+      font-weight: 700 !important; }
+      .homepage .faqs ul .faq-item .faq-question span {
+        font-weight: bold; }
+    .homepage .faqs ul .faq-item .faq-answer {
+      border-top: none !important;
+      padding: 0 20px;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 30px;
+      color: #333; }
+      .homepage .faqs ul .faq-item .faq-answer p {
+        display: flex; }
+      .homepage .faqs ul .faq-item .faq-answer span {
+        display: flex;
+        align-items: center;
+        padding-right: 15px;
+        color: #cc2a36;
+        font-weight: bold; }
 @media screen and (max-width: 540px) {
   .homepage h2 {
-    font-size: 20px;
-  }
+    font-size: 20px; }
   .homepage .btn-yellow {
     font-size: 14px;
-    text-align: center;
-  }
-}
+    text-align: center; } }
+
 /*# sourceMappingURL=homepage.css.map */

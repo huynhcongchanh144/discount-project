@@ -341,6 +341,15 @@ footer {
     }
 }
 
+// Responsive footer 
+footer {
+    .col-md-3 {
+        @media screen and (max-width: 992px) and (min-width: 768px) {
+            width: calc(100% * (6 / 12));
+        }
+    }
+}
+
 
 
 @import './layout/header.scss';

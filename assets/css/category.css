@@ -1,88 +1,85 @@
-@import "../css/responsive.css";
+@import url(../css/responsive.css);
 .category {
   background-color: #f9f9f9;
-  padding: 3.5rem 0;
-}
-.category .slider-store .magazin-item {
-  text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.category .slider-store .magazin-item .img-magazin {
-  border: 1px solid #ddd;
-  border-radius: 100%;
-}
-.category .glide__track {
-  position: relative;
-}
-.category .glide__track .glide_prev {
-  font-size: 0;
-  line-height: 0;
-  position: absolute;
-  top: 50%;
-  display: block;
-  width: 20px;
-  height: 20px;
-  padding: 0;
-  transform: translate(0, -50%);
-  cursor: pointer;
-  color: transparent;
-  border: none;
-  outline: none;
-  background: transparent;
-}
-.category .glide__track .glide_prev::before {
-  content: "";
-  display: block;
-  background: url("../images/arrow-left.png");
-  font-size: 20px;
-  line-height: 1;
-  opacity: 0.75;
-  color: white;
-  width: 25px;
-  height: 32px;
-}
-.category .glide__track .glide_next {
-  font-size: 0;
-  line-height: 0;
-  position: absolute;
-  top: 50%;
-  right: 0;
-  display: block;
-  width: 20px;
-  height: 20px;
-  padding: 0;
-  transform: translate(0, -50%);
-  cursor: pointer;
-  color: transparent;
-  border: none;
-  outline: none;
-  background: transparent;
-}
-.category .glide__track .glide_next::before {
-  content: "";
-  display: block;
-  background: url("../images/arrow-right.png");
-  font-size: 20px;
-  line-height: 1;
-  opacity: 0.75;
-  color: white;
-  width: 25px;
-  height: 32px;
-}
-.category .store-item {
-  background-color: white;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-}
-.category .store-item .img-item {
-  max-width: 100px;
-  border-radius: 10px;
-  padding: 0 15px;
-}
-.category .store-item .img-item img {
-  max-width: 100%;
-}
+  padding: 3.5rem 0; }
+  .category .slider-store .magazin-item {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .category .slider-store .magazin-item .img-magazin {
+      border: 1px solid #ddd;
+      border-radius: 100%; }
+  .category .glide__track {
+    position: relative; }
+    .category .glide__track .glide_prev {
+      font-size: 0;
+      line-height: 0;
+      position: absolute;
+      top: 50%;
+      display: block;
+      width: 20px;
+      height: 20px;
+      padding: 0;
+      -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+      cursor: pointer;
+      color: transparent;
+      border: none;
+      outline: none;
+      background: transparent; }
+      .category .glide__track .glide_prev::before {
+        content: '';
+        display: block;
+        background: url("../images/arrow-left.png");
+        font-size: 20px;
+        line-height: 1;
+        opacity: .75;
+        color: white;
+        width: 25px;
+        height: 32px; }
+    .category .glide__track .glide_next {
+      font-size: 0;
+      line-height: 0;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      display: block;
+      width: 20px;
+      height: 20px;
+      padding: 0;
+      -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+      cursor: pointer;
+      color: transparent;
+      border: none;
+      outline: none;
+      background: transparent; }
+      .category .glide__track .glide_next::before {
+        content: '';
+        display: block;
+        background: url("../images/arrow-right.png");
+        font-size: 20px;
+        line-height: 1;
+        opacity: .75;
+        color: white;
+        width: 25px;
+        height: 32px; }
+  .category .store-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px; }
+    .category .store-item .img-item {
+      max-width: 100px;
+      border-radius: 10px;
+      padding: 0 15px; }
+      .category .store-item .img-item img {
+        max-width: 100%; }
+  @media screen and (max-width: 992px) and (max-width: 768px) {
+    .category .list-category .col-md-4 {
+      width: calc(100% * (6 / 12)); } }
+
 /*# sourceMappingURL=category.css.map */

@@ -6,7 +6,7 @@
         border-radius: 0;
     }
     .glide-trending , .glide-popular {
-        @media screen and (max-height: 769px) {
+        @media screen and (max-width: 769px) {
             .glide__slide {
                 padding: 3rem
             }
