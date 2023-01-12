@@ -93,6 +93,7 @@
 }
 .category-detail .voucher .imgwrap {
   padding: 0.7rem;
+  text-align: center;
 }
 .category-detail .voucher .imgwrap img {
   border-radius: 7px;
