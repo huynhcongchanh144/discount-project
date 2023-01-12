@@ -253,6 +253,9 @@ footer {
   footer .col-md-3 {
     width: calc(100% * (6 / 12)); } }
 
+@media screen and (max-width: 768px) {
+  #footer .container {
+    max-width: 768px; } }
 header {
   max-height: 130px;
   color: #919191;

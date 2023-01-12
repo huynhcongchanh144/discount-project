@@ -352,4 +352,13 @@ footer {
 
 
 
+@media screen and (max-width: 768px){
+    #footer {
+        .container {
+            max-width: 768px
+        }
+    }
+}
+
+
 @import './layout/header.scss';

@@ -1,4 +1,22 @@
 .magazin {
+    @media screen and (max-width: 768px) {
+        .container {
+            max-width: 768px;
+        }
+
+        .sidebar {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .view-details {
+            display: none;
+        }
+    }
+    @media screen and (max-width: 425px) {
+        .sidebar {
+            display: none;
+        }
+    }
 	background: #F9F9F9;
 	.thumbnail {
 		border: 1px solid #eee;
@@ -99,10 +117,10 @@
 }
 .list-vouchers {
 	.voucher {
-		border: 1px solid #adadad;
+		border: 1px solid #ddd;
 		border-radius: 7px;
 		.short-detail {
-			border-bottom: 1px solid #adadad;
+			border-bottom: 1px solid #ddd;
 			cursor: pointer;
 		}
 	}
@@ -304,7 +322,7 @@ table th + td {
 .faqs .faq-item {
     background-color: #fff;
     border: 1px solid #eee;
-    padding: 20px;
+    padding: 10px;
     border-radius: 7px;
     cursor: pointer;
 }
@@ -320,4 +338,90 @@ table th + td {
 
 .faqs .faq-item .faq-answer {
     border-top: 1px solid #eee;
+}
+
+@media screen and (max-width: 768px) {
+    .voucher {
+        .imgwrap, .nocode-img {
+            width: calc(100% * (4 / 12));
+            padding: 0.5rem;
+        }
+
+        .desc-voucher {
+            width: calc(100% * (8/12));
+            padding: 0.5rem;
+            .desc, .code {
+                width: 100%;
+                padding-left: 0;
+                padding-right: 0
+            }
+
+            .title-voucher {
+                font-weight: 400;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .magazine-popular {
+        .col-xs-2 {
+            width: calc(100% * (3/12));
+        }
+    }
+}
+
+.title img {
+    display: none;
+}
+
+.on-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 425px){
+    .container-on-mobile {
+        padding-left: 0;
+        padding-right: 0;
+
+        .description {
+            font-size: 14px;
+        }
+    }
+    .title {
+        font-size: 23px;
+        display: flex;
+        .on-desktop {
+            display: none;
+        }
+        .on-mobile {
+            display: block;
+            padding: 10px 0px 0px 10px;
+            font-size: 18px;
+        }
+        img {
+            width: calc(100% * (3/12));
+            height: calc(100% * (3/12));
+            display: block;
+            border: 1px solid #ddd;
+            border-radius: 7px;
+        }
+    }
+
+    .voucher {
+        .desc {
+            .f-18 b {
+                font-weight: 400;
+            }
+        }
+
+        .px-xs-0 {
+            padding: 10px 0;
+        }
+    }
+
+    .magazine-popular {
+        .col-xs-2 {
+            width: 50%;
+        }
+    }
 }

@@ -44,6 +44,16 @@
   justify-content: center;
 }
 
+.justify-md-center {
+    justify-content: center;
+}
+
+@media screen and (max-width: 769px) {
+    .justify-md-center {
+        justify-content: start;
+    }
+}
+
 .justify-between {
     justify-content: space-between;
 }

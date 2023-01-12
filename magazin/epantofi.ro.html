@@ -17,16 +17,16 @@
             <div class="mb-0 meta">
                 <div class="container">
                     <div class="row justify-between align-center mb-0">
-                        <div class="col-md-12 py-1">
+                        <div class="col-xs-12 py-1">
                             <div class="row justify-between align-center mb-0">
-                                <a href="" class="col-md-1 p-0"><img src="../assets/images/logo.png" width="66" alt=""></a>
-                                <div class="search_bar p-0 col-md-8">
+                                <a href="../index.html" class="col-xs-1 p-0"><img src="../assets/images/logo.png" width="66" alt=""></a>
+                                <div class="search_bar p-0 col-xs-8">
                                     <div class="row mb-0 align-center">
-                                        <div class="wrapper_search col-md-7 p-0">
+                                        <div class="wrapper_search col-xs-7 p-0">
                                             <input type="text" name="search" id="search" placeholder="Find stores">
                                             <button class="position-relative btn btn-search">Search</button>
                                         </div>
-                                        <div class="question col-md-4 py-0">
+                                        <div class="question col-xs-4 py-0">
                                             <a href="" class="nav-tips d-flex align-center c-gray">
                                                 <img src="../assets/images/circle-question-regular.svg" alt="" width="24"
                                                     class="mr-1">
@@ -35,10 +35,10 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="login col-md-3 p-0">
+                                <div class="login col-xs-3 p-0">
                                     <div class="row mb-0 justify-right">
                                         <img src="../assets/images/user-large-solid.svg" alt="" width="25" class="mr-1">
-                                        <div class="col-md-10 p-0">
+                                        <div class="col-xs-10 p-0">
                                             <div class="row mb-0">
                                                 <a href="" class="f-bold link-h-decoration">Sign in</a>
                                                 <small>
@@ -56,7 +56,7 @@
             </div>
             <div class="navbar bg-gray-light">
                 <nav class="row d-flex container p-0">
-                        <ul class="menu col-md-12">
+                        <ul class="menu col-xs-12">
                             <li class="nav-item dropdown">
                                 <a href="" target="shop">
                                     shop
@@ -96,7 +96,7 @@
             <div class="navbar-mobile d-sm-none d-block">
                 <div class="row mb-0">
                     <div class="logo py-1 px-1">
-                        <a href="" class="col-md-1 p-0"><img src="../assets/images/logo.png" width="66" alt=""></a>
+                        <a href="" class="col-xs-1 p-0"><img src="../assets/images/logo.png" width="66" alt=""></a>
                     </div>
                     <div class="hamberger d-flex p-0">
                         <div class="search-btn">
@@ -156,10 +156,10 @@
 
         <div class="body-content magazin">
             <div class="row justify-between container mb-0">
-                <div class="col-md-3 px-4 position-relative">
+                <div class="col-xs-3 px-4 position-relative sidebar">
                     <div class="sidebar-store">
                         <div class="thumbnail mb-1">
-                            <a href="" class="d-flex"><img src="../assets/images/magazin.jpg" alt=""></a>
+                            <a href="" class="d-flex"><img src="../assets/images/magazin.jpg" alt="" class="w-100"></a>
                         </div>
                         <div class="mb-1 f-15 c-gray">
                             <img src="../assets/images/circle-check-solid.svg" width="15" alt="" class="v-center"> <span
@@ -202,12 +202,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-9">
-                    <div class="row breadcum">
+                <div class="col-xs-9 container-on-mobile">
+                    <!-- <div class="row breadcum">
                         Home >> Moda >> Shop
+                    </div> -->
+                    <div class="title f-30 mb-1">
+                        <img src="../assets/images/magazin.jpg" alt="" class="">
+                        <span class="on-desktop">Coduri Reducere și Vouchere <b>ePantofi</b></span>
+                        <small class="f-16 on-desktop">Decembrie 2022</small>
+                        <span class="on-mobile">
+                            Coduri Reducere și Vouchere <b>ePantofi</b> <br> 
+                            <small class="f-16">Decembrie 2022</small>
+                        </span>
                     </div>
-                    <div class="title f-30 mb-1">Coduri Reducere și Vouchere <b>ePantofi</b> <small
-                            class="f-16">Decembrie 2022</small></div>
                     <p class="description f-18 c-gray-b mb-1">
                         Aici poți găsi ultimele coduri reducere și coduri voucher la ePantofi. Cumpără la reducere!
                     </p>
@@ -220,28 +227,32 @@
                         <span class="v-center">(85 votes)</span>
                     </div>
                     <div class="list-vouchers">
-                        <div class="voucher mb-1">
-                            <div class="row mb-0 align-center short-detail bg-white">
-                                <h1 class="c-red f-40 col-md-2 t-center px-2 py-1">100 lei</h1>
-                                <div class="desc col-md-7 px-0">
-                                    <div class="status row mb-0 f-12 c-red mb-7">
-                                        <b>Cod</b> <img src="../assets/images/circle-check-solid.svg" width="10" alt=""
-                                            class="mx-1">
-                                        <span class="c-gray"><b>Verificat</b></span>
+                        <div class="voucher mb-1" id="voucher-1">
+                            <div class="row mb-0 align-center short-detail bg-white" onclick="createModal('voucher-1')">
+                                <h1 class="c-red f-40 col-xs-2 t-center px-2 py-1 nocode-img">100 lei</h1>
+                                <div class="col-xs-10 desc-voucher">
+                                    <div class="row mb-0">
+                                        <div class="desc col-xs-8">
+                                            <div class="status row mb-0 f-12 c-red mb-7">
+                                                <b>Cod</b> <img src="../assets/images/circle-check-solid.svg" width="10" alt=""
+                                                    class="mx-1">
+                                                <span class="c-gray"><b>Verificat</b></span>
+                                            </div>
+                                            <div class="row mb-0 f-18">
+                                                <b class="title-voucher">Cod reducere Epantofi 100 lei extra la produsele cu pret intreg</b>
+                                            </div>
+                                        </div>
+                                        <div class="code col-xs-4">
+                                            <button class="btn btn-getcode" code="TESTCODE123">
+                                                <span>Afișează COD</span>
+                                                ...00RO
+                                            </button>
+                                        </div>
                                     </div>
-                                    <div class="row mb-0 f-18">
-                                        <b>Cod reducere Epantofi 100 lei extra la produsele cu pret intreg</b>
-                                    </div>
-                                </div>
-                                <div class="code col-md-3">
-                                    <button class="btn btn-getcode">
-                                        <span>Afișează COD</span>
-                                        ...00RO
-                                    </button>
                                 </div>
                             </div>
                             <div class="row mb-0 px-3 py-1 justify-between align-center view-details">
-                                <button class="btn-none-border btn-view btn-view-up collapse-btn" target="voucher-1">
+                                <button class="btn-none-border btn-view btn-view-up collapse-btn" target="voucher-description-1">
                                     <span>View Details</span>
                                 </button>
                                 <div>
@@ -261,30 +272,30 @@
                                     </button>
                                 </div>
                             </div>
-                            <div class="more-details bg-white px-3 collapse" id="voucher-1">
+                            <div class="more-details bg-white px-3 collapse" id="voucher-description-1">
                                 <div class="row mb-0 tabs">
                                     <button class="btn-none-border mr-2 px-0 py-2 f-16 tab active"
-                                        target="detail-voucher-1">
+                                        target="detail-voucher-description-1">
                                         Detail
                                     </button>
-                                    <button class="btn-none-border py-2 px-0 f-16 tab" target="comment-voucher-1">
+                                    <button class="btn-none-border py-2 px-0 f-16 tab" target="comment-voucher-description-1">
                                         Comment
                                     </button>
                                 </div>
                                 <div class="row mb-0 content py-3 justify-center">
-                                    <div id="detail-voucher-1">
+                                    <div id="detail-voucher-description-1">
                                         <ul class="list-style-none">
                                             <li><b>Expira:</b> 01.12.2023</li>
                                             <li><b>Detail:</b> Beneficiază de reducere pentru achiziționarea de produse
                                                 nereduse din noua colecție, în cazul comenzilor de peste 999 lei.</li>
                                         </ul>
                                     </div>
-                                    <div id="comment-voucher-1" class="col-md-10 collapse">
+                                    <div id="comment-voucher-description-1" class="col-xs-10 collapse">
                                         <form action="" class="row mb-0 justify-center">
-                                            <input type="text" placeholder="Name" class="col-md-10 p-1 mb-1">
-                                            <textarea name="" id="" cols="30" rows="3" class="col-md-10 p-1"
+                                            <input type="text" placeholder="Name" class="col-xs-10 p-1 mb-1">
+                                            <textarea name="" id="" cols="30" rows="3" class="col-xs-10 p-1"
                                                 placeholder="Comments"></textarea>
-                                            <div class="group col-md-10 px-0">
+                                            <div class="group col-xs-10 px-0">
                                                 <button type="submit" class="btn-submit">Comment</button>
                                             </div>
                                         </form>
@@ -292,100 +303,32 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="voucher mb-1">
-                            <div class="row mb-0 align-center short-detail bg-white">
-                                <h1 class="c-red f-40 col-md-2 t-center px-2 py-1">100 lei</h1>
-                                <div class="desc col-md-7 px-0">
-                                    <div class="status row mb-0 f-12 c-red mb-7">
-                                        <b>Cod</b> <img src="../assets/images/circle-check-solid.svg" width="10" alt=""
-                                            class="mx-1">
-                                        <span class="c-gray"><b>Verificat</b></span>
-                                    </div>
-                                    <div class="row mb-0 f-18">
-                                        <b>Cod reducere Epantofi 100 lei extra la produsele cu pret intreg</b>
-                                    </div>
-                                </div>
-                                <div class="code col-md-3">
-                                    <button class="btn btn-getcode">
-                                        <span>Afișează COD</span>
-                                        ...00RO
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="row mb-0 px-3 py-1 justify-between align-center view-details">
-                                <button class="btn-none-border btn-view btn-view-up collapse-btn" target="voucher-1">
-                                    <span>View Details</span>
-                                </button>
-                                <div>
-                                    <button class="btn-thumb thumb-up">
-                                        <svg class="thumb" xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                                            <path
-                                                d="M313.4 32.9c26 5.2 42.9 30.5 37.7 56.5l-2.3 11.4c-5.3 26.7-15.1 52.1-28.8 75.2H464c26.5 0 48 21.5 48 48c0 25.3-19.5 46-44.3 47.9c7.7 8.5 12.3 19.8 12.3 32.1c0 23.4-16.8 42.9-38.9 47.1c4.4 7.2 6.9 15.8 6.9 24.9c0 21.3-13.9 39.4-33.1 45.6c.7 3.3 1.1 6.8 1.1 10.4c0 26.5-21.5 48-48 48H294.5c-19 0-37.5-5.6-53.3-16.1l-38.5-25.7C176 420.4 160 390.4 160 358.3V320 272 247.1c0-29.2 13.3-56.7 36-75l7.4-5.9c26.5-21.2 44.6-51 51.2-84.2l2.3-11.4c5.2-26 30.5-42.9 56.5-37.7zM32 192H96c17.7 0 32 14.3 32 32V448c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V224c0-17.7 14.3-32 32-32z" />
-                                        </svg>
-                                    </button>
-                                    <button class="btn-thumb thumb-down">
-                                        <svg class=" thumb" xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                                            <path
-                                                d="M313.4 479.1c26-5.2 42.9-30.5 37.7-56.5l-2.3-11.4c-5.3-26.7-15.1-52.1-28.8-75.2H464c26.5 0 48-21.5 48-48c0-25.3-19.5-46-44.3-47.9c7.7-8.5 12.3-19.8 12.3-32.1c0-23.4-16.8-42.9-38.9-47.1c4.4-7.3 6.9-15.8 6.9-24.9c0-21.3-13.9-39.4-33.1-45.6c.7-3.3 1.1-6.8 1.1-10.4c0-26.5-21.5-48-48-48H294.5c-19 0-37.5 5.6-53.3 16.1L202.7 73.8C176 91.6 160 121.6 160 153.7V192v48 24.9c0 29.2 13.3 56.7 36 75l7.4 5.9c26.5 21.2 44.6 51 51.2 84.2l2.3 11.4c5.2 26 30.5 42.9 56.5 37.7zM32 320H96c17.7 0 32-14.3 32-32V64c0-17.7-14.3-32-32-32H32C14.3 32 0 46.3 0 64V288c0 17.7 14.3 32 32 32z" />
-                                        </svg>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="more-details bg-white px-3 collapse" id="voucher-1">
-                                <div class="row mb-0 tabs">
-                                    <button class="btn-none-border mr-2 px-0 py-2 f-16 tab active"
-                                        target="detail-voucher-1">
-                                        Detail
-                                    </button>
-                                    <button class="btn-none-border py-2 px-0 f-16 tab" target="comment-voucher-1">
-                                        Comment
-                                    </button>
-                                </div>
-                                <div class="row mb-0 content py-3 justify-center">
-                                    <div id="detail-voucher-1">
-                                        <ul class="list-style-none">
-                                            <li><b>Expira:</b> 01.12.2023</li>
-                                            <li><b>Detail:</b> Beneficiază de reducere pentru achiziționarea de produse
-                                                nereduse din noua colecție, în cazul comenzilor de peste 999 lei.</li>
-                                        </ul>
-                                    </div>
-                                    <div id="comment-voucher-1" class="col-md-10 collapse">
-                                        <form action="" class="row mb-0 justify-center">
-                                            <input type="text" placeholder="Name" class="col-md-10 p-1 mb-1">
-                                            <textarea name="" id="" cols="30" rows="3" class="col-md-10 p-1"
-                                                placeholder="Comments"></textarea>
-                                            <div class="group col-md-10 px-0">
-                                                <button type="submit" class="btn-submit">Comment</button>
+                        <div class="voucher mb-1" id="voucher-2">
+                            <div class="row mb-0 align-center short-detail bg-white" onclick="createModal('voucher-2')">
+                                <h1 class="c-red f-40 col-xs-2 t-center px-2 py-1 nocode-img">100 lei</h1>
+                                <div class="col-xs-10 desc-voucher">
+                                    <div class="row mb-0">
+                                        <div class="desc col-xs-8">
+                                            <div class="status row mb-0 f-12 c-red mb-7">
+                                                <b>Cod</b> <img src="../assets/images/circle-check-solid.svg" width="10" alt=""
+                                                    class="mx-1">
+                                                <span class="c-gray"><b>Verificat</b></span>
                                             </div>
-                                        </form>
+                                            <div class="row mb-0 f-18">
+                                                <b class="title-voucher">Cod reducere Epantofi 100 lei extra la produsele cu pret intreg</b>
+                                            </div>
+                                        </div>
+                                        <div class="code col-xs-4">
+                                            <button class="btn btn-getcode" code="TESTCODE123">
+                                                <span>Afișează COD</span>
+                                                ...00RO
+                                            </button>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="voucher mb-1">
-                            <div class="row mb-0 align-center short-detail bg-white">
-                                <h1 class="c-red f-40 col-md-2 t-center px-2 py-1">100 lei</h1>
-                                <div class="desc col-md-7 px-0">
-                                    <div class="status row mb-0 f-12 c-red mb-7">
-                                        <b>Cod</b> <img src="../assets/images/circle-check-solid.svg" width="10" alt=""
-                                            class="mx-1">
-                                        <span class="c-gray"><b>Verificat</b></span>
-                                    </div>
-                                    <div class="row mb-0 f-18">
-                                        <b>Cod reducere Epantofi 100 lei extra la produsele cu pret intreg</b>
-                                    </div>
-                                </div>
-                                <div class="code col-md-3">
-                                    <button class="btn btn-getcode">
-                                        <span>Afișează COD</span>
-                                        ...00RO
-                                    </button>
                                 </div>
                             </div>
                             <div class="row mb-0 px-3 py-1 justify-between align-center view-details">
-                                <button class="btn-none-border btn-view btn-view-up collapse-btn" target="voucher-1">
+                                <button class="btn-none-border btn-view btn-view-up collapse-btn" target="voucher-description-2">
                                     <span>View Details</span>
                                 </button>
                                 <div>
@@ -405,30 +348,30 @@
                                     </button>
                                 </div>
                             </div>
-                            <div class="more-details bg-white px-3 collapse" id="voucher-1">
+                            <div class="more-details bg-white px-3 collapse" id="voucher-description-2">
                                 <div class="row mb-0 tabs">
                                     <button class="btn-none-border mr-2 px-0 py-2 f-16 tab active"
-                                        target="detail-voucher-1">
+                                        target="detail-voucher-description-2">
                                         Detail
                                     </button>
-                                    <button class="btn-none-border py-2 px-0 f-16 tab" target="comment-voucher-1">
+                                    <button class="btn-none-border py-2 px-0 f-16 tab" target="comment-voucher-description-2">
                                         Comment
                                     </button>
                                 </div>
                                 <div class="row mb-0 content py-3 justify-center">
-                                    <div id="detail-voucher-1">
+                                    <div id="detail-voucher-description-2">
                                         <ul class="list-style-none">
                                             <li><b>Expira:</b> 01.12.2023</li>
                                             <li><b>Detail:</b> Beneficiază de reducere pentru achiziționarea de produse
                                                 nereduse din noua colecție, în cazul comenzilor de peste 999 lei.</li>
                                         </ul>
                                     </div>
-                                    <div id="comment-voucher-1" class="col-md-10 collapse">
+                                    <div id="comment-voucher-description-2" class="col-xs-10 collapse">
                                         <form action="" class="row mb-0 justify-center">
-                                            <input type="text" placeholder="Name" class="col-md-10 p-1 mb-1">
-                                            <textarea name="" id="" cols="30" rows="3" class="col-md-10 p-1"
+                                            <input type="text" placeholder="Name" class="col-xs-10 p-1 mb-1">
+                                            <textarea name="" id="" cols="30" rows="3" class="col-xs-10 p-1"
                                                 placeholder="Comments"></textarea>
-                                            <div class="group col-md-10 px-0">
+                                            <div class="group col-xs-10 px-0">
                                                 <button type="submit" class="btn-submit">Comment</button>
                                             </div>
                                         </form>
@@ -438,12 +381,12 @@
                         </div>
                         <div class="voucher mb-1">
                             <div class="best-offer bg-white row mb-0 justify-center py-2">
-                                <form action="" class="col-md-12 px-3 form-best-offer">
+                                <form action="" class="col-xs-12 px-3 form-best-offer">
                                     <p for="email" class="f-16 f-bold mb-7">Iti trimitem cele mai bune oferte</p>
                                     <div class="row mb-7 justify-between">
-                                        <input type="email" name="email" id="email" class="col-md-8 t-center"
+                                        <input type="email" name="email" id="email" class="col-xs-8 t-center"
                                             placeholder="Enter e-mail to subscribe to the newsletter">
-                                        <div class="col-md-4 py-0">
+                                        <div class="col-xs-4 py-0 px-xs-0">
                                             <button type="submit"
                                                 class="btn btn-secondary h-100 w-100">Subscription</button>
                                         </div>
@@ -452,172 +395,32 @@
                                 </form>
                             </div>
                         </div>
-                        <div class="voucher mb-1">
-                            <div class="row mb-0 align-center short-detail bg-white">
-                                <h1 class="c-red f-40 col-md-2 t-center px-2 py-1">100 lei</h1>
-                                <div class="desc col-md-7 px-0">
-                                    <div class="status row mb-0 f-12 c-red mb-7">
-                                        <b>Cod</b> <img src="../assets/images/circle-check-solid.svg" width="10" alt=""
-                                            class="mx-1">
-                                        <span class="c-gray"><b>Verificat</b></span>
-                                    </div>
-                                    <div class="row mb-0 f-18">
-                                        <b>Cod reducere Epantofi 100 lei extra la produsele cu pret intreg</b>
-                                    </div>
-                                </div>
-                                <div class="code col-md-3">
-                                    <button class="btn btn-getcode">
-                                        <span>Afișează COD</span>
-                                        ...00RO
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="row mb-0 px-3 py-1 justify-between align-center view-details">
-                                <button class="btn-none-border btn-view btn-view-up collapse-btn" target="voucher-1">
-                                    <span>View Details</span>
-                                </button>
-                                <div>
-                                    <button class="btn-thumb thumb-up">
-                                        <svg class="thumb" xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                                            <path
-                                                d="M313.4 32.9c26 5.2 42.9 30.5 37.7 56.5l-2.3 11.4c-5.3 26.7-15.1 52.1-28.8 75.2H464c26.5 0 48 21.5 48 48c0 25.3-19.5 46-44.3 47.9c7.7 8.5 12.3 19.8 12.3 32.1c0 23.4-16.8 42.9-38.9 47.1c4.4 7.2 6.9 15.8 6.9 24.9c0 21.3-13.9 39.4-33.1 45.6c.7 3.3 1.1 6.8 1.1 10.4c0 26.5-21.5 48-48 48H294.5c-19 0-37.5-5.6-53.3-16.1l-38.5-25.7C176 420.4 160 390.4 160 358.3V320 272 247.1c0-29.2 13.3-56.7 36-75l7.4-5.9c26.5-21.2 44.6-51 51.2-84.2l2.3-11.4c5.2-26 30.5-42.9 56.5-37.7zM32 192H96c17.7 0 32 14.3 32 32V448c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V224c0-17.7 14.3-32 32-32z" />
-                                        </svg>
-                                    </button>
-                                    <button class="btn-thumb thumb-down">
-                                        <svg class=" thumb" xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                                            <path
-                                                d="M313.4 479.1c26-5.2 42.9-30.5 37.7-56.5l-2.3-11.4c-5.3-26.7-15.1-52.1-28.8-75.2H464c26.5 0 48-21.5 48-48c0-25.3-19.5-46-44.3-47.9c7.7-8.5 12.3-19.8 12.3-32.1c0-23.4-16.8-42.9-38.9-47.1c4.4-7.3 6.9-15.8 6.9-24.9c0-21.3-13.9-39.4-33.1-45.6c.7-3.3 1.1-6.8 1.1-10.4c0-26.5-21.5-48-48-48H294.5c-19 0-37.5 5.6-53.3 16.1L202.7 73.8C176 91.6 160 121.6 160 153.7V192v48 24.9c0 29.2 13.3 56.7 36 75l7.4 5.9c26.5 21.2 44.6 51 51.2 84.2l2.3 11.4c5.2 26 30.5 42.9 56.5 37.7zM32 320H96c17.7 0 32-14.3 32-32V64c0-17.7-14.3-32-32-32H32C14.3 32 0 46.3 0 64V288c0 17.7 14.3 32 32 32z" />
-                                        </svg>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="more-details bg-white px-3 collapse" id="voucher-1">
-                                <div class="row mb-0 tabs">
-                                    <button class="btn-none-border mr-2 px-0 py-2 f-16 tab active"
-                                        target="detail-voucher-1">
-                                        Detail
-                                    </button>
-                                    <button class="btn-none-border py-2 px-0 f-16 tab" target="comment-voucher-1">
-                                        Comment
-                                    </button>
-                                </div>
-                                <div class="row mb-0 content py-3 justify-center">
-                                    <div id="detail-voucher-1">
-                                        <ul class="list-style-none">
-                                            <li><b>Expira:</b> 01.12.2023</li>
-                                            <li><b>Detail:</b> Beneficiază de reducere pentru achiziționarea de produse
-                                                nereduse din noua colecție, în cazul comenzilor de peste 999 lei.</li>
-                                        </ul>
-                                    </div>
-                                    <div id="comment-voucher-1" class="col-md-10 collapse">
-                                        <form action="" class="row mb-0 justify-center">
-                                            <input type="text" placeholder="Name" class="col-md-10 p-1 mb-1">
-                                            <textarea name="" id="" cols="30" rows="3" class="col-md-10 p-1"
-                                                placeholder="Comments"></textarea>
-                                            <div class="group col-md-10 px-0">
-                                                <button type="submit" class="btn-submit">Comment</button>
+                        <div class="voucher mb-1" id="voucher-3">
+                            <div class="row mb-0 align-center short-detail bg-white" onclick="createModal('voucher-3')">
+                                <h1 class="c-red f-40 col-xs-2 t-center px-2 py-1 nocode-img">100 lei</h1>
+                                <div class="col-xs-10 desc-voucher">
+                                    <div class="row mb-0">
+                                        <div class="desc col-xs-8">
+                                            <div class="status row mb-0 f-12 c-red mb-7">
+                                                <b>Cod</b> <img src="../assets/images/circle-check-solid.svg" width="10" alt=""
+                                                    class="mx-1">
+                                                <span class="c-gray"><b>Verificat</b></span>
                                             </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="voucher mb-1">
-                            <div class="row mb-0 align-center short-detail bg-white">
-                                <h1 class="c-red f-40 col-md-2 t-center px-2 py-1">100 lei</h1>
-                                <div class="desc col-md-7 px-0">
-                                    <div class="status row mb-0 f-12 c-red mb-7">
-                                        <b>Cod</b> <img src="../assets/images/circle-check-solid.svg" width="10" alt=""
-                                            class="mx-1">
-                                        <span class="c-gray"><b>Verificat</b></span>
-                                    </div>
-                                    <div class="row mb-0 f-18">
-                                        <b>Cod reducere Epantofi 100 lei extra la produsele cu pret intreg</b>
-                                    </div>
-                                </div>
-                                <div class="code col-md-3">
-                                    <button class="btn btn-getcode">
-                                        <span>Afișează COD</span>
-                                        ...00RO
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="row mb-0 px-3 py-1 justify-between align-center view-details">
-                                <button class="btn-none-border btn-view btn-view-up collapse-btn" target="voucher-1">
-                                    <span>View Details</span>
-                                </button>
-                                <div>
-                                    <button class="btn-thumb thumb-up">
-                                        <svg class="thumb" xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                                            <path
-                                                d="M313.4 32.9c26 5.2 42.9 30.5 37.7 56.5l-2.3 11.4c-5.3 26.7-15.1 52.1-28.8 75.2H464c26.5 0 48 21.5 48 48c0 25.3-19.5 46-44.3 47.9c7.7 8.5 12.3 19.8 12.3 32.1c0 23.4-16.8 42.9-38.9 47.1c4.4 7.2 6.9 15.8 6.9 24.9c0 21.3-13.9 39.4-33.1 45.6c.7 3.3 1.1 6.8 1.1 10.4c0 26.5-21.5 48-48 48H294.5c-19 0-37.5-5.6-53.3-16.1l-38.5-25.7C176 420.4 160 390.4 160 358.3V320 272 247.1c0-29.2 13.3-56.7 36-75l7.4-5.9c26.5-21.2 44.6-51 51.2-84.2l2.3-11.4c5.2-26 30.5-42.9 56.5-37.7zM32 192H96c17.7 0 32 14.3 32 32V448c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V224c0-17.7 14.3-32 32-32z" />
-                                        </svg>
-                                    </button>
-                                    <button class="btn-thumb thumb-down">
-                                        <svg class=" thumb" xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                                            <path
-                                                d="M313.4 479.1c26-5.2 42.9-30.5 37.7-56.5l-2.3-11.4c-5.3-26.7-15.1-52.1-28.8-75.2H464c26.5 0 48-21.5 48-48c0-25.3-19.5-46-44.3-47.9c7.7-8.5 12.3-19.8 12.3-32.1c0-23.4-16.8-42.9-38.9-47.1c4.4-7.3 6.9-15.8 6.9-24.9c0-21.3-13.9-39.4-33.1-45.6c.7-3.3 1.1-6.8 1.1-10.4c0-26.5-21.5-48-48-48H294.5c-19 0-37.5 5.6-53.3 16.1L202.7 73.8C176 91.6 160 121.6 160 153.7V192v48 24.9c0 29.2 13.3 56.7 36 75l7.4 5.9c26.5 21.2 44.6 51 51.2 84.2l2.3 11.4c5.2 26 30.5 42.9 56.5 37.7zM32 320H96c17.7 0 32-14.3 32-32V64c0-17.7-14.3-32-32-32H32C14.3 32 0 46.3 0 64V288c0 17.7 14.3 32 32 32z" />
-                                        </svg>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="more-details bg-white px-3 collapse" id="voucher-1">
-                                <div class="row mb-0 tabs">
-                                    <button class="btn-none-border mr-2 px-0 py-2 f-16 tab active"
-                                        target="detail-voucher-1">
-                                        Detail
-                                    </button>
-                                    <button class="btn-none-border py-2 px-0 f-16 tab" target="comment-voucher-1">
-                                        Comment
-                                    </button>
-                                </div>
-                                <div class="row mb-0 content py-3 justify-center">
-                                    <div id="detail-voucher-1">
-                                        <ul class="list-style-none">
-                                            <li><b>Expira:</b> 01.12.2023</li>
-                                            <li><b>Detail:</b> Beneficiază de reducere pentru achiziționarea de produse
-                                                nereduse din noua colecție, în cazul comenzilor de peste 999 lei.</li>
-                                        </ul>
-                                    </div>
-                                    <div id="comment-voucher-1" class="col-md-10 collapse">
-                                        <form action="" class="row mb-0 justify-center">
-                                            <input type="text" placeholder="Name" class="col-md-10 p-1 mb-1">
-                                            <textarea name="" id="" cols="30" rows="3" class="col-md-10 p-1"
-                                                placeholder="Comments"></textarea>
-                                            <div class="group col-md-10 px-0">
-                                                <button type="submit" class="btn-submit">Comment</button>
+                                            <div class="row mb-0 f-18">
+                                                <b class="title-voucher">Cod reducere Epantofi 100 lei extra la produsele cu pret intreg</b>
                                             </div>
-                                        </form>
+                                        </div>
+                                        <div class="code col-xs-4">
+                                            <button class="btn btn-getcode" code="TESTCODE123">
+                                                <span>Afișează COD</span>
+                                                ...00RO
+                                            </button>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="voucher mb-1">
-                            <div class="row mb-0 align-center short-detail bg-white">
-                                <h1 class="c-red f-40 col-md-2 t-center px-2 py-1">100 lei</h1>
-                                <div class="desc col-md-7 px-0">
-                                    <div class="status row mb-0 f-12 c-red mb-7">
-                                        <b>Cod</b> <img src="../assets/images/circle-check-solid.svg" width="10" alt=""
-                                            class="mx-1">
-                                        <span class="c-gray"><b>Verificat</b></span>
-                                    </div>
-                                    <div class="row mb-0 f-18">
-                                        <b>Cod reducere Epantofi 100 lei extra la produsele cu pret intreg</b>
-                                    </div>
-                                </div>
-                                <div class="code col-md-3">
-                                    <button class="btn btn-getcode">
-                                        <span>Afișează COD</span>
-                                        ...00RO
-                                    </button>
                                 </div>
                             </div>
                             <div class="row mb-0 px-3 py-1 justify-between align-center view-details">
-                                <button class="btn-none-border btn-view btn-view-up collapse-btn" target="voucher-1">
+                                <button class="btn-none-border btn-view btn-view-up collapse-btn" target="voucher-description-3">
                                     <span>View Details</span>
                                 </button>
                                 <div>
@@ -637,30 +440,30 @@
                                     </button>
                                 </div>
                             </div>
-                            <div class="more-details bg-white px-3 collapse" id="voucher-1">
+                            <div class="more-details bg-white px-3 collapse" id="voucher-description-3">
                                 <div class="row mb-0 tabs">
                                     <button class="btn-none-border mr-2 px-0 py-2 f-16 tab active"
-                                        target="detail-voucher-1">
+                                        target="detail-voucher-description-3">
                                         Detail
                                     </button>
-                                    <button class="btn-none-border py-2 px-0 f-16 tab" target="comment-voucher-1">
+                                    <button class="btn-none-border py-2 px-0 f-16 tab" target="comment-voucher-description-3">
                                         Comment
                                     </button>
                                 </div>
                                 <div class="row mb-0 content py-3 justify-center">
-                                    <div id="detail-voucher-1">
+                                    <div id="detail-voucher-description-3">
                                         <ul class="list-style-none">
                                             <li><b>Expira:</b> 01.12.2023</li>
                                             <li><b>Detail:</b> Beneficiază de reducere pentru achiziționarea de produse
                                                 nereduse din noua colecție, în cazul comenzilor de peste 999 lei.</li>
                                         </ul>
                                     </div>
-                                    <div id="comment-voucher-1" class="col-md-10 collapse">
+                                    <div id="comment-voucher-description-3" class="col-xs-10 collapse">
                                         <form action="" class="row mb-0 justify-center">
-                                            <input type="text" placeholder="Name" class="col-md-10 p-1 mb-1">
-                                            <textarea name="" id="" cols="30" rows="3" class="col-md-10 p-1"
+                                            <input type="text" placeholder="Name" class="col-xs-10 p-1 mb-1">
+                                            <textarea name="" id="" cols="30" rows="3" class="col-xs-10 p-1"
                                                 placeholder="Comments"></textarea>
-                                            <div class="group col-md-10 px-0">
+                                            <div class="group col-xs-10 px-0">
                                                 <button type="submit" class="btn-submit">Comment</button>
                                             </div>
                                         </form>
@@ -673,7 +476,7 @@
                     <div class="magazine-popular mt-3">
                         <h2>Magazine Popular</h2>
                         <div class="row justify-between mt-1">
-                            <div class="col-md-2 p-5">
+                            <div class="col-xs-2 p-5">
                                 <div class="magazine-item">
                                     <a href="">
                                         <img src="../assets/images/Aboutyou.ro-200x200.jpg" alt="" class="w-100">
@@ -683,7 +486,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-md-2 p-5">
+                            <div class="col-xs-2 p-5">
                                 <div class="magazine-item">
                                     <a href="">
                                         <img src="../assets/images/Aboutyou.ro-200x200.jpg" alt="" class="w-100">
@@ -693,7 +496,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-md-2 p-5">
+                            <div class="col-xs-2 p-5">
                                 <div class="magazine-item">
                                     <a href="">
                                         <img src="../assets/images/Aboutyou.ro-200x200.jpg" alt="" class="w-100">
@@ -703,7 +506,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-md-2 p-5">
+                            <div class="col-xs-2 p-5">
                                 <div class="magazine-item">
                                     <a href="">
                                         <img src="../assets/images/Aboutyou.ro-200x200.jpg" alt="" class="w-100">
@@ -713,7 +516,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-md-2 p-5">
+                            <div class="col-xs-2 p-5">
                                 <div class="magazine-item">
                                     <a href="">
                                         <img src="../assets/images/Aboutyou.ro-200x200.jpg" alt="" class="w-100">
@@ -723,7 +526,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-md-2 p-5">
+                            <div class="col-xs-2 p-5">
                                 <div class="magazine-item">
                                     <a href="">
                                         <img src="../assets/images/Aboutyou.ro-200x200.jpg" alt="" class="w-100">
@@ -733,7 +536,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-md-2 p-5">
+                            <div class="col-xs-2 p-5">
                                 <div class="magazine-item">
                                     <a href="">
                                         <img src="../assets/images/Aboutyou.ro-200x200.jpg" alt="" class="w-100">
@@ -743,7 +546,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-md-2 p-5">
+                            <div class="col-xs-2 p-5">
                                 <div class="magazine-item">
                                     <a href="">
                                         <img src="../assets/images/Aboutyou.ro-200x200.jpg" alt="" class="w-100">
@@ -753,7 +556,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-md-2 p-5">
+                            <div class="col-xs-2 p-5">
                                 <div class="magazine-item">
                                     <a href="">
                                         <img src="../assets/images/Aboutyou.ro-200x200.jpg" alt="" class="w-100">
@@ -763,7 +566,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-md-2 p-5">
+                            <div class="col-xs-2 p-5">
                                 <div class="magazine-item">
                                     <a href="">
                                         <img src="../assets/images/Aboutyou.ro-200x200.jpg" alt="" class="w-100">
@@ -773,7 +576,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-md-2 p-5">
+                            <div class="col-xs-2 p-5">
                                 <div class="magazine-item">
                                     <a href="">
                                         <img src="../assets/images/Aboutyou.ro-200x200.jpg" alt="" class="w-100">
@@ -783,7 +586,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-md-2 p-5">
+                            <div class="col-xs-2 p-5">
                                 <div class="magazine-item">
                                     <a href="">
                                         <img src="../assets/images/Aboutyou.ro-200x200.jpg" alt="" class="w-100">
@@ -1092,27 +895,27 @@
 
         <footer id="footer">
             <div class="row justify-between align-center container mb-0">
-                <div class="col-md-12">
+                <div class="col-xs-12">
                     <div class="row">
-                        <div class="col-md-3">
+                        <div class="col-xs-3">
                             <a href=""><img src="../assets/images/footer_logo.svg" alt="" width="170"></a>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-xs-3">
                             <a href="mailto:"><img class="v-center" src="../assets/images/Email.svg" width="25" alt="">
                                 <span class="v-center">info@kuplio.ro</span></a>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-xs-3">
                             <a href=""><img class="v-center" src="../assets/images/Download.svg" width="25" alt="">
                                 <span class="v-center">noutăți prin e-mail</span></a>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-xs-3">
                             <a href="" class="mr-1"><img src="../assets/images/Facebook.svg" width="32" alt=""></a>
                             <a href="" class="mr-1"><img src="../assets/images/Instagram.svg" width="32" alt=""></a>
                             <a href=""><img src="../assets/images/Youtube.svg" width="32" alt=""></a>
                         </div>
                     </div>
                     <div class="row c-white">
-                        <div class="col-md-3">
+                        <div class="col-xs-3">
                             <h3 class="mb-2">Site-urile noastre</h3>
                             <div class="list">
                                 <ul class="list-style-none">
@@ -1139,7 +942,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-xs-3">
                             <h3 class="mb-2">Cele mai bune reduceri</h3>
                             <div class="list">
                                 <ul class="list-style-none">
@@ -1155,7 +958,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-xs-3">
                             <h3 class="mb-2">Pentru parteneri</h3>
                             <div class="list">
                                 <ul class="list-style-none">
@@ -1167,7 +970,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-xs-3">
                             <h3 class="mb-2">Pentru utilizatori</h3>
                             <div class="list">
                                 <ul class="list-style-none">
@@ -1180,7 +983,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <p class="col-md-12 copyright">© 2022 PACHET PLUS s.r.l., Toate drepturile rezervate</p>
+                        <p class="col-xs-12 copyright">© 2022 PACHET PLUS s.r.l., Toate drepturile rezervate</p>
                     </div>
                 </div>
             </div>
