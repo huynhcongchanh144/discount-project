@@ -9,7 +9,8 @@ import {
     sendPasswordResetEmail,
     updatePassword,
     onAuthStateChanged,
-	signOut
+	signOut,
+    FacebookAuthProvider
 }from "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js";
 
 const firebaseConfig = {
@@ -22,6 +23,16 @@ const firebaseConfig = {
     measurementId: "G-5FLQLC7CVY"
 };
 
+// const firebaseConfig = {
+//     apiKey: "AIzaSyDG_sf2bnRZdcxBOumpTcN1OT9aADfoMoY",
+//     authDomain: "discount-646d6.firebaseapp.com",
+//     projectId: "discount-646d6",
+//     storageBucket: "discount-646d6.appspot.com",
+//     messagingSenderId: "961694167011",
+//     appId: "1:961694167011:web:4821329e3f6a9209103ad6",
+//     measurementId: "G-7RWEG0QETC"
+// };
+
 const app = initializeApp(firebaseConfig);
 const database = getDatabase();
 
@@ -33,12 +44,10 @@ let btnRegister = document.querySelector('.btn-submit.btn-signup')
 let btnLoginFb = document.querySelector('.btn-login-fb')
 let btnLoginGg = document.querySelector('.btn-login-gg')
 
-if(btnLoginGg) {
-    btnLoginGg.addEventListener("click", () => {
-        const provider = new GoogleAuthProvider()
+if(btnLoginFb) {
+    btnLoginFb.addEventListener("click", () => {
+        const provider = new FacebookAuthProvider();
         signInWithPopup(auth, provider).then(result => {
-            const credential = GoogleAuthProvider.credentialFromResult(result);
-            // const token = credential.accessToken;
             const user = result.user;
             let userData = {
                 email: user.email || '',
@@ -48,13 +57,48 @@ if(btnLoginGg) {
             const userInfo = ref(database, 'users/' + user.uid);
             onValue(userInfo, async (snapshot) => {
                 const data = snapshot.val();
-                console.log(1)
                 if(data) {
-                    console.log(2)
                     await sessionStorage.setItem('userData', JSON.stringify(data)) 
                     window.location.href = '/account/profile.html'     
                 } else {
-                console.log(3)
+                    await set(ref(database, 'users/' + user.uid), userData);    
+                    sessionStorage.setItem('userData', JSON.stringify(userData))    
+                    window.location.href = '/account/profile.html'  
+                }
+            });
+        }).catch((error) => {
+            // Handle Errors here.
+            const errorCode = error.code;
+            let notify = document.querySelector('.notify-login')
+            notify.textContent = generateMessage(errorCode)
+            notify.style.color = 'red'
+
+            let idInter = setInterval(() => {
+                notify.textContent = ''
+                clearInterval(idInter)
+            }, 3000)
+            
+          })
+    })
+}
+
+if(btnLoginGg) {
+    btnLoginGg.addEventListener("click", () => {
+        const provider = new GoogleAuthProvider()
+        signInWithPopup(auth, provider).then(result => {
+            const user = result.user;
+            let userData = {
+                email: user.email || '',
+                name: user.displayName || '',
+                phone: user.phoneNumber || '',
+            }
+            const userInfo = ref(database, 'users/' + user.uid);
+            onValue(userInfo, async (snapshot) => {
+                const data = snapshot.val();
+                if(data) {
+                    await sessionStorage.setItem('userData', JSON.stringify(data)) 
+                    window.location.href = '/account/profile.html'     
+                } else {
                     await set(ref(database, 'users/' + user.uid), userData);    
                     sessionStorage.setItem('userData', JSON.stringify(userData))    
                     window.location.href = '/account/profile.html'  
