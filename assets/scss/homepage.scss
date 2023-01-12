@@ -16,6 +16,7 @@
                     display: block;
                     max-width: 100%;
                     height: auto;
+                    width: 100%;
                 }
             }
             .item-info {
@@ -35,6 +36,7 @@
                     img {
                         max-width: 100%;
                         height: auto;
+                        width: 100%;
                     }
                 }
 
@@ -412,6 +414,9 @@
 
                 &.glide__arrow--right {
                     right: -5% !important;
+                    @media (max-width: 768px) {
+                        right: -2% !important;
+                    }
                 }
             }
         }

@@ -13,7 +13,8 @@
     .homepage .glide-trending .item-link .item-image img, .homepage .glide-popular .item-link .item-image img {
       display: block;
       max-width: 100%;
-      height: auto; }
+      height: auto;
+      width: 100%; }
     .homepage .glide-trending .item-link .item-info, .homepage .glide-popular .item-link .item-info {
       font-size: 0.875rem;
       padding: 8px 16px 12px 7px;
@@ -29,7 +30,8 @@
         padding: 0 !important; }
         .homepage .glide-trending .item-link .item-info .small-image img, .homepage .glide-popular .item-link .item-info .small-image img {
           max-width: 100%;
-          height: auto; }
+          height: auto;
+          width: 100%; }
       .homepage .glide-trending .item-link .item-info .promoinfo, .homepage .glide-popular .item-link .item-info .promoinfo {
         position: relative; }
         .homepage .glide-trending .item-link .item-info .promoinfo .shop-name, .homepage .glide-popular .item-link .item-info .promoinfo .shop-name {
@@ -311,6 +313,9 @@
       left: -8% !important; }
     .homepage .glide-popular .gslide-arrows button.glide__arrow--right {
       right: -5% !important; }
+      @media (max-width: 768px) {
+        .homepage .glide-popular .gslide-arrows button.glide__arrow--right {
+          right: -2% !important; } }
 .homepage .faqs h2 {
   font-size: 38px;
   line-height: 43px;
