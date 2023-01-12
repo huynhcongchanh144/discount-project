@@ -1,11 +1,22 @@
+.contain-filter {
+  overflow-x: auto;
+  margin-top: 1em;
+}
+
 .filter-options {
   display: flex;
   border: 1px solid #ddd;
   border-radius: 20px;
   background-color: #f9f9f9;
+  margin: 0 auto;
 }
 .filter-options li {
   padding: 12px 0px;
+}
+@media screen and (max-width: 1200px) {
+  .filter-options li {
+    min-width: 50px;
+  }
 }
 .filter-options li a {
   padding: 12px;

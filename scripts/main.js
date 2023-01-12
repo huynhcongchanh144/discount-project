@@ -146,7 +146,8 @@ if(sidebarStore) {
 function createModal(id) {
     let body = document.querySelector("body")
     let content = document.querySelector(`#${id}`)
-    let img = content.querySelector(".imgwrap img").getAttribute('src')
+    let img = content.querySelector(".imgwrap img")
+    img = img ? img.getAttribute('src') : document.querySelector('.title img').getAttribute('src')
     let title = content.querySelector('.title-voucher').textContent
     let code = content.querySelector(".code .btn-getcode").getAttribute('code')
     body.innerHTML += `
@@ -156,7 +157,7 @@ function createModal(id) {
                     <div class="col-md-12">
                         <div class="row">
                             <div class="imgwrap">
-                                <img src="${img}" width="80" alt="">
+                                <img src="${img || imgStore}" width="80" alt="">
                             </div>
                             <div class="title f-bold col-md-8">${title}
                             </div>
