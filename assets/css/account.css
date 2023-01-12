@@ -1,0 +1,356 @@
+.account .sidebar {
+  height: 100vh;
+  background-color: #f4f2eb;
+}
+.account .sidebar ul {
+  padding-left: 25%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.account .sidebar ul .nav-item {
+  padding: 10px 0;
+}
+.account .sidebar ul .nav-item svg {
+  width: 15px;
+  vertical-align: middle;
+}
+.account .sidebar ul .nav-item span {
+  padding-left: 10px;
+  vertical-align: middle;
+  color: black;
+}
+.account .sidebar ul .nav-item.active {
+  border-right: 4px solid #b5aad1;
+}
+.account .sidebar ul .nav-item.active span,
+.account .sidebar ul .nav-item.active svg {
+  fill: #b5aad1;
+  color: #b5aad1;
+}
+.account .contain {
+  padding: 40px;
+}
+@media screen and (max-width: 768px) {
+  .account .contain {
+    padding: 10px;
+  }
+}
+.account .contain form {
+  margin-top: 2rem;
+}
+.account .contain form .input-group fieldset {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  position: relative;
+  padding: 0;
+  box-sizing: border-box;
+}
+.account .contain form .input-group fieldset legend {
+  font-size: 12px;
+  color: gray;
+  position: absolute;
+  top: -8px;
+  left: 10px;
+  background: white;
+  padding: 0 5px;
+  z-index: 9;
+}
+.account .contain form .input-group input,
+.account .contain form .input-group select {
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  width: 100%;
+  padding: 0.7rem;
+}
+.account .contain form .reset-link {
+  color: black;
+  text-decoration: underline;
+}
+.account .contain form .reset-link:hover {
+  color: #ee7836;
+}
+.account .contain form .footer-form .btn-save {
+  position: relative;
+}
+.account .contain form .footer-form .btn-save.loading {
+  background: rgba(238, 120, 54, 0.8);
+  border: transparent;
+  color: white;
+  cursor: not-allowed;
+}
+.account .contain form .footer-form .btn-save.loading::after {
+  content: "";
+  position: absolute;
+  border-radius: 100%;
+  right: 6px;
+  top: 50%;
+  width: 0px;
+  height: 0px;
+  margin-top: -2px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-left-color: #fff;
+  border-top-color: #fff;
+  -webkit-animation: spin 0.6s infinite linear, grow 0.3s forwards ease-out;
+          animation: spin 0.6s infinite linear, grow 0.3s forwards ease-out;
+}
+@-webkit-keyframes spin {
+  to {
+    transform: rotate(359deg);
+  }
+}
+@keyframes spin {
+  to {
+    transform: rotate(359deg);
+  }
+}
+@-webkit-keyframes grow {
+  to {
+    width: 14px;
+    height: 14px;
+    margin-top: -8px;
+    right: 13px;
+  }
+}
+@keyframes grow {
+  to {
+    width: 14px;
+    height: 14px;
+    margin-top: -8px;
+    right: 13px;
+  }
+}
+.account .contain form .footer-form small {
+  color: green;
+}
+.account .contain .logout:hover > svg {
+  color: #ee7836;
+}
+.account .contain .logout:hover > span {
+  color: #ee7836;
+}
+.account .contain .logout svg,
+.account .contain .logout span {
+  vertical-align: middle;
+  color: black;
+  text-decoration: underline;
+}
+.account .contain .tabs-list {
+  background-color: #f4f2eb;
+  padding: 5px;
+  border-radius: 1000px;
+}
+.account .contain .tabs-list .tab {
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+  border-radius: 1000px;
+  cursor: pointer;
+}
+.account .contain .tabs-list .tab:hover {
+  background-color: black;
+  color: white;
+}
+.account .contain .tabs-list .tab.active {
+  background: black;
+  color: white;
+}
+.account .contain .list-items {
+  /* Media Queries*/
+}
+.account .contain .list-items table {
+  border-collapse: collapse;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.account .contain .list-items caption {
+  font-size: 2em;
+  margin: 0.25em 0 0.75em;
+}
+.account .contain .list-items table tr {
+  padding: 0.35em;
+}
+.account .contain .list-items table tr:nth-child(2n) {
+  background-color: #f4f2eb;
+}
+.account .contain .list-items table th,
+.account .contain .list-items table td {
+  padding: 0.625em;
+  text-align: center;
+}
+.account .contain .list-items table th:first-child,
+.account .contain .list-items table td:first-child {
+  text-align: left;
+}
+.account .contain .list-items table th input,
+.account .contain .list-items table td input {
+  width: 20px;
+  height: 20px;
+}
+.account .contain .list-items table th {
+  font-size: 0.85em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.account .contain .list-items table th span {
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: capitalize;
+  display: block;
+}
+.account .contain .list-items table th:first-child {
+  width: 50%;
+}
+@media screen and (max-width: 600px) {
+  .account .contain .list-items table {
+    border: 0;
+  }
+  .account .contain .list-items table caption {
+    font-size: 1.3em;
+  }
+  .account .contain .list-items table thead {
+    display: none;
+  }
+  .account .contain .list-items table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: 0.625em;
+  }
+  .account .contain .list-items table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 0.8em;
+    text-align: right;
+  }
+  .account .contain .list-items table td:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .account .contain .list-items table td:last-child {
+    border-bottom: 0;
+  }
+}
+.account .contain .balance {
+  background-color: #f4f2eb;
+  border-radius: 15px;
+}
+.account .contain .container-progress {
+  text-align: right;
+  margin-top: 4rem;
+  position: relative;
+}
+.account .contain .container-progress .total {
+  color: #b5aad1;
+}
+.account .contain .container-progress .message {
+  position: absolute;
+  background-color: #6A55A2;
+  padding: 15px 40px;
+  top: -75%;
+  left: 10%;
+  color: white;
+  border-radius: 10px;
+}
+.account .contain .container-progress .message::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #6A55A2;
+  position: absolute;
+  bottom: -10px;
+  left: 20%;
+}
+.account .contain .container-progress .progress {
+  padding: 0;
+  margin: 6px 0;
+  width: 100%;
+  height: 20px;
+  background: #e5e5e5;
+  border-radius: 1000px;
+  position: relative;
+}
+.account .contain .container-progress .bar {
+  position: relative;
+  float: left;
+  min-width: 1%;
+  height: 100%;
+  border-radius: 1000px;
+  background: #6A55A2;
+}
+.account .contain .container-progress .percent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  font-family: tahoma, arial, helvetica;
+  font-size: 12px;
+  color: white;
+}
+.account .contain .statistic {
+  margin-top: 30px;
+  border-top: 1px solid #ccc;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+.account .contain .statistic .earned {
+  position: relative;
+  padding: 10px;
+  font-size: 12px;
+  border-right: 1px solid #ccc;
+}
+.account .contain .statistic .earned svg {
+  fill: #6A55A2;
+  width: 10px;
+}
+.account .contain .statistic .pending {
+  position: relative;
+  padding: 10px;
+  font-size: 12px;
+}
+.account .contain .statistic .pending svg {
+  fill: #FA9BBB;
+  width: 10px;
+}
+.account .contain .statistic .pending .term {
+  display: block;
+  padding: 2px 12px;
+  font-weight: bold;
+  text-decoration: underline;
+  color: black;
+}
+.account .contain .btn-cashout, .account .contain .btn-connect {
+  border-radius: 1000px;
+}
+.account .contain .btn-cashout {
+  background-color: gray;
+  color: white;
+  border: none;
+}
+.account .contain .connect {
+  background-color: white;
+  padding: 1rem 0;
+  border-radius: 10px;
+}
+.account .contain .contain-menu {
+  background-color: #f4f2eb;
+  border-radius: 10px;
+}
+.account .contain .contain-menu .tabs-list {
+  background-color: white;
+}
+.account .contain .contain-menu .tabs-list .tab {
+  background-color: #f4f2eb;
+  color: black;
+}
+.account .contain .contain-menu .tabs-list .tab.active {
+  color: white;
+  background-color: black;
+}
+/*# sourceMappingURL=account.css.map */

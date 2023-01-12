@@ -1,0 +1,388 @@
+.account {
+  .sidebar {
+    height: 100vh;
+    background-color: #f4f2eb;
+    ul {
+      padding-left: 25%;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      .nav-item {
+        padding: 10px 0;
+        svg {
+          width: 15px;
+          vertical-align: middle;
+        }
+        span {
+          padding-left: 10px;
+          vertical-align: middle;
+          color: black;
+        }
+
+        &.active {
+          border-right: 4px solid #b5aad1;
+          span,
+          svg {
+            fill: #b5aad1;
+            color: #b5aad1;
+          }
+        }
+      }
+    }
+  }
+
+  .contain {
+    padding: 40px;
+
+    @media screen and (max-width: 768px) {
+      & {
+        padding: 10px;
+      }
+    }
+
+    form {
+      margin-top: 2rem;
+      .input-group {
+        fieldset {
+          border: 1px solid #ddd;
+          border-radius: 5px;
+          position: relative;
+          padding: 0;
+          box-sizing: border-box;
+
+          legend {
+            font-size: 12px;
+            color: gray;
+            position: absolute;
+            top: -8px;
+            left: 10px;
+            background: white;
+            padding: 0 5px;
+            z-index: 9;
+          }
+        }
+
+        input,
+        select {
+          border: none;
+          border-radius: 10px;
+          outline: none;
+          width: 100%;
+          padding: 0.7rem;
+        }
+      }
+
+      .reset-link {
+        color: black;
+        text-decoration: underline;
+        &:hover {
+          color: #ee7836;
+        }
+      }
+
+      .footer-form {
+        .btn-save {
+          position: relative;
+
+          &.loading {
+            background: rgba($color: #ee7836, $alpha: 0.8);
+            border: transparent;
+            color: white;
+            cursor: not-allowed;
+          }
+        }
+
+        .btn-save.loading::after {
+          content: "";
+          position: absolute;
+          border-radius: 100%;
+          right: 6px;
+          top: 50%;
+          width: 0px;
+          height: 0px;
+          margin-top: -2px;
+          border: 2px solid rgba(255, 255, 255, 0.5);
+          border-left-color: #fff;
+          border-top-color: #fff;
+          animation: spin 0.6s infinite linear, grow 0.3s forwards ease-out;
+        }
+
+        @keyframes spin {
+          to {
+            transform: rotate(359deg);
+          }
+        }
+        @keyframes grow {
+          to {
+            width: 14px;
+            height: 14px;
+            margin-top: -8px;
+            right: 13px;
+          }
+        }
+
+        small {
+          color: green;
+        }
+      }
+    }
+
+    .logout {
+      &:hover > svg {
+        color: #ee7836;
+      }
+      &:hover > span {
+        color: #ee7836;
+      }
+      svg,
+      span {
+        vertical-align: middle;
+        color: black;
+        text-decoration: underline;
+      }
+    }
+
+    .tabs-list {
+      background-color: #f4f2eb;
+      padding: 5px;
+      border-radius: 1000px;
+
+      .tab {
+        background-color: transparent;
+        border: none;
+        font-weight: bold;
+        border-radius: 1000px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: black;
+          color: white;
+        }
+
+        &.active {
+          background: black;
+          color: white;
+        }
+      }
+    }
+
+    .list-items {
+      table {
+        border-collapse: collapse;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+      }
+
+      caption {
+        font-size: 2em;
+        margin: 0.25em 0 0.75em;
+      }
+
+      table tr {
+        padding: 0.35em;
+        &:nth-child(2n) {
+            background-color: #f4f2eb;
+        }
+      }
+
+      table th,
+      table td {
+        padding: 0.625em;
+        text-align: center;
+        &:first-child {
+            text-align: left;
+        }
+
+        input {
+            width: 20px;
+            height: 20px;
+        }
+      }
+
+      table th {
+        font-size: 0.85em;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        span {
+            font-size: 11px;
+            font-weight: 400;
+            text-transform: capitalize;
+            display: block;
+        }
+
+        &:first-child {
+            width: 50%;
+        }
+      }
+
+      /* Media Queries*/
+
+      @media screen and (max-width: 600px) {
+        table {
+          border: 0;
+        }
+        table caption {
+          font-size: 1.3em;
+        }
+        table thead {
+          display: none;
+        }
+        table tr {
+          border-bottom: 3px solid #ddd;
+          display: block;
+          margin-bottom: 0.625em;
+        }
+        table td {
+          border-bottom: 1px solid #ddd;
+          display: block;
+          font-size: 0.8em;
+          text-align: right;
+        }
+        table td:before {
+          content: attr(data-label);
+          float: left;
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+        table td:last-child {
+          border-bottom: 0;
+        }
+      }
+    }
+
+    .balance {
+        background-color: #f4f2eb;
+        border-radius: 15px;
+    }
+
+    .container-progress {
+        text-align: right;
+        margin-top: 4rem;
+        position: relative;
+        .total {
+            color:#b5aad1
+        }
+        .message {
+            position: absolute;
+            background-color: #6A55A2;
+            padding: 15px 40px;
+            top: -75%;
+            left: calc(20% / 2);
+            color: white;
+            border-radius: 10px;
+            &::after {
+                content: '';
+                width: 0; 
+                height: 0; 
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                
+                border-top: 10px solid #6A55A2;
+                position: absolute;
+                bottom: -10px;
+                left: 20%;
+            }
+        }
+        .progress {
+            padding:0;
+            margin: 6px 0;
+            width:100%;
+            height:20px;
+            background:#e5e5e5;
+            border-radius:1000px;
+            position: relative;
+          }
+          
+          .bar {
+                position:relative;
+                float:left;
+                min-width:1%;
+                height:100%;
+                border-radius:1000px;
+                background:#6A55A2;
+          }
+          
+          .percent {
+              position:absolute;
+                top:50%;
+                left:50%;
+                transform:translate(-50%,-50%);
+                margin:0;
+                font-family:tahoma,arial,helvetica;
+                font-size:12px;
+                color:white;
+          }
+    }
+
+    .statistic {
+        margin-top: 30px;
+        border-top: 1px solid #ccc;
+        padding: 10px 0;
+        display: flex;
+        justify-content: center;
+
+        .earned {
+            position: relative;
+            padding: 10px;
+            font-size: 12px;
+            border-right: 1px solid #ccc;
+
+            svg {
+                fill: #6A55A2;
+                width: 10px;
+            }
+        }
+
+        .pending {
+            position: relative;
+            padding: 10px;
+            font-size: 12px;
+
+            svg {
+                fill: #FA9BBB;
+                width: 10px;
+            }
+
+            .term {
+                display: block;
+                padding: 2px 12px;
+                font-weight: bold;
+                text-decoration: underline;
+                color: black
+            }
+        }
+    }
+
+    .btn-cashout, .btn-connect {
+        border-radius: 1000px;
+    }
+
+    .btn-cashout {
+        background-color: gray;
+        color: white;
+        border: none;
+    }
+
+    .connect {
+        background-color: white;
+        padding: 1rem 0;
+        border-radius: 10px;
+    }
+
+    .contain-menu {
+        background-color: #f4f2eb;
+        border-radius: 10px;
+        .tabs-list {
+            background-color: white;
+            .tab {
+                background-color: #f4f2eb;
+                color: black;
+                &.active {
+                    color: white;
+                    background-color: black;
+                }
+            }
+        }
+    }
+  }
+}

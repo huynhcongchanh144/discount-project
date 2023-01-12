@@ -255,11 +255,11 @@ function createModal(id) {
     })
 }
 
-function createModalLogin(e) {
+function createModalLogin(e, type) {
     e.preventDefault()
     let body = document.querySelector('body')
     body.innerHTML += `
-            <div class="popup-container">
+            <div class="popup-container login-container">
                 <div class="popup login">
                     <div class="row mb-0 content justify-center">
                         <div class="col-xs-8 t-center">
@@ -292,7 +292,7 @@ function createModalLogin(e) {
                                         confidentialitate.</a>"</small>
 
                                     <div class="submit mt-2">
-                                        <button class="btn btn-submit">Login</button>
+                                        <button class="btn btn-submit ${type == 'login' ? 'btn-login' : 'btn-signup'}" type="button">${type == 'login' ? 'Login' : 'Register'}</button>
                                     </div>
                                 </form>
 
@@ -306,20 +306,28 @@ function createModalLogin(e) {
                 <div class="backdrop"></div>
             </div>`
 
+    var loginScript = document.createElement("script")
+    loginScript.src = "../../scripts/login.js"
+    loginScript.type = 'module'
+    body.appendChild(loginScript)
+
     let btnClose = document.querySelector('.btn.close')
     btnClose.addEventListener("click", () => {
         document.querySelector('.popup-container').remove()
+        body.removeChild(loginScript)
     })
 
     let backdrop = document.querySelector('.backdrop')
     backdrop.addEventListener("click", () => {
         document.querySelector('.popup-container').remove()
+        body.removeChild(loginScript)
     })
 
     document.addEventListener("keydown", (event) => {
         let popupC = document.querySelector('.popup-container')
         if(event.key == 'Escape' && popupC) {
             popupC.remove()
+            body.removeChild(loginScript)
         }
     })
 }
