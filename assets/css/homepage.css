@@ -1,3 +1,8 @@
+.homepage .btn-yellow {
+  background-color: #deaed4;
+  color: #cc2a36;
+  border: none;
+  border-radius: 0; }
 .homepage .glide-trending, .homepage .glide-popular {
   position: relative; }
   .homepage .glide-trending .item-link, .homepage .glide-popular .item-link {
@@ -343,6 +348,13 @@
       font-size: 18px;
       font-weight: 400;
       line-height: 30px;
-      color: #333; }
+      color: #333;
+      display: flex; }
+      .homepage .faqs ul .faq-item .faq-answer span {
+        display: flex;
+        align-items: center;
+        padding-right: 15px;
+        color: #cc2a36;
+        font-weight: bold; }
 
 /*# sourceMappingURL=homepage.css.map */

@@ -1,4 +1,10 @@
 .homepage {
+    .btn-yellow {
+        background-color: #deaed4;
+        color: #cc2a36;
+        border: none;
+        border-radius: 0;
+    }
     .glide-trending , .glide-popular {
         position: relative;
         .item-link {
@@ -454,6 +460,14 @@
                     font-weight: 400;
                     line-height: 30px;
                     color: #333;
+                    display: flex;
+                    span {
+                        display: flex;
+                        align-items: center;
+                        padding-right: 15px;
+                        color: #cc2a36;
+                        font-weight: bold;
+                    }
                 }
             }
         }
