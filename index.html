@@ -7,7 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/responsive.css">
-    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="../assets/font/icomoon/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.5.0/css/glide.core.css"
+        integrity="sha512-kcsVKF2zQWxpZox0QJTl40HBAhKLjfcUFw2LoTdHilSuHeOSg8uo8zf6ZiIUSHgHHl0H8zRkMcqJz2w4ZH57KA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/magazin_store.css">
+    <link rel="stylesheet" href="./assets/css/homepage.css">
 </head>
 
 <body id="homepage">
@@ -36,7 +42,7 @@
                             <div class="login col-md-3 p-0">
                                 <div class="row mb-0 justify-right">
                                     <img src="./assets/images/user-large-solid.svg" alt="" width="25" class="mr-1">
-                                    <div class="col-md-10 p-0">
+                                    <div class="col-md-12 p-0">
                                         <div class="row mb-0">
                                             <a href="" class="f-bold link-h-decoration">Sign in</a>
                                             <small>
@@ -54,41 +60,41 @@
         </div>
         <div class="navbar bg-gray-light">
             <nav class="row d-flex container p-0 mb-0">
-                    <ul class="menu col-md-12">
-                        <li class="nav-item dropdown">
-                            <a href="" target="shop">
-                                shop
-                                <img src="./assets/images/caret-down-solid.svg" alt="" width="8" class="caret">
-                            </a>
+                <ul class="menu col-md-12">
+                    <li class="nav-item dropdown">
+                        <a href="" target="shop">
+                            shop
+                            <img src="./assets/images/caret-down-solid.svg" alt="" width="8" class="caret">
+                        </a>
                         <!--Start of Dropdown-->
-                            <ul class="dropdown-nav">
-                                <div class="container-navbar-dropdown">
-                                    <li class="nav-item"><a href="">Vouchers</a></li>
-                                    <li class="nav-item"><a href="">Vouchers</a></li>
-                                    <li class="nav-item"><a href="">Vouchers</a></li>
-                                    <li class="nav-item"><a href="">Vouchers</a></li>
-                                    <li class="nav-item"><a href="">Vouchers</a></li>
-                                    <li class="nav-item"><a href="">Vouchers</a></li>
-                                    <li class="nav-item"><a href="">Vouchers</a></li>
-                                    <li class="nav-item"><a href="">Vouchers</a></li>
-                                </div>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a href="">VOUCHERS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" >catalogs</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="">Recommended products</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="">ware</a>
-                        <li class="nav-item">
-                            <a href="">Post-Christmas discounts on Tipli</a>
-                        </li>
-                    </ul>
+                        <ul class="dropdown-nav">
+                            <div class="container-navbar-dropdown">
+                                <li class="nav-item"><a href="">Vouchers</a></li>
+                                <li class="nav-item"><a href="">Vouchers</a></li>
+                                <li class="nav-item"><a href="">Vouchers</a></li>
+                                <li class="nav-item"><a href="">Vouchers</a></li>
+                                <li class="nav-item"><a href="">Vouchers</a></li>
+                                <li class="nav-item"><a href="">Vouchers</a></li>
+                                <li class="nav-item"><a href="">Vouchers</a></li>
+                                <li class="nav-item"><a href="">Vouchers</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="">VOUCHERS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="">catalogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="">Recommended products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="">ware</a>
+                    <li class="nav-item">
+                        <a href="">Post-Christmas discounts on Tipli</a>
+                    </li>
+                </ul>
             </nav>
         </div>
         <div class="navbar-mobile d-sm-none d-block">
@@ -111,10 +117,10 @@
             <div class="menu">
                 <span class="nav-item" onclick="openMenuSecondaryOnMobile('shop')">Shop</span>
                 <a class="nav-item" href="">VOUCHERS</a>
-                <a class="nav-item"  href="">catalogs</a>
-                <a class="nav-item"  href="">Recommended products</a>
-                <a class="nav-item"  href="">ware</a>
-                <a class="nav-item"  href="">Post-Christmas discounts on Tipli</a>
+                <a class="nav-item" href="">catalogs</a>
+                <a class="nav-item" href="">Recommended products</a>
+                <a class="nav-item" href="">ware</a>
+                <a class="nav-item" href="">Post-Christmas discounts on Tipli</a>
             </div>
         </div>
         <div id="shop" class="navbar-secondary">
@@ -151,7 +157,395 @@
             </div>
         </div>
     </header>
-    <div class="body-content"></div>
+    <div class="body-content homepage container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="coupons-h2">Trending</h2>
+            </div>
+            <div class="glide-trending col-md-12">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides item-list">
+                        <li class="glide__slide item">
+                            <a class="item-link">
+                                <div class="item-image">
+                                    <img src="https://discount.ro/wp-content/uploads/2021/11/1.jpg" />
+                                </div>
+                                <div class="item-info row">
+                                    <div class="small-image col-xs-5">
+                                        <img alt="Pana la 80% reducere"
+                                            src="https://discount.ro/wp-content/uploads/2021/11/download-150x150.png"
+                                            class="lazy">
+                                    </div>
+                                    <div class="promoinfo col-xs-7">
+                                        <div class="shop-name">
+                                            <div class="shop-name-title">Black Friday Best Value</div>
+                                        </div>
+                                        <div class="shop-info">Pana la 80% reducere</div>
+                                        <div class="shop-desc">Produse Originale</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="gslide-arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                        <span class="icon-chevron-thin-left icon"></span>
+                    </button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                        <span class="icon-chevron-thin-right icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="pb-3 row">
+            <div class="col-md-12">
+                <h2>Magazine populare</h2>
+            </div>
+            <div class="glide-logo col-md-12">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide t-center">
+                            <div>
+                                <a href="" class="magazin-item">
+                                    <img class="img-magazin"
+                                        src="https://discount.ro/wp-content/uploads/2021/03/Sinsay.com-220x220.jpg"
+                                        width="96" alt="">
+                                </a>
+                            </div>
+                        </li>
+                        <li class="glide__slide t-center">
+                            <div>
+                                <a href="" class="magazin-item">
+                                    <img class="img-magazin"
+                                        src="https://discount.ro/wp-content/uploads/2021/03/Epantofi.ro-220x220.jpg"
+                                        width="96" alt="">
+                                </a>
+                            </div>
+                        </li>
+                        <li class="glide__slide t-center">
+                            <div>
+                                <a href="" class="magazin-item">
+                                    <img class="img-magazin"
+                                        src="https://discount.ro/wp-content/uploads/2021/03/Aboutyou.ro-220x220.jpg"
+                                        width="96" alt="">
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="gslide-arrows" data-glide-el="controls">
+                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                            <span class="icon-chevron-thin-left icon"></span>
+                        </button>
+                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                            <span class="icon-chevron-thin-right icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row lastest-coupons">
+            <div class="col-md-12">
+                <h2>Ultimele cupoane adaugate</h2>
+            </div>
+            <div class="col-md-12">
+                <div class="coffee-card">
+                    <div class="offer-type-1 offer-card home-card open-offer status-1" id="TESTCODE123">
+                        <div class="h-100" onclick="createModal('TESTCODE123')"> 
+                            <div title="Lensa" class="h-100 product-link" href="#" >
+                                <div class="product-img imgwrap"> <img alt="Lensa" class="lazy"
+                                        src="https://discount.ro/wp-content/uploads/2021/03/Lensa.ro-220x220.jpg"
+                                        style="display: block;"></div>
+                                <div class="product-info code">
+                                    <div class="shop-name">
+                                        <div class="shop-name-title">Cod<span class="verified-offer"><i
+                                                    class="fas fa-check-circle"></i> Verificat</span></div>
+                                        <div class="shop-title">Lensa</div>
+                                    </div>
+                                    <div class="shop-info title-voucher">Cupon de reducere Lensa -40 lei la abonarea de newsletter-ul
+                                        Lensa
+                                    </div>
+                                    <div class="coupone-button"> 
+                                        <button class="btn btn-getcode" code="TESTCODE123">
+                                            <span>Afișează COD</span>
+                                            ...00RO
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offer-type-1 offer-card home-card open-offer status-1" id="TESTCODE123">
+                        <div class="h-100" onclick="createModal('TESTCODE123')"> 
+                            <div title="Lensa" class="h-100 product-link" href="#" >
+                                <div class="product-img imgwrap"> <img alt="Lensa" class="lazy"
+                                        src="https://discount.ro/wp-content/uploads/2021/03/Lensa.ro-220x220.jpg"
+                                        style="display: block;"></div>
+                                <div class="product-info code">
+                                    <div class="shop-name">
+                                        <div class="shop-name-title">Cod<span class="verified-offer"><i
+                                                    class="fas fa-check-circle"></i> Verificat</span></div>
+                                        <div class="shop-title">Lensa</div>
+                                    </div>
+                                    <div class="shop-info title-voucher">Cupon de reducere Lensa -40 lei la abonarea de newsletter-ul
+                                        Lensa
+                                    </div>
+                                    <div class="coupone-button"> 
+                                        <button class="btn btn-getcode" code="TESTCODE123">
+                                            <span>Afișează COD</span>
+                                            ...00RO
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offer-type-1 offer-card home-card open-offer status-1" id="TESTCODE123">
+                        <div class="h-100" onclick="createModal('TESTCODE123')"> 
+                            <div title="Lensa" class="h-100 product-link" href="#" >
+                                <div class="product-img imgwrap"> <img alt="Lensa" class="lazy"
+                                        src="https://discount.ro/wp-content/uploads/2021/03/Lensa.ro-220x220.jpg"
+                                        style="display: block;"></div>
+                                <div class="product-info code">
+                                    <div class="shop-name">
+                                        <div class="shop-name-title">Cod<span class="verified-offer"><i
+                                                    class="fas fa-check-circle"></i> Verificat</span></div>
+                                        <div class="shop-title">Lensa</div>
+                                    </div>
+                                    <div class="shop-info title-voucher">Cupon de reducere Lensa -40 lei la abonarea de newsletter-ul
+                                        Lensa
+                                    </div>
+                                    <div class="coupone-button"> 
+                                        <button class="btn btn-getcode" code="TESTCODE123">
+                                            <span>Afișează COD</span>
+                                            ...00RO
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offer-type-1 offer-card home-card open-offer status-1" id="TESTCODE123">
+                        <div class="h-100" onclick="createModal('TESTCODE123')"> 
+                            <div title="Lensa" class="h-100 product-link" href="#" >
+                                <div class="product-img imgwrap"> <img alt="Lensa" class="lazy"
+                                        src="https://discount.ro/wp-content/uploads/2021/03/Lensa.ro-220x220.jpg"
+                                        style="display: block;"></div>
+                                <div class="product-info code">
+                                    <div class="shop-name">
+                                        <div class="shop-name-title">Cod<span class="verified-offer"><i
+                                                    class="fas fa-check-circle"></i> Verificat</span></div>
+                                        <div class="shop-title">Lensa</div>
+                                    </div>
+                                    <div class="shop-info title-voucher">Cupon de reducere Lensa -40 lei la abonarea de newsletter-ul
+                                        Lensa
+                                    </div>
+                                    <div class="coupone-button"> 
+                                        <button class="btn btn-getcode" code="TESTCODE123">
+                                            <span>Afișează COD</span>
+                                            ...00RO
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offer-type-1 offer-card home-card open-offer status-1" id="TESTCODE123">
+                        <div class="h-100" onclick="createModal('TESTCODE123')"> 
+                            <div title="Lensa" class="h-100 product-link" href="#" >
+                                <div class="product-img imgwrap"> <img alt="Lensa" class="lazy"
+                                        src="https://discount.ro/wp-content/uploads/2021/03/Lensa.ro-220x220.jpg"
+                                        style="display: block;"></div>
+                                <div class="product-info code">
+                                    <div class="shop-name">
+                                        <div class="shop-name-title">Cod<span class="verified-offer"><i
+                                                    class="fas fa-check-circle"></i> Verificat</span></div>
+                                        <div class="shop-title">Lensa</div>
+                                    </div>
+                                    <div class="shop-info title-voucher">Cupon de reducere Lensa -40 lei la abonarea de newsletter-ul
+                                        Lensa
+                                    </div>
+                                    <div class="coupone-button"> 
+                                        <button class="btn btn-getcode" code="TESTCODE123">
+                                            <span>Afișează COD</span>
+                                            ...00RO
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offer-type-1 offer-card home-card open-offer status-1" id="TESTCODE123">
+                        <div class="h-100" onclick="createModal('TESTCODE123')"> 
+                            <div title="Lensa" class="h-100 product-link" href="#" >
+                                <div class="product-img imgwrap"> <img alt="Lensa" class="lazy"
+                                        src="https://discount.ro/wp-content/uploads/2021/03/Lensa.ro-220x220.jpg"
+                                        style="display: block;"></div>
+                                <div class="product-info code">
+                                    <div class="shop-name">
+                                        <div class="shop-name-title">Cod<span class="verified-offer"><i
+                                                    class="fas fa-check-circle"></i> Verificat</span></div>
+                                        <div class="shop-title">Lensa</div>
+                                    </div>
+                                    <div class="shop-info title-voucher">Cupon de reducere Lensa -40 lei la abonarea de newsletter-ul
+                                        Lensa
+                                    </div>
+                                    <div class="coupone-button"> 
+                                        <button class="btn btn-getcode" code="TESTCODE123">
+                                            <span>Afișează COD</span>
+                                            ...00RO
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offer-type-1 offer-card home-card open-offer status-1" id="TESTCODE123">
+                        <div class="h-100" onclick="createModal('TESTCODE123')"> 
+                            <div title="Lensa" class="h-100 product-link" href="#" >
+                                <div class="product-img imgwrap"> <img alt="Lensa" class="lazy"
+                                        src="https://discount.ro/wp-content/uploads/2021/03/Lensa.ro-220x220.jpg"
+                                        style="display: block;"></div>
+                                <div class="product-info code">
+                                    <div class="shop-name">
+                                        <div class="shop-name-title">Cod<span class="verified-offer"><i
+                                                    class="fas fa-check-circle"></i> Verificat</span></div>
+                                        <div class="shop-title">Lensa</div>
+                                    </div>
+                                    <div class="shop-info title-voucher">Cupon de reducere Lensa -40 lei la abonarea de newsletter-ul
+                                        Lensa
+                                    </div>
+                                    <div class="coupone-button"> 
+                                        <button class="btn btn-getcode" code="TESTCODE123">
+                                            <span>Afișează COD</span>
+                                            ...00RO
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="coupons-h2">Popular</h2>
+            </div>
+            <div class="glide-popular col-md-12">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides item-list">
+                        <li class="glide__slide item">
+                            <a class="item-link">
+                                <div class="item-image">
+                                    <img src="https://discount.ro/wp-content/uploads/2021/11/1.jpg" />
+                                </div>
+                                <div class="item-info row">
+                                    <div class="promoinfo col-xs-12">
+                                        <div class="title">Pana la 80% reducere</div>
+                                        <div class="btn btn-yellow">
+                                            <span>text</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="gslide-arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                        <span class="icon-chevron-thin-left icon"></span>
+                    </button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                        <span class="icon-chevron-thin-right icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="mt-3 row container d-flex justify-center">
+            <div class="faqs mt-2 col-md-12">
+                <ul class="list-style-none">
+                    <li>
+                        <div class="faq-item" target="faq-1">
+                            <h3 class="faq-question">
+                                <span class="f-16 f-thin">Ce reprezintă un cod de reducere ePantofi?</span>
+                                <svg class="v-center faq-icon icon-plus" width="25" fill="#cc2a36"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                    <path
+                                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
+                                </svg>
+                                <svg class="v-center faq-icon icon-minus" width="25" fill="#cc2a36"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                    <path
+                                        d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z" />
+                                </svg>
+                            </h3>
+                            <div class="collapse faq-answer py-1 mt-1" id="faq-1">
+                                Un cod de reducere, voucher sau cupon reprezintă un cod format din litere
+                                și/sau cifre (ex: DISCOUNT25), care poate fi aplicat în câmpul special aflat
+                                în pagina de finalizare a comenzilor. Un cod de reducere poate aplica o
+                                reducere la prețul final al comenzii dvs.
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="faq-item" target="faq-2">
+                            <h3 class="faq-question">
+                                <span class="f-16 f-thin">Ce reprezintă un cod de reducere ePantofi?</span>
+                                <svg class="v-center faq-icon icon-plus" width="25" fill="#cc2a36"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                    <path
+                                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
+                                </svg>
+                                <svg class="v-center faq-icon icon-minus" width="25" fill="#cc2a36"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                    <path
+                                        d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z" />
+                                </svg>
+                            </h3>
+                            <div class="collapse faq-answer py-1 mt-1" id="faq-2">
+                                Un cod de reducere, voucher sau cupon reprezintă un cod format din litere
+                                și/sau cifre (ex: DISCOUNT25), care poate fi aplicat în câmpul special aflat
+                                în pagina de finalizare a comenzilor. Un cod de reducere poate aplica o
+                                reducere la prețul final al comenzii dvs.
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="faq-item" target="faq-3">
+                            <h3 class="faq-question">
+                                <span class="f-16 f-thin">Ce reprezintă un cod de reducere ePantofi?</span>
+                                <svg class="v-center faq-icon icon-plus" width="25" fill="#cc2a36"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                    <path
+                                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
+                                </svg>
+                                <svg class="v-center faq-icon icon-minus" width="25" fill="#cc2a36"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                    <path
+                                        d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z" />
+                                </svg>
+                            </h3>
+                            <div class="collapse faq-answer py-1 mt-1" id="faq-3">
+                                Un cod de reducere, voucher sau cupon reprezintă un cod format din litere
+                                și/sau cifre (ex: DISCOUNT25), care poate fi aplicat în câmpul special aflat
+                                în pagina de finalizare a comenzilor. Un cod de reducere poate aplica o
+                                reducere la prețul final al comenzii dvs.
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div> 
+    </div>
     <footer>
         <div class="row justify-between align-center container mb-0">
             <div class="col-md-12">
@@ -160,10 +554,12 @@
                         <a href=""><img src="./assets/images/footer_logo.svg" alt="" width="170"></a>
                     </div>
                     <div class="col-md-3">
-                        <a href="mailto:"><img class="v-center" src="./assets/images/Email.svg" width="25" alt=""> <span class="v-center">info@kuplio.ro</span></a>
+                        <a href="mailto:"><img class="v-center" src="./assets/images/Email.svg" width="25" alt=""> <span
+                                class="v-center">info@kuplio.ro</span></a>
                     </div>
                     <div class="col-md-3">
-                        <a href=""><img class="v-center" src="./assets/images/Download.svg" width="25" alt="">  <span class="v-center">noutăți prin e-mail</span></a>
+                        <a href=""><img class="v-center" src="./assets/images/Download.svg" width="25" alt=""> <span
+                                class="v-center">noutăți prin e-mail</span></a>
                     </div>
                     <div class="col-md-3">
                         <a href="" class="mr-1"><img src="./assets/images/Facebook.svg" width="32" alt=""></a>
@@ -176,16 +572,26 @@
                         <h3 class="mb-2">Site-urile noastre</h3>
                         <div class="list">
                             <ul class="list-style-none">
-                                <li><a href=""><img src="./assets/images/flag_cz.webp" class="mr-1" alt=""> <span>Vasekupony.cz</span></a></li>
-                                <li><a href=""><img src="./assets/images/flag_sk.webp" class="mr-1" alt=""> <span>Vasekupony.sk</span></a></li>
-                                <li><a href=""><img src="./assets/images/flag_hu.webp" class="mr-1" alt=""> <span>KUPLIO.hu</span></a></li>
-                                <li><a href=""><img src="./assets/images/flag_pl.webp" class="mr-1" alt=""> <span>KUPLIO.pl</span></a></li>
-                                <li><a href=""><img src="./assets/images/flag_de.webp" class="mr-1" alt=""> <span>KUPLIO.de</span></a></li>
-                                <li><a href=""><img src="./assets/images/flag_at.webp" class="mr-1" alt=""> <span>KUPLIO.at</span></a></li>
-                                <li><a href=""><img src="./assets/images/flag_bg.webp" class="mr-1" alt=""> <span>KUPLIO.bg</span></a></li>
-                                <li><a href=""><img src="./assets/images/flag_hr.webp" class="mr-1" alt=""> <span>KUPLIO.hr</span></a></li>
-                                <li><a href=""><img src="./assets/images/flag_si.webp" class="mr-1" alt=""> <span>KUPLIO.si</span></a></li>
-                                <li><a href=""><img src="./assets/images/flag_it.webp" class="mr-1" alt=""> <span>KUPLIO.it</span></a></li>
+                                <li><a href=""><img src="./assets/images/flag_cz.webp" class="mr-1" alt="">
+                                        <span>Vasekupony.cz</span></a></li>
+                                <li><a href=""><img src="./assets/images/flag_sk.webp" class="mr-1" alt="">
+                                        <span>Vasekupony.sk</span></a></li>
+                                <li><a href=""><img src="./assets/images/flag_hu.webp" class="mr-1" alt="">
+                                        <span>KUPLIO.hu</span></a></li>
+                                <li><a href=""><img src="./assets/images/flag_pl.webp" class="mr-1" alt="">
+                                        <span>KUPLIO.pl</span></a></li>
+                                <li><a href=""><img src="./assets/images/flag_de.webp" class="mr-1" alt="">
+                                        <span>KUPLIO.de</span></a></li>
+                                <li><a href=""><img src="./assets/images/flag_at.webp" class="mr-1" alt="">
+                                        <span>KUPLIO.at</span></a></li>
+                                <li><a href=""><img src="./assets/images/flag_bg.webp" class="mr-1" alt="">
+                                        <span>KUPLIO.bg</span></a></li>
+                                <li><a href=""><img src="./assets/images/flag_hr.webp" class="mr-1" alt="">
+                                        <span>KUPLIO.hr</span></a></li>
+                                <li><a href=""><img src="./assets/images/flag_si.webp" class="mr-1" alt="">
+                                        <span>KUPLIO.si</span></a></li>
+                                <li><a href=""><img src="./assets/images/flag_it.webp" class="mr-1" alt="">
+                                        <span>KUPLIO.it</span></a></li>
                             </ul>
                         </div>
                     </div>
@@ -213,7 +619,7 @@
                                 <li><a href="">Adăugare magazin</a></li>
                                 <li><a href="">Profilul companiei</a></li>
                                 <li><a href="">Condiții comerciale generale</a></li>
-                                <li><a href="">Contact</a></li>   
+                                <li><a href="">Contact</a></li>
                             </ul>
                         </div>
                     </div>
@@ -237,5 +643,14 @@
     </footer>
 </body>
 <script src="./scripts/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.5.0/glide.min.js"
+    integrity="sha512-sRTWzFH9u9XGU6qNUQ8eFE6s6FXl/2L/nRJVwigW92TW8kC4eZCWsIKZTdfkIrCRyE8j0GwkTg8p+H76drV/WQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./scripts/slider.js"></script>
+<script>
+    renderSlider('.glide-trending', 3, 3, 2, 1, 16);
+    renderSlider('.glide-logo', 5, 5, 3, 2, 16);
+    renderSlider('.glide-popular', 3, 3, 2, 1, 16);
+</script>
 
 </html>
