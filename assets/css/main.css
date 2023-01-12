@@ -314,6 +314,11 @@ footer .copyright {
   background-position: 3px 8px;
 }
 
+@media screen and (max-width: 768px) {
+  #footer .container {
+    max-width: 768px;
+  }
+}
 header {
   max-height: 130px;
   color: #919191;
