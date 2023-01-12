@@ -68,37 +68,46 @@
             <nav class="row d-flex container p-0">
                 <ul class="menu col-md-12">
                     <li class="nav-item dropdown">
-                        <a href="" target="shop">
-                            shop
+                        <a href="./magazin/index.html" target="shop">
+                            Magazin
                             <img src="./assets/images/caret-down-solid.svg" alt="" width="8" class="caret">
                         </a>
                         <!--Start of Dropdown-->
                         <ul class="dropdown-nav">
                             <div class="container-navbar-dropdown">
-                                <li class="nav-item"><a href="">Vouchers</a></li>
-                                <li class="nav-item"><a href="">Vouchers</a></li>
-                                <li class="nav-item"><a href="">Vouchers</a></li>
-                                <li class="nav-item"><a href="">Vouchers</a></li>
-                                <li class="nav-item"><a href="">Vouchers</a></li>
-                                <li class="nav-item"><a href="">Vouchers</a></li>
-                                <li class="nav-item"><a href="">Vouchers</a></li>
-                                <li class="nav-item"><a href="">Vouchers</a></li>
+                                <li class="nav-item"><a href="./magazin/epantofi.ro.html">Epantofi.ro</a></li>
                             </div>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a href="">VOUCHERS</a>
+                        <a href="./recenzzi/index.html">Recenzzi</a>
                     </li>
                     <li class="nav-item">
-                        <a href="">catalogs</a>
+                        <a href="./ghid/index.html">Ghid</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="">Recommended products</a>
+                    <li class="nav-item dropdown">
+                        <a href="./category/index.html" target="shop">
+                            Category
+                            <img src="./assets/images/caret-down-solid.svg" alt="" width="8" class="caret">
+                        </a>
+                        <!--Start of Dropdown-->
+                        <ul class="dropdown-nav">
+                            <div class="container-navbar-dropdown">
+                                <li class="nav-item"><a href="./category/details/index.html">Category Detail</a></li>
+                            </div>
+                        </ul>
                     </li>
-                    <li class="nav-item">
-                        <a href="">ware</a>
-                    <li class="nav-item">
-                        <a href="">Post-Christmas discounts on Tipli</a>
+                    <li class="nav-item dropdown">
+                        <a href="./black-friday/index.html" target="shop">
+                            Black Friday
+                            <img src="./assets/images/caret-down-solid.svg" alt="" width="8" class="caret">
+                        </a>
+                        <!--Start of Dropdown-->
+                        <ul class="dropdown-nav">
+                            <div class="container-navbar-dropdown">
+                                <li class="nav-item"><a href="./black-friday/articole-copii-si-jucarii.html">Article</a></li>
+                            </div>
+                        </ul>
                     </li>
                 </ul>
             </nav>
@@ -121,42 +130,47 @@
         </div>
         <div class="navbar-mobile-menu">
             <div class="menu">
-                <span class="nav-item" onclick="openMenuSecondaryOnMobile('shop')">Shop</span>
-                <a class="nav-item" href="">VOUCHERS</a>
-                <a class="nav-item" href="">catalogs</a>
-                <a class="nav-item" href="">Recommended products</a>
-                <a class="nav-item" href="">ware</a>
-                <a class="nav-item" href="">Post-Christmas discounts on Tipli</a>
+                <span class="nav-item" onclick="openMenuSecondaryOnMobile('magazin')">Magazin</span>
+                <a class="nav-item" href="">Recenzzi</a>
+                <a class="nav-item" href="">Ghid</a>
+                <span class="nav-item" onclick="openMenuSecondaryOnMobile('category')">Category</span>
+                <span class="nav-item" onclick="openMenuSecondaryOnMobile('black-friday')">Black Friday</span>
             </div>
         </div>
-        <div id="shop" class="navbar-secondary">
+        <div id="magazin" class="navbar-secondary">
             <div class="navbar-secondary-container">
                 <div class="navbar-secondary-wrapper">
                     <span class="navbar-item navbar-mobile-back-link" onclick="openMenuOnMobile()">
                         Back to main menu
                     </span>
                     <span class="navbar-secondary-item">
-                        <a class="link" href="">Vouchers</a>
+                        <a class="link" href="./magazin/epantofi.ro.html">Epantofi.ro</a>
                         <span class="plus">+</span>
                     </span>
-                    <span class="navbar-secondary-item">
-                        <a class="link" href="">Vouchers</a>
-                        <span class="plus">+</span>
+                </div>
+            </div>
+        </div>
+        <div id="category" class="navbar-secondary">
+            <div class="navbar-secondary-container">
+                <div class="navbar-secondary-wrapper">
+                    <span class="navbar-item navbar-mobile-back-link" onclick="openMenuOnMobile()">
+                        Back to main menu
                     </span>
                     <span class="navbar-secondary-item">
-                        <a class="link" href="">Vouchers</a>
+                        <a class="link" href="./category/details/index.html">Category Detail</a>
                         <span class="plus">+</span>
                     </span>
-                    <span class="navbar-secondary-item">
-                        <a class="link" href="">Vouchers</a>
-                        <span class="plus">+</span>
+                </div>
+            </div>
+        </div>
+        <div id="black-friday" class="navbar-secondary">
+            <div class="navbar-secondary-container">
+                <div class="navbar-secondary-wrapper">
+                    <span class="navbar-item navbar-mobile-back-link" onclick="openMenuOnMobile()">
+                        Back to main menu
                     </span>
                     <span class="navbar-secondary-item">
-                        <a class="link" href="">Vouchers</a>
-                        <span class="plus">+</span>
-                    </span>
-                    <span class="navbar-secondary-item">
-                        <a class="link" href="">Vouchers</a>
+                        <a class="link" href="./black-friday/articole-copii-si-jucarii.html">Article</a>
                         <span class="plus">+</span>
                     </span>
                 </div>
