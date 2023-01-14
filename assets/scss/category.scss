@@ -116,4 +116,37 @@
             }
         }
     }
+
+    .d-md-none {
+        display: none;
+    }
+    .d-md-block {
+        display: block;
+    }
+
+    @media screen and (max-width: 768px) {
+        .container {
+            max-width: 760px;
+        }
+
+        .slider-store {
+            width: 100%;
+            overflow-x: auto;
+            .d-md-none {
+                display: flex;
+            }
+            .d-md-block {
+                display: none;
+            }
+            .glide__slides {
+                touch-action: auto;
+                overflow: unset;
+
+                .glide__slide {
+                    width: auto;
+                    margin: 0 10px;
+                }
+            }
+        }
+    }
 }

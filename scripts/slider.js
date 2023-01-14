@@ -1,4 +1,4 @@
-const renderSlider = (element ,  perView  = 2, perViewDesktop  = 3, perViewTablet = 2, perViewMobile = 1, gap = 8 , type = 'carousel', autoplay = 3800 ) => {
+const renderSlider = (element ,  perView  = 2, perViewDesktop  = 3, perViewTablet = 2, perViewMobile = 1, gap = 8 , type = 'carousel', autoplay = 3800, perViewMobileSmall = 1 ) => {
     const config = {
         type,
         startAt: 0,
@@ -16,7 +16,7 @@ const renderSlider = (element ,  perView  = 2, perViewDesktop  = 3, perViewTable
             perView: perViewMobile,
           },
           540: {
-            perView: 1
+            perView: perViewMobileSmall
           }
         }
       }

@@ -64,7 +64,7 @@ footer .copyright {
 }
 
 .collapse {
-  display: none;
+  display: none !important;
 }
 
 .popup-container {
