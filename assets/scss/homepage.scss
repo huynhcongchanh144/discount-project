@@ -147,6 +147,7 @@
             position: absolute;
             top: 40% !important;
             width: calc(100% - 2em);
+            left: 0;
             button {
                 border: 0;
                 background-color:    transparent;
@@ -164,12 +165,12 @@
                     }
                 }
 
-                // &.glide__arrow--left {
-                //     left: -30px !important;
-                // }
+                &.glide__arrow--left {
+                    left: 16px !important;
+                }
 
                 &.glide__arrow--right {
-                    right: 0 !important;
+                    right: -16px !important;
                 }
             }
         }
