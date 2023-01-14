@@ -323,18 +323,22 @@ table th + td {
 .faqs .faq-item {
     background-color: #fff;
     border: 1px solid #eee;
-    padding: 10px;
+    padding: 20px 10px;
     border-radius: 7px;
     cursor: pointer;
 }
 
 .faqs .faq-item .faq-question {
     position: relative;
+    span {
+        margin-right: 25px;
+    }
 }
 
 .faqs .faq-item .faq-icon {
     position: absolute;
     right: 0;
+    top: 13%
 }
 
 .faqs .faq-item .faq-answer {

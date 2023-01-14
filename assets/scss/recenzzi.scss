@@ -309,41 +309,4 @@ html {
         }
 
     }
-
-    .faqs {
-        h2 {
-            font-size: 38px;
-            line-height: 43px;
-            color: #041264;
-            font-weight: 700;
-        }
-        ul {
-            margin-top: 20px;
-            .faq-item {
-                background-color: #fff;
-                border-radius: 32px;
-                border: thin solid rgb(224, 224, 224);
-                box-shadow: rgb(0, 0, 0) 0 1px 1px;
-                margin-bottom: 35px;
-                position: relative;
-                .faq-question {
-                    cursor: pointer;
-                    margin-bottom: 0!important;
-                    padding: 20px;
-                    font-weight: 700 !important;
-                    span {
-                        font-weight: bold;
-                    }
-                }
-                .faq-answer  {
-                    border-top: none !important;
-                    padding: 0 20px;
-                    font-size: 18px;
-                    font-weight: 400;
-                    line-height: 30px;
-                    color: #333;
-                }
-            }
-        }
-    }
 }

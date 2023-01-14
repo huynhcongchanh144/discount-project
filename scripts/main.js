@@ -259,6 +259,9 @@ function createModal(id) {
 function createModalLogin(e, type) {
     e.preventDefault()
     let body = document.querySelector('body')
+    let popupExist = document.querySelector('.popup-container')
+    if(popupExist) popupExist.remove()
+    
     body.innerHTML += `
             <div class="popup-container login-container">
                 <div class="popup login">
@@ -301,7 +304,7 @@ function createModalLogin(e, type) {
                                     </div>
                                 </form>
 
-                                <small class="notify">Ai deja un cont Picodi? <a href="">Conecteaza-te</a></small>
+                                <small class="notify">${type == 'login' ? 'Nu aveți încă un cont Picodi?' : 'Ai deja un cont Picodi?'} <a href="" class="${type == 'login' ? 'redirect-register' : 'redirect-login'}">${type == 'login' ? 'Inregistreaza-te' : 'Conecteaza-te'}</a></small>
                             </div>
                         </div>
                     </div>
@@ -335,6 +338,18 @@ function createModalLogin(e, type) {
             body.removeChild(loginScript)
         }
     })
+
+    let redirectLogin = document.querySelector('.redirect-login')
+    let redirectRegister = document.querySelector('.redirect-register')
+    if(redirectLogin) {
+        redirectLogin.addEventListener('click', (e) => {
+            createModalLogin(e, 'login')
+        })
+    } else {
+        redirectRegister.addEventListener('click', (e) => {
+            createModalLogin(e, 'register')
+        })
+    }
 }
 
 
@@ -388,5 +403,15 @@ function goToAccountPage(e) {
         window.location.href = '/account/profile.html'
     } else {
         createModalLogin()
+    }
+}
+
+const openMenuSearch = () => {
+    const menuMobile = document.querySelector('.search-bar-mobile');
+  
+    if(!menuMobile.classList.contains('collapse')){
+      menuMobile.classList.add('collapse');
+    } else {
+      menuMobile.classList.remove('collapse');
     }
 }
