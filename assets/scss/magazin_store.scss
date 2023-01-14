@@ -37,7 +37,8 @@
     
     .is-bottom {
         position: absolute;
-        bottom: 0%
+        bottom: 1%;
+        width: calc(100% - 4.4rem);
     }
 
     .magazine-item {
