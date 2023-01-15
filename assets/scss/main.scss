@@ -346,6 +346,11 @@ footer {
 
 // Responsive footer 
 footer {
+    h3 {
+        span {
+            display: none;
+        }
+    }
     .col-md-3 {
         @media screen and (max-width: 992px) and (min-width: 768px) {
             width: calc(100% * (6 / 12));
@@ -359,6 +364,31 @@ footer {
     #footer {
         .container {
             max-width: 768px
+        }
+    }
+    footer {
+        h3 {
+            margin-bottom: 0 !important;
+            span {
+                display: block;
+                transform: rotate(180deg);
+                float: right;
+                transition: all 250ms;
+                &.show {
+                    transform: rotate(0deg);
+                }
+            }
+        }
+        .list {
+            height: auto;
+            max-height: 0;
+            max-width: 300px;
+            overflow: hidden;
+            transform: translateY(20px);
+            transition: all 180ms ease-in-out 0ms; 
+            &.show {
+                transition: all 250ms ease-in-out 0ms;
+            }
         }
     }
 }

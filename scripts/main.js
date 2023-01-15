@@ -415,3 +415,18 @@ const openMenuSearch = () => {
       menuMobile.classList.remove('collapse');
     }
 }
+
+const actionFooterOnMobile = (e) => {
+    let ListEl = e.querySelector('.list');
+    let heightOfList = ListEl.querySelector('.list-style-none').offsetHeight;
+    let icon = e.querySelector('.icon-chevron-down-solid')
+    if(ListEl.classList.contains('show')) {
+        ListEl.classList.remove('show');
+        icon.classList.remove('show')
+        ListEl.style.maxHeight = 0+'px';
+    } else {
+        ListEl.classList.add('show');
+        icon.classList.add('show')
+        ListEl.style.maxHeight = heightOfList+10+'px';
+    }
+}
