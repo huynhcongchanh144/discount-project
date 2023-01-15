@@ -262,24 +262,23 @@ footer h3 span {
   #footer .container {
     max-width: 768px; }
 
-  footer h3 {
-    margin-bottom: 0 !important; }
-    footer h3 span {
-      display: block;
-      transform: rotate(180deg);
-      float: right;
-      transition: all 250ms; }
-      footer h3 span.show {
-        transform: rotate(0deg); }
+  footer h3 span {
+    display: block;
+    transform: rotate(180deg);
+    float: right;
+    transition: all 250ms; }
+    footer h3 span.show {
+      transform: rotate(0deg); }
   footer .list {
     height: auto;
     max-height: 0;
     max-width: 300px;
     overflow: hidden;
-    transform: translateY(20px);
     transition: all 180ms ease-in-out 0ms; }
     footer .list.show {
-      transition: all 250ms ease-in-out 0ms; } }
+      transition: all 250ms ease-in-out 0ms; }
+  footer .panel-collapse {
+    border-bottom: 1px solid rgba(204, 204, 204, 0.3); } }
 header {
   max-height: 130px;
   color: #919191;

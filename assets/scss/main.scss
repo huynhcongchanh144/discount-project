@@ -368,7 +368,6 @@ footer {
     }
     footer {
         h3 {
-            margin-bottom: 0 !important;
             span {
                 display: block;
                 transform: rotate(180deg);
@@ -384,11 +383,13 @@ footer {
             max-height: 0;
             max-width: 300px;
             overflow: hidden;
-            transform: translateY(20px);
             transition: all 180ms ease-in-out 0ms; 
             &.show {
                 transition: all 250ms ease-in-out 0ms;
             }
+        }
+        .panel-collapse {
+            border-bottom: 1px solid hsla(0,0%,80%,.3);
         }
     }
 }
