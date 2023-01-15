@@ -1,0 +1,158 @@
+html {
+  scroll-behavior: smooth; }
+
+#cateloage-page .cateloage .top-banner {
+  background-color: #fff;
+  padding: 10px 0px; }
+  #cateloage-page .cateloage .top-banner.sticky-banner {
+    position: sticky;
+    top: -17px;
+    z-index: 9; }
+  #cateloage-page .cateloage .top-banner .breakcrumbs-wrappers {
+    white-space: nowrap;
+    overflow-x: auto;
+    margin: 10px auto;
+    position: relative;
+    width: 100%; }
+    #cateloage-page .cateloage .top-banner .breakcrumbs-wrappers .page-sub-t {
+      display: inline; }
+      #cateloage-page .cateloage .top-banner .breakcrumbs-wrappers .page-sub-t a {
+        color: #323232;
+        font-size: 12px; }
+#cateloage-page .cateloage .featured-body {
+  font-weight: 600;
+  line-height: 1.33;
+  color: #323232;
+  font-size: 1.125rem;
+  margin-top: 12px;
+  margin-bottom: 8px; }
+  @media (min-width: 576px) {
+    #cateloage-page .cateloage .featured-body {
+      font-size: 1.5rem;
+      margin-top: 24px;
+      margin-bottom: 16px; } }
+#cateloage-page .cateloage .scroll-section {
+  position: relative;
+  display: flex;
+  margin-top: 20px; }
+  #cateloage-page .cateloage .scroll-section .thumbs-panel {
+    display: none;
+    width: 130px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    max-height: calc(100vh - 80px);
+    position: sticky;
+    top: 76px;
+    z-index: 7;
+    overflow-y: hidden; }
+    @media (min-width: 768px) {
+      #cateloage-page .cateloage .scroll-section .thumbs-panel {
+        display: block; } }
+    #cateloage-page .cateloage .scroll-section .thumbs-panel .thumbs-page-t {
+      padding: 10px;
+      font-size: 14px;
+      background-color: #fff;
+      z-index: 9;
+      position: absolute;
+      width: 100%; }
+    #cateloage-page .cateloage .scroll-section .thumbs-panel .thumb-nav {
+      overflow-y: auto;
+      background-color: #fff;
+      padding: 10px;
+      z-index: 8;
+      height: 100%;
+      margin-top: 35px;
+      transition: all 0.3s;
+      position: relative;
+      scrollbar-width: none;
+      /* Firefox */ }
+      #cateloage-page .cateloage .scroll-section .thumbs-panel .thumb-nav::-webkit-scrollbar {
+        display: none;
+        /* Safari and Chrome */ }
+      #cateloage-page .cateloage .scroll-section .thumbs-panel .thumb-nav ul {
+        list-style-type: none; }
+        #cateloage-page .cateloage .scroll-section .thumbs-panel .thumb-nav ul .side-li {
+          height: 150px;
+          margin-bottom: 10px; }
+          #cateloage-page .cateloage .scroll-section .thumbs-panel .thumb-nav ul .side-li .side-a {
+            height: 100%;
+            display: block;
+            color: #cc2a36;
+            text-decoration: none; }
+            #cateloage-page .cateloage .scroll-section .thumbs-panel .thumb-nav ul .side-li .side-a .thumb-img {
+              height: 100%;
+              width: 100%;
+              border: 3px solid transparent;
+              padding: 3px;
+              object-fit: cover;
+              opacity: 0.6;
+              transition: all 0.2s; }
+            #cateloage-page .cateloage .scroll-section .thumbs-panel .thumb-nav ul .side-li .side-a.active-section .thumb-img {
+              border: 3px solid #cc2a36;
+              padding: 3px;
+              border-radius: 8px;
+              overflow: hidden;
+              opacity: 1;
+              transition: all 0.2s; }
+  #cateloage-page .cateloage .scroll-section .images-panel {
+    padding-top: 0 !important; }
+    #cateloage-page .cateloage .scroll-section .images-panel .image-item {
+      height: auto;
+      position: relative;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0px 0px 5px #0000003e;
+      margin-bottom: 15px; }
+      #cateloage-page .cateloage .scroll-section .images-panel .image-item .img-page-n {
+        position: absolute;
+        right: 9px;
+        top: 68px;
+        border: 1px solid #ddd;
+        padding: 2px 10px;
+        border-radius: 4px;
+        font-size: 13px;
+        background-color: #fff; }
+      #cateloage-page .cateloage .scroll-section .images-panel .image-item .session-img {
+        width: 100%;
+        height: auto; }
+    @media (min-width: 768px) {
+      #cateloage-page .cateloage .scroll-section .images-panel {
+        padding: 15px;
+        width: calc(100% - 150px); } }
+#cateloage-page #actionscatalog {
+  z-index: 9;
+  justify-content: space-around;
+  box-shadow: 0px 0px 15px #0000003e;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #fff;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -141px;
+  padding: 10px 5px !important;
+  width: 273px; }
+  #cateloage-page #actionscatalog a {
+    width: 81px;
+    height: 60px;
+    display: inline-block;
+    color: #333;
+    float: left;
+    border: none !important;
+    padding: 0;
+    cursor: pointer;
+    font-size: 12px;
+    background-color: #fff; }
+    #cateloage-page #actionscatalog a i {
+      display: block;
+      font-size: 23px;
+      margin-bottom: 7px; }
+    #cateloage-page #actionscatalog a span {
+      display: inline-block;
+      height: 34px; }
+    #cateloage-page #actionscatalog a:hover {
+      color: #cc2a36; }
+#cateloage-page footer {
+  margin-top: 30px; }
+
+/*# sourceMappingURL=cateloage.css.map */

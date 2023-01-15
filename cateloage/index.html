@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cateloage</title>
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/font/icomoon/style.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/cateloage.css">
+</head>
+
+<body>
+    <div id="cateloage-page">
+        <header id="header">
+            <div class="mb-0 meta">
+                <div class="container">
+                    <div class="row justify-between align-center mb-0">
+                        <div class="col-md-12 py-1">
+                            <div class="row justify-between align-center mb-0">
+                                <a href="../index.html" class="col-md-1 p-0"><img src="../assets/images/logo.png"
+                                        width="66" alt=""></a>
+                                <div class="search_bar p-0 col-md-8">
+                                    <div class="row mb-0 align-center">
+                                        <div class="wrapper_search col-md-7 p-0">
+                                            <input type="text" name="search" id="search" placeholder="Find stores">
+                                            <button class="position-relative btn btn-search">Search</button>
+                                        </div>
+                                        <div class="question col-md-4 py-0">
+                                            <a href="" class="nav-tips d-flex align-center c-gray">
+                                                <img src="../assets/images/circle-question-regular.svg" alt=""
+                                                    width="24" class="mr-1">
+                                                <span>How to get rewards with Tipli?</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="login col-md-3 p-0">
+                                    <div class="row mb-0 justify-right">
+                                        <img src="../assets/images/user-large-solid.svg" alt="" width="25" class="mr-1">
+                                        <div class="col-md-10 p-0">
+                                            <div class="row mb-0 no-auth">
+                                                <a href="" onclick="createModalLogin(event, 'login')"
+                                                    class="f-bold link-h-decoration">Sign in</a>
+                                                <small>
+                                                    Already earning rewards with Tipli? <a href=""
+                                                        class="link-h-decoration"
+                                                        onclick="createModalLogin(event, 'signup')">Sign up</a>
+                                                </small>
+                                            </div>
+                                            <div class="row mb-0 auth">
+                                                <a href="" onclick="goToAccountPage(event)"
+                                                    class="f-bold link-h-decoration">My Account</a>
+                                                <small class="name-account col-xs-12"></small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar bg-gray-light">
+                <nav class="row d-flex container p-0">
+                    <ul class="menu col-md-12">
+                        <li class="nav-item dropdown">
+                            <a href="../magazin/index.html" target="shop">
+                                Magazin
+                                <img src="../assets/images/caret-down-solid.svg" alt="" width="8" class="caret">
+                            </a>
+                            <!--Start of Dropdown-->
+                            <ul class="dropdown-nav">
+                                <div class="container-navbar-dropdown">
+                                    <li class="nav-item"><a href="../magazin/epantofi.ro.html">Epantofi.ro</a></li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../recenzzi/index.html">Recenzzi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../ghid/index.html">Ghid</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="../category/index.html" target="shop">
+                                Category
+                                <img src="../assets/images/caret-down-solid.svg" alt="" width="8" class="caret">
+                            </a>
+                            <!--Start of Dropdown-->
+                            <ul class="dropdown-nav">
+                                <div class="container-navbar-dropdown">
+                                    <li class="nav-item"><a href="../category/details/index.html">Category Detail</a>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="../black-friday/index.html" target="shop">
+                                Black Friday
+                                <img src="../assets/images/caret-down-solid.svg" alt="" width="8" class="caret">
+                            </a>
+                            <!--Start of Dropdown-->
+                            <ul class="dropdown-nav">
+                                <div class="container-navbar-dropdown">
+                                    <li class="nav-item"><a
+                                            href="../black-friday/articole-copii-si-jucarii.html">Article</a></li>
+                                </div>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="navbar-mobile d-sm-none d-block">
+                <div class="row mb-0">
+                    <div class="logo py-1 px-1">
+                        <a href="../index.html" class="col-md-1 p-0"><img src="../assets/images/logo.png" width="66"
+                                alt=""></a>
+                    </div>
+                    <div class="hamberger d-flex p-0">
+                        <div class="search-btn" onclick="openMenuSearch()">
+                            <img src="../assets/images/icons8-search.svg" alt="" width="24" />
+                        </div>
+                        <div class="menu" onclick="openMenuOnMobile()">
+                            <img src="../assets/images/burger-menu-svgrepo-com.svg" alt="" width="24" />
+                            <span>MENU</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="search-bar-mobile pb-3 collapse">
+                <div class="p-2">
+                    <div class="wrapper_search p-0">
+                        <input type="text" name="search" id="search" placeholder="Find stores">
+                    </div>
+                    <div class="d-flex justify-between py-1 border-bottom">
+                        <div class="store">
+                            <img src="https://static.tipli.ro/t/upload/images/shops-shop-logo/4744/170x/fit/769011.png?v=9"
+                                width="69" alt="">
+                            <span class="f-14 px-1">Sinsay</span>
+                        </div>
+                        <span class="f-bold rate">5%</span>
+                    </div>
+                    <div class="d-flex justify-between py-1 border-bottom">
+                        <div class="store">
+                            <img src="https://static.tipli.ro/t/upload/images/shops-shop-logo/4744/170x/fit/769011.png?v=9"
+                                width="69" alt="">
+                            <span class="f-14 px-1">Sinsay</span>
+                        </div>
+                        <span class="f-bold rate">5%</span>
+                    </div>
+                    <div class="d-flex justify-between py-1 border-bottom">
+                        <div class="store">
+                            <img src="https://static.tipli.ro/t/upload/images/shops-shop-logo/4744/170x/fit/769011.png?v=9"
+                                width="69" alt="">
+                            <span class="f-14 px-1">Sinsay</span>
+                        </div>
+                        <span class="f-bold rate">5%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-mobile-menu">
+                <div class="menu">
+                    <span class="nav-item" onclick="openMenuSecondaryOnMobile('magazin')">Magazin</span>
+                    <a class="nav-item" href="../recenzzi/index.html">Recenzzi</a>
+                    <a class="nav-item" href="./index.html">Ghid</a>
+                    <span class="nav-item" onclick="openMenuSecondaryOnMobile('category')">Category</span>
+                    <span class="nav-item" onclick="openMenuSecondaryOnMobile('black-friday')">Black Friday</span>
+                </div>
+            </div>
+            <div id="magazin" class="navbar-secondary">
+                <div class="navbar-secondary-container">
+                    <div class="navbar-secondary-wrapper">
+                        <span class="navbar-item navbar-mobile-back-link" onclick="openMenuOnMobile()">
+                            Back to main menu
+                        </span>
+                        <span class="navbar-secondary-item">
+                            <a class="link" href="../magazin/epantofi.ro.html">Epantofi.ro</a>
+                            <span class="plus">+</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div id="category" class="navbar-secondary">
+                <div class="navbar-secondary-container">
+                    <div class="navbar-secondary-wrapper">
+                        <span class="navbar-item navbar-mobile-back-link" onclick="openMenuOnMobile()">
+                            Back to main menu
+                        </span>
+                        <span class="navbar-secondary-item">
+                            <a class="link" href="../category/details/index.html">Category Detail</a>
+                            <span class="plus">+</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div id="black-friday" class="navbar-secondary">
+                <div class="navbar-secondary-container">
+                    <div class="navbar-secondary-wrapper">
+                        <span class="navbar-item navbar-mobile-back-link" onclick="openMenuOnMobile()">
+                            Back to main menu
+                        </span>
+                        <span class="navbar-secondary-item">
+                            <a class="link" href="../black-friday/articole-copii-si-jucarii.html">Article</a>
+                            <span class="plus">+</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="body-content cateloage">
+            <div class="top-banner sticky-banner">
+                <div class="container">
+                    <div class="row breakcrumbs-wrappers p-0">
+                        <div class="col-md-12 p-0">
+                            <div class="page-sub-t">
+                                <a href="">Discount.ro</a>
+                                <span>›</span>
+                            </div>
+                            <div class="page-sub-t">
+                                <a href="">Cataloage</a>
+                                <span>›</span>
+                            </div>
+                            <div class="page-sub-t">
+                                <a href="">Cora.ro</a>
+                                <span>›</span>
+                            </div>
+                            <div class="page-sub-t">
+                                <a href="">Catalog Cora Pe locuri fiti gata..Sport 3 august 2021 -31 ianuarie 2022</a>
+                                <span>›</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 p-0">
+                        <h1 class="featured-body">
+                            Catalog Cora Pe locuri fiti gata..Sport 3 august 2021 -31 ianuarie 2022
+                        </h1>
+                    </div>
+                    <div class="col-md-12 p-0">
+                        <p>Valabilitate: <strong>03.11.2022 - 31.01.2023</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container scroll-section">
+                <div class="thumbs-panel">
+                    <div class="thumbs-page-t"> Pagina <span id="current-num">1</span> / <span id="total-num">16</span>
+                    </div>
+                    <nav class="thumb-nav">
+                        <ul>
+                            <li class="side-li"> <a href="#section1" class="side-a active-section"> <img
+                                        src="https://discount.ro/wp-content/uploads/catalog/23375/catalog-cora-pe-locuri-fiti-gata..sport-3-august-2021-31-ianuarie-2022-0-xs.jpg"
+                                        class="thumb-img lazy" style="display: inline;"> </a> </li>
+                            <li class="side-li"> <a href="#section2" class="side-a"> <img
+                                        src="https://discount.ro/wp-content/uploads/catalog/23375/catalog-cora-pe-locuri-fiti-gata..sport-3-august-2021-31-ianuarie-2022-1-xs.jpg"
+                                        class="thumb-img lazy" style="display: inline;"> </a> </li>
+                            <li class="side-li"> <a href="#section3" class="side-a"> <img
+                                        src="https://discount.ro/wp-content/uploads/catalog/23375/catalog-cora-pe-locuri-fiti-gata..sport-3-august-2021-31-ianuarie-2022-2-xs.jpg"
+                                        class="thumb-img lazy" style="display: inline;"> </a> </li>
+                            <li class="side-li"> <a href="#section4" class="side-a"> <img
+                                        src="https://discount.ro/wp-content/uploads/catalog/23375/catalog-cora-pe-locuri-fiti-gata..sport-3-august-2021-31-ianuarie-2022-3-xs.jpg"
+                                        class="thumb-img lazy" style="display: inline;"> </a> </li>
+                    </nav>
+                </div>
+                <div class="images-panel">
+                    <div id="section1" class="image-item"> <span class="img-page-n">1</span> <img
+                            src="https://discount.ro/wp-content/uploads/catalog/23375/catalog-cora-pe-locuri-fiti-gata..sport-3-august-2021-31-ianuarie-2022-0.jpg"
+                            class="session-img lazy" style="display: block;"></div>
+                    <div class="mb-10 gaholder">
+                        <div style="position: relative;  max-width: 100%; margin:0 auto">
+                            <script async=""
+                                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7630505746736463"
+                                crossorigin="anonymous"></script> <ins class="adsbygoogle" style="display:block"
+                                data-ad-client="ca-pub-7630505746736463" data-ad-slot="6286760149" data-ad-format="auto"
+                                data-full-width-responsive="true"></ins>
+                            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+                        </div>
+                    </div>
+                    <div id="section2" class="image-item"> <span class="img-page-n">2</span> <img
+                            src="https://discount.ro/wp-content/uploads/catalog/23375/catalog-cora-pe-locuri-fiti-gata..sport-3-august-2021-31-ianuarie-2022-1.jpg"
+                            class="session-img lazy" style="display: block;"></div>
+                    <div id="section3" class="image-item"> <span class="img-page-n">3</span> <img
+                            src="https://discount.ro/wp-content/uploads/catalog/23375/catalog-cora-pe-locuri-fiti-gata..sport-3-august-2021-31-ianuarie-2022-2.jpg"
+                            class="session-img lazy" style="display: block;"></div>
+                    <div class="mb-10 gaholder">
+                        <div style="position: relative;  max-width: 100%; margin:0 auto">
+                            <script async=""
+                                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7630505746736463"
+                                crossorigin="anonymous"></script> <ins class="adsbygoogle" style="display:block"
+                                data-ad-client="ca-pub-7630505746736463" data-ad-slot="6286760149" data-ad-format="auto"
+                                data-full-width-responsive="true"></ins>
+                            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+                        </div>
+                    </div>
+                    <div id="section4" class="image-item"> <span class="img-page-n">4</span> <img
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                            data-src="https://discount.ro/wp-content/uploads/catalog/23375/catalog-cora-pe-locuri-fiti-gata..sport-3-august-2021-31-ianuarie-2022-3.jpg"
+                            class="session-img lazy"></div>
+                </div>
+            </div>
+        </div>
+        <div id="actionscatalog"> 
+            <a target="_blank" rel="nofollow" href="/mergi-la/?id=4918" class="acwpreload">
+                <i class="icon-phone-solid"></i>
+                <span>Catre <br>Magazin</span>
+            </a> 
+            <a target="_blank" rel="nofollow" href="https://discount.ro/wp-content/uploads/catalog/23375/catalog-cora-pe-locuri-fiti-gata..sport-3-august-2021-31-ianuarie-2022.pdf">
+                <i class="icon-phone-solid"></i>
+                <span>Vezi Pdf <br>(Zoom)</span>
+            </a> 
+            <a target="_blank" rel="nofollow"
+                href="whatsapp://send?text=https://discount.ro/cataloage/cora-ro/catalog-cora-pe-locuri-fiti-gata-sport-3-august-2021-31-ianuarie-2022-23375/">
+                <i class="icon-phone-solid"></i>
+                <span>Partajare<br> WhatsApp</span>
+            </a>
+        </div>
+        <footer id="footer">
+            <div class="row justify-between align-center container mb-0">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <a href=""><img src="../assets/images/footer_logo.svg" alt="" width="170"></a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="mailto:"><img class="v-center" src="../assets/images/Email.svg" width="25" alt="">
+                                <span class="v-center">info@kuplio.ro</span></a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href=""><img class="v-center" src="../assets/images/Download.svg" width="25" alt="">
+                                <span class="v-center">noutăți prin e-mail</span></a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="" class="mr-1"><img src="../assets/images/Facebook.svg" width="32" alt=""></a>
+                            <a href="" class="mr-1"><img src="../assets/images/Instagram.svg" width="32" alt=""></a>
+                            <a href=""><img src="../assets/images/Youtube.svg" width="32" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="row c-white">
+                        <div class="col-md-3">
+                            <h3 class="mb-2">Site-urile noastre</h3>
+                            <div class="list">
+                                <ul class="list-style-none">
+                                    <li><a href=""><img src="../assets/images/flag_cz.webp" class="mr-1" alt="">
+                                            <span>Vasekupony.cz</span></a></li>
+                                    <li><a href=""><img src="../assets/images/flag_sk.webp" class="mr-1" alt="">
+                                            <span>Vasekupony.sk</span></a></li>
+                                    <li><a href=""><img src="../assets/images/flag_hu.webp" class="mr-1" alt="">
+                                            <span>KUPLIO.hu</span></a></li>
+                                    <li><a href=""><img src="../assets/images/flag_pl.webp" class="mr-1" alt="">
+                                            <span>KUPLIO.pl</span></a></li>
+                                    <li><a href=""><img src="../assets/images/flag_de.webp" class="mr-1" alt="">
+                                            <span>KUPLIO.de</span></a></li>
+                                    <li><a href=""><img src="../assets/images/flag_at.webp" class="mr-1" alt="">
+                                            <span>KUPLIO.at</span></a></li>
+                                    <li><a href=""><img src="../assets/images/flag_bg.webp" class="mr-1" alt="">
+                                            <span>KUPLIO.bg</span></a></li>
+                                    <li><a href=""><img src="../assets/images/flag_hr.webp" class="mr-1" alt="">
+                                            <span>KUPLIO.hr</span></a></li>
+                                    <li><a href=""><img src="../assets/images/flag_si.webp" class="mr-1" alt="">
+                                            <span>KUPLIO.si</span></a></li>
+                                    <li><a href=""><img src="../assets/images/flag_it.webp" class="mr-1" alt="">
+                                            <span>KUPLIO.it</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <h3 class="mb-2">Cele mai bune reduceri</h3>
+                            <div class="list">
+                                <ul class="list-style-none">
+                                    <li><a href="">TOP 50 vouchere</a></li>
+                                    <li><a href="">Coduri de reducere</a></li>
+                                    <li><a href="">Reduceri</a></li>
+                                    <li><a href="">Lichidări</a></li>
+                                    <li><a href="">Cataloage online</a></li>
+                                    <li><a href="">Magazine</a></li>
+                                    <li><a href="">Branduri</a></li>
+                                    <li><a href="">BLACK FRIDAY</a></li>
+                                    <li><a href="">Transport gratuit</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <h3 class="mb-2">Pentru parteneri</h3>
+                            <div class="list">
+                                <ul class="list-style-none">
+                                    <li><a href="">Reclamă pe KUPLIO.ro</a></li>
+                                    <li><a href="">Adăugare magazin</a></li>
+                                    <li><a href="">Profilul companiei</a></li>
+                                    <li><a href="">Condiții comerciale generale</a></li>
+                                    <li><a href="">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <h3 class="mb-2">Pentru utilizatori</h3>
+                            <div class="list">
+                                <ul class="list-style-none">
+                                    <li><a href="">KUPLIO revista</a></li>
+                                    <li><a href="">Termeni de utilizare</a></li>
+                                    <li><a href="">Protecția datelor personale</a></li>
+                                    <li><a href="">Cookies</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p class="col-md-12 copyright">© 2022 PACHET PLUS s.r.l., Toate drepturile rezervate</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="../scripts/main.js"></script>
+<script src="../scripts/cateloage/index.js"></script>
+</html>
