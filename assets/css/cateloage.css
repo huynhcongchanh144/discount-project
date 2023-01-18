@@ -7,7 +7,7 @@ html {
   #cateloage-page .cateloage .top-banner.sticky-banner {
     position: sticky;
     top: -17px;
-    z-index: 9; }
+    z-index: 1; }
   #cateloage-page .cateloage .top-banner .breakcrumbs-wrappers {
     white-space: nowrap;
     overflow-x: auto;
