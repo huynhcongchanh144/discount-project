@@ -113,15 +113,14 @@
 }
 .homepage .glide-logo .magazin-item {
   text-decoration: none;
-  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.homepage .glide-logo .magazin-item .img-magazin {
   border: 1px solid #ddd;
-  width: 100px;
-  height: 100px;
-  background-color: #f9f9f9;
+  border-radius: 100%;
 }
 .homepage .glide-logo .gslide-arrows {
   position: absolute;
@@ -418,5 +417,18 @@
     font-size: 14px;
     text-align: center;
   }
+}
+.homepage .category-item {
+  margin: 0 12px 8px 0;
+}
+.homepage .category-item .btn {
+  border-color: #ddd;
+  transition: background-color 500ms ease 0s, border-color 500ms ease 0s, color 500ms ease 0s, fill 500ms ease 0s;
+}
+.homepage .category-item .btn:hover {
+  border: thin solid rgb(224, 224, 224);
+  background-color: #cc2a36;
+  text-decoration: none;
+  color: #fff;
 }
 /*# sourceMappingURL=homepage.css.map */

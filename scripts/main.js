@@ -95,8 +95,10 @@ storeDesc.forEach(e => {
         let content = document.getElementById(target)
         if(content.classList.contains('showshort')) {
             content.classList.remove('showshort')
+            e.textContent = 'See less »'
         } else {
             content.classList.add('showshort')
+            e.textContent = 'See more »'
         }
     })
 })

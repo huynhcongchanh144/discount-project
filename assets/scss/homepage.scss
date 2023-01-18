@@ -130,18 +130,14 @@
         position: relative;
         .magazin-item {
             text-decoration: none;
-            margin: auto;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            border: 1px solid #ddd;
-            width: 100px;
-            height: 100px;
-            background-color: #f9f9f9;
-            // .img-magazin {
-            //     border: 1px solid #ddd;
-            // }
+            .img-magazin {
+                border: 1px solid #ddd;
+                border-radius: 100%;
+            }
         }
         .gslide-arrows {
             position: absolute;
@@ -475,6 +471,20 @@
         .btn-yellow {
             font-size: 14px;
             text-align: center;
+        }
+    }
+
+    .category-item {
+        margin: 0 12px 8px 0;
+        .btn {
+            border-color: #ddd;
+            transition: background-color 500ms ease 0s, border-color 500ms ease 0s, color 500ms ease 0s, fill 500ms ease 0s;
+            &:hover {
+                border: thin solid rgb(224, 224, 224);
+                background-color: #cc2a36;
+                text-decoration: none;
+                color: #fff;
+            }
         }
     }
 }
