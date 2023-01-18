@@ -8,9 +8,6 @@
     <title>Home</title>
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/font/icomoon/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.5.0/css/glide.core.css"
-        integrity="sha512-kcsVKF2zQWxpZox0QJTl40HBAhKLjfcUFw2LoTdHilSuHeOSg8uo8zf6ZiIUSHgHHl0H8zRkMcqJz2w4ZH57KA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/magazin_store.css">
     <link rel="stylesheet" href="./assets/css/homepage.css">
@@ -717,16 +714,19 @@
             </div>
         </div>
     </footer>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.5.0/css/glide.core.css"
+    integrity="sha512-kcsVKF2zQWxpZox0QJTl40HBAhKLjfcUFw2LoTdHilSuHeOSg8uo8zf6ZiIUSHgHHl0H8zRkMcqJz2w4ZH57KA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./scripts/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.5.0/glide.min.js"
+        integrity="sha512-sRTWzFH9u9XGU6qNUQ8eFE6s6FXl/2L/nRJVwigW92TW8kC4eZCWsIKZTdfkIrCRyE8j0GwkTg8p+H76drV/WQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./scripts/slider.js"></script>
+    <script>
+        renderSlider('.glide-trending', 3, 3, 2, 1, 16);
+        renderSlider('.glide-logo', 6, 5, 3, 2, 16, 'carousel', 0);
+        renderSlider('.glide-popular', 3, 3, 2, 1, 16);
+    </script>
 </body>
-<script src="./scripts/main.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.5.0/glide.min.js"
-    integrity="sha512-sRTWzFH9u9XGU6qNUQ8eFE6s6FXl/2L/nRJVwigW92TW8kC4eZCWsIKZTdfkIrCRyE8j0GwkTg8p+H76drV/WQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="./scripts/slider.js"></script>
-<script>
-    renderSlider('.glide-trending', 3, 3, 2, 1, 16);
-    renderSlider('.glide-logo', 6, 5, 3, 2, 16, 'carousel', 0);
-    renderSlider('.glide-popular', 3, 3, 2, 1, 16);
-</script>
 
 </html>
