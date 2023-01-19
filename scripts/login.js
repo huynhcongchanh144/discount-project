@@ -74,7 +74,8 @@ if(btnLoginFb) {
             // Handle Errors here.
             const errorCode = error.code;
             let notify = document.querySelector('.notify-login')
-            notify.textContent = generateMessage(errorCode)
+            // notify.textContent = generateMessage(errorCode)
+            notify.textContent = error.message
             notify.style.color = 'red'
 
             let idInter = setInterval(() => {
@@ -117,7 +118,8 @@ if(btnLoginGg) {
             // Handle Errors here.
             const errorCode = error.code;
             let notify = document.querySelector('.notify-login')
-            notify.textContent = generateMessage(errorCode)
+            // notify.textContent = generateMessage(errorCode)
+            notify.textContent = error.message
             notify.style.color = 'red'
 
             let idInter = setInterval(() => {
@@ -154,10 +156,11 @@ if(btnRegister) {
             })
         })
         .catch((error) => {
-            console.log(error.message)
+            // console.log(error.message)
             const errorCode = error.code;
             let notify = document.querySelector('.notify-login')
-            notify.textContent = generateMessage(errorCode)
+            // notify.textContent = generateMessage(errorCode)
+            notify.textContent = error.message
             notify.style.color = 'red'
 
             let idInter = setInterval(() => {
@@ -188,9 +191,10 @@ if(btnLogin) {
         })
         .catch((error) => {
             const errorCode = error.code;
-            console.log(errorCode)
+            // console.log(errorCode)
             let notify = document.querySelector('.notify-login')
-            notify.textContent = generateMessage(errorCode)
+            // notify.textContent = generateMessage(errorCode)
+            notify.textContent = error.message
             notify.style.color = 'red'
 
             let idInter = setInterval(() => {
