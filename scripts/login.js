@@ -14,25 +14,25 @@ import {
     FacebookAuthProvider
 }from "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js";
 
-// const firebaseConfig = {
-//     apiKey: "AIzaSyANjXg9ighDIyS7xgYEIUfg65Bcdzv396I",
-//     authDomain: "test-d075e.firebaseapp.com",
-//     projectId: "test-d075e",
-//     storageBucket: "test-d075e.appspot.com",
-//     messagingSenderId: "1003451507207",
-//     appId: "1:1003451507207:web:84804bcf5664fb189bc0a2",
-//     measurementId: "G-5FLQLC7CVY"
-// };
-
 const firebaseConfig = {
-    apiKey: "AIzaSyDG_sf2bnRZdcxBOumpTcN1OT9aADfoMoY",
-    authDomain: "discount-646d6.firebaseapp.com",
-    projectId: "discount-646d6",
-    storageBucket: "discount-646d6.appspot.com",
-    messagingSenderId: "961694167011",
-    appId: "1:961694167011:web:4821329e3f6a9209103ad6",
-    measurementId: "G-7RWEG0QETC"
+    apiKey: "AIzaSyANjXg9ighDIyS7xgYEIUfg65Bcdzv396I",
+    authDomain: "test-d075e.firebaseapp.com",
+    projectId: "test-d075e",
+    storageBucket: "test-d075e.appspot.com",
+    messagingSenderId: "1003451507207",
+    appId: "1:1003451507207:web:84804bcf5664fb189bc0a2",
+    measurementId: "G-5FLQLC7CVY"
 };
+
+// const firebaseConfig = {
+//     apiKey: "AIzaSyDG_sf2bnRZdcxBOumpTcN1OT9aADfoMoY",
+//     authDomain: "discount-646d6.firebaseapp.com",
+//     projectId: "discount-646d6",
+//     storageBucket: "discount-646d6.appspot.com",
+//     messagingSenderId: "961694167011",
+//     appId: "1:961694167011:web:4821329e3f6a9209103ad6",
+//     measurementId: "G-7RWEG0QETC"
+// };
 
 const app = initializeApp(firebaseConfig);
 const database = getFirestore();
@@ -56,7 +56,7 @@ if(btnLoginFb) {
                 name: user.displayName || '',
                 phone: user.phoneNumber || '',
             }
-            const userInfoRef = doc(database, 'users', user.uid);
+            const userInfoRef = doc(database, 'user', user.uid);
             const docUser = await getDoc(userInfoRef)
             if(docUser.exists()) {
                 await sessionStorage.setItem('userData', JSON.stringify(docUser.data())) 
@@ -99,7 +99,7 @@ if(btnLoginGg) {
                 name: user.displayName || '',
                 phone: user.phoneNumber || '',
             }
-            const userInfoRef = doc(database, 'users', user.uid);
+            const userInfoRef = doc(database, 'user', user.uid);
             const docUser = await getDoc(userInfoRef)
             if(docUser.exists()) {
                 await sessionStorage.setItem('userData', JSON.stringify(docUser.data())) 
@@ -179,7 +179,7 @@ if(btnLogin) {
         .then(async (userCredential) => {
             // Signed in
             const user = userCredential.user;
-            const userInfoRef = doc(database, 'users', user.uid);
+            const userInfoRef = doc(database, 'user', user.uid);
             const docUser = await getDoc(userInfoRef)
             if(docUser.exists()) {
                 sessionStorage.setItem('userData', JSON.stringify(docUser.data())) 
@@ -240,7 +240,7 @@ if(resetLink) {
 async function updateUserProfile(auth, profile) {
 	const user = auth.currentUser;
 	if(user) {
-        const ref = doc(database, 'users', user.uid)
+        const ref = doc(database, 'user', user.uid)
         btnSave.classList.add('loading')
         await updateDoc(ref, profile).then(() => {
             let newData = {
@@ -296,7 +296,7 @@ function getCurrentUser(auth) {
     let userData = {}
     onAuthStateChanged(auth, async (user) => {
         if (user) {
-            const userInfoRef = doc(database, 'users', user.uid);
+            const userInfoRef = doc(database, 'user', user.uid);
             const docUser = await getDoc(userInfoRef)
             if(docUser.exists()) {
                 let data = docUser.data()
@@ -380,7 +380,7 @@ function generateMessage(code) {
         case 'auth/email-already-in-use': 
             return 'Email already in use !'
         default:
-            return "Send request failed!"
+            return "Email/password combination does not exist"
     }
 }
 
