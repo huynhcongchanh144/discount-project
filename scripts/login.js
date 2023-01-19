@@ -1,5 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
 import { getDatabase, ref, set, onValue, update } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
+import {doc, setDoc,getDoc,updateDoc, getFirestore} from "https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js";
 import { 
     getAuth,
     createUserWithEmailAndPassword, 
@@ -34,7 +35,7 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-const database = getDatabase();
+const database = getFirestore();
 
 
 const auth = getAuth(app);
@@ -47,25 +48,28 @@ let btnLoginGg = document.querySelector('.btn-login-gg')
 if(btnLoginFb) {
     btnLoginFb.addEventListener("click", () => {
         const provider = new FacebookAuthProvider();
-        signInWithPopup(auth, provider).then(result => {
+        btnLoginFb.classList.add('loading')
+        signInWithPopup(auth, provider).then(async (result) => {
             const user = result.user;
             let userData = {
                 email: user.email || '',
                 name: user.displayName || '',
                 phone: user.phoneNumber || '',
             }
-            const userInfo = ref(database, 'users/' + user.uid);
-            onValue(userInfo, async (snapshot) => {
-                const data = snapshot.val();
-                if(data) {
-                    await sessionStorage.setItem('userData', JSON.stringify(data)) 
-                    window.location.href = '/account/profile.html'     
-                } else {
-                    await set(ref(database, 'users/' + user.uid), userData);    
-                    sessionStorage.setItem('userData', JSON.stringify(userData))    
-                    window.location.href = '/account/profile.html'  
-                }
-            });
+            const userInfoRef = doc(database, 'users', user.uid);
+            const docUser = await getDoc(userInfoRef)
+            if(docUser.exists()) {
+                await sessionStorage.setItem('userData', JSON.stringify(docUser.data())) 
+                window.location.href = '/account/profile.html'  
+            } else {
+                let ref = doc(database, "users", user.uid)
+                await setDoc(ref, userData).then(() => {
+                    sessionStorage.setItem('userData', JSON.stringify(userData))
+                    window.location.href = '/account/profile.html'
+                }).catch(err => {
+                    console.log(err)
+                })
+            }
         }).catch((error) => {
             // Handle Errors here.
             const errorCode = error.code;
@@ -78,32 +82,37 @@ if(btnLoginFb) {
                 clearInterval(idInter)
             }, 3000)
             
-          })
+        }).finally(() => {
+            btnLoginFb.classList.remove('loading')
+        })
     })
 }
 
 if(btnLoginGg) {
     btnLoginGg.addEventListener("click", () => {
         const provider = new GoogleAuthProvider()
-        signInWithPopup(auth, provider).then(result => {
+        btnLoginGg.classList.add('loading')
+        signInWithPopup(auth, provider).then(async (result) => {
             const user = result.user;
             let userData = {
                 email: user.email || '',
                 name: user.displayName || '',
                 phone: user.phoneNumber || '',
             }
-            const userInfo = ref(database, 'users/' + user.uid);
-            onValue(userInfo, async (snapshot) => {
-                const data = snapshot.val();
-                if(data) {
-                    await sessionStorage.setItem('userData', JSON.stringify(data)) 
-                    window.location.href = '/account/profile.html'     
-                } else {
-                    await set(ref(database, 'users/' + user.uid), userData);    
-                    sessionStorage.setItem('userData', JSON.stringify(userData))    
-                    window.location.href = '/account/profile.html'  
-                }
-            });
+            const userInfoRef = doc(database, 'users', user.uid);
+            const docUser = await getDoc(userInfoRef)
+            if(docUser.exists()) {
+                await sessionStorage.setItem('userData', JSON.stringify(docUser.data())) 
+                window.location.href = '/account/profile.html'  
+            } else {
+                let ref = doc(database, "users", user.uid)
+                await setDoc(ref, userData).then(() => {
+                    sessionStorage.setItem('userData', JSON.stringify(userData))
+                    window.location.href = '/account/profile.html'
+                }).catch(err => {
+                    console.log(err)
+                })
+            }
         }).catch((error) => {
             // Handle Errors here.
             const errorCode = error.code;
@@ -116,7 +125,9 @@ if(btnLoginGg) {
                 clearInterval(idInter)
             }, 3000)
             
-          })
+        }).finally(() => {
+            btnLoginGg.classList.remove('loading')
+        })
     })
 }
 
@@ -124,8 +135,9 @@ if(btnRegister) {
     btnRegister.addEventListener("click", () => {
         let email = document.querySelector('.login-container #email').value
         let password = document.querySelector('.login-container #password').value
+        btnRegister.classList.add('loading')
         createUserWithEmailAndPassword(auth, email, password)
-        .then((userCredential) => {
+        .then(async (userCredential) => {
             // Signed in
             const user = userCredential.user;
             let userData = {
@@ -133,11 +145,16 @@ if(btnRegister) {
                 name: user.displayName || '',
                 phone: user.phoneNumber || '',
             }
-            set(ref(database, 'users/' + user.uid), userData);
-            sessionStorage.setItem('userData', JSON.stringify(userData))
-            window.location.href = '/account/profile.html'
+            let ref = doc(database, "users", user.uid)
+            await setDoc(ref, userData).then(() => {
+                sessionStorage.setItem('userData', JSON.stringify(userData))
+                window.location.href = '/account/profile.html'
+            }).catch(err => {
+                console.log(err)
+            })
         })
         .catch((error) => {
+            console.log(error.message)
             const errorCode = error.code;
             let notify = document.querySelector('.notify-login')
             notify.textContent = generateMessage(errorCode)
@@ -147,7 +164,9 @@ if(btnRegister) {
                 notify.textContent = ''
                 clearInterval(idInter)
             }, 3000)
-        });
+        }).finally(() => {
+            btnRegister.classList.remove('loading')
+        })
     })
 }
 
@@ -155,17 +174,17 @@ if(btnLogin) {
     btnLogin.addEventListener("click", () => {
         let email = document.querySelector('.login-container #email').value
         let password = document.querySelector('.login-container #password').value
-    
+        btnLogin.classList.add('loading')
         signInWithEmailAndPassword(auth, email, password)
         .then(async (userCredential) => {
             // Signed in
             const user = userCredential.user;
-            const userInfo = ref(database, 'users/' + user.uid);
-            await onValue(userInfo, (snapshot) => {
-                const data = snapshot.val();
-                sessionStorage.setItem('userData', JSON.stringify(data)) 
+            const userInfoRef = doc(database, 'users', user.uid);
+            const docUser = await getDoc(userInfoRef)
+            if(docUser.exists()) {
+                sessionStorage.setItem('userData', JSON.stringify(docUser.data())) 
                 window.location.href = "/account/profile.html"
-            });
+            }
         })
         .catch((error) => {
             const errorCode = error.code;
@@ -178,17 +197,9 @@ if(btnLogin) {
                 notify.textContent = ''
                 clearInterval(idInter)
             }, 3000)
-        });
-    })
-}
-
-
-function changePassword(auth, newPassword) {
-    const user = auth.currentUser
-    updatePassword(user, newPassword).then(() => {
-        console.log('updated successful')
-    }).catch(() => {
-        console.log('update fail')
+        }).finally(() => {
+            btnLogin.classList.remove('loading')
+        })
     })
 }
 
@@ -226,14 +237,13 @@ if(resetLink) {
 	})
 }
 
-function updateUserProfile(auth, profile) {
+async function updateUserProfile(auth, profile) {
 	const user = auth.currentUser;
 	if(user) {
-		const updates = {}
-		updates['users/' + user.uid] = profile
-		btnSave.classList.add('loading')
-		update(ref(database), updates).then(() => {
-			let newData = {
+        const ref = doc(database, 'users', user.uid)
+        btnSave.classList.add('loading')
+        await updateDoc(ref, profile).then(() => {
+            let newData = {
 				...JSON.parse(sessionStorage.getItem('userData')),
 				...profile
 			}
@@ -244,7 +254,7 @@ function updateUserProfile(auth, profile) {
 				clearInterval(idInter)
 			}, 3000)
 			getUserFromSession()
-		}).catch((error) => {
+        }).catch((error) => {
 			console.log(error.message)
 		}).finally(() => {
 			btnSave.classList.remove('loading')
@@ -284,25 +294,24 @@ if(btnSave) {
 
 function getCurrentUser(auth) {
     let userData = {}
-    onAuthStateChanged(auth, (user) => {
+    onAuthStateChanged(auth, async (user) => {
         if (user) {
-            const userInfo = ref(database, 'users/' + user.uid);
-            onValue(userInfo, (snapshot) => {
-                const data = snapshot.val();
-                if(data) {
-                        sessionStorage.setItem('userData', JSON.stringify(data))
-						document.querySelector('.form-profile #email').value = data.email || ''
-						document.querySelector('.form-profile #phone').value = data.phone || ''
-						document.querySelector('.form-profile #first_name').value = data.first_name || ''
-						document.querySelector('.form-profile #last_name').value = data.last_name || ''
-						document.querySelector('.form-profile #year').value = data.birth_day ? new Date(data.birth_day).getFullYear() : 0
-						document.querySelector('.form-profile #month').value = data.birth_day ? new Date(data.birth_day).getMonth() + 1 : 0
-						document.querySelector('.form-profile #day').value = data.birth_day ? new Date(data.birth_day).getDate() : 0
-						document.querySelector('.form-profile #gender').value = data.gender || 0
-						document.querySelector('.form-profile #language').value = data.language || 0
-						document.querySelector('.form-profile #currency').value = data.currency || 0
-                }
-            });
+            const userInfoRef = doc(database, 'users', user.uid);
+            const docUser = await getDoc(userInfoRef)
+            if(docUser.exists()) {
+                let data = docUser.data()
+                sessionStorage.setItem('userData', JSON.stringify(data))
+                document.querySelector('.form-profile #email').value = data.email || ''
+                document.querySelector('.form-profile #phone').value = data.phone || ''
+                document.querySelector('.form-profile #first_name').value = data.first_name || ''
+                document.querySelector('.form-profile #last_name').value = data.last_name || ''
+                document.querySelector('.form-profile #year').value = data.birth_day ? new Date(data.birth_day).getFullYear() : 0
+                document.querySelector('.form-profile #month').value = data.birth_day ? new Date(data.birth_day).getMonth() + 1 : 0
+                document.querySelector('.form-profile #day').value = data.birth_day ? new Date(data.birth_day).getDate() : 0
+                document.querySelector('.form-profile #gender').value = data.gender || 0
+                document.querySelector('.form-profile #language').value = data.language || 0
+                document.querySelector('.form-profile #currency').value = data.currency || 0
+            }
         }
     });
     return userData

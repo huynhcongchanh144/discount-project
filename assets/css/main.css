@@ -109,6 +109,7 @@ footer .copyright {
   border: none;
   border-radius: 1000px;
   margin: 10px 0;
+  position: relative;
 }
 .popup-container .popup.login .btn-login-fb:hover {
   border-color: transparent;
@@ -126,6 +127,9 @@ footer .copyright {
   vertical-align: middle;
   padding: 12px;
 }
+.popup-container .popup.login .btn-login-fb.loading {
+  background-color: rgba(59, 89, 152, 0.8);
+}
 .popup-container .popup.login .btn-login-gg {
   background-color: #ea4335;
   color: white;
@@ -133,6 +137,7 @@ footer .copyright {
   border: none;
   border-radius: 1000px;
   margin: 10px 0;
+  position: relative;
 }
 .popup-container .popup.login .btn-login-gg:hover {
   border-color: transparent;
@@ -149,6 +154,9 @@ footer .copyright {
 .popup-container .popup.login .btn-login-gg span {
   vertical-align: middle;
   padding: 12px;
+}
+.popup-container .popup.login .btn-login-gg.loading {
+  background-color: rgba(234, 67, 53, 0.8);
 }
 .popup-container .popup.login .close {
   background: transparent;
@@ -169,9 +177,13 @@ footer .copyright {
   border: none;
   width: 100%;
   padding: 12px;
+  position: relative;
 }
 .popup-container .popup.login .btn-submit:hover {
   background-color: #147620;
+}
+.popup-container .popup.login .btn-submit.loading {
+  background-color: rgba(59, 181, 74, 0.8);
 }
 .popup-container .popup .content {
   background-color: #f9f9f9;
@@ -286,6 +298,50 @@ footer .copyright {
 }
 .popup-container .popup .close:hover {
   color: black;
+}
+.popup-container .popup .loading {
+  cursor: not-allowed;
+}
+.popup-container .popup .loading::after {
+  content: "";
+  position: absolute;
+  border-radius: 100%;
+  right: 6px;
+  top: 50%;
+  width: 0px;
+  height: 0px;
+  margin-top: -2px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-left-color: #fff;
+  border-top-color: #fff;
+  -webkit-animation: spin 0.6s infinite linear, grow 0.3s forwards ease-out;
+          animation: spin 0.6s infinite linear, grow 0.3s forwards ease-out;
+}
+@-webkit-keyframes spin {
+  to {
+    transform: rotate(359deg);
+  }
+}
+@keyframes spin {
+  to {
+    transform: rotate(359deg);
+  }
+}
+@-webkit-keyframes grow {
+  to {
+    width: 14px;
+    height: 14px;
+    margin-top: -8px;
+    right: 13px;
+  }
+}
+@keyframes grow {
+  to {
+    width: 14px;
+    height: 14px;
+    margin-top: -8px;
+    right: 13px;
+  }
 }
 .popup-container .notify-wrapper {
   position: absolute;
