@@ -152,7 +152,7 @@ function createModal(id) {
     img = img ? img.getAttribute('src') : document.querySelector('.title img').getAttribute('src')
     let title = content.querySelector('.title-voucher').textContent
     let code = content.querySelector(".code .btn-getcode").getAttribute('code')
-    body.innerHTML += `
+    body.insertAdjacentHTML('afterend',`
         <div class="popup-container">
             <div class="popup">
                 <div class="row mb-0 content">
@@ -227,7 +227,7 @@ function createModal(id) {
             </div>
             <div class="backdrop"></div>
         </div>
-    `
+    `)
 
     let btnClose = document.querySelector('.btn.close')
     btnClose.addEventListener("click", () => {
@@ -264,7 +264,7 @@ function createModalLogin(e, type) {
     let popupExist = document.querySelector('.popup-container')
     if(popupExist) popupExist.remove()
     
-    body.innerHTML += `
+    body.insertAdjacentHTML('afterend',`
             <div class="popup-container login-container">
                 <div class="popup login">
                     <div class="row mb-0 content justify-center">
@@ -314,7 +314,7 @@ function createModalLogin(e, type) {
                     <button class="btn close">X</button>
                 </div>
                 <div class="backdrop"></div>
-            </div>`
+            </div>`)
 
     var head= document.getElementsByTagName('head')[0]
 
