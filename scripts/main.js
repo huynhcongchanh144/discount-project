@@ -263,6 +263,13 @@ function createModalLogin(e, type) {
     let body = document.querySelector('body')
     let popupExist = document.querySelector('.popup-container')
     if(popupExist) popupExist.remove()
+
+    // <div class="social col-md-12 p-0">
+    //     <button class="btn btn-login-fb w-100">
+    //         <span class="icon"></span>
+    //         <span>Login Facebook</span> 
+    //     </button>
+    // </div>
     
     body.insertAdjacentHTML('afterend',`
             <div class="popup-container login-container">
@@ -275,12 +282,6 @@ function createModalLogin(e, type) {
                             <img src="https://cdn.picodi.com/assets/v20/images/navbar-register-modal.9045e5b9.svg" alt="">
 
                             <div class="form-login justify-center">
-                                <div class="social col-md-12 p-0">
-                                    <button class="btn btn-login-fb w-100">
-                                        <span class="icon"></span>
-                                        <span>Login Facebook</span> 
-                                    </button>
-                                </div>
                                 <div class="social col-md-12 p-0">
                                     <button class="btn btn-login-gg col-md-12">
                                         <span class="icon"></span>
