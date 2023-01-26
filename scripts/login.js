@@ -14,25 +14,25 @@ import {
     FacebookAuthProvider
 }from "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js";
 
-// const firebaseConfig = {
-//     apiKey: "AIzaSyANjXg9ighDIyS7xgYEIUfg65Bcdzv396I",
-//     authDomain: "test-d075e.firebaseapp.com",
-//     projectId: "test-d075e",
-//     storageBucket: "test-d075e.appspot.com",
-//     messagingSenderId: "1003451507207",
-//     appId: "1:1003451507207:web:84804bcf5664fb189bc0a2",
-//     measurementId: "G-5FLQLC7CVY"
-// };
-
 const firebaseConfig = {
-    apiKey: "AIzaSyDG_sf2bnRZdcxBOumpTcN1OT9aADfoMoY",
-    authDomain: "discount-646d6.firebaseapp.com",
-    projectId: "discount-646d6",
-    storageBucket: "discount-646d6.appspot.com",
-    messagingSenderId: "961694167011",
-    appId: "1:961694167011:web:4821329e3f6a9209103ad6",
-    measurementId: "G-7RWEG0QETC"
+    apiKey: "AIzaSyANjXg9ighDIyS7xgYEIUfg65Bcdzv396I",
+    authDomain: "test-d075e.firebaseapp.com",
+    projectId: "test-d075e",
+    storageBucket: "test-d075e.appspot.com",
+    messagingSenderId: "1003451507207",
+    appId: "1:1003451507207:web:84804bcf5664fb189bc0a2",
+    measurementId: "G-5FLQLC7CVY"
 };
+
+// const firebaseConfig = {
+//     apiKey: "AIzaSyDG_sf2bnRZdcxBOumpTcN1OT9aADfoMoY",
+//     authDomain: "discount-646d6.firebaseapp.com",
+//     projectId: "discount-646d6",
+//     storageBucket: "discount-646d6.appspot.com",
+//     messagingSenderId: "961694167011",
+//     appId: "1:961694167011:web:4821329e3f6a9209103ad6",
+//     measurementId: "G-7RWEG0QETC"
+// };
 
 const app = initializeApp(firebaseConfig);
 const database = getFirestore();
@@ -53,8 +53,13 @@ if(btnLoginFb) {
             const user = result.user;
             let userData = {
                 email: user.email || '',
-                name: user.displayName || '',
-                phone: user.phoneNumber || '',
+                user_name: user.displayName || '',
+                active: '',
+                date_registered: new Date().toLocaleString(),
+                id_user: user.uid,
+                password: '',
+                social_type: '',
+                user_public_token: generateToken()
             }
             const userInfoRef = doc(database, 'user', user.uid);
             const docUser = await getDoc(userInfoRef)
@@ -62,7 +67,7 @@ if(btnLoginFb) {
                 await sessionStorage.setItem('userData', JSON.stringify(docUser.data())) 
                 window.location.href = '/account/profile.html'  
             } else {
-                let ref = doc(database, "users", user.uid)
+                let ref = doc(database, "user", user.uid)
                 await setDoc(ref, userData).then(() => {
                     sessionStorage.setItem('userData', JSON.stringify(userData))
                     window.location.href = '/account/profile.html'
@@ -97,8 +102,13 @@ if(btnLoginGg) {
             const user = result.user;
             let userData = {
                 email: user.email || '',
-                name: user.displayName || '',
-                phone: user.phoneNumber || '',
+                user_name: user.displayName || '',
+                active: '',
+                date_registered: new Date().toLocaleString(),
+                id_user: user.uid,
+                password: '',
+                social_type: '',
+                user_public_token: generateToken()
             }
             const userInfoRef = doc(database, 'user', user.uid);
             const docUser = await getDoc(userInfoRef)
@@ -106,7 +116,7 @@ if(btnLoginGg) {
                 await sessionStorage.setItem('userData', JSON.stringify(docUser.data())) 
                 window.location.href = '/account/profile.html'  
             } else {
-                let ref = doc(database, "users", user.uid)
+                let ref = doc(database, "user", user.uid)
                 await setDoc(ref, userData).then(() => {
                     sessionStorage.setItem('userData', JSON.stringify(userData))
                     window.location.href = '/account/profile.html'
@@ -144,10 +154,15 @@ if(btnRegister) {
             const user = userCredential.user;
             let userData = {
                 email: user.email || '',
-                name: user.displayName || '',
-                phone: user.phoneNumber || '',
+                user_name: user.displayName || '',
+                active: '',
+                date_registered: new Date().toLocaleString(),
+                id_user: user.uid,
+                password: password,
+                social_type: '',
+                user_public_token: generateToken()
             }
-            let ref = doc(database, "users", user.uid)
+            let ref = doc(database, "user", user.uid)
             await setDoc(ref, userData).then(() => {
                 sessionStorage.setItem('userData', JSON.stringify(userData))
                 window.location.href = '/account/profile.html'
@@ -323,6 +338,7 @@ function getCurrentUser(auth) {
 
 function getUserFromSession() {
 	let data = JSON.parse(sessionStorage.getItem('userData'))
+    console.log(data)
 	document.querySelector('.form-profile #email').value = data.email || ''
 	document.querySelector('.form-profile #phone').value = data.phone || ''
 	document.querySelector('.form-profile #first_name').value = data.first_name || ''
@@ -335,7 +351,7 @@ function getUserFromSession() {
 	document.querySelector('.form-profile #currency').value = data.currency || 0
 }
 
-if(['/account/profile.html'].includes(window.location.pathname)) {
+if(window.location.pathname.includes('/account/profile')) {
     if(sessionStorage.getItem('userData')) {
         getUserFromSession()
     } else {
@@ -388,8 +404,12 @@ function generateMessage(code) {
     }
 }
 
+function generateToken() {
+    return (Date.now().toString(36) + Math.random().toString(36).substr(2)).toUpperCase()
+}
+
 window.onload = e => {
-	if(['/account/profile.html'].includes(window.location.pathname)) {
+	if(window.location.pathname.includes('/account/profile')) {
         removeDisableField()
     }
 }
