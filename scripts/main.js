@@ -103,6 +103,24 @@ storeDesc.forEach(e => {
     })
 })
 
+let showAll = document.querySelectorAll('a[href="#show-all"]')
+if(showAll) {
+    showAll.forEach(e => {
+        e.addEventListener('click', (ref) => {
+            ref.preventDefault()
+            let target = e.getAttribute('target')
+            let content = document.getElementById(target)
+            if(content.classList.contains('show')) {
+                content.classList.remove('show')
+                e.textContent = 'Show all'
+            } else {
+                content.classList.add('show')
+                e.textContent = 'Show less'
+            }
+        })
+    })
+}
+
 let faqs = document.querySelectorAll('.faq-item')
 
 faqs.forEach(e => {
@@ -434,4 +452,53 @@ const actionFooterOnMobile = (e) => {
         icon.classList.add('show')
         ListEl.style.maxHeight = heightOfList+10+'px';
     }
+}
+
+let showFilter = document.querySelector('.btn-show-filter')
+if(showFilter) {
+    showFilter.addEventListener('click', () => {
+        document.querySelector('.filter-mobile').classList.add('show')
+    })
+}
+
+let filterChecklist = document.querySelectorAll('.filter-mobile .filter-checklist')
+if(filterChecklist) {
+    filterChecklist.forEach(item => {
+        let listTitle = item.querySelector('.list-title')
+        let listItem = item.querySelector('.list-item')
+        let listIcon = item.querySelector('.list-icon')
+        listTitle.addEventListener('click', () => {
+            if(listIcon.classList.contains('open')) {
+                listIcon.classList.remove('open')
+                listItem.classList.remove('show')
+            } else {
+                listIcon.classList.add('open')
+                listItem.classList.add('show')
+            }
+        })
+    })
+}
+
+let hideMenuFilter = document.querySelectorAll('a[href="#close-filter"]')
+if(hideMenuFilter) {
+    hideMenuFilter.forEach(e => {
+        e.addEventListener('click', (ref) => {
+            ref.preventDefault()
+            document.querySelector('.filter-mobile').classList.remove('show')
+        })
+    })
+}
+
+let clearFilter = document.querySelector('.btn-clear-filter')
+if(clearFilter) {
+    clearFilter.addEventListener('click', () => {
+        document.querySelector('.filter-mobile').classList.remove('show')
+    })
+}
+
+let applyFilter = document.querySelector('.btn-apply-filter')
+if(applyFilter) {
+    applyFilter.addEventListener('click', () => {
+        document.querySelector('.filter-mobile').classList.remove('show')
+    })
 }

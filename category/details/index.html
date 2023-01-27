@@ -22,8 +22,8 @@
                     <div class="row justify-between align-center mb-0">
                         <div class="col-md-12 py-1">
                             <div class="row justify-between align-center mb-0">
-                                <a href="../../index.html" class="col-md-1 p-0"><img src="../../assets/images/logo.png" width="66"
-                                        alt=""></a>
+                                <a href="../../index.html" class="col-md-1 p-0"><img src="../../assets/images/logo.png"
+                                        width="66" alt=""></a>
                                 <div class="search_bar p-0 col-md-8">
                                     <div class="row mb-0 align-center">
                                         <div class="wrapper_search col-md-7 p-0">
@@ -45,14 +45,17 @@
                                             class="mr-1">
                                         <div class="col-md-10 p-0">
                                             <div class="row mb-0 no-auth">
-                                                <a href="" onclick="createModalLogin(event, 'login')" class="f-bold link-h-decoration">Sign in</a>
+                                                <a href="" onclick="createModalLogin(event, 'login')"
+                                                    class="f-bold link-h-decoration">Sign in</a>
                                                 <small>
                                                     Already earning rewards with Tipli? <a href=""
-                                                        class="link-h-decoration" onclick="createModalLogin(event, 'signup')">Sign up</a>
+                                                        class="link-h-decoration"
+                                                        onclick="createModalLogin(event, 'signup')">Sign up</a>
                                                 </small>
                                             </div>
                                             <div class="row mb-0 auth">
-                                                <a href="" onclick="goToAccountPage(event)" class="f-bold link-h-decoration">My Account</a>
+                                                <a href="" onclick="goToAccountPage(event)"
+                                                    class="f-bold link-h-decoration">My Account</a>
                                                 <small class="name-account col-xs-12"></small>
                                             </div>
                                         </div>
@@ -92,7 +95,8 @@
                             <!--Start of Dropdown-->
                             <ul class="dropdown-nav">
                                 <div class="container-navbar-dropdown">
-                                    <li class="nav-item"><a href="../../category/details/index.html">Category Detail</a></li>
+                                    <li class="nav-item"><a href="../../category/details/index.html">Category Detail</a>
+                                    </li>
                                 </div>
                             </ul>
                         </li>
@@ -104,7 +108,8 @@
                             <!--Start of Dropdown-->
                             <ul class="dropdown-nav">
                                 <div class="container-navbar-dropdown">
-                                    <li class="nav-item"><a href="../../black-friday/articole-copii-si-jucarii.html">Article</a></li>
+                                    <li class="nav-item"><a
+                                            href="../../black-friday/articole-copii-si-jucarii.html">Article</a></li>
                                 </div>
                             </ul>
                         </li>
@@ -119,7 +124,8 @@
             <div class="navbar-mobile d-sm-none d-block">
                 <div class="row mb-0">
                     <div class="logo py-1 px-1">
-                        <a href="../../index.html" class="col-md-1 p-0"><img src="../../assets/images/logo.png" width="66" alt=""></a>
+                        <a href="../../index.html" class="col-md-1 p-0"><img src="../../assets/images/logo.png"
+                                width="66" alt=""></a>
                     </div>
                     <div class="hamberger d-flex p-0">
                         <div class="search-btn" onclick="openMenuSearch()">
@@ -139,21 +145,24 @@
                     </div>
                     <div class="d-flex justify-between py-1 border-bottom">
                         <div class="store">
-                            <img src="https://static.tipli.ro/t/upload/images/shops-shop-logo/4744/170x/fit/769011.png?v=9" width="69" alt="">
+                            <img src="https://static.tipli.ro/t/upload/images/shops-shop-logo/4744/170x/fit/769011.png?v=9"
+                                width="69" alt="">
                             <span class="f-14 px-1">Sinsay</span>
                         </div>
                         <span class="f-bold rate">5%</span>
                     </div>
                     <div class="d-flex justify-between py-1 border-bottom">
                         <div class="store">
-                            <img src="https://static.tipli.ro/t/upload/images/shops-shop-logo/4744/170x/fit/769011.png?v=9" width="69" alt="">
+                            <img src="https://static.tipli.ro/t/upload/images/shops-shop-logo/4744/170x/fit/769011.png?v=9"
+                                width="69" alt="">
                             <span class="f-14 px-1">Sinsay</span>
                         </div>
                         <span class="f-bold rate">5%</span>
                     </div>
                     <div class="d-flex justify-between py-1 border-bottom">
                         <div class="store">
-                            <img src="https://static.tipli.ro/t/upload/images/shops-shop-logo/4744/170x/fit/769011.png?v=9" width="69" alt="">
+                            <img src="https://static.tipli.ro/t/upload/images/shops-shop-logo/4744/170x/fit/769011.png?v=9"
+                                width="69" alt="">
                             <span class="f-14 px-1">Sinsay</span>
                         </div>
                         <span class="f-bold rate">5%</span>
@@ -235,7 +244,7 @@
                                     </svg> <input type="text" placeholder="Search for a store"
                                         aria-label="Search for a store" value="" class="search-input-d"></fieldset>
                             </form>
-                            <ul class="list-style-none long-list">
+                            <ul class="list-style-none long-list" id="magazin-filter">
                                 <li class="py-1">
                                     <input type="checkbox" name="coduri" id="Chocolissimo.ro" class="filter-input">
                                     <label for="Chocolissimo.ro" class="input-label">Chocolissimo.ro</label>
@@ -256,7 +265,22 @@
                                     <input type="checkbox" name="coduri" id="Alcool-Discount" class="filter-input">
                                     <label for="Alcool-Discount" class="input-label">Alcool Discount</label>
                                 </li>
+                                <li class="py-1">
+                                    <input type="checkbox" name="coduri" id="Hiris.ro" class="filter-input">
+                                    <label for="Hiris.ro" class="input-label">Hiris.ro</label>
+                                </li>
+                                <li class="py-1">
+                                    <input type="checkbox" name="coduri" id="Hotpick.ro" class="filter-input">
+                                    <label for="Hotpick.ro" class="input-label">Hotpick.ro</label>
+                                </li>
+                                <li class="py-1">
+                                    <input type="checkbox" name="coduri" id="Wish.com" class="filter-input">
+                                    <label for="Wish.com" class="input-label">Wish.com</label>
+                                </li>
                             </ul>
+                            <div class="mt-2">
+                                <a href="#show-all" target="magazin-filter" class="mt-2">Show all</a>
+                            </div>
                         </div>
                         <div class="filter mb-1">
                             <span><b>Tip</b></span>
@@ -286,8 +310,132 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="filter-mobile">
+                    <div class="filter-header">
+                        Filtreaza
+                        <a href="#close-filter">Inchide</a>
+                    </div>
+                    <div class="filter-body">
+                        <div class="filter-checked row justify-between">
+                            <label for="">Just checked</label>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+
+                        <div class="filter-checklist">
+                            <div class="list-title">
+                                Magazin
+                                <div class="list-icon"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                                    <path class="cls-1"
+                                        d="M15.7 4.3a1 1 0 0 0-1.4 0L8 9.6 1.75 4.3a1 1 0 0 0-1.42 0 .94.94 0 0 0 0 1.36l7 6a1 1 0 0 0 1.42 0l7-6a.94.94 0 0 0-.04-1.33z">
+                                    </path>
+                                </svg></div>
+                            </div>
+                            <div class="list-item">
+                                <form class="filter-search">
+                                    <fieldset> <svg class="search-icon" viewBox="0 0 16 16">
+                                            <path
+                                                d="M15.9 15.1l-3.6-3.6C13.4 10.4 14 8.8 14 7c0-3.9-3.1-7-7-7S0 3.1 0 7s3.1 7 7 7c1.8 0 3.4-.6 4.6-1.7l3.6 3.6c.2.2.5.2.7 0 .1-.2.1-.6 0-.8zM7 13c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6z">
+                                            </path>
+                                        </svg> <input type="text" placeholder="Search for a store"
+                                            aria-label="Search for a store" value="" class="search-input-d"></fieldset>
+                                </form>
+                                <ul class="list-style-none long-list row" id="magazin-filter">
+                                    <li class="py-1">
+                                        <input type="checkbox" name="coduri" id="Chocolissimo.ro" class="filter-input">
+                                        <label for="Chocolissimo.ro" class="input-label">Chocolissimo.ro</label>
+                                    </li>
+                                    <li class="py-1">
+                                        <input type="checkbox" name="promoti" id="Carturesti" class="filter-input">
+                                        <label for="Carturesti" class="input-label">Carturesti</label>
+                                    </li>
+                                    <li class="py-1">
+                                        <input type="checkbox" name="coduri" id="Best-Value" class="filter-input">
+                                        <label for="Best-Value" class="input-label">Best Value</label>
+                                    </li>
+                                    <li class="py-1">
+                                        <input type="checkbox" name="coduri" id="Presto-Pizza" class="filter-input">
+                                        <label for="Presto-Pizza" class="input-label">Presto Pizza</label>
+                                    </li>
+                                    <li class="py-1">
+                                        <input type="checkbox" name="coduri" id="Alcool-Discount" class="filter-input">
+                                        <label for="Alcool-Discount" class="input-label">Alcool Discount</label>
+                                    </li>
+                                    <li class="py-1">
+                                        <input type="checkbox" name="coduri" id="Hiris.ro" class="filter-input">
+                                        <label for="Hiris.ro" class="input-label">Hiris.ro</label>
+                                    </li>
+                                    <li class="py-1">
+                                        <input type="checkbox" name="coduri" id="Hotpick.ro" class="filter-input">
+                                        <label for="Hotpick.ro" class="input-label">Hotpick.ro</label>
+                                    </li>
+                                    <li class="py-1">
+                                        <input type="checkbox" name="coduri" id="Wish.com" class="filter-input">
+                                        <label for="Wish.com" class="input-label">Wish.com</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="filter-checklist">
+                            <div class="list-title">
+                                Tip
+                                <div class="list-icon"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                                    <path class="cls-1"
+                                        d="M15.7 4.3a1 1 0 0 0-1.4 0L8 9.6 1.75 4.3a1 1 0 0 0-1.42 0 .94.94 0 0 0 0 1.36l7 6a1 1 0 0 0 1.42 0l7-6a.94.94 0 0 0-.04-1.33z">
+                                    </path>
+                                </svg></div>
+                            </div>
+                            <div class="list-item">
+                                <ul class="list-style-none row">
+                                    <li class="py-1">
+                                        <input type="checkbox" name="coduri" id="coduri" class="filter-input">
+                                        <label for="coduri" class="input-label">Coduri cupon</label>
+                                    </li>
+                                    <li class="py-1">
+                                        <input type="checkbox" name="promoti" id="promoti" class="filter-input">
+                                        <label for="promoti" class="input-label">Promotii online</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="filter-checklist">
+                            <div class="list-title">
+                                Category
+                                <div class="list-icon"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                                    <path class="cls-1"
+                                        d="M15.7 4.3a1 1 0 0 0-1.4 0L8 9.6 1.75 4.3a1 1 0 0 0-1.42 0 .94.94 0 0 0 0 1.36l7 6a1 1 0 0 0 1.42 0l7-6a.94.94 0 0 0-.04-1.33z">
+                                    </path>
+                                </svg></div>
+                            </div>
+                            <div class="list-item">
+                                <ul class="list-style-none row">
+                                    <li class="py-1">
+                                        <input type="checkbox" name="coduri" id="Alimente" class="filter-input">
+                                        <label for="Alimente" class="input-label">Alimente și băuturi</label>
+                                    </li>
+                                    <li class="py-1">
+                                        <input type="checkbox" name="promoti" id="Alcool" class="filter-input">
+                                        <label for="Alcool" class="input-label">Alcool</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-footer">
+                        <button class="btn btn-clear-filter">Reseteaza</button>
+                        <button class="btn btn-apply-filter">Aplica</button>
+                    </div>
+                </div>
+
                 <div class="col-md-9 px-sm-0">
                     <div class="title f-30 mb-1">Cupoane, vouchere si promotii alimente și băuturi</div>
+                    <button class="btn btn-show-filter w-100"> Filtreaza 20 Oferte</button>
                     <div class="list-vouchers">
                         <div class="voucher mb-1" id="voucher-1">
                             <div class="row mb-0 align-center short-detail bg-white" onclick="createModal('voucher-1')">
@@ -300,12 +448,13 @@
                                     <div class="row mb-0">
                                         <div class="desc col-xs-8">
                                             <div class="status row mb-0 f-12 c-red mb-7">
-                                                <b>Cod</b> <img src="../../assets/images/circle-check-solid.svg" width="10"
-                                                    alt="" class="mx-1">
+                                                <b>Cod</b> <img src="../../assets/images/circle-check-solid.svg"
+                                                    width="10" alt="" class="mx-1">
                                                 <span class="c-gray"><b>Verificat</b></span>
                                             </div>
                                             <div class="row mb-0 f-18">
-                                                <b class="title-voucher">Cod reducere Epantofi 100 lei extra la produsele cu pret intreg</b>
+                                                <b class="title-voucher">Cod reducere Epantofi 100 lei extra la
+                                                    produsele cu pret intreg</b>
                                             </div>
                                         </div>
                                         <div class="code col-xs-4">
@@ -318,7 +467,8 @@
                                 </div>
                             </div>
                             <div class="row mb-0 px-3 py-1 justify-between align-center view-details">
-                                <button class="btn-none-border btn-view btn-view-up collapse-btn" target="voucher-description-1">
+                                <button class="btn-none-border btn-view btn-view-up collapse-btn"
+                                    target="voucher-description-1">
                                     <span>View Details</span>
                                 </button>
                                 <div>
@@ -344,7 +494,8 @@
                                         target="detail-voucher-description-1">
                                         Detail
                                     </button>
-                                    <button class="btn-none-border py-2 px-0 f-16 tab" target="comment-voucher-description-1">
+                                    <button class="btn-none-border py-2 px-0 f-16 tab"
+                                        target="comment-voucher-description-1">
                                         Comment
                                     </button>
                                 </div>
@@ -381,12 +532,13 @@
                                     <div class="row mb-0">
                                         <div class="desc col-xs-8">
                                             <div class="status row mb-0 f-12 c-red mb-7">
-                                                <b>Cod</b> <img src="../../assets/images/circle-check-solid.svg" width="10"
-                                                    alt="" class="mx-1">
+                                                <b>Cod</b> <img src="../../assets/images/circle-check-solid.svg"
+                                                    width="10" alt="" class="mx-1">
                                                 <span class="c-gray"><b>Verificat</b></span>
                                             </div>
                                             <div class="row mb-0 f-18">
-                                                <b class="title-voucher">Cod reducere Epantofi 100 lei extra la produsele cu pret intreg</b>
+                                                <b class="title-voucher">Cod reducere Epantofi 100 lei extra la
+                                                    produsele cu pret intreg</b>
                                             </div>
                                         </div>
                                         <div class="code col-xs-4">
@@ -399,7 +551,8 @@
                                 </div>
                             </div>
                             <div class="row mb-0 px-3 py-1 justify-between align-center view-details">
-                                <button class="btn-none-border btn-view btn-view-up collapse-btn" target="voucher-description-2">
+                                <button class="btn-none-border btn-view btn-view-up collapse-btn"
+                                    target="voucher-description-2">
                                     <span>View Details</span>
                                 </button>
                                 <div>
@@ -425,7 +578,8 @@
                                         target="detail-voucher-description-2">
                                         Detail
                                     </button>
-                                    <button class="btn-none-border py-2 px-0 f-16 tab" target="comment-voucher-description-2">
+                                    <button class="btn-none-border py-2 px-0 f-16 tab"
+                                        target="comment-voucher-description-2">
                                         Comment
                                     </button>
                                 </div>
@@ -458,25 +612,28 @@
                                     <div class="row mb-0">
                                         <div class="desc col-xs-8">
                                             <div class="status row mb-0 f-12 c-red mb-7">
-                                                <b>Reducere</b> <img src="../../assets/images/circle-check-solid.svg" width="10"
-                                                    alt="" class="mx-1">
+                                                <b>Reducere</b> <img src="../../assets/images/circle-check-solid.svg"
+                                                    width="10" alt="" class="mx-1">
                                                 <span class="c-gray"><b>Verificat</b></span>
                                             </div>
                                             <div class="row mb-0 f-18">
-                                                <b class="title-voucher">Cod reducere Epantofi 100 lei extra la produsele cu pret intreg</b>
+                                                <b class="title-voucher">Cod reducere Epantofi 100 lei extra la
+                                                    produsele cu pret intreg</b>
                                             </div>
                                         </div>
                                         <div class="code col-xs-4">
                                             <button class="btn btn-nocode">
                                                 <span>Vezi oferta</span>
-                                                <img src="../../assets/images/chevron-right-solid.svg" width="12" alt="">
+                                                <img src="../../assets/images/chevron-right-solid.svg" width="12"
+                                                    alt="">
                                             </button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="row mb-0 px-3 py-1 justify-between align-center view-details">
-                                <button class="btn-none-border btn-view btn-view-up collapse-btn" target="voucher-description-4">
+                                <button class="btn-none-border btn-view btn-view-up collapse-btn"
+                                    target="voucher-description-4">
                                     <span>View Details</span>
                                 </button>
                                 <div>
@@ -502,7 +659,8 @@
                                         target="detail-voucher-description-4">
                                         Detail
                                     </button>
-                                    <button class="btn-none-border py-2 px-0 f-16 tab" target="comment-voucher-description-4">
+                                    <button class="btn-none-border py-2 px-0 f-16 tab"
+                                        target="comment-voucher-description-4">
                                         Comment
                                     </button>
                                 </div>
@@ -539,12 +697,13 @@
                                     <div class="row mb-0">
                                         <div class="desc col-xs-8">
                                             <div class="status row mb-0 f-12 c-red mb-7">
-                                                <b>Cod</b> <img src="../../assets/images/circle-check-solid.svg" width="10"
-                                                    alt="" class="mx-1">
+                                                <b>Cod</b> <img src="../../assets/images/circle-check-solid.svg"
+                                                    width="10" alt="" class="mx-1">
                                                 <span class="c-gray"><b>Verificat</b></span>
                                             </div>
                                             <div class="row mb-0 f-18">
-                                                <b class="title-voucher">Cod reducere Epantofi 100 lei extra la produsele cu pret intreg</b>
+                                                <b class="title-voucher">Cod reducere Epantofi 100 lei extra la
+                                                    produsele cu pret intreg</b>
                                             </div>
                                         </div>
                                         <div class="code col-xs-4">
@@ -557,7 +716,8 @@
                                 </div>
                             </div>
                             <div class="row mb-0 px-3 py-1 justify-between align-center view-details">
-                                <button class="btn-none-border btn-view btn-view-up collapse-btn" target="voucher-description-4">
+                                <button class="btn-none-border btn-view btn-view-up collapse-btn"
+                                    target="voucher-description-4">
                                     <span>View Details</span>
                                 </button>
                                 <div>
@@ -583,7 +743,8 @@
                                         target="detail-voucher-description-4">
                                         Detail
                                     </button>
-                                    <button class="btn-none-border py-2 px-0 f-16 tab" target="comment-voucher-description-4">
+                                    <button class="btn-none-border py-2 px-0 f-16 tab"
+                                        target="comment-voucher-description-4">
                                         Comment
                                     </button>
                                 </div>
@@ -644,202 +805,104 @@
                 </div>
             </div>
         </div>
-
-    <footer id="footer">
-        <div class="row justify-between align-center container mb-0">
-            <div class="col-md-12">
-                <div class="row">
-                    <div class="col-md-3 col-xs-6">
-                        <a href=""><img src="../assets/images/footer_logo.svg" alt="" width="170"></a>
-                    </div>
-                    <div class="col-md-3">
-                        <a href="mailto:"><img class="v-center" src="../assets/images/Email.svg" width="25" alt=""> <span
-                                class="v-center">info@kuplio.ro</span></a>
-                    </div>
-                    <div class="col-md-3">
-                        <a href=""><img class="v-center" src="../assets/images/Download.svg" width="25" alt=""> <span
-                                class="v-center">noutăți prin e-mail</span></a>
-                    </div>
-                    <div class="col-md-3">
-                        <a href="" class="mr-1"><img src="../assets/images/Facebook.svg" width="32" alt=""></a>
-                        <a href="" class="mr-1"><img src="../assets/images/Instagram.svg" width="32" alt=""></a>
-                        <a href=""><img src="../assets/images/Youtube.svg" width="32" alt=""></a>
-                    </div>
-                </div>
-                <div class="row c-white">
-                    <div class="col-md-3 panel-collapse" onclick="actionFooterOnMobile(this)">
-                        <h3 class="mb-2">
-                            Site-urile noastre
-                            <span class="icon-chevron-down-solid"></span>
-                        </h3>
-                        <div class="list">
-                            <ul class="list-style-none">
-                                <li><a href=""><img src="../assets/images/flag_cz.webp" class="mr-1" alt="">
-                                        <span>Vasekupony.cz</span></a></li>
-                                <li><a href=""><img src="../assets/images/flag_sk.webp" class="mr-1" alt="">
-                                        <span>Vasekupony.sk</span></a></li>
-                                <li><a href=""><img src="../assets/images/flag_hu.webp" class="mr-1" alt="">
-                                        <span>KUPLIO.hu</span></a></li>
-                                <li><a href=""><img src="../assets/images/flag_pl.webp" class="mr-1" alt="">
-                                        <span>KUPLIO.pl</span></a></li>
-                                <li><a href=""><img src="../assets/images/flag_de.webp" class="mr-1" alt="">
-                                        <span>KUPLIO.de</span></a></li>
-                                <li><a href=""><img src="../assets/images/flag_at.webp" class="mr-1" alt="">
-                                        <span>KUPLIO.at</span></a></li>
-                                <li><a href=""><img src="../assets/images/flag_bg.webp" class="mr-1" alt="">
-                                        <span>KUPLIO.bg</span></a></li>
-                                <li><a href=""><img src="../assets/images/flag_hr.webp" class="mr-1" alt="">
-                                        <span>KUPLIO.hr</span></a></li>
-                                <li><a href=""><img src="../assets/images/flag_si.webp" class="mr-1" alt="">
-                                        <span>KUPLIO.si</span></a></li>
-                                <li><a href=""><img src="../assets/images/flag_it.webp" class="mr-1" alt="">
-                                        <span>KUPLIO.it</span></a></li>
-                            </ul>
+        <footer id="footer">
+            <div class="row justify-between align-center container mb-0">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-3 col-xs-6">
+                            <a href=""><img src="../../assets/images/footer_logo.svg" alt="" width="170"></a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="mailto:"><img class="v-center" src="../../assets/images/Email.svg" width="25" alt="">
+                                <span class="v-center">info@kuplio.ro</span></a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href=""><img class="v-center" src="../../assets/images/Download.svg" width="25" alt="">
+                                <span class="v-center">noutăți prin e-mail</span></a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="" class="mr-1"><img src="../../assets/images/Facebook.svg" width="32" alt=""></a>
+                            <a href="" class="mr-1"><img src="../../assets/images/Instagram.svg" width="32" alt=""></a>
+                            <a href=""><img src="../../assets/images/Youtube.svg" width="32" alt=""></a>
                         </div>
                     </div>
-                    <div class="col-md-3 panel-collapse" onclick="actionFooterOnMobile(this)">
-                        <h3 class="mb-2">Cele mai bune reduceri<span class="icon-chevron-down-solid"></span></h3>
-                        <div class="list">
-                            <ul class="list-style-none">
-                                <li><a href="">TOP 50 vouchere</a></li>
-                                <li><a href="">Coduri de reducere</a></li>
-                                <li><a href="">Reduceri</a></li>
-                                <li><a href="">Lichidări</a></li>
-                                <li><a href="">Cataloage online</a></li>
-                                <li><a href="">Magazine</a></li>
-                                <li><a href="">Branduri</a></li>
-                                <li><a href="">BLACK FRIDAY</a></li>
-                                <li><a href="">Transport gratuit</a></li>
-                            </ul>
+                    <div class="row c-white">
+                        <div class="col-md-3 panel-collapse" onclick="actionFooterOnMobile(this)">
+                            <h3 class="mb-2">
+                                Site-urile noastre
+                                <span class="icon-chevron-down-solid"></span>
+                            </h3>
+                            <div class="list">
+                                <ul class="list-style-none">
+                                    <li><a href=""><img src="../../assets/images/flag_cz.webp" class="mr-1" alt="">
+                                            <span>Vasekupony.cz</span></a></li>
+                                    <li><a href=""><img src="../../assets/images/flag_sk.webp" class="mr-1" alt="">
+                                            <span>Vasekupony.sk</span></a></li>
+                                    <li><a href=""><img src="../../assets/images/flag_hu.webp" class="mr-1" alt="">
+                                            <span>KUPLIO.hu</span></a></li>
+                                    <li><a href=""><img src="../../assets/images/flag_pl.webp" class="mr-1" alt="">
+                                            <span>KUPLIO.pl</span></a></li>
+                                    <li><a href=""><img src="../../assets/images/flag_de.webp" class="mr-1" alt="">
+                                            <span>KUPLIO.de</span></a></li>
+                                    <li><a href=""><img src="../../assets/images/flag_at.webp" class="mr-1" alt="">
+                                            <span>KUPLIO.at</span></a></li>
+                                    <li><a href=""><img src="../../assets/images/flag_bg.webp" class="mr-1" alt="">
+                                            <span>KUPLIO.bg</span></a></li>
+                                    <li><a href=""><img src="../../assets/images/flag_hr.webp" class="mr-1" alt="">
+                                            <span>KUPLIO.hr</span></a></li>
+                                    <li><a href=""><img src="../../assets/images/flag_si.webp" class="mr-1" alt="">
+                                            <span>KUPLIO.si</span></a></li>
+                                    <li><a href=""><img src="../../assets/images/flag_it.webp" class="mr-1" alt="">
+                                            <span>KUPLIO.it</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 panel-collapse" onclick="actionFooterOnMobile(this)">
+                            <h3 class="mb-2">Cele mai bune reduceri<span class="icon-chevron-down-solid"></span></h3>
+                            <div class="list">
+                                <ul class="list-style-none">
+                                    <li><a href="">TOP 50 vouchere</a></li>
+                                    <li><a href="">Coduri de reducere</a></li>
+                                    <li><a href="">Reduceri</a></li>
+                                    <li><a href="">Lichidări</a></li>
+                                    <li><a href="">Cataloage online</a></li>
+                                    <li><a href="">Magazine</a></li>
+                                    <li><a href="">Branduri</a></li>
+                                    <li><a href="">BLACK FRIDAY</a></li>
+                                    <li><a href="">Transport gratuit</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 panel-collapse" onclick="actionFooterOnMobile(this)">
+                            <h3 class="mb-2">Pentru parteneri<span class="icon-chevron-down-solid"></span></h3>
+                            <div class="list">
+                                <ul class="list-style-none">
+                                    <li><a href="">Reclamă pe KUPLIO.ro</a></li>
+                                    <li><a href="">Adăugare magazin</a></li>
+                                    <li><a href="">Profilul companiei</a></li>
+                                    <li><a href="">Condiții comerciale generale</a></li>
+                                    <li><a href="">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 panel-collapse" onclick="actionFooterOnMobile(this)">
+                            <h3 class="mb-2">Pentru utilizatori<span class="icon-chevron-down-solid"></span></h3>
+                            <div class="list">
+                                <ul class="list-style-none">
+                                    <li><a href="">KUPLIO revista</a></li>
+                                    <li><a href="">Termeni de utilizare</a></li>
+                                    <li><a href="">Protecția datelor personale</a></li>
+                                    <li><a href="">Cookies</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-3 panel-collapse" onclick="actionFooterOnMobile(this)">
-                        <h3 class="mb-2">Pentru parteneri<span class="icon-chevron-down-solid"></span></h3>
-                        <div class="list">
-                            <ul class="list-style-none">
-                                <li><a href="">Reclamă pe KUPLIO.ro</a></li>
-                                <li><a href="">Adăugare magazin</a></li>
-                                <li><a href="">Profilul companiei</a></li>
-                                <li><a href="">Condiții comerciale generale</a></li>
-                                <li><a href="">Contact</a></li>
-                            </ul>
-                        </div>
+                    <div class="row">
+                        <p class="col-md-12 copyright">© 2022 PACHET PLUS s.r.l., Toate drepturile rezervate</p>
                     </div>
-                    <div class="col-md-3 panel-collapse" onclick="actionFooterOnMobile(this)">
-                        <h3 class="mb-2">Pentru utilizatori<span class="icon-chevron-down-solid"></span></h3>
-                        <div class="list">
-                            <ul class="list-style-none">
-                                <li><a href="">KUPLIO revista</a></li>
-                                <li><a href="">Termeni de utilizare</a></li>
-                                <li><a href="">Protecția datelor personale</a></li>
-                                <li><a href="">Cookies</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <p class="col-md-12 copyright">© 2022 PACHET PLUS s.r.l., Toate drepturile rezervate</p>
-                </div>
-            </div>
-        </div>
-    </footer>    <footer id="footer">
-        <div class="row justify-between align-center container mb-0">
-            <div class="col-md-12">
-                <div class="row">
-                    <div class="col-md-3 col-xs-6">
-                        <a href=""><img src="../assets/images/footer_logo.svg" alt="" width="170"></a>
-                    </div>
-                    <div class="col-md-3">
-                        <a href="mailto:"><img class="v-center" src="../assets/images/Email.svg" width="25" alt=""> <span
-                                class="v-center">info@kuplio.ro</span></a>
-                    </div>
-                    <div class="col-md-3">
-                        <a href=""><img class="v-center" src="../assets/images/Download.svg" width="25" alt=""> <span
-                                class="v-center">noutăți prin e-mail</span></a>
-                    </div>
-                    <div class="col-md-3">
-                        <a href="" class="mr-1"><img src="../assets/images/Facebook.svg" width="32" alt=""></a>
-                        <a href="" class="mr-1"><img src="../assets/images/Instagram.svg" width="32" alt=""></a>
-                        <a href=""><img src="../assets/images/Youtube.svg" width="32" alt=""></a>
-                    </div>
-                </div>
-                <div class="row c-white">
-                    <div class="col-md-3 panel-collapse" onclick="actionFooterOnMobile(this)">
-                        <h3 class="mb-2">
-                            Site-urile noastre
-                            <span class="icon-chevron-down-solid"></span>
-                        </h3>
-                        <div class="list">
-                            <ul class="list-style-none">
-                                <li><a href=""><img src="../assets/images/flag_cz.webp" class="mr-1" alt="">
-                                        <span>Vasekupony.cz</span></a></li>
-                                <li><a href=""><img src="../assets/images/flag_sk.webp" class="mr-1" alt="">
-                                        <span>Vasekupony.sk</span></a></li>
-                                <li><a href=""><img src="../assets/images/flag_hu.webp" class="mr-1" alt="">
-                                        <span>KUPLIO.hu</span></a></li>
-                                <li><a href=""><img src="../assets/images/flag_pl.webp" class="mr-1" alt="">
-                                        <span>KUPLIO.pl</span></a></li>
-                                <li><a href=""><img src="../assets/images/flag_de.webp" class="mr-1" alt="">
-                                        <span>KUPLIO.de</span></a></li>
-                                <li><a href=""><img src="../assets/images/flag_at.webp" class="mr-1" alt="">
-                                        <span>KUPLIO.at</span></a></li>
-                                <li><a href=""><img src="../assets/images/flag_bg.webp" class="mr-1" alt="">
-                                        <span>KUPLIO.bg</span></a></li>
-                                <li><a href=""><img src="../assets/images/flag_hr.webp" class="mr-1" alt="">
-                                        <span>KUPLIO.hr</span></a></li>
-                                <li><a href=""><img src="../assets/images/flag_si.webp" class="mr-1" alt="">
-                                        <span>KUPLIO.si</span></a></li>
-                                <li><a href=""><img src="../assets/images/flag_it.webp" class="mr-1" alt="">
-                                        <span>KUPLIO.it</span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-3 panel-collapse" onclick="actionFooterOnMobile(this)">
-                        <h3 class="mb-2">Cele mai bune reduceri<span class="icon-chevron-down-solid"></span></h3>
-                        <div class="list">
-                            <ul class="list-style-none">
-                                <li><a href="">TOP 50 vouchere</a></li>
-                                <li><a href="">Coduri de reducere</a></li>
-                                <li><a href="">Reduceri</a></li>
-                                <li><a href="">Lichidări</a></li>
-                                <li><a href="">Cataloage online</a></li>
-                                <li><a href="">Magazine</a></li>
-                                <li><a href="">Branduri</a></li>
-                                <li><a href="">BLACK FRIDAY</a></li>
-                                <li><a href="">Transport gratuit</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-3 panel-collapse" onclick="actionFooterOnMobile(this)">
-                        <h3 class="mb-2">Pentru parteneri<span class="icon-chevron-down-solid"></span></h3>
-                        <div class="list">
-                            <ul class="list-style-none">
-                                <li><a href="">Reclamă pe KUPLIO.ro</a></li>
-                                <li><a href="">Adăugare magazin</a></li>
-                                <li><a href="">Profilul companiei</a></li>
-                                <li><a href="">Condiții comerciale generale</a></li>
-                                <li><a href="">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-3 panel-collapse" onclick="actionFooterOnMobile(this)">
-                        <h3 class="mb-2">Pentru utilizatori<span class="icon-chevron-down-solid"></span></h3>
-                        <div class="list">
-                            <ul class="list-style-none">
-                                <li><a href="">KUPLIO revista</a></li>
-                                <li><a href="">Termeni de utilizare</a></li>
-                                <li><a href="">Protecția datelor personale</a></li>
-                                <li><a href="">Cookies</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <p class="col-md-12 copyright">© 2022 PACHET PLUS s.r.l., Toate drepturile rezervate</p>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
     </div>
 </body>
 <script src="../../scripts/main.js"></script>
