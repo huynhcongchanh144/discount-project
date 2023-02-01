@@ -143,8 +143,10 @@ if(btnLoginGg) {
     })
 }
 
-if(btnRegister) {
-    btnRegister.addEventListener("click", () => {
+let formRegister = document.querySelector('#form-signup')
+if(btnRegister && formRegister) {
+    formRegister.addEventListener("submit", (e) => {
+        e.preventDefault()
         let email = document.querySelector('.login-container #email').value
         let password = document.querySelector('.login-container #password').value
         btnRegister.classList.add('loading')
@@ -188,8 +190,10 @@ if(btnRegister) {
     })
 }
 
-if(btnLogin) {
-    btnLogin.addEventListener("click", () => {
+let formLogin = document.querySelector('#form-login')
+if(btnLogin && formLogin) {
+    formLogin.addEventListener('submit', (e) => {
+        e.preventDefault()
         let email = document.querySelector('.login-container #email').value
         let password = document.querySelector('.login-container #password').value
         btnLogin.classList.add('loading')

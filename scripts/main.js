@@ -308,7 +308,7 @@ function createModalLogin(e, type) {
                                 </div>
 
                                 <h3 class="mt-2 t-center col-md-12 py-0 f-18">${type == 'login' ? 'Login' : 'Signup'} with Email</h3>
-                                <form action="" class="col-md-12 px-0">
+                                <form action="" class="col-md-12 px-0" id="form-${type}">
                                     <div class="row mb-0">
                                         <input type="email" name="email" id="email" class="col-md-12 mb-7" placeholder="Email">
                                         <input type="password" name="password" id="password" class="col-md-12" placeholder="Password">
@@ -321,7 +321,7 @@ function createModalLogin(e, type) {
                                     </div>
 
                                     <div class="submit mt-2">
-                                        <button class="btn btn-submit ${type == 'login' ? 'btn-login' : 'btn-signup'}" type="button">${type == 'login' ? 'Login' : 'Register'}</button>
+                                        <button class="btn btn-submit ${type == 'login' ? 'btn-login' : 'btn-signup'}" type="submit">${type == 'login' ? 'Login' : 'Register'}</button>
                                     </div>
                                 </form>
 
@@ -370,7 +370,7 @@ function createModalLogin(e, type) {
         })
     } else {
         redirectRegister.addEventListener('click', (e) => {
-            createModalLogin(e, 'register')
+            createModalLogin(e, 'signup')
         })
     }
 }
